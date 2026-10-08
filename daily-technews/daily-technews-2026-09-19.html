@@ -129,7 +129,8 @@
 <style id="suite">
   .title { margin-top: 0; }
   .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
-  .dateline .topline { letter-spacing: 0; text-transform: none; }
+  .dateline .price { font: inherit; margin-left: 1.5em; }
+  .dateline .issue { letter-spacing: 0; }
   .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
   .suite a { text-decoration: none; }
   .suite .num { font-family: var(--didone); font-weight: 400; }
@@ -140,7 +141,7 @@
 
   <header>
   <h1 class="title"><span>Daily </span><span>Technews</span></h1>
-  <div class="dateline"><span>Samedi 19 septembre 2026</span><div class="topline"><span class="issue" aria-label="Numéro 1">001</span><p class="price">2,70&nbsp;€</p></div></div>
+  <div class="dateline"><span>Samedi 19 septembre 2026<span class="price">2,70&nbsp;€</span></span><span class="issue" aria-label="Numéro 1">001</span></div>
 </header>
 <nav class="contents" aria-label="Sommaire">
   <a href="#a1"><span class="num">1</span><span class="what">Brevo&nbsp;: du code malveillant sur 100&nbsp;000 sites</span></a>

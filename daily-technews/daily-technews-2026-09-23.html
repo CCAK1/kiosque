@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 23 septembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #E58A9B;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #A8566A; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #A8566A; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="topline">
+      <span class="issue" aria-label="Numéro 5">005</span>
+      <p class="price">2,90&nbsp;€</p>
+    </div>
+    <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+    <div class="dateline">Mercredi 23 septembre 2026</div>
+  </header>
+
+  <nav class="contents" aria-label="Sommaire">
+    <a href="#a1"><span class="num">1</span><span class="what">L'armée américaine a failli aborder un navire chinois sur un rapport d'IA</span></a>
+    <a href="#a2"><span class="num">2</span><span class="what">Les patrons de l'IA devant le Conseil de sécurité de l'ONU</span></a>
+    <a href="#a3"><span class="num">3</span><span class="what">Alibaba présente sa puce et vise 20 GW de data centers</span></a>
+    <a href="#a4"><span class="num">4</span><span class="what">ASML ne vend plus aucune machine en Europe</span></a>
+    <a href="#a5"><span class="num">5</span><span class="what">La Californie fait payer le réseau aux data centers</span></a>
+    <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Promptfoo</span></a>
+  </nav>
+
+  <main>
+
+    <article class="lead" id="a1">
+      <p class="zone">États-Unis</p>
+      <h2>L'armée américaine a failli aborder un navire chinois sur la foi d'un rapport rédigé avec un chatbot</h2>
+      <p class="deck">Selon CNN, des avions étaient déjà en vol quand l'erreur a été repérée. Le Pentagone n'a pas commenté.</p>
+      <div class="body">
+        <p>Ce printemps, en pleine guerre avec l'Iran, un rapport de renseignement a circulé dans l'armée américaine&nbsp;: un navire chinois au Moyen-Orient transportait des composants d'un programme d'armes nucléaires. Selon l'enquête publiée par CNN le 18 septembre, fondée sur quatre sources anonymes, l'armée a préparé l'interception. Deux sources affirment que des militaires armés s'apprêtaient à monter à bord, et des appareils avaient décollé.</p>
+        <p>Juste avant l'opération, des officiers ont creusé le rapport. Il avait été rédigé par un analyste du commandement des opérations spéciales pour le Pacifique, basé à Hawaï, avec l'aide d'un chatbot. Celui-ci avait mal identifié la cargaison, à partir d'un mélange de sources ouvertes et de renseignement électromagnétique classifié. CNN n'a pas pu savoir de quelle cargaison il s'agissait, ni si l'outil était un produit commercial ou gouvernemental. Le rapport était «&nbsp;entièrement faux&nbsp;», selon une source, et «&nbsp;a failli déclencher une guerre&nbsp;».</p>
+        <p>Ni le Pentagone, ni le commandement des opérations spéciales pour le Pacifique, ni le commandement central n'ont répondu aux sollicitations de CNN. Aucune confirmation officielle n'a été donnée depuis.</p>
+        <p>Toujours selon CNN, l'armée américaine accélère l'usage de l'IA, y compris pour le ciblage. La révélation tombe la semaine où Washington propose à Pékin un canal de notification des incidents liés à l'IA, et deux jours avant la visite de Xi Jinping à la Maison-Blanche.</p>
+      </div>
+      <p class="meta">Enquête publiée le 18 septembre, faits du printemps 2026, info proposée par un lecteur. Sources&nbsp;: <a href="https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship">CNN</a>, <a href="https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/">TechCrunch</a>, <a href="https://www.timesofisrael.com/us-nearly-raided-chinese-ship-after-ai-falsely-flagged-nuclear-cargo-for-iran-cnn/">The Times of Israel</a>.</p>
+    </article>
+
+    <section class="briefs" aria-label="Les autres infos du jour">
+
+      <article class="brief" id="a2">
+        <p class="zone">International</p>
+        <h3>Les patrons de l'IA sont entendus cet après-midi par le Conseil de sécurité de l'ONU</h3>
+        <p>À l'initiative de la France, qui préside le Conseil en septembre, les quinze membres tiennent à 17 h (heure de Paris) une réunion sur l'IA et la sécurité internationale, présidée par Jean-Noël Barrot. Selon l'ordre du jour publié par Security Council Report, les intervenants attendus sont Yoshua Bengio, coprésident du panel scientifique de l'ONU sur l'IA, Sam Altman (OpenAI), Dario Amodei (Anthropic) et Clément Delangue (Hugging Face). D'après Reuters, le chinois DeepSeek a aussi été invité à faire une déclaration, sans son fondateur. Une note française consultée par l'agence cadre les débats sur les risques de perte de contrôle et l'usage de modèles avancés dans des actions touchant la paix. Le Conseil ne s'était réuni sur l'IA qu'une fois, en juillet 2023. Rien ne sera voté.</p>
+        <p class="meta">Réunion du 23 septembre. Sources&nbsp;: <a href="https://www.securitycouncilreport.org/whatsinblue/2026/09/artificial-intelligence-high-level-briefing-2.php">Security Council Report</a>, <a href="https://runtimewire.com/article/deepseek-un-security-council-ai-briefing-liang-wenfeng">Reuters, via Runtime Wire</a>, <a href="https://thedeepdive.ca/un-security-council-brings-deepseek-sam-altman-to-talk-about-ai-risks/">The Deep Dive</a>.</p>
+      </article>
+
+      <article class="brief" id="a3">
+        <p class="zone">Chine</p>
+        <h3>Alibaba présente une nouvelle puce d'IA et vise 20 gigawatts de data centers d'ici 2032</h3>
+        <p>À sa conférence Apsara, mardi à Hangzhou, le groupe a dévoilé le Zhenwu V900, conçu par sa filiale T-Head. Selon Alibaba, il triple les performances du M890 sorti en mai et peut être assemblé en grappes jusqu'à 500&nbsp;000 unités pour entraîner des modèles de pointe. Aucun de ces chiffres n'a été mesuré par un tiers. La production en série est prévue au premier trimestre 2027. Le directeur général Eddie Wu a fixé l'objectif de porter la capacité mondiale d'Alibaba Cloud au-delà de 20 gigawatts en 2032, et indiqué que le modèle Qwen 4 est en cours d'entraînement. Le groupe s'est engagé sur plus de 53 milliards de dollars d'investissements IA sur trois ans et a levé 10,2 milliards en Bourse à Hong Kong en août. L'annonce précède de deux jours la visite de Xi Jinping à Washington.</p>
+        <p class="meta">Annonces du 22 septembre. Sources&nbsp;: <a href="https://www.bloomberg.com/news/articles/2026-09-22/alibaba-unveils-ai-chip-to-drive-20gw-of-data-centers-by-2032">Bloomberg</a>, <a href="https://www.cnbc.com/2026/09/22/alibaba-ai-alibabacloud-zhenwu-v900-.html">CNBC</a>, <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/alibaba-touts-most-powerful-ai-chip-in-china-for-data-center-buildout">Nikkei Asia</a>, <a href="https://www.caixinglobal.com/2026-09-22/alibaba-unveils-new-ai-chip-as-it-deepens-ai-infrastructure-push-102487686.html">Caixin</a>.</p>
+      </article>
+
+      <article class="brief" id="a4">
+        <p class="zone">Europe</p>
+        <h3>ASML ne vend actuellement aucune machine en Europe, selon un de ses dirigeants</h3>
+        <p>«&nbsp;Nous ne vendons rien du tout en Europe&nbsp;», a déclaré lundi à Amsterdam Frank Heemskerk, vice-président exécutif du néerlandais ASML, seul fabricant au monde des machines de lithographie EUV nécessaires aux puces les plus avancées. La raison, selon lui&nbsp;: «&nbsp;l'Europe n'investit pas, et aucune usine de puces ne s'y construit&nbsp;». Les États-Unis, la Chine et l'Inde cherchent au contraire à attirer l'entreprise. Les comptes le confirment&nbsp;: au deuxième trimestre, l'Europe a pesé 0&nbsp;% des ventes de systèmes d'ASML, contre 1&nbsp;% un an plus tôt pour la zone Europe, Moyen-Orient et Afrique. La Corée du Sud, Taïwan et la Chine sont les premiers marchés. La Commission révise en ce moment le Chips Act de 2023, dont l'objectif de doubler la part européenne de la production mondiale d'ici 2030 a été jugé hors d'atteinte par la Cour des comptes européenne l'an dernier.</p>
+        <p class="meta">Déclarations du 21 septembre. Sources&nbsp;: <a href="https://nltimes.nl/2026/09/22/asml-currently-sells-chipmaking-machines-europe-executive-says">NL Times</a>, <a href="https://en.sedaily.com/international/2026/09/23/europes-most-valuable-firm-asml-sold-no-machines-at-home">Seoul Economic Daily, d'après Bloomberg</a>, rapport trimestriel d'ASML.</p>
+      </article>
+
+      <article class="brief" id="a5">
+        <p class="zone">États-Unis</p>
+        <h3>La Californie adopte sept lois pour faire payer aux data centers leur raccordement au réseau</h3>
+        <p>Gavin Newsom les a signées lundi. Trois textes chargent le régulateur de l'énergie de fixer des tarifs qui font supporter aux data centers le coût de leur raccordement et des renforcements du réseau, au lieu de le répartir sur les autres abonnés. Trois autres imposent de déclarer la consommation d'eau et d'électricité, l'emprise foncière et les emplois prévus. Le dernier retire aux data centers les exemptions générales d'étude environnementale, avec une procédure accélérée pour ceux qui respectent des normes d'économie d'eau et d'énergie. La Californie compte près de 300 data centers et 54 en projet. Selon un sondage du Public Policy Institute of California de juillet, près de trois Californiens sur quatre s'opposent à en accueillir un près de chez eux. La fédération du secteur juge que ces lois rendent l'État «&nbsp;peu attractif&nbsp;». Le même jour, le Texas a gelé tous les permis de data centers le temps d'un audit.</p>
+        <p class="meta">Lois signées le 21 septembre. Sources&nbsp;: <a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/">bureau du gouverneur</a>, <a href="https://calmatters.org/economy/technology/2026/09/new-california-laws-data-centers/">CalMatters</a>, <a href="https://www.usnews.com/news/politics/articles/2026-09-21/california-governor-signs-broad-data-center-oversight-bill-package">Reuters, via US News</a>.</p>
+      </article>
+
+    </section>
+
+    <section class="tool" id="outil" aria-labelledby="tool-title">
+      <p class="tool-head">L'outil open source du jour</p>
+      <h2 id="tool-title">Promptfoo, pour tester les réponses d'une IA avant de s'y fier</h2>
+      <div class="tool-grid">
+        <div>
+          <p>Promptfoo fait passer à un modèle de langage, un prompt ou un agent une batterie de tests définis dans un fichier de configuration&nbsp;: cas d'entrée, réponses attendues, critères de réussite. Il compare plusieurs modèles ou versions d'un prompt côte à côte, et vérifie qu'une modification ne dégrade rien avant la mise en production. Il comprend aussi un module de red teaming qui génère des attaques (injection de prompt, fuite de données, contenus interdits).</p>
+          <p>Il tourne en local, en ligne de commande ou dans une chaîne d'intégration continue, et fonctionne avec les API d'OpenAI, Anthropic, Google, Mistral et les modèles locaux via Ollama.</p>
+          <p class="meta">Dépôt&nbsp;: <a href="https://github.com/promptfoo/promptfoo">github.com/promptfoo/promptfoo</a>, consulté le 23 septembre.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Licence</dt><dd>MIT, vérifiée dans le dépôt.</dd></div>
+          <div><dt>Activité</dt><dd>25&nbsp;390 étoiles, 2&nbsp;359 forks, 9&nbsp;834 commits, 125 tickets ouverts.</dd></div>
+          <div><dt>Qui</dt><dd>L'entreprise Promptfoo (San Francisco), qui vend une version hébergée pour les équipes.</dd></div>
+          <div><dt>À savoir</dt><dd>Les évaluations qui utilisent un modèle comme juge héritent des biais de ce modèle. Les tests avec réponses attendues explicites sont plus fiables.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <p class="band">Prix affiché&nbsp;: coût de fabrication estimé de ce numéro (tokens traités par le modèle et recherches web).</p>
+
+</div>
+</body>
+</html>

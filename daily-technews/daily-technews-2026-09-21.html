@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 21 septembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #E58A9B;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #A8566A; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #A8566A; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="topline">
+      <span class="issue" aria-label="Numéro 3">003</span>
+      <p class="price">3,60&nbsp;€</p>
+    </div>
+    <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+    <div class="dateline">Lundi 21 septembre 2026</div>
+  </header>
+
+  <nav class="contents" aria-label="Sommaire">
+    <a href="#a1"><span class="num">1</span><span class="what">Mémoire&nbsp;: le chinois CXMT passe à la génération suivante</span></a>
+    <a href="#a2"><span class="num">2</span><span class="what">Trois gouverneurs américains légifèrent sur l'IA</span></a>
+    <a href="#a3"><span class="num">3</span><span class="what">Une faille dans les assistants de code IA</span></a>
+    <a href="#a4"><span class="num">4</span><span class="what">Jev, l'IA qui décide au lieu d'écrire</span></a>
+    <a href="#a5"><span class="num">5</span><span class="what">Crusoe lève 3,9 milliards de dollars</span></a>
+    <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Docling</span></a>
+  </nav>
+
+  <main>
+
+    <article class="lead" id="a1">
+      <p class="zone">Chine</p>
+      <h2>Le chinois CXMT produit en série une nouvelle génération de mémoire vive</h2>
+      <p class="deck">Le quatrième fabricant mondial de DRAM affirme avoir rattrapé les procédés les plus avancés du secteur. Il ne donne ni rendement ni volumes.</p>
+      <div class="body">
+        <p>CXMT (ChangXin Memory Technologies) a annoncé dimanche, à la World Manufacturing Convention de Hefei, que sa plateforme de cinquième génération, dite G5, est entrée en production de masse. Elle ramène à 11,95 nanomètres l'espacement entre les éléments clés des cellules de mémoire. Selon l'entreprise, chaque plaque de silicium donne au moins 50&nbsp;% de puces en plus qu'avec la génération précédente.</p>
+        <p>Deux produits sont déjà fabriqués&nbsp;: des mémoires LPDDR5X de 24 gigabits, le type utilisé dans les smartphones, qui stockent 50&nbsp;% de données de plus que les modèles précédents de CXMT. «&nbsp;Notre procédé est désormais au niveau des plus avancés produits en série dans l'industrie&nbsp;», a déclaré Luo Xiaodong, vice-président du groupe.</p>
+        <p>Cette affirmation n'a pas été vérifiée par un tiers, et CXMT n'a communiqué ni ses rendements ni ses volumes mensuels, relève le Seoul Economic Daily. Privé des machines de lithographie EUV par les restrictions américaines à l'exportation, le groupe dit obtenir cette finesse en multipliant les passes de gravure avec des équipements plus anciens.</p>
+        <p>CXMT détenait 9,5&nbsp;% du chiffre d'affaires mondial de la DRAM au deuxième trimestre selon le cabinet TrendForce, derrière Samsung, SK Hynix et Micron. L'annonce tombe en pleine pénurie de mémoire, que le patron d'Intel voit s'aggraver en 2027. Les analystes cités par la presse coréenne jugent l'effet limité à court terme pour les trois leaders, dont la production part en priorité vers les serveurs d'IA.</p>
+      </div>
+      <p class="meta">Annonce du 20 septembre. Sources&nbsp;: <a href="https://www.asiaone.com/china/chinas-cxmt-says-new-memory-chip-platform-enters-mass-production">Reuters, via AsiaOne</a>, <a href="https://en.sedaily.com/international/2026/09/20/chinas-cxmt-starts-mass-production-on-5th-generation-dram">Seoul Economic Daily</a>, <a href="https://finance.biggo.com/news/cda06052-f559-4b73-bdc8-f59a9db70289">BigGo Finance</a>.</p>
+    </article>
+
+    <section class="briefs" aria-label="Les autres infos du jour">
+
+      <article class="brief" id="a2">
+        <p class="zone">États-Unis</p>
+        <h3>Trois gouverneurs américains signent des décrets sur l'IA le même jour</h3>
+        <p>Vendredi, Gavin Newsom (Californie, démocrate) a chargé un groupe d'experts de proposer sous deux mois un renforcement des lois de l'État sur la sécurité de l'IA. Parmi les pistes&nbsp;: faire rédiger les plans de sécurité des grands laboratoires par des tiers indépendants, et imposer un «&nbsp;bouton d'arrêt d'urgence&nbsp;» sur les modèles. Newsom reconnaît que cette notion reste à définir. Le même jour, Abigail Spanberger (Virginie, démocrate) a créé un groupe de travail sur l'IA et un plan de contrôle des data centers, et Joe Lombardo (Nevada, républicain) a retiré aux data centers un avantage fiscal en leur imposant de payer leur électricité. Au Sénat, une proposition de loi fédérale sur un bouton d'arrêt a été bloquée la même semaine. Donald Trump qualifie les inquiétudes sur l'IA de «&nbsp;canular&nbsp;».</p>
+        <p class="meta">Décrets du 18 septembre. Sources&nbsp;: <a href="https://www.gov.ca.gov/2026/09/18/governor-newsom-issues-executive-order-to-accelerate-independent-oversight-and-advance-the-creation-of-an-ai-kill-switch/">bureau du gouverneur de Californie</a>, <a href="https://www.nbcnews.com/politics/elections/california-gavin-newsom-ai-order-safety-regulations-kill-switch-rcna598570">NBC News</a>, <a href="https://www.cnbc.com/2026/09/18/california-newsom-executive-order-ai.html">CNBC</a>.</p>
+      </article>
+
+      <article class="brief" id="a3">
+        <p class="zone">Cybersécurité</p>
+        <h3>Une faille permet de piéger les assistants de code IA par leurs extensions</h3>
+        <p>Baptisée Plugin4Shell par les chercheurs d'AIR Security, qui l'ont rendue publique le 17 septembre, elle touche Claude Code (Anthropic), Codex (OpenAI), GitHub Copilot et Gemini CLI (Google). Ces outils verrouillent chaque extension sur une version précise de son code, identifiée par une empreinte. Mais ils ne vérifiaient pas que le code installé correspondait bien à cette empreinte. Un attaquant qui contrôle le dépôt de l'extension pouvait y glisser le sien, exécuté ensuite avec les droits du développeur, sans aucun clic grâce aux mises à jour automatiques. Anthropic et OpenAI ont corrigé (Claude Code 2.1.179, Codex 0.146.0). Copilot n'avait pas de correctif à la date de publication, et Google a préféré abandonner Gemini CLI. Aucune exploitation réelle n'est signalée.</p>
+        <p class="meta">Publication du 17 septembre. Sources&nbsp;: <a href="https://www.air.security/blog-posts/plugin4shell">AIR Security</a>, <a href="https://www.helpnetsecurity.com/2026/09/18/plugin4shell-ai-coding-agents-vulnerability/">Help Net Security</a>, <a href="https://cybersecuritynews.com/plugin4shell-zero-click-rce/">Cybersecurity News</a>.</p>
+      </article>
+
+      <article class="brief" id="a4">
+        <p class="zone">IA</p>
+        <h3>Jev, un modèle d'IA qui rend des décisions au lieu de texte</h3>
+        <p>La startup californienne TypeSafe AI, fondée par Diogo Almeida, ancien chercheur d'OpenAI, a ouvert le 15 septembre l'accès anticipé à Jev et annoncé 40 millions de dollars de financement. Le modèle ne rédige rien&nbsp;: le développeur définit à l'avance les réponses possibles, et Jev renvoie un choix, une note ou un oui/non, accompagné d'une probabilité. Usages visés&nbsp;: trier des demandes, noter des dossiers, filtrer les sorties d'un autre modèle. TypeSafe annonce des réponses en 70 à 500 millisecondes et un prix de 0,042 dollar par million de tokens. Ces chiffres viennent de l'éditeur, qui précise que ses comparaisons portent surtout sur des modèles concurrents utilisés sans leur mode raisonnement. Aucun article technique n'a été publié. Depuis le lancement, Vercel et Cloudflare ont ajouté le modèle à leurs plateformes.</p>
+        <p class="meta">Lancement du 15 septembre, info proposée par un lecteur. Sources&nbsp;: annonce de TypeSafe AI, <a href="https://www.therundown.ai/news/typesafe-jev-ai-decisions-software">The Rundown</a>, <a href="https://www.artificialintelligence-news.com/news/chatgpt-pioneer-launches-jev-model-for-programmatic-logic/">AI News</a>, <a href="https://www.testingcatalog.com/icymtypesafe-ai-launches-jev-for-structured-ai-decisions/">TestingCatalog</a>.</p>
+      </article>
+
+      <article class="brief" id="a5">
+        <p class="zone">Entreprises</p>
+        <h3>Crusoe lève 3,9 milliards de dollars pour construire des data centers</h3>
+        <p>L'américain, basé à Denver, a annoncé le 17 septembre la première clôture de ce tour de table, qui le valorise 30,9 milliards de dollars, contre 10 milliards il y a dix mois. Nvidia et les fonds souverains d'Abou Dhabi, du Qatar et de Singapour figurent parmi les investisseurs. Né en 2018 dans le minage de cryptomonnaies, Crusoe a construit le site d'Abilene, au Texas, utilisé par OpenAI. Il veut désormais fabriquer en usine de petits data centers modulaires, livrés là où de l'électricité est disponible. L'entreprise revendique 140 milliards de dollars de contrats signés. Ce sont des engagements déclarés, pas du chiffre d'affaires, et le site Axios a fait état de pannes et d'oppositions locales sur plusieurs de ses projets.</p>
+        <p class="meta">Annonce du 17 septembre. Sources&nbsp;: <a href="https://www.crusoe.ai/resources/newsroom/crusoe-announces-series-f-funding">Crusoe</a>, <a href="https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/">TechCrunch</a>, <a href="https://thenextweb.com/news/crusoe-3-9-billion-series-f-30-9-billion-valuation-spark">The Next Web</a>.</p>
+      </article>
+
+    </section>
+
+    <section class="tool" id="outil" aria-labelledby="tool-title">
+      <p class="tool-head">L'outil open source du jour</p>
+      <h2 id="tool-title">Docling, pour transformer PDF et documents Office en données exploitables par une IA</h2>
+      <div class="tool-grid">
+        <div>
+          <p>Docling convertit des PDF, des fichiers Word, PowerPoint et Excel, des pages HTML, des images ou de l'audio en un format unique, exportable en Markdown ou en JSON. Il reconstitue la mise en page, l'ordre de lecture, les tableaux, les formules et le code. C'est une brique courante des projets de recherche documentaire (RAG).</p>
+          <p>Tout peut tourner en local, sans envoi de données à l'extérieur, y compris sur un réseau isolé. Le projet existe en bibliothèque Python, en ligne de commande, en service HTTP et en serveur MCP.</p>
+          <p class="meta">Dépôt&nbsp;: <a href="https://github.com/docling-project/docling">github.com/docling-project/docling</a>, consulté le 21 septembre.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Licence</dt><dd>MIT pour le code, vérifiée dans le dépôt.</dd></div>
+          <div><dt>Activité</dt><dd>67&nbsp;465 étoiles, 4&nbsp;868 forks, 1&nbsp;452 commits, 810 tickets ouverts.</dd></div>
+          <div><dt>Qui</dt><dd>Lancé par une équipe d'IBM Research à Zurich, hébergé par la fondation LF AI &amp; Data (Linux Foundation).</dd></div>
+          <div><dt>À savoir</dt><dd>Les modèles d'IA embarqués ont leurs propres licences, distinctes de celle du code. À vérifier une par une avant un usage commercial.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <p class="band">Prix affiché&nbsp;: coût de fabrication estimé de ce numéro (tokens traités par le modèle et recherches web).</p>
+
+</div>
+</body>
+</html>

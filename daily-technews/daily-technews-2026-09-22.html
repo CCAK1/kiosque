@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 22 septembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #E58A9B;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #A8566A; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #A8566A; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="topline">
+      <span class="issue" aria-label="Numéro 4">004</span>
+      <p class="price">3,20&nbsp;€</p>
+    </div>
+    <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+    <div class="dateline">Mardi 22 septembre 2026</div>
+  </header>
+
+  <nav class="contents" aria-label="Sommaire">
+    <a href="#a1"><span class="num">1</span><span class="what">Google&nbsp;: 403 millions d'euros d'amende pour la géolocalisation</span></a>
+    <a href="#a2"><span class="num">2</span><span class="what">SoftBank emprunte 11 milliards pour OpenAI</span></a>
+    <a href="#a3"><span class="num">3</span><span class="what">Une étiquette énergie pour les data centers européens</span></a>
+    <a href="#a4"><span class="num">4</span><span class="what">Washington propose à Pékin un canal d'alerte sur l'IA</span></a>
+    <a href="#a5"><span class="num">5</span><span class="what">Le finlandais Oura vise 2,2 milliards en Bourse</span></a>
+    <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: OpenTofu</span></a>
+  </nav>
+
+  <main>
+
+    <article class="lead" id="a1">
+      <p class="zone">Europe</p>
+      <h2>Google écope de 403 millions d'euros d'amende pour sa gestion des données de localisation</h2>
+      <p class="deck">Le régulateur irlandais clôt une enquête ouverte en 2020. Google a six mois pour se mettre en conformité et peut faire appel.</p>
+      <div class="body">
+        <p>La Data Protection Commission (DPC), autorité irlandaise chargée de Google pour toute l'Union européenne, a annoncé lundi une amende de 403 millions d'euros pour plusieurs infractions au RGPD. L'enquête portait sur trois fonctions&nbsp;: l'activité sur le web et les applications, l'historique des positions et la précision de la localisation sur Android. Elle couvrait la période du 25 mai 2018, entrée en application du RGPD, au 4 février 2020.</p>
+        <p>Selon la DPC, Google n'a pas respecté ses obligations de transparence sur les trois fonctions et a conservé les données de localisation plus longtemps que nécessaire pour deux d'entre elles. «&nbsp;Les personnes pouvaient ignorer que leur position servait, par exemple, à les cibler avec de la publicité ou à déduire leurs centres d'intérêt&nbsp;», a déclaré le commissaire adjoint Graham Doyle.</p>
+        <p>L'enquête avait été ouverte en février 2020 après des plaintes d'associations de consommateurs européennes, dont le BEUC. Il aura donc fallu six ans et demi pour aboutir. La décision complète n'est pas encore publiée.</p>
+        <p>C'est la quatrième amende la plus lourde infligée par la DPC, derrière celles visant Meta et TikTok. Elle ne sera exigible qu'après confirmation par un tribunal irlandais, et Google dispose de 28 jours pour faire appel devant la High Court. D'après la presse irlandaise, l'entreprise entend contester certains points de droit. Trois autres enquêtes de la DPC visant Google sont en cours.</p>
+      </div>
+      <p class="meta">Décision du 21 septembre. Sources&nbsp;: communiqué de la DPC, <a href="https://therecord.media/google-europe-location-data-fine">The Record</a>, <a href="https://www.bleepingcomputer.com/news/security/google-fined-403-million-over-location-data-privacy-violations/">BleepingComputer</a>, <a href="https://thehackernews.com/2026/09/google-fined-403-million-over-gdpr.html">The Hacker News</a>.</p>
+    </article>
+
+    <section class="briefs" aria-label="Les autres infos du jour">
+
+      <article class="brief" id="a2">
+        <p class="zone">Japon</p>
+        <h3>SoftBank emprunte 11 milliards de dollars sur les marchés pour payer sa part dans OpenAI</h3>
+        <p>Le groupe japonais a lancé lundi une émission obligataire de 10 milliards de dollars et 1 milliard d'euros, selon la fiche de l'opération consultée par Reuters. Les titres, notés BB+ par Fitch, c'est-à-dire spéculatifs, ont des échéances de 3,5 à 7,5 ans. Le produit financera le versement de 10 milliards de dollars attendu le 1er octobre, troisième tranche de l'investissement complémentaire de SoftBank dans OpenAI, et remplacera un prêt relais du même montant. Ce serait la plus grosse émission jamais réalisée par une entreprise non financière d'Asie-Pacifique. SoftBank, qui a engagé près de 65 milliards de dollars dans OpenAI, est déjà le premier emprunteur à haut rendement de l'année d'après Bloomberg. Le prix des titres doit être fixé le 24 septembre. SoftBank n'a pas commenté.</p>
+        <p class="meta">Lancement du 21 septembre. Sources&nbsp;: <a href="https://whtc.com/2026/09/20/softbank-group-launches-over-10-billion-in-bonds-for-openai-investment-term-sheet-shows/">Reuters</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-21/softbank-seeks-over-11-billion-in-junk-bond-deal-for-openai-bet">Bloomberg</a>, <a href="https://www.japantimes.co.jp/business/2026/09/21/companies/softbank-11-billion-junk-bonds-openai-bet/">The Japan Times</a>.</p>
+      </article>
+
+      <article class="brief" id="a3">
+        <p class="zone">Europe</p>
+        <h3>Bruxelles crée une étiquette de A à G pour les data centers</h3>
+        <p>La Commission a adopté lundi un règlement délégué qui note les centres de données de plus de 500 kW sur leur efficacité énergétique et leur consommation d'eau, sur le modèle des étiquettes de l'électroménager. Les premières étiquettes sont prévues en 2027, sous réserve de l'accord du Parlement et des États membres. Le texte ne fixe aucun plafond de consommation et n'oblige pas à publier la consommation totale d'électricité. Selon Agence Europe, la déclaration des données pour obtenir la note se fait sur la base du volontariat. La Commission a ouvert en parallèle une consultation, jusqu'au 14 décembre, sur des normes minimales de performance qui deviendraient contraignantes, avec une proposition législative annoncée pour le deuxième trimestre 2027. L'UE veut tripler sa capacité de calcul en cinq à sept ans. Les data centers ont consommé environ 68 TWh dans l'Union en 2024, sur des données partielles.</p>
+        <p class="meta">Adoption du 21 septembre. Sources&nbsp;: communiqué de la Commission (IP/26/1667), <a href="https://agenceurope.eu/en/bulletin/article/13942/1/european-commission-proposes-a-sustainability-label-for-european-data-centres-including-nuclear-energy">Agence Europe</a>, <a href="https://www.letemps.ch/cyber/l-union-europeenne-promet-davantage-de-transparence-sur-l-empreinte-environnementale-des-centres-de-donnees">Le Temps avec l'AFP</a>, <a href="https://www.silicon.fr/green-it-1374/bruxelles-veut-noter-les-centres-de-donnees-sur-leur-empreinte-energetique-229231">Silicon</a>.</p>
+      </article>
+
+      <article class="brief" id="a4">
+        <p class="zone">États-Unis&nbsp;/ Chine</p>
+        <h3>Washington propose à Pékin un canal d'alerte sur les incidents liés à l'IA</h3>
+        <p>À l'issue de huit heures de discussions dimanche à New York avec le vice-premier ministre chinois He Lifeng, le secrétaire au Trésor Scott Bessent a annoncé que les États-Unis proposaient un dialogue bilatéral sur l'IA, avec un système de notification des incidents assez graves pour toucher la sécurité nationale. La proposition sera soumise à Donald Trump et Xi Jinping lors de leur sommet jeudi et vendredi à Washington. Le représentant au commerce Jamieson Greer a précisé que les contrôles à l'exportation des puces et des équipements de fabrication n'en font pas partie. Côté chinois, les médias d'État évoquent des échanges «&nbsp;francs et constructifs&nbsp;» incluant l'IA, sans mentionner le mécanisme. Un groupe de travail a poursuivi les discussions lundi. Trump et Xi avaient évoqué un tel dialogue en mai à Pékin, sans suite.</p>
+        <p class="meta">Discussions du 20 septembre. Sources&nbsp;: <a href="https://www.nbcnews.com/world/asia/us-proposes-exchanging-ai-safety-alerts-china-bessent-says-rcna598923">NBC News</a>, <a href="https://www.aljazeera.com/economy/2026/9/20/us-china-open-high-level-talks-ahead-of-trump-xi-summit">Al Jazeera</a>, <a href="https://www.washingtonpost.com/politics/2026/09/21/us-proposes-ai-incident-alert-system-with-china/">The Washington Post</a>.</p>
+      </article>
+
+      <article class="brief" id="a5">
+        <p class="zone">Entreprises</p>
+        <h3>Le finlandais Oura veut lever jusqu'à 2,2 milliards de dollars au Nasdaq</h3>
+        <p>Le fabricant de bagues connectées a fixé lundi les conditions de son entrée en Bourse&nbsp;: 50 millions d'actions entre 40 et 44 dollars, ce qui valoriserait l'entreprise environ 14 milliards de dollars en haut de fourchette. Une partie des titres est vendue par des actionnaires existants. Sur les neuf mois clos fin juin, le chiffre d'affaires atteint 1,21 milliard de dollars, en hausse de 74&nbsp;%, pour 4,1 millions de bagues vendues et plus de 5 millions d'abonnés payants. La perte nette de 924 millions s'explique surtout par une écriture comptable liée aux actions de préférence, précise le prospectus. Fondée en 2013 à Oulu, l'entreprise garde ses bureaux en Finlande. Le titre s'échangera sous le symbole OURA.</p>
+        <p class="meta">Dépôt du 21 septembre. Sources&nbsp;: prospectus déposé à la SEC, <a href="https://finance.yahoo.com/healthcare/articles/smart-ring-maker-oura-backers-110923647.html">Bloomberg</a>, <a href="https://finance.yahoo.com/technology/article/oura-publicly-files-for-initial-public-offering-looks-to-raise-22-billion-140523751.html">Associated Press</a>, <a href="https://qz.com/oura-ipo-public-filing-revenue-growth-090426">Quartz</a>.</p>
+      </article>
+
+    </section>
+
+    <section class="tool" id="outil" aria-labelledby="tool-title">
+      <p class="tool-head">L'outil open source du jour</p>
+      <h2 id="tool-title">OpenTofu, l'infrastructure as code sous licence libre</h2>
+      <div class="tool-grid">
+        <div>
+          <p>OpenTofu décrit une infrastructure (serveurs, réseaux, bases de données, comptes cloud) dans des fichiers texte, puis la crée, la modifie et la détruit de façon reproductible. Il est né en 2023 d'une copie de Terraform, après que son éditeur HashiCorp a abandonné la licence libre. Il reste compatible avec les fournisseurs et modules Terraform existants.</p>
+          <p>Depuis la séparation, le projet a ajouté le chiffrement de l'état, les variables dans les blocs de configuration et l'exclusion ciblée de ressources. La migration depuis Terraform se fait sans réécrire le code dans la plupart des cas.</p>
+          <p class="meta">Dépôt&nbsp;: <a href="https://github.com/opentofu/opentofu">github.com/opentofu/opentofu</a>, consulté le 22 septembre.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Licence</dt><dd>MPL 2.0, vérifiée dans le dépôt.</dd></div>
+          <div><dt>Activité</dt><dd>30&nbsp;252 étoiles, 1&nbsp;375 forks, 33&nbsp;873 commits, 275 tickets ouverts.</dd></div>
+          <div><dt>Qui</dt><dd>Projet de la Linux Foundation, soutenu par plusieurs entreprises du secteur.</dd></div>
+          <div><dt>À savoir</dt><dd>HashiCorp, racheté par IBM, continue de développer Terraform de son côté. Les deux outils divergent progressivement, une migration dans un sens comme dans l'autre devient moins simple avec le temps.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <p class="band">Prix affiché&nbsp;: coût de fabrication estimé de ce numéro (tokens traités par le modèle et recherches web).</p>
+
+</div>
+</body>
+</html>

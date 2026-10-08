@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 19 septembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #E58A9B;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #A8566A; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #A8566A; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+</head>
+<body>
+<div class="page">
+
+  <header>
+    <div class="topline">
+      <span class="issue" aria-label="Numéro 1">001</span>
+      <p class="price">2,70&nbsp;€</p>
+    </div>
+    <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+    <div class="dateline">Samedi 19 septembre 2026</div>
+  </header>
+
+  <nav class="contents" aria-label="Sommaire">
+    <a href="#a1"><span class="num">1</span><span class="what">Brevo&nbsp;: du code malveillant sur 100&nbsp;000 sites</span></a>
+    <a href="#a2"><span class="num">2</span><span class="what">Lunettes connectées&nbsp;: enquête à Paris</span></a>
+    <a href="#a3"><span class="num">3</span><span class="what">Nvidia veut doubler ses ventes de puces</span></a>
+    <a href="#a4"><span class="num">4</span><span class="what">Faux recruteurs nord-coréens</span></a>
+    <a href="#a5"><span class="num">5</span><span class="what">Anthropic&nbsp;: 26&nbsp;% de sa R&amp;D menée par l'IA</span></a>
+    <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Neko</span></a>
+  </nav>
+
+  <main>
+
+    <article class="lead" id="a1">
+      <p class="zone">France</p>
+      <h2>Une attaque contre le français Brevo a diffusé du code malveillant sur plus de 100&nbsp;000 sites</h2>
+      <p class="deck">L'éditeur de logiciels de marketing a publié le détail de l'incident. Une clé d'accès laissée dans du code source a suffi aux attaquants.</p>
+      <div class="body">
+        <p>Le 14 septembre, pendant environ cinq heures et demie, les scripts que les clients de Brevo (ex-Sendinblue) intègrent à leurs sites ont été modifiés à la volée&nbsp;: formulaires, messagerie instantanée, kit de suivi. Certains visiteurs voyaient une fausse page de vérification « Cloudflare » qui leur demandait de copier et d'exécuter une commande sur leur ordinateur, ce qui installait un logiciel malveillant. Sur les sites WordPress, si le visiteur était connecté comme administrateur, le script tentait d'installer une extension donnant un accès durable au site.</p>
+        <p>Selon le rapport d'incident de Brevo, les attaquants ont utilisé une clé d'API Cloudflare à longue durée de vie, dotée de tous les droits, qui était stockée dans du code source. Elle leur a permis de déployer un programme sur le réseau de diffusion de contenu, qui réécrivait les pages au passage et retirait les en-têtes de sécurité. Les fichiers hébergés sur les serveurs de Brevo n'ont jamais été modifiés, et les contrôles d'intégrité habituels n'ont donc rien détecté.</p>
+        <p>L'affaire avait commencé le 10 septembre par une première intrusion, via une faille dans la connexion unique SAML. Bilan de cette première phase&nbsp;: 138 comptes clients consultés, des mails d'hameçonnage envoyés depuis six d'entre eux et des listes de contacts exportées depuis 43.</p>
+        <p>Le chiffre de 100&nbsp;000 sites est une estimation de Sansec, la société de sécurité qui a repéré l'attaque. Brevo indique ne plus diffuser de code malveillant. Les chercheurs recommandent aux sites WordPress équipés d'un module Brevo de vérifier les extensions installées ou activées le 14 septembre.</p>
+      </div>
+      <p class="meta">Incident du 14 septembre, rapport publié cette semaine. Sources&nbsp;: rapport d'incident de Brevo, <a href="https://www.bleepingcomputer.com/news/security/brevo-supply-chain-attack-injected-clickfix-scripts-on-customer-sites/">BleepingComputer</a>, <a href="https://www.securityweek.com/brevo-supply-chain-attack-injects-malware-into-100000-websites/">SecurityWeek</a>, <a href="https://cybernews.com/security/brevo-supply-chain-attack-clickfix-malware/">Cybernews</a>.</p>
+    </article>
+
+    <section class="briefs" aria-label="Les autres infos du jour">
+
+      <article class="brief" id="a2">
+        <p class="zone">France</p>
+        <h3>Le parquet de Paris enquête sur des femmes filmées à leur insu avec des lunettes connectées</h3>
+        <p>Le parquet a indiqué à Reuters avoir ouvert au moins une enquête pénale après des plaintes pour harcèlement sexuel. Des femmes ont été filmées dans la rue sans leur accord, puis les vidéos publiées en ligne. La marque des lunettes n'est pas précisée. La cellule cybercriminalité du parquet a testé ces appareils il y a deux semaines. De son côté, la CNIL dit avoir reçu moins de dix plaintes sur leur usage au travail, et de plus en plus de questions d'entreprises qui veulent savoir si elles peuvent les interdire. Les lunettes de Meta et EssilorLuxottica représentent environ 76&nbsp;% du marché mondial, avec sept millions d'exemplaires vendus l'an dernier.</p>
+        <p class="meta">Information du 18 septembre. Sources&nbsp;: <a href="https://www.boursorama.com/bourse/actualites/france-les-lunettes-connectees-de-meta-dans-l-oeil-de-mire-de-la-justice-et-des-regulateurs-669e26b38842462cbf5b98b1c6bc7e17">Reuters</a>, <a href="https://next.ink/brief-article/lunettes-connectees-le-parquet-de-paris-ouvre-une-enquete-pour-harcelement-sexuel/">Next</a>, déclarations du parquet de Paris et de la CNIL.</p>
+      </article>
+
+      <article class="brief" id="a3">
+        <p class="zone">Entreprises</p>
+        <h3>Le patron de Nvidia prévoit de vendre deux fois plus de puces en 2027</h3>
+        <p>Jensen Huang l'a déclaré jeudi à des journalistes, en marge du sommet organisé par Charles III en Écosse. Il l'explique par la volonté d'investir dans l'IA « dans presque tous les pays » où le groupe est présent. La prévision ne peut pas être vérifiée de l'extérieur&nbsp;: Nvidia ne publie pas le nombre total de puces qu'il vend. Le groupe a annoncé en août viser 70&nbsp;% de croissance sur l'exercice clos en janvier 2028, soit environ 673 milliards de dollars de chiffre d'affaires. Sa directrice financière a précisé que les ventes sont limitées par les approvisionnements. Interrogé sur les appels à ralentir l'IA, Huang a répondu qu'un produit qui n'est pas sûr doit être retenu et retravaillé.</p>
+        <p class="meta">Déclarations du 17 septembre. Sources&nbsp;: <a href="https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html">CNBC</a>, <a href="https://www.bloomberg.com/news/articles/2026-09-17/nvidia-s-huang-expects-to-sell-twice-as-many-chips-next-year">Bloomberg</a>, <a href="https://qz.com/nvidia-jensen-huang-chip-sales-double-forecast-091826">Quartz</a>.</p>
+      </article>
+
+      <article class="brief" id="a4">
+        <p class="zone">Asie</p>
+        <h3>Quatre pays attribuent à la Corée du Nord une campagne de faux recruteurs visant les développeurs</h3>
+        <p>Le Japon, les États-Unis, l'Australie et l'Allemagne ont publié vendredi un avis commun, signé par sept agences dont la police nationale japonaise et le FBI. Le groupe, baptisé WaterPlum, se fait passer pour des recruteurs d'entreprises d'IA ou de cryptomonnaies. Il propose aux développeurs un test technique, qui consiste à télécharger et exécuter du code piégé. Bilan selon l'avis&nbsp;: plus de 30&nbsp;000 ordinateurs infectés dans plus de 100 pays entre décembre 2025 et juillet 2026, les données de 7&nbsp;000 portefeuilles de cryptomonnaies volées et environ 1,7 milliard de yens détournés, soit 10,7 millions de dollars.</p>
+        <p class="meta">Avis du 18 septembre. Sources&nbsp;: <a href="https://www.mofa.go.jp/press/release/pressite_000001_02670.html">ministère japonais des Affaires étrangères</a>, <a href="https://thecyberexpress.com/waterplum-contagious-interview-north-korea/">The Cyber Express</a>, <a href="https://www.cryptotimes.io/2026/09/18/north-korea-linked-waterplum-used-fake-jobs-to-steal-crypto-npa-says/">The Crypto Times</a>.</p>
+      </article>
+
+      <article class="brief" id="a5">
+        <p class="zone">États-Unis</p>
+        <h3>Anthropic chiffre la part de son IA dans sa propre recherche&nbsp;: 26&nbsp;%</h3>
+        <p>L'entreprise a publié jeudi un premier indice interne. En août, son modèle Claude « menait » 26&nbsp;% des travaux de recherche et développement sur l'IA&nbsp;: il réalisait l'essentiel d'une tâche à partir d'une consigne générale, sous supervision humaine. Cette part était inférieure à 1&nbsp;% en février. Plus de 90&nbsp;% des travaux impliquent Claude au moins comme assistant, et aucun n'est mené sans humain dans la boucle, précise Anthropic. L'échelle utilisée vient de l'institut Epoch AI, mais la mesure est faite par l'entreprise elle-même et n'a été vérifiée par aucun tiers. Anthropic demande aux autres laboratoires de publier les mêmes chiffres.</p>
+        <p class="meta">Publication du 17 septembre. Sources&nbsp;: <a href="https://www.anthropic.com/institute/measuring-pace-of-ai-development">Anthropic</a>, <a href="https://www.reuters.com/business/anthropic-says-claude-now-leads-quarter-work-building-its-next-ai-models-2026-09-17">Reuters</a>, <a href="https://apnews.com/article/anthropic-claude-ai-model-self-improvement-4d3a7430f57cbc7c39e1c5f2b7d7e132">Associated Press</a>.</p>
+      </article>
+
+    </section>
+
+    <section class="tool" id="outil" aria-labelledby="tool-title">
+      <p class="tool-head">L'outil open source du jour</p>
+      <h2 id="tool-title">Neko, un navigateur partagé à héberger soi-même</h2>
+      <div class="tool-grid">
+        <div>
+          <p>Neko fait tourner un navigateur (Firefox, Chromium, Tor et d'autres) dans un conteneur Docker et en diffuse l'image et le son en WebRTC. Plusieurs personnes peuvent le voir et le piloter en même temps, depuis leur propre navigateur.</p>
+          <p>Usages décrits par le projet&nbsp;: démonstration ou assistance à distance, navigation jetable isolée du poste de travail, accès à des applications internes sans VPN, automatisation avec Playwright sous contrôle visuel. Il peut aussi diffuser un bureau Linux complet.</p>
+          <p class="meta">Dépôt&nbsp;: <a href="https://github.com/m1k1o/neko">github.com/m1k1o/neko</a>, consulté le 19 septembre.</p>
+        </div>
+        <dl class="facts">
+          <div><dt>Licence</dt><dd>Apache 2.0, vérifiée dans le fichier LICENSE du dépôt.</dd></div>
+          <div><dt>Activité</dt><dd>22&nbsp;200 étoiles, 1&nbsp;600 forks, 2&nbsp;176 commits, 134 tickets ouverts.</dd></div>
+          <div><dt>Qui</dt><dd>Un développeur indépendant, m1k1o, qui a repris un projet abandonné en 2021. Financement par des dons.</dd></div>
+          <div><dt>À savoir</dt><dd>Le projet repose surtout sur une personne. WebRTC demande d'ouvrir des ports réseau spécifiques, ce qui peut compliquer l'installation derrière un pare-feu d'entreprise.</dd></div>
+        </dl>
+      </div>
+    </section>
+
+  </main>
+
+  <p class="band">Prix affiché&nbsp;: coût de fabrication estimé de ce numéro (tokens traités par le modèle et recherches web).</p>
+
+</div>
+</body>
+</html>

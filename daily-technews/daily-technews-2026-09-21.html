@@ -13,7 +13,7 @@
     --ink: #141414;
     --muted: #5C5C59;
     --hair: #B9B9B4;
-    --accent-rule: #E58A9B;
+    --accent-rule: #141414;
     --accent: #B3243F;
     --band-bg: #141414;
     --band-ink: #E9E9E6;
@@ -25,12 +25,12 @@
   @media (prefers-color-scheme: dark) {
     :root:not([data-theme="light"]) {
       --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
-      --accent-rule: #A8566A; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
     }
   }
   :root[data-theme="dark"] {
     --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
-    --accent-rule: #A8566A; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
   }
 
   * { box-sizing: border-box; }
@@ -127,6 +127,9 @@
 </style>
 <style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
 <style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .topline { letter-spacing: 0; text-transform: none; }
   .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
   .suite a { text-decoration: none; }
   .suite .num { font-family: var(--didone); font-weight: 400; }
@@ -136,9 +139,8 @@
 <div class="page">
 
   <header>
-  <div class="topline"><span class="issue" aria-label="Numéro 3">003</span><p class="price">3,60&nbsp;€</p></div>
   <h1 class="title"><span>Daily </span><span>Technews</span></h1>
-  <div class="dateline">Lundi 21 septembre 2026</div>
+  <div class="dateline"><span>Lundi 21 septembre 2026</span><div class="topline"><span class="issue" aria-label="Numéro 3">003</span><p class="price">3,60&nbsp;€</p></div></div>
 </header>
 <nav class="contents" aria-label="Sommaire">
   <a href="#a1"><span class="num">1</span><span class="what">Mémoire&nbsp;: le chinois CXMT passe à la génération suivante</span></a>

@@ -129,7 +129,8 @@
 <style id="suite">
   .title { margin-top: 0; }
   .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
-  .dateline .price { font: inherit; margin-left: 1.5em; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
   .dateline .issue { letter-spacing: 0; }
   .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
   .suite a { text-decoration: none; }

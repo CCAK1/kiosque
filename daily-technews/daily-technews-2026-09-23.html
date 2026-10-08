@@ -125,97 +125,93 @@
     .band { margin: 0 -2rem; padding: .7rem 2rem; }
   }
 </style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
 </head>
 <body>
 <div class="page">
 
   <header>
-    <div class="topline">
-      <span class="issue" aria-label="Numéro 5">005</span>
-      <p class="price">2,90&nbsp;€</p>
+  <div class="topline"><span class="issue" aria-label="Numéro 5">005</span><p class="price">2,90&nbsp;€</p></div>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline">Mercredi 23 septembre 2026</div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">L'armée américaine a failli aborder un navire chinois sur un rapport d'IA</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Les patrons de l'IA devant le Conseil de sécurité de l'ONU</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Alibaba présente sa puce et vise 20 GW de data centers</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">ASML ne vend plus aucune machine en Europe</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">La Californie fait payer le réseau aux data centers</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Promptfoo</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">États-Unis</p>
+    <h2>L'armée américaine a failli aborder un navire chinois sur la foi d'un rapport rédigé avec un chatbot</h2>
+    <p class="deck">Selon CNN, des avions étaient déjà en vol quand l'erreur a été repérée. Le Pentagone n'a pas commenté.</p>
+    <div class="body">
+      <p>Ce printemps, en pleine guerre avec l'Iran, un rapport de renseignement a circulé dans l'armée américaine&nbsp;: un navire chinois au Moyen-Orient transportait des composants d'un programme d'armes nucléaires. Selon l'enquête publiée par CNN le 18 septembre, fondée sur quatre sources anonymes, l'armée a préparé l'interception. Deux sources affirment que des militaires armés s'apprêtaient à monter à bord, et des appareils avaient décollé.</p>
+      <p>Juste avant l'opération, des officiers ont creusé le rapport. Il avait été rédigé par un analyste du commandement des opérations spéciales pour le Pacifique, basé à Hawaï, avec l'aide d'un chatbot. Celui-ci avait mal identifié la cargaison, à partir d'un mélange de sources ouvertes et de renseignement électromagnétique classifié. CNN n'a pas pu savoir de quelle cargaison il s'agissait, ni si l'outil était un produit commercial ou gouvernemental. Le rapport était «&nbsp;entièrement faux&nbsp;», selon une source, et «&nbsp;a failli déclencher une guerre&nbsp;».</p>
+      <p>Ni le Pentagone, ni le commandement des opérations spéciales pour le Pacifique, ni le commandement central n'ont répondu aux sollicitations de CNN. Aucune confirmation officielle n'a été donnée depuis.</p>
+      <p>Toujours selon CNN, l'armée américaine accélère l'usage de l'IA, y compris pour le ciblage. La révélation tombe la semaine où Washington propose à Pékin un canal de notification des incidents liés à l'IA, et deux jours avant la visite de Xi Jinping à la Maison-Blanche.</p>
     </div>
-    <h1 class="title"><span>Daily </span><span>Technews</span></h1>
-    <div class="dateline">Mercredi 23 septembre 2026</div>
-  </header>
+    <p class="meta">Enquête publiée le 18 septembre, faits du printemps 2026, info proposée par un lecteur. Sources&nbsp;: <a href="https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship">CNN</a>, <a href="https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/">TechCrunch</a>, <a href="https://www.timesofisrael.com/us-nearly-raided-chinese-ship-after-ai-falsely-flagged-nuclear-cargo-for-iran-cnn/">The Times of Israel</a>.</p>
+  </article>
 
-  <nav class="contents" aria-label="Sommaire">
-    <a href="#a1"><span class="num">1</span><span class="what">L'armée américaine a failli aborder un navire chinois sur un rapport d'IA</span></a>
-    <a href="#a2"><span class="num">2</span><span class="what">Les patrons de l'IA devant le Conseil de sécurité de l'ONU</span></a>
-    <a href="#a3"><span class="num">3</span><span class="what">Alibaba présente sa puce et vise 20 GW de data centers</span></a>
-    <a href="#a4"><span class="num">4</span><span class="what">ASML ne vend plus aucune machine en Europe</span></a>
-    <a href="#a5"><span class="num">5</span><span class="what">La Californie fait payer le réseau aux data centers</span></a>
-    <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Promptfoo</span></a>
-  </nav>
-
-  <main>
-
-    <article class="lead" id="a1">
-      <p class="zone">États-Unis</p>
-      <h2>L'armée américaine a failli aborder un navire chinois sur la foi d'un rapport rédigé avec un chatbot</h2>
-      <p class="deck">Selon CNN, des avions étaient déjà en vol quand l'erreur a été repérée. Le Pentagone n'a pas commenté.</p>
-      <div class="body">
-        <p>Ce printemps, en pleine guerre avec l'Iran, un rapport de renseignement a circulé dans l'armée américaine&nbsp;: un navire chinois au Moyen-Orient transportait des composants d'un programme d'armes nucléaires. Selon l'enquête publiée par CNN le 18 septembre, fondée sur quatre sources anonymes, l'armée a préparé l'interception. Deux sources affirment que des militaires armés s'apprêtaient à monter à bord, et des appareils avaient décollé.</p>
-        <p>Juste avant l'opération, des officiers ont creusé le rapport. Il avait été rédigé par un analyste du commandement des opérations spéciales pour le Pacifique, basé à Hawaï, avec l'aide d'un chatbot. Celui-ci avait mal identifié la cargaison, à partir d'un mélange de sources ouvertes et de renseignement électromagnétique classifié. CNN n'a pas pu savoir de quelle cargaison il s'agissait, ni si l'outil était un produit commercial ou gouvernemental. Le rapport était «&nbsp;entièrement faux&nbsp;», selon une source, et «&nbsp;a failli déclencher une guerre&nbsp;».</p>
-        <p>Ni le Pentagone, ni le commandement des opérations spéciales pour le Pacifique, ni le commandement central n'ont répondu aux sollicitations de CNN. Aucune confirmation officielle n'a été donnée depuis.</p>
-        <p>Toujours selon CNN, l'armée américaine accélère l'usage de l'IA, y compris pour le ciblage. La révélation tombe la semaine où Washington propose à Pékin un canal de notification des incidents liés à l'IA, et deux jours avant la visite de Xi Jinping à la Maison-Blanche.</p>
-      </div>
-      <p class="meta">Enquête publiée le 18 septembre, faits du printemps 2026, info proposée par un lecteur. Sources&nbsp;: <a href="https://www.cnn.com/2026/09/18/politics/us-military-ai-false-intelligence-china-ship">CNN</a>, <a href="https://techcrunch.com/2026/09/18/ai-hallucination-nearly-triggers-us-military-operation/">TechCrunch</a>, <a href="https://www.timesofisrael.com/us-nearly-raided-chinese-ship-after-ai-falsely-flagged-nuclear-cargo-for-iran-cnn/">The Times of Israel</a>.</p>
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">International</p>
+      <h3>Les patrons de l'IA sont entendus cet après-midi par le Conseil de sécurité de l'ONU</h3>
+      <p>À l'initiative de la France, qui préside le Conseil en septembre, les quinze membres tiennent à 17 h (heure de Paris) une réunion sur l'IA et la sécurité internationale, présidée par Jean-Noël Barrot. Selon l'ordre du jour publié par Security Council Report, les intervenants attendus sont Yoshua Bengio, coprésident du panel scientifique de l'ONU sur l'IA, Sam Altman (OpenAI), Dario Amodei (Anthropic) et Clément Delangue (Hugging Face). D'après Reuters, le chinois DeepSeek a aussi été invité à faire une déclaration, sans son fondateur. Une note française consultée par l'agence cadre les débats sur les risques de perte de contrôle et l'usage de modèles avancés dans des actions touchant la paix. Le Conseil ne s'était réuni sur l'IA qu'une fois, en juillet 2023. Rien ne sera voté.</p>
+      <p class="meta">Réunion du 23 septembre. Sources&nbsp;: <a href="https://www.securitycouncilreport.org/whatsinblue/2026/09/artificial-intelligence-high-level-briefing-2.php">Security Council Report</a>, <a href="https://runtimewire.com/article/deepseek-un-security-council-ai-briefing-liang-wenfeng">Reuters, via Runtime Wire</a>, <a href="https://thedeepdive.ca/un-security-council-brings-deepseek-sam-altman-to-talk-about-ai-risks/">The Deep Dive</a>.</p>
     </article>
+    <article class="brief" id="a3">
+      <p class="zone">Chine</p>
+      <h3>Alibaba présente une nouvelle puce d'IA et vise 20 gigawatts de data centers d'ici 2032</h3>
+      <p>À sa conférence Apsara, mardi à Hangzhou, le groupe a dévoilé le Zhenwu V900, conçu par sa filiale T-Head. Selon Alibaba, il triple les performances du M890 sorti en mai et peut être assemblé en grappes jusqu'à 500&nbsp;000 unités pour entraîner des modèles de pointe. Aucun de ces chiffres n'a été mesuré par un tiers. La production en série est prévue au premier trimestre 2027. Le directeur général Eddie Wu a fixé l'objectif de porter la capacité mondiale d'Alibaba Cloud au-delà de 20 gigawatts en 2032, et indiqué que le modèle Qwen 4 est en cours d'entraînement. Le groupe s'est engagé sur plus de 53 milliards de dollars d'investissements IA sur trois ans et a levé 10,2 milliards en Bourse à Hong Kong en août. L'annonce précède de deux jours la visite de Xi Jinping à Washington.</p>
+      <p class="meta">Annonces du 22 septembre. Sources&nbsp;: <a href="https://www.bloomberg.com/news/articles/2026-09-22/alibaba-unveils-ai-chip-to-drive-20gw-of-data-centers-by-2032">Bloomberg</a>, <a href="https://www.cnbc.com/2026/09/22/alibaba-ai-alibabacloud-zhenwu-v900-.html">CNBC</a>, <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/alibaba-touts-most-powerful-ai-chip-in-china-for-data-center-buildout">Nikkei Asia</a>, <a href="https://www.caixinglobal.com/2026-09-22/alibaba-unveils-new-ai-chip-as-it-deepens-ai-infrastructure-push-102487686.html">Caixin</a>.</p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Europe</p>
+      <h3>ASML ne vend actuellement aucune machine en Europe, selon un de ses dirigeants</h3>
+      <p>«&nbsp;Nous ne vendons rien du tout en Europe&nbsp;», a déclaré lundi à Amsterdam Frank Heemskerk, vice-président exécutif du néerlandais ASML, seul fabricant au monde des machines de lithographie EUV nécessaires aux puces les plus avancées. La raison, selon lui&nbsp;: «&nbsp;l'Europe n'investit pas, et aucune usine de puces ne s'y construit&nbsp;». Les États-Unis, la Chine et l'Inde cherchent au contraire à attirer l'entreprise. Les comptes le confirment&nbsp;: au deuxième trimestre, l'Europe a pesé 0&nbsp;% des ventes de systèmes d'ASML, contre 1&nbsp;% un an plus tôt pour la zone Europe, Moyen-Orient et Afrique. La Corée du Sud, Taïwan et la Chine sont les premiers marchés. La Commission révise en ce moment le Chips Act de 2023, dont l'objectif de doubler la part européenne de la production mondiale d'ici 2030 a été jugé hors d'atteinte par la Cour des comptes européenne l'an dernier.</p>
+      <p class="meta">Déclarations du 21 septembre. Sources&nbsp;: <a href="https://nltimes.nl/2026/09/22/asml-currently-sells-chipmaking-machines-europe-executive-says">NL Times</a>, <a href="https://en.sedaily.com/international/2026/09/23/europes-most-valuable-firm-asml-sold-no-machines-at-home">Seoul Economic Daily, d'après Bloomberg</a>, rapport trimestriel d'ASML.</p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">États-Unis</p>
+      <h3>La Californie adopte sept lois pour faire payer aux data centers leur raccordement au réseau</h3>
+      <p>Gavin Newsom les a signées lundi. Trois textes chargent le régulateur de l'énergie de fixer des tarifs qui font supporter aux data centers le coût de leur raccordement et des renforcements du réseau, au lieu de le répartir sur les autres abonnés. Trois autres imposent de déclarer la consommation d'eau et d'électricité, l'emprise foncière et les emplois prévus. Le dernier retire aux data centers les exemptions générales d'étude environnementale, avec une procédure accélérée pour ceux qui respectent des normes d'économie d'eau et d'énergie. La Californie compte près de 300 data centers et 54 en projet. Selon un sondage du Public Policy Institute of California de juillet, près de trois Californiens sur quatre s'opposent à en accueillir un près de chez eux. La fédération du secteur juge que ces lois rendent l'État «&nbsp;peu attractif&nbsp;». Le même jour, le Texas a gelé tous les permis de data centers le temps d'un audit.</p>
+      <p class="meta">Lois signées le 21 septembre. Sources&nbsp;: <a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/">bureau du gouverneur</a>, <a href="https://calmatters.org/economy/technology/2026/09/new-california-laws-data-centers/">CalMatters</a>, <a href="https://www.usnews.com/news/politics/articles/2026-09-21/california-governor-signs-broad-data-center-oversight-bill-package">Reuters, via US News</a>.</p>
+    </article>
+  </section>
 
-    <section class="briefs" aria-label="Les autres infos du jour">
-
-      <article class="brief" id="a2">
-        <p class="zone">International</p>
-        <h3>Les patrons de l'IA sont entendus cet après-midi par le Conseil de sécurité de l'ONU</h3>
-        <p>À l'initiative de la France, qui préside le Conseil en septembre, les quinze membres tiennent à 17 h (heure de Paris) une réunion sur l'IA et la sécurité internationale, présidée par Jean-Noël Barrot. Selon l'ordre du jour publié par Security Council Report, les intervenants attendus sont Yoshua Bengio, coprésident du panel scientifique de l'ONU sur l'IA, Sam Altman (OpenAI), Dario Amodei (Anthropic) et Clément Delangue (Hugging Face). D'après Reuters, le chinois DeepSeek a aussi été invité à faire une déclaration, sans son fondateur. Une note française consultée par l'agence cadre les débats sur les risques de perte de contrôle et l'usage de modèles avancés dans des actions touchant la paix. Le Conseil ne s'était réuni sur l'IA qu'une fois, en juillet 2023. Rien ne sera voté.</p>
-        <p class="meta">Réunion du 23 septembre. Sources&nbsp;: <a href="https://www.securitycouncilreport.org/whatsinblue/2026/09/artificial-intelligence-high-level-briefing-2.php">Security Council Report</a>, <a href="https://runtimewire.com/article/deepseek-un-security-council-ai-briefing-liang-wenfeng">Reuters, via Runtime Wire</a>, <a href="https://thedeepdive.ca/un-security-council-brings-deepseek-sam-altman-to-talk-about-ai-risks/">The Deep Dive</a>.</p>
-      </article>
-
-      <article class="brief" id="a3">
-        <p class="zone">Chine</p>
-        <h3>Alibaba présente une nouvelle puce d'IA et vise 20 gigawatts de data centers d'ici 2032</h3>
-        <p>À sa conférence Apsara, mardi à Hangzhou, le groupe a dévoilé le Zhenwu V900, conçu par sa filiale T-Head. Selon Alibaba, il triple les performances du M890 sorti en mai et peut être assemblé en grappes jusqu'à 500&nbsp;000 unités pour entraîner des modèles de pointe. Aucun de ces chiffres n'a été mesuré par un tiers. La production en série est prévue au premier trimestre 2027. Le directeur général Eddie Wu a fixé l'objectif de porter la capacité mondiale d'Alibaba Cloud au-delà de 20 gigawatts en 2032, et indiqué que le modèle Qwen 4 est en cours d'entraînement. Le groupe s'est engagé sur plus de 53 milliards de dollars d'investissements IA sur trois ans et a levé 10,2 milliards en Bourse à Hong Kong en août. L'annonce précède de deux jours la visite de Xi Jinping à Washington.</p>
-        <p class="meta">Annonces du 22 septembre. Sources&nbsp;: <a href="https://www.bloomberg.com/news/articles/2026-09-22/alibaba-unveils-ai-chip-to-drive-20gw-of-data-centers-by-2032">Bloomberg</a>, <a href="https://www.cnbc.com/2026/09/22/alibaba-ai-alibabacloud-zhenwu-v900-.html">CNBC</a>, <a href="https://asia.nikkei.com/business/technology/artificial-intelligence/alibaba-touts-most-powerful-ai-chip-in-china-for-data-center-buildout">Nikkei Asia</a>, <a href="https://www.caixinglobal.com/2026-09-22/alibaba-unveils-new-ai-chip-as-it-deepens-ai-infrastructure-push-102487686.html">Caixin</a>.</p>
-      </article>
-
-      <article class="brief" id="a4">
-        <p class="zone">Europe</p>
-        <h3>ASML ne vend actuellement aucune machine en Europe, selon un de ses dirigeants</h3>
-        <p>«&nbsp;Nous ne vendons rien du tout en Europe&nbsp;», a déclaré lundi à Amsterdam Frank Heemskerk, vice-président exécutif du néerlandais ASML, seul fabricant au monde des machines de lithographie EUV nécessaires aux puces les plus avancées. La raison, selon lui&nbsp;: «&nbsp;l'Europe n'investit pas, et aucune usine de puces ne s'y construit&nbsp;». Les États-Unis, la Chine et l'Inde cherchent au contraire à attirer l'entreprise. Les comptes le confirment&nbsp;: au deuxième trimestre, l'Europe a pesé 0&nbsp;% des ventes de systèmes d'ASML, contre 1&nbsp;% un an plus tôt pour la zone Europe, Moyen-Orient et Afrique. La Corée du Sud, Taïwan et la Chine sont les premiers marchés. La Commission révise en ce moment le Chips Act de 2023, dont l'objectif de doubler la part européenne de la production mondiale d'ici 2030 a été jugé hors d'atteinte par la Cour des comptes européenne l'an dernier.</p>
-        <p class="meta">Déclarations du 21 septembre. Sources&nbsp;: <a href="https://nltimes.nl/2026/09/22/asml-currently-sells-chipmaking-machines-europe-executive-says">NL Times</a>, <a href="https://en.sedaily.com/international/2026/09/23/europes-most-valuable-firm-asml-sold-no-machines-at-home">Seoul Economic Daily, d'après Bloomberg</a>, rapport trimestriel d'ASML.</p>
-      </article>
-
-      <article class="brief" id="a5">
-        <p class="zone">États-Unis</p>
-        <h3>La Californie adopte sept lois pour faire payer aux data centers leur raccordement au réseau</h3>
-        <p>Gavin Newsom les a signées lundi. Trois textes chargent le régulateur de l'énergie de fixer des tarifs qui font supporter aux data centers le coût de leur raccordement et des renforcements du réseau, au lieu de le répartir sur les autres abonnés. Trois autres imposent de déclarer la consommation d'eau et d'électricité, l'emprise foncière et les emplois prévus. Le dernier retire aux data centers les exemptions générales d'étude environnementale, avec une procédure accélérée pour ceux qui respectent des normes d'économie d'eau et d'énergie. La Californie compte près de 300 data centers et 54 en projet. Selon un sondage du Public Policy Institute of California de juillet, près de trois Californiens sur quatre s'opposent à en accueillir un près de chez eux. La fédération du secteur juge que ces lois rendent l'État «&nbsp;peu attractif&nbsp;». Le même jour, le Texas a gelé tous les permis de data centers le temps d'un audit.</p>
-        <p class="meta">Lois signées le 21 septembre. Sources&nbsp;: <a href="https://www.gov.ca.gov/2026/09/21/governor-newsom-signs-most-comprehensive-data-center-laws-in-the-nation-providing-communities-more-control-on-water-electricity-and-land-use/">bureau du gouverneur</a>, <a href="https://calmatters.org/economy/technology/2026/09/new-california-laws-data-centers/">CalMatters</a>, <a href="https://www.usnews.com/news/politics/articles/2026-09-21/california-governor-signs-broad-data-center-oversight-bill-package">Reuters, via US News</a>.</p>
-      </article>
-
-    </section>
-
-    <section class="tool" id="outil" aria-labelledby="tool-title">
-      <p class="tool-head">L'outil open source du jour</p>
-      <h2 id="tool-title">Promptfoo, pour tester les réponses d'une IA avant de s'y fier</h2>
-      <div class="tool-grid">
-        <div>
-          <p>Promptfoo fait passer à un modèle de langage, un prompt ou un agent une batterie de tests définis dans un fichier de configuration&nbsp;: cas d'entrée, réponses attendues, critères de réussite. Il compare plusieurs modèles ou versions d'un prompt côte à côte, et vérifie qu'une modification ne dégrade rien avant la mise en production. Il comprend aussi un module de red teaming qui génère des attaques (injection de prompt, fuite de données, contenus interdits).</p>
-          <p>Il tourne en local, en ligne de commande ou dans une chaîne d'intégration continue, et fonctionne avec les API d'OpenAI, Anthropic, Google, Mistral et les modèles locaux via Ollama.</p>
-          <p class="meta">Dépôt&nbsp;: <a href="https://github.com/promptfoo/promptfoo">github.com/promptfoo/promptfoo</a>, consulté le 23 septembre.</p>
-        </div>
-        <dl class="facts">
-          <div><dt>Licence</dt><dd>MIT, vérifiée dans le dépôt.</dd></div>
-          <div><dt>Activité</dt><dd>25&nbsp;390 étoiles, 2&nbsp;359 forks, 9&nbsp;834 commits, 125 tickets ouverts.</dd></div>
-          <div><dt>Qui</dt><dd>L'entreprise Promptfoo (San Francisco), qui vend une version hébergée pour les équipes.</dd></div>
-          <div><dt>À savoir</dt><dd>Les évaluations qui utilisent un modèle comme juge héritent des biais de ce modèle. Les tests avec réponses attendues explicites sont plus fiables.</dd></div>
-        </dl>
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">Promptfoo, pour tester les réponses d'une IA avant de s'y fier</h2>
+    <div class="tool-grid">
+      <div>
+        <p>Promptfoo fait passer à un modèle de langage, un prompt ou un agent une batterie de tests définis dans un fichier de configuration&nbsp;: cas d'entrée, réponses attendues, critères de réussite. Il compare plusieurs modèles ou versions d'un prompt côte à côte, et vérifie qu'une modification ne dégrade rien avant la mise en production. Il comprend aussi un module de red teaming qui génère des attaques (injection de prompt, fuite de données, contenus interdits).</p>
+        <p>Il tourne en local, en ligne de commande ou dans une chaîne d'intégration continue, et fonctionne avec les API d'OpenAI, Anthropic, Google, Mistral et les modèles locaux via Ollama.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/promptfoo/promptfoo">github.com/promptfoo/promptfoo</a>, consulté le 23 septembre.</p>
       </div>
-    </section>
-
-  </main>
-
-  <p class="band">Prix affiché&nbsp;: coût de fabrication estimé de ce numéro (tokens traités par le modèle et recherches web).</p>
-
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>MIT, vérifiée dans le dépôt.</dd></div>
+        <div><dt>Activité</dt><dd>25&nbsp;390 étoiles, 2&nbsp;359 forks, 9&nbsp;834 commits, 125 tickets ouverts.</dd></div>
+        <div><dt>Qui</dt><dd>L'entreprise Promptfoo (San Francisco), qui vend une version hébergée pour les équipes.</dd></div>
+        <div><dt>À savoir</dt><dd>Les évaluations qui utilisent un modèle comme juge héritent des biais de ce modèle. Les tests avec réponses attendues explicites sont plus fiables.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-09-22.html" rel="prev">Numéro précédent&nbsp;: <span class="num">004</span>, mardi 22 septembre 2026</a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+<p class="band">Prix affiché&nbsp;: coût de fabrication estimé de ce numéro (tokens traités par le modèle et recherches web).</p>
 </div>
 </body>
 </html>

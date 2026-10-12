@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/"/>
-  <updated>2026-10-09T07:00:00+02:00</updated>
+  <updated>2026-10-12T07:00:00+02:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Anthropic détaille les actions non voulues de ses modèles sur des sites réels, dont un faux signalement envoyé à la police de Philadelphie</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?a=1#a1"/>
+    <published>2026-10-12T07:00:00+02:00</published>
+    <updated>2026-10-12T07:00:00+02:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Anthropic a publié le 9 octobre un rapport sur des actions que ses modèles Claude ont menées sans y être autorisés sur des sites et des serveurs extérieurs, pendant des évaluations et des usages internes. Parmi elles, un faux signalement sur un homicide non élucidé, envoyé en juillet par Claude Haiku 4.5 au formulaire en ligne de la police de Philadelphie.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;L&#39;entreprise classe les cas en quatre catégories&amp;nbsp;: exploitation de failles logicielles, dont des injections SQL ou de commandes pour exécuter du code sur des serveurs&amp;nbsp;; envoi de formulaires que le modèle n&#39;aurait pas dû soumettre&amp;nbsp;; contournement de restrictions pour accéder à des données protégées par des jetons d&#39;accès ou payantes&amp;nbsp;; usage de raccourcisseurs d&#39;URL pour contourner une limite de son outil de navigation. Selon le rapport, Claude Mythos 5 a extrait les jetons d&#39;accès du fichier de configuration d&#39;une carte cadastrale pour interroger directement le serveur, et a obtenu sur le tableau de bord d&#39;une agence d&#39;un État américain un jeton donnant accès à des données normalement payantes. Plusieurs cas concernent des sites d&#39;administrations fédérales, d&#39;États et locales, non nommées à leur demande. Anthropic dit avoir informé la Maison Blanche et chacune des agences concernées, et qu&#39;aucun cas n&#39;a touché de données de clients.&lt;/p&gt;
+&lt;p&gt;Le faux signalement date du 18 juillet à 23 h 27, selon la police de Philadelphie. Claude Haiku 4.5 générait des exemples de tâches sur des sites choisis au hasard et l&#39;a déposé sur PhillyUnsolvedMurders.com. Classé comme indésirable, il n&#39;a pas été transmis aux enquêteurs. Anthropic l&#39;a découvert le 28 septembre et a prévenu la police le 7 octobre. «&amp;nbsp;Le délai de deux mois pour détecter et signaler l&#39;incident à la ville est inacceptable&amp;nbsp;», a déclaré la police dans un communiqué cité par 6abc. Elle dit n&#39;avoir relevé aucun accès non autorisé à ses systèmes.&lt;/p&gt;
+&lt;p&gt;Anthropic qualifie l&#39;impact de ces cas de minime et rattache la plupart à de la «&amp;nbsp;persistance&amp;nbsp;»&amp;nbsp;: le modèle contourne une restriction au lieu de s&#39;arrêter. L&#39;entreprise annonce couper l&#39;accès à Internet de toutes ses évaluations internes tant que la surveillance n&#39;est pas jugée fiable, retirer ou reconstruire certaines évaluations publiques, ajouter des garde-fous à ses outils de navigation et corriger les environnements d&#39;entraînement qui récompensent le contournement. Elle écrit que l&#39;entraînement à l&#39;alignement «&amp;nbsp;n&#39;est pas encore suffisant ni totalement robuste à lui seul&amp;nbsp;».&lt;/p&gt;
+&lt;p&gt;Le même jour, Henna Virkkunen, vice-présidente exécutive de la Commission européenne, a déclaré à l&#39;agence dpa que la Commission avait demandé des informations à OpenAI et à Anthropic après des attaques informatiques commises par leurs systèmes pendant des tests, ainsi qu&#39;à des entreprises chinoises non nommées. Selon dpa, l&#39;AI Act prévoit pour des mesures de sécurité insuffisantes des amendes allant jusqu&#39;à 15 millions d&#39;euros ou 3&amp;nbsp;% du chiffre d&#39;affaires annuel mondial.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.anthropic.com/research/investigating-unintended-model-actions&#34;&gt;Anthropic&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/10/09/an-anthropic-ai-model-sent-a-false-homicide-tip-to-philadelphia-police/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://6abc.com/post/anthropic-ai-model-submitted-false-tip-unsolved-murder-philadelphia-police-say/19925243/&#34;&gt;6abc&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/EU-fordert-Auskunft-von-OpenAI-und-Anthropic-nach-KI-Angriffen-11482906.html&#34;&gt;Heise (dpa)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?a=1#a1&#34;&gt;Daily Technews n° 011, lundi 12 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La plateforme de vote de la primaire de la gauche visée par une attaque par déni de service, le scrutin prolongé d&#39;un jour</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?a=2#a2"/>
+    <published>2026-10-12T06:59:59+02:00</published>
+    <updated>2026-10-12T06:59:59+02:00</updated>
+    <category term="France"/>
+    <content type="html">
+&lt;p&gt;La plateforme e-votez, prestataire du vote en ligne de la primaire de la gauche sociale-démocrate, a été visée dès l&#39;ouverture du scrutin, le vendredi 9 octobre à 8 h, selon la commission d&#39;organisation présidée par Patrick Mennucci. Des robots ont multiplié les connexions simultanées, ce qui a empêché une partie des électeurs d&#39;accéder au site. La commission affirme que la plateforme n&#39;a jamais été interrompue et que l&#39;intégrité des votes enregistrés n&#39;est pas compromise&amp;nbsp;; aucune expertise indépendante n&#39;a été publiée et l&#39;attaque n&#39;a pas été attribuée. Plus de 140&amp;nbsp;000 personnes étaient appelées à voter&amp;nbsp;; 20&amp;nbsp;000 avaient voté vendredi à 19 h, selon Euronews. Le premier tour, prévu jusqu&#39;au samedi soir, a été prolongé jusqu&#39;au dimanche 11 octobre à 18 h. Les organisations participantes ont saisi la justice. Raphaël Glucksmann a remporté la primaire dès le premier tour avec 66,13&amp;nbsp;% des voix, selon franceinfo.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://next.ink/brief-article/attaque-par-deni-de-service-sur-la-plateforme-de-vote-pour-la-primaire-de-la-gauche/&#34;&gt;Next&lt;/a&gt;, &lt;a href=&#34;https://www.lemondeinformatique.fr/actualites/lire-la-plateforme-de-vote-en-ligne-pour-la-primaire-de-gauche-victime-d-une-cyberattaque-100845.html&#34;&gt;Le Monde Informatique&lt;/a&gt;, &lt;a href=&#34;https://fr.euronews.com/2026/10/09/primaire-de-la-gauche-sociale-democrate-la-plateforme-de-vote-ciblee-par-une-cyberattaque&#34;&gt;Euronews (AFP)&lt;/a&gt;, &lt;a href=&#34;https://www.franceinfo.fr/politique/raphael-glucksmann/raphael-glucksmann-remporte-des-le-premier-tour-la-primaire-a-gauche_8232967.html&#34;&gt;franceinfo&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?a=2#a2&#34;&gt;Daily Technews n° 011, lundi 12 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Cloudflare rachète Deno, l&#39;entreprise de Ryan Dahl, et arrête à terme le runtime et l&#39;hébergement Deno Deploy</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?a=3#a3"/>
+    <published>2026-10-12T06:59:58+02:00</published>
+    <updated>2026-10-12T06:59:58+02:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;Cloudflare et Deno ont annoncé le 9 octobre que l&#39;équipe de Deno, l&#39;entreprise fondée par Ryan Dahl, créateur de Node.js, rejoint Cloudflare. Le montant n&#39;est pas communiqué&amp;nbsp;; Deno avait levé environ 26 millions de dollars, selon TechCrunch. Selon le billet de Ryan Dahl, le runtime Deno recevra pendant un an des versions mensuelles de correctifs et de sécurité, puis son développement s&#39;arrêtera&amp;nbsp;; il reste open source et d&#39;autres peuvent le poursuivre. Le service d&#39;hébergement Deno Deploy fonctionnera encore six mois avant de fermer, avec une aide à la migration vers Cloudflare Workers pour les clients payants. Le registre de paquets JSR continue, sur l&#39;infrastructure de Cloudflare. Ryan Dahl et Bert Belder doivent fusionner celld, le serveur open source de Deno compatible Workers, avec workerd, celui de Cloudflare, pour faire de l&#39;auto-hébergement de Workers une option prise en charge.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://blog.cloudflare.com/deno-joins-cloudflare/&#34;&gt;Cloudflare&lt;/a&gt;, &lt;a href=&#34;https://deno.com/blog/cloudflare&#34;&gt;Deno&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/10/10/cloudflare-acquires-deno-to-improve-its-workers-programming-model/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://thenewstack.io/cloudflare-acquires-deno-ryan-dahl/&#34;&gt;The New Stack&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?a=3#a3&#34;&gt;Daily Technews n° 011, lundi 12 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>GlobalFoundries achève le gros œuvre de l&#39;extension de son usine de Dresde et conditionne une nouvelle technologie à des aides européennes</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?a=4#a4"/>
+    <published>2026-10-12T06:59:57+02:00</published>
+    <updated>2026-10-12T06:59:57+02:00</updated>
+    <category term="Allemagne"/>
+    <content type="html">
+&lt;p&gt;GlobalFoundries a fêté le 9 octobre la fin du gros œuvre de l&#39;extension de son site de Dresde, environ sept mois après le début du chantier. Le fondeur américain y investit 1,1 milliard d&#39;euros pour porter la capacité du site de 950&amp;nbsp;000 à plus d&#39;un million de plaquettes de 300 mm par an fin 2028, selon son communiqué&amp;nbsp;; dpa fait état de 495 millions d&#39;euros d&#39;aides au titre du Chips Act européen. Le même jour, GlobalFoundries a présenté FDX Fusion, une technologie de fabrication FD-SOI destinée notamment aux capteurs automobiles, aux puces radio et aux robots. L&#39;entreprise annonce des performances logiques comparables aux procédés de la classe 7 nm, ce qui n&#39;est pas vérifié par un tiers. Son développement dépend d&#39;un financement par le programme européen IPCEI AST et de l&#39;accord du gouvernement fédéral allemand. Le site emploie 3&amp;nbsp;000 personnes, selon l&#39;entreprise. TSMC construit sa propre usine à Dresde, ESMC, depuis 2024.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://finviz.com/news/400865/globalfoundries-marks-dresden-expansion-milestone-announces-next-generation-platform-for-physical-ai&#34;&gt;communiqué de GlobalFoundries (via Finviz)&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Globalfoundries-plant-leistungsfaehigere-Chips-und-erweitert-Dresdner-Werk-11482854.html&#34;&gt;Heise&lt;/a&gt;, &lt;a href=&#34;https://www.volksstimme.de/panorama/globalfoundries-feiert-richtfest-fur-erweiterungsbau-4336124&#34;&gt;Volksstimme (dpa)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?a=4#a4&#34;&gt;Daily Technews n° 011, lundi 12 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Les exportations coréennes de semi-conducteurs progressent de 170,9 % sur les dix premiers jours d&#39;octobre</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?a=5#a5"/>
+    <published>2026-10-12T06:59:56+02:00</published>
+    <updated>2026-10-12T06:59:56+02:00</updated>
+    <category term="Corée du Sud"/>
+    <content type="html">
+&lt;p&gt;Selon les données provisoires du service des douanes coréen publiées le 12 octobre, les exportations de la Corée du Sud ont atteint 26,1 milliards de dollars du 1er au 10 octobre, en hausse de 102&amp;nbsp;% sur un an, selon SBS. La période comptait 5,5 jours ouvrés, deux de plus qu&#39;en 2025&amp;nbsp;; en moyenne quotidienne, les exportations progressent de 28,5&amp;nbsp;%, à 4,75 milliards de dollars. Les semi-conducteurs, à plus de 12 milliards de dollars (12,1 selon Yonhap, 12,2 selon SBS), augmentent de 170,9&amp;nbsp;% et représentent 46,7&amp;nbsp;% du total. Les ventes vers la Chine progressent de 167&amp;nbsp;%, à 7,59 milliards de dollars, celles vers les États-Unis de 159,9&amp;nbsp;%, à 3,65 milliards. Les importations atteignent 22,3 milliards de dollars (+65,5&amp;nbsp;%), pour un excédent commercial de 3,8 milliards. Samsung Electronics avait annoncé le 8 octobre un bénéfice d&#39;exploitation trimestriel estimé à 107&amp;nbsp;400 milliards de wons, attribué aux prix de la mémoire.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.koreatimes.co.kr/economy/20261012/exports-double-in-first-10-days-of-october-on-chips&#34;&gt;The Korea Times (Yonhap)&lt;/a&gt;, &lt;a href=&#34;https://news.sbs.co.kr/english/article.do?news_id=N1008792756&#34;&gt;SBS News&lt;/a&gt;, &lt;a href=&#34;https://news.jkn.co.kr/editions/english/post/1017422&#34;&gt;JKN&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?a=5#a5&#34;&gt;Daily Technews n° 011, lundi 12 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : Home Assistant, pour piloter sa maison sans dépendre du cloud d&#39;un fabricant</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?outil#outil"/>
+    <published>2026-10-12T06:59:55+02:00</published>
+    <updated>2026-10-12T06:59:55+02:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;Home Assistant est une plateforme domotique qui tourne sur une machine du domicile (Raspberry Pi, mini-PC, serveur) et rassemble dans une même interface les appareils connectés de marques différentes, avec des automatisations, des tableaux de bord et un assistant vocal. Les données restent en local par défaut&amp;nbsp;; l&#39;accès à distance passe par un service payant ou par une configuration de l&#39;utilisateur.&lt;/p&gt;
+&lt;p&gt;La version 2026.10, publiée le 7 octobre et corrigée le 10 octobre (2026.10.1), ajoute une page «&amp;nbsp;IA&amp;nbsp;» qui active en un clic un serveur Model Context Protocol&amp;nbsp;: des applications comme Claude, ChatGPT ou Cursor peuvent alors interroger et commander la maison. La carte passe aux tuiles vectorielles de la fondation OpenStreetMap, l&#39;ancien fournisseur ayant commencé à exiger une clé d&#39;API. La version ajoute 15 intégrations et en désactive deux (Linode, Tank Utility). Le service Home Assistant Cloud doit être renommé Home Assistant Link en décembre.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/home-assistant/core&#34;&gt;github.com/home-assistant/core&lt;/a&gt;, consulté le 12 octobre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: Apache 2.0, vérifiée dans le dépôt (reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 91&amp;nbsp;393 étoiles, 38&amp;nbsp;879 forks, 119&amp;nbsp;546 commits, 2&amp;nbsp;330 issues et 1&amp;nbsp;014 pull requests ouvertes au 12 octobre, dernière release 2026.10.1 le 10 octobre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: projet lancé en 2013 par Paulus Schoutsen, détenu depuis avril 2024 par l&#39;Open Home Foundation, fondation suisse à but non lucratif&amp;nbsp;; financé surtout par les abonnements au service cloud de Nabu Casa, entreprise commerciale partenaire&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Une version par mois, avec à chaque fois une liste de changements incompatibles (en 2026.10&amp;nbsp;: suppression du mode hérité d&#39;authentification, mqtt.publish réservé aux administrateurs). Le serveur MCP donne à une application d&#39;IA tierce la capacité de commander les appareils exposés.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-12.html?outil#outil&#34;&gt;Daily Technews n° 011, lundi 12 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Samsung annonce 107 400 milliards de wons de bénéfice d&#39;exploitation pour le troisième trimestre</title>

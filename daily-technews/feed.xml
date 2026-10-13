@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/"/>
-  <updated>2026-10-12T07:00:00+02:00</updated>
+  <updated>2026-10-13T07:00:00+02:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Des pirates forcent le dégivrage des installations de froid de centaines de supermarchés français, le parquet de Paris ouvre une enquête</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?a=1#a1"/>
+    <published>2026-10-13T07:00:00+02:00</published>
+    <updated>2026-10-13T07:00:00+02:00</updated>
+    <category term="France"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Dans la nuit du dimanche 11 au lundi 12 octobre, des attaquants non identifiés ont pris la main sur les contrôleurs Danfoss qui pilotent les meubles réfrigérés, chambres froides et centrales de froid de plusieurs centaines de supermarchés en France. Ils ont basculé les installations en dégivrage continu, avec une consigne de 50 °C, et des magasins ont dû jeter tous leurs produits frais et surgelés.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Le cycle normal prévoit environ deux heures de dégivrage par jour, selon BFMTV cité par Next. Dans certains magasins, les modifications ont commencé avant minuit et les installations ont chauffé plusieurs heures avant l&#39;arrivée des employés&amp;nbsp;; un porte-parole d&#39;Intermarché parle auprès de Bloomberg d&#39;environ six heures à 50 °C, selon heise. Les bilans par enseigne divergent&amp;nbsp;: environ 150 magasins Intermarché selon ce porte-parole, 300 magasins Intermarché et Netto selon BFMTV&amp;nbsp;; une centaine de magasins U&amp;nbsp;; 80 magasins Carrefour sur 6&amp;nbsp;000, selon un porte-parole cité par heise&amp;nbsp;; plusieurs magasins Leclerc, sans chiffre. Un Leclerc de Wasselonne estime sa perte à 220&amp;nbsp;000 euros, selon BFMTV.&lt;/p&gt;
+&lt;p&gt;Dominique Schelcher, PDG de Coopérative U, a confirmé l&#39;attaque et l&#39;a jugée «&amp;nbsp;d&#39;une extrême gravité&amp;nbsp;». La section cyber du parquet de Paris a ouvert une enquête confiée à l&#39;Office anti-cybercriminalité (OFAC) et fait état de «&amp;nbsp;départs de feu&amp;nbsp;». Selon heise, le Premier ministre Sébastien Lecornu a chargé l&#39;ANSSI d&#39;enquêter. Ni les auteurs ni le point d&#39;entrée n&#39;ont été identifiés.&lt;/p&gt;
+&lt;p&gt;Selon Danfoss, la plupart des appareils touchés sont d&#39;anciens contrôleurs AK-SM 800 et AK-SC 355, qui ne reçoivent plus de mises à jour de sécurité, ou des AK-SM 800A dont le micrologiciel n&#39;avait pas été mis à jour. L&#39;entreprise recommande de migrer vers la génération actuelle. En août 2025, la société de sécurité Claroty avait publié des failles de l&#39;AK-SM 800A, dont CVE-2025-41450, qui permet d&#39;ouvrir à distance une session d&#39;administrateur, corrigées dans les versions 4.2 et 4.3.1&amp;nbsp;; elle comptait alors 2&amp;nbsp;765 interfaces de ce modèle accessibles depuis Internet. Next souligne qu&#39;aucun lien n&#39;est établi avec l&#39;attaque&amp;nbsp;: modifier un cycle de dégivrage est une fonction d&#39;administration ordinaire, accessible avec un identifiant valide.&lt;/p&gt;
+&lt;p&gt;Le même lundi, le groupe néerlandais Ahold Delhaize a signalé un incident de sécurité dans son réseau et coupé des systèmes par précaution. Les commandes en ligne d&#39;Albert Heijn, Etos et Gall &amp;amp; Gall sont suspendues et plusieurs centres de distribution néerlandais sont à l&#39;arrêt, selon NL Times&amp;nbsp;; les magasins restent ouverts. Aucun lien avec l&#39;attaque contre les supermarchés français n&#39;est établi.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://next.ink/261236/des-frigos-pirates-dans-des-supermarches-a-cause-dequipements-obsoletes-ou-non-mis-a-jour/&#34;&gt;Next&lt;/a&gt;, &lt;a href=&#34;https://www.silicon.fr/cybersecurite-1371/intermarche-systeme-u-e-leclerc-une-cyberattaque-paralyse-le-froid-de-centaines-de-magasins-229600&#34;&gt;Silicon.fr&lt;/a&gt;, &lt;a href=&#34;https://www.zataz.com/une-cyberattaque-deregle-le-froid-des-supermarches/&#34;&gt;ZATAZ&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Cyberangriff-auf-franzoesische-Supermarkt-Kuehlschraenke-Hunderte-Waren-verdorben-11485129.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://nltimes.nl/2026/10/12/empty-shelves-likely-albert-heijn-cyber-incident-extends-parents-us-business&#34;&gt;NL Times&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?a=1#a1&#34;&gt;Daily Technews n° 012, mardi 13 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Meta publie Muse Wonder, son premier modèle d&#39;IA de niveau « frontière », à 4 dollars le million de jetons en entrée</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?a=2#a2"/>
+    <published>2026-10-13T06:59:59+02:00</published>
+    <updated>2026-10-13T06:59:59+02:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;Le laboratoire Superintelligence de Meta a présenté le 12 octobre deux modèles, Muse Wonder et Muse Wonder Full, plus grands que Muse Spark, sorti en avril. Muse Wonder est accessible par la Meta Model API, à 4 dollars par million de jetons en entrée et 20 dollars en sortie, selon TechCrunch&amp;nbsp;; Muse Wonder Full est réservé aux abonnés de l&#39;outil de programmation Muse Code et n&#39;est pas proposé par l&#39;API. Les deux modèles doivent ensuite équiper l&#39;agent Muse. Selon les tests publiés par Meta dans sa fiche de modèle, Muse Wonder obtient des scores comparables à ceux de Fable 5.1 d&#39;Anthropic et de GPT-6 Astra d&#39;OpenAI, et les dépasse sur MemoryBench, un test de mémoire sur de longues conversations&amp;nbsp;; ces résultats ne sont pas vérifiés par un tiers. Meta met en avant une fonction de mémoire qui conserve et résume les informations données par l&#39;utilisateur d&#39;une session à l&#39;autre. Les modèles ont été entraînés dans le centre de données Prometheus de Meta, dans l&#39;Ohio. C&#39;est la première sortie de ce niveau depuis la réorganisation des équipes d&#39;IA de Meta par Alexandr Wang en août 2025.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://about.fb.com/news/2026/10/introducing-muse-wonder-models/&#34;&gt;Meta&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://www.iclarified.com/102756/meta-launches-muse-wonder-ai-models-with-improved-memory-and-coding&#34;&gt;iClarified&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?a=2#a2&#34;&gt;Daily Technews n° 012, mardi 13 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Microsoft détaille Maia 300, sa troisième puce d&#39;IA maison, gravée par TSMC et destinée à l&#39;inférence</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?a=3#a3"/>
+    <published>2026-10-13T06:59:58+02:00</published>
+    <updated>2026-10-13T06:59:58+02:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;Microsoft a publié le 12 octobre l&#39;architecture de Maia 300, troisième génération de ses accélérateurs d&#39;IA. Les puces de calcul sont gravées par TSMC en procédé N2P, la mémoire et les entrées-sorties sont sur des puces séparées. Chaque accélérateur dispose de huit piles de mémoire HBM4, soit 288 Go et 18 To/s de bande passante. Une baie réunit 96 accélérateurs pour 167 kW, refroidie à plus de 80&amp;nbsp;% par liquide, et un ensemble peut compter jusqu&#39;à 128 baies, soit 12&amp;nbsp;288 accélérateurs. Selon Microsoft, Maia 300 traite jusqu&#39;à 7 fois plus de jetons par baie que Maia 200, présenté en janvier, avec une performance par watt jusqu&#39;à 2,5 fois supérieure&amp;nbsp;; ces chiffres ne sont pas vérifiés par un tiers. La puce vise l&#39;inférence de grands modèles de langage pour Microsoft Copilot, GitHub Copilot et Microsoft Foundry. Selon Reuters, Microsoft prévoit des déploiements de plusieurs gigawatts à partir de 2027. Plus de détails sont annoncés pour la conférence Ignite, en novembre.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/&#34;&gt;Microsoft Azure&lt;/a&gt;, &lt;a href=&#34;https://investing.com/news/stock-market-news/microsoft-plans-huge-deployment-of-its-own-ai-chips-with-an-eye-on-saving-costs-4944480&#34;&gt;Reuters, via Investing.com&lt;/a&gt;, &lt;a href=&#34;https://thenextweb.com/news/microsoft-maia-300-ai-chip-2027&#34;&gt;The Next Web&lt;/a&gt;, &lt;a href=&#34;https://www.upi.com/Top_News/US/2026/10/12/microsoft-azure-maia-300-ai-chips-nvidia/3511791823960&#34;&gt;UPI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?a=3#a3&#34;&gt;Daily Technews n° 012, mardi 13 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Taïwan perquisitionne trois fournisseurs soupçonnés d&#39;avoir vendu aux ambassades un logiciel chinois présenté comme taïwanais</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?a=4#a4"/>
+    <published>2026-10-13T06:59:57+02:00</published>
+    <updated>2026-10-13T06:59:57+02:00</updated>
+    <category term="Taïwan"/>
+    <content type="html">
+&lt;p&gt;Le parquet du district de Taipei a fait perquisitionner le 12 octobre dix adresses et interroger quatre personnes dans une enquête sur IP-guard, un logiciel de gestion des postes de travail développé par la société chinoise Guangzhou Yixin Technology. Selon le parquet, trois sociétés taïwanaises l&#39;ont reconditionné pour le présenter comme un produit local&amp;nbsp;: Information Security Technology aurait organisé l&#39;opération, Ewill Technology aurait modifié l&#39;interface et Kunyou Technology a remporté de 2023 à 2025 les marchés du ministère des Affaires étrangères, pour plus de 20 millions de dollars taïwanais (environ 627&amp;nbsp;000 dollars américains). Le logiciel, qui inventorie le matériel, suit l&#39;usage des logiciels et contrôle l&#39;accès aux données, était installé sur les ordinateurs des représentations à l&#39;étranger. Le ministère a relevé l&#39;anomalie lors d&#39;un contrôle en décembre 2025&amp;nbsp;: une partie du code était liée à l&#39;entreprise chinoise. Les enquêteurs visent notamment la loi sur les marchés publics. Les quatre personnes ont été libérées sous caution, avec interdiction de quitter le territoire, selon le Liberty Times.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://news.ltn.com.tw/news/society/breakingnews/5603817&#34;&gt;Liberty Times&lt;/a&gt;, &lt;a href=&#34;https://udn.com/news/story/7321/9809757&#34;&gt;United Daily News&lt;/a&gt;, &lt;a href=&#34;https://www.setn.com/news/1921354&#34;&gt;SETN&lt;/a&gt;, &lt;a href=&#34;https://www.taipeitimes.com/News/taiwan/archives/2026/10/13/2003865870&#34;&gt;Taipei Times&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?a=4#a4&#34;&gt;Daily Technews n° 012, mardi 13 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La Norvège inflige 92 millions de couronnes d&#39;amende à Xandr, filiale publicitaire de Microsoft, pour des données d&#39;utilisateurs de Grindr</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?a=5#a5"/>
+    <published>2026-10-13T06:59:56+02:00</published>
+    <updated>2026-10-13T06:59:56+02:00</updated>
+    <category term="Norvège"/>
+    <content type="html">
+&lt;p&gt;L&#39;autorité norvégienne de protection des données, Datatilsynet, a annoncé le 12 octobre une amende de 92 millions de couronnes, environ 8,6 millions d&#39;euros, contre Xandr, plateforme d&#39;enchères publicitaires rachetée par Microsoft en 2022. De juillet 2018 à avril 2020, Xandr a reçu par les enchères publicitaires en temps réel de l&#39;application de rencontres Grindr des données pouvant révéler l&#39;orientation sexuelle de ses utilisateurs. L&#39;autorité considère Xandr comme responsable conjoint du traitement avec Grindr. «&amp;nbsp;Xandr a omis de vérifier que les consentements recueillis par Grindr étaient valides&amp;nbsp;», a déclaré sa directrice, Line Coll. Microsoft dit examiner la décision, qui porte sur des faits antérieurs au rachat&amp;nbsp;; Xandr dispose de trois semaines pour faire appel. La procédure part d&#39;une plainte du Conseil norvégien des consommateurs et de l&#39;association noyb en janvier 2020&amp;nbsp;; l&#39;amende de 65 millions de couronnes infligée à Grindr a été confirmée en appel en 2025.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.datatilsynet.no/en/news/news-2026/microsoft-company-fined-nok-92-million-for-unlawfully-sharing-personal-data/&#34;&gt;Datatilsynet&lt;/a&gt;, &lt;a href=&#34;https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/&#34;&gt;BleepingComputer&lt;/a&gt;, &lt;a href=&#34;https://techxplore.com/news/2026-10-norway-fines-microsoft-subsidiary-grindr.html&#34;&gt;TechXplore (AFP)&lt;/a&gt;, &lt;a href=&#34;https://next.ink/brief-article/xandr-amende-de-86-millions-deuros-en-norvege-pour-avoir-utilise-des-donnees-de-grindr/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?a=5#a5&#34;&gt;Daily Technews n° 012, mardi 13 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : Heretic, pour retirer automatiquement les refus d&#39;un modèle de langage</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?outil#outil"/>
+    <published>2026-10-13T06:59:55+02:00</published>
+    <updated>2026-10-13T06:59:55+02:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;Heretic est un outil en ligne de commande, écrit en Python, qui supprime les refus d&#39;un modèle de langage ouvert (Gemma, Qwen, gpt-oss et la plupart des modèles denses) sans réentraînement. Il applique l&#39;ablation directionnelle, ou «&amp;nbsp;abliteration&amp;nbsp;»&amp;nbsp;: repérer dans les activations du modèle la direction associée au refus et la retirer des poids. Un optimiseur (Optuna) cherche les réglages qui réduisent le plus le nombre de refus tout en restant au plus près du modèle d&#39;origine, mesuré par la divergence de Kullback-Leibler. Selon le README, sur Gemma 3 12B, le modèle produit refuse 3 requêtes «&amp;nbsp;nuisibles&amp;nbsp;» sur 100 contre 97 pour l&#39;original, avec une divergence de 0,16, plus faible que celle de deux versions modifiées à la main&amp;nbsp;; ces chiffres sont ceux du projet.&lt;/p&gt;
+&lt;p&gt;Depuis le 1er octobre, la branche principale, en version 2.0 de développement, applique par défaut une nouvelle méthode, ARA (Arbitrary-Rank Ablation), qui calcule une modification de rang arbitraire des poids, approchée par un adaptateur LoRA de rang 50 par défaut&amp;nbsp;; les méthodes sont désormais des modules interchangeables. Des configurations fournies avec l&#39;outil visent d&#39;autres comportements que le refus, comme les tournures stéréotypées en écriture créative. Le dernier correctif date du 12 octobre.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/p-e-w/heretic&#34;&gt;github.com/p-e-w/heretic&lt;/a&gt;, consulté le 13 octobre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: AGPL-3.0, vérifiée dans le dépôt (reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 34&amp;nbsp;895 étoiles, 3&amp;nbsp;923 forks, 210 commits, 29 issues et 38 pull requests ouvertes au 13 octobre, dernière release v1.4.0 le 14 juin 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Philipp Emanuel Weidmann (p-e-w), auteur principal, avec des contributeurs extérieurs&amp;nbsp;; premier commit en septembre 2025&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: L&#39;outil sert à retirer les garde-fous de sécurité d&#39;un modèle&amp;nbsp;: les versions produites répondent à des demandes que le modèle d&#39;origine refusait. ARA n&#39;est pas encore dans une release. Il faut Python 3.10 et PyTorch 2.2 ou plus récents&amp;nbsp;; les modèles à espace d&#39;états purs ne sont pas pris en charge.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-13.html?outil#outil&#34;&gt;Daily Technews n° 012, mardi 13 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Anthropic détaille les actions non voulues de ses modèles sur des sites réels, dont un faux signalement envoyé à la police de Philadelphie</title>

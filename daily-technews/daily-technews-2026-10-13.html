@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 13 octobre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Mardi 13 octobre 2026<span class="price">9,73&nbsp;€</span></span><span class="issue" aria-label="Numéro 12">012</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Des pirates forcent le dégivrage des installations de froid de centaines de supermarchés</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Meta publie Muse Wonder, son premier modèle de niveau «&nbsp;frontière&nbsp;»</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Microsoft détaille Maia 300, sa troisième puce d'IA maison</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Taïwan perquisitionne des fournisseurs d'un logiciel chinois installé dans les ambassades</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">La Norvège inflige 92 millions de couronnes d'amende à Xandr, filiale de Microsoft</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Heretic</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">France</p>
+    <h2>Des pirates forcent le dégivrage des installations de froid de centaines de supermarchés français, le parquet de Paris ouvre une enquête</h2>
+    <p class="deck">Dans la nuit du dimanche 11 au lundi 12 octobre, des attaquants non identifiés ont pris la main sur les contrôleurs Danfoss qui pilotent les meubles réfrigérés, chambres froides et centrales de froid de plusieurs centaines de supermarchés en France. Ils ont basculé les installations en dégivrage continu, avec une consigne de 50 °C, et des magasins ont dû jeter tous leurs produits frais et surgelés.</p>
+    <div class="body">
+      <p>Le cycle normal prévoit environ deux heures de dégivrage par jour, selon BFMTV cité par Next. Dans certains magasins, les modifications ont commencé avant minuit et les installations ont chauffé plusieurs heures avant l'arrivée des employés&nbsp;; un porte-parole d'Intermarché parle auprès de Bloomberg d'environ six heures à 50 °C, selon heise. Les bilans par enseigne divergent&nbsp;: environ 150 magasins Intermarché selon ce porte-parole, 300 magasins Intermarché et Netto selon BFMTV&nbsp;; une centaine de magasins U&nbsp;; 80 magasins Carrefour sur 6&nbsp;000, selon un porte-parole cité par heise&nbsp;; plusieurs magasins Leclerc, sans chiffre. Un Leclerc de Wasselonne estime sa perte à 220&nbsp;000 euros, selon BFMTV.</p>
+      <p>Dominique Schelcher, PDG de Coopérative U, a confirmé l'attaque et l'a jugée «&nbsp;d'une extrême gravité&nbsp;». La section cyber du parquet de Paris a ouvert une enquête confiée à l'Office anti-cybercriminalité (OFAC) et fait état de «&nbsp;départs de feu&nbsp;». Selon heise, le Premier ministre Sébastien Lecornu a chargé l'ANSSI d'enquêter. Ni les auteurs ni le point d'entrée n'ont été identifiés.</p>
+      <p>Selon Danfoss, la plupart des appareils touchés sont d'anciens contrôleurs AK-SM 800 et AK-SC 355, qui ne reçoivent plus de mises à jour de sécurité, ou des AK-SM 800A dont le micrologiciel n'avait pas été mis à jour. L'entreprise recommande de migrer vers la génération actuelle. En août 2025, la société de sécurité Claroty avait publié des failles de l'AK-SM 800A, dont CVE-2025-41450, qui permet d'ouvrir à distance une session d'administrateur, corrigées dans les versions 4.2 et 4.3.1&nbsp;; elle comptait alors 2&nbsp;765 interfaces de ce modèle accessibles depuis Internet. Next souligne qu'aucun lien n'est établi avec l'attaque&nbsp;: modifier un cycle de dégivrage est une fonction d'administration ordinaire, accessible avec un identifiant valide.</p>
+      <p>Le même lundi, le groupe néerlandais Ahold Delhaize a signalé un incident de sécurité dans son réseau et coupé des systèmes par précaution. Les commandes en ligne d'Albert Heijn, Etos et Gall &amp; Gall sont suspendues et plusieurs centres de distribution néerlandais sont à l'arrêt, selon NL Times&nbsp;; les magasins restent ouverts. Aucun lien avec l'attaque contre les supermarchés français n'est établi.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://next.ink/261236/des-frigos-pirates-dans-des-supermarches-a-cause-dequipements-obsoletes-ou-non-mis-a-jour/">Next</a>, <a href="https://www.silicon.fr/cybersecurite-1371/intermarche-systeme-u-e-leclerc-une-cyberattaque-paralyse-le-froid-de-centaines-de-magasins-229600">Silicon.fr</a>, <a href="https://www.zataz.com/une-cyberattaque-deregle-le-froid-des-supermarches/">ZATAZ</a>, <a href="https://www.heise.de/news/Cyberangriff-auf-franzoesische-Supermarkt-Kuehlschraenke-Hunderte-Waren-verdorben-11485129.html">heise</a>, <a href="https://nltimes.nl/2026/10/12/empty-shelves-likely-albert-heijn-cyber-incident-extends-parents-us-business">NL Times</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">États-Unis</p>
+      <h3>Meta publie Muse Wonder, son premier modèle d'IA de niveau «&nbsp;frontière&nbsp;», à 4 dollars le million de jetons en entrée</h3>
+      <p>Le laboratoire Superintelligence de Meta a présenté le 12 octobre deux modèles, Muse Wonder et Muse Wonder Full, plus grands que Muse Spark, sorti en avril. Muse Wonder est accessible par la Meta Model API, à 4 dollars par million de jetons en entrée et 20 dollars en sortie, selon TechCrunch&nbsp;; Muse Wonder Full est réservé aux abonnés de l'outil de programmation Muse Code et n'est pas proposé par l'API. Les deux modèles doivent ensuite équiper l'agent Muse. Selon les tests publiés par Meta dans sa fiche de modèle, Muse Wonder obtient des scores comparables à ceux de Fable 5.1 d'Anthropic et de GPT-6 Astra d'OpenAI, et les dépasse sur MemoryBench, un test de mémoire sur de longues conversations&nbsp;; ces résultats ne sont pas vérifiés par un tiers. Meta met en avant une fonction de mémoire qui conserve et résume les informations données par l'utilisateur d'une session à l'autre. Les modèles ont été entraînés dans le centre de données Prometheus de Meta, dans l'Ohio. C'est la première sortie de ce niveau depuis la réorganisation des équipes d'IA de Meta par Alexandr Wang en août 2025.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://about.fb.com/news/2026/10/introducing-muse-wonder-models/">Meta</a>, <a href="https://techcrunch.com/2026/10/12/meta-releases-its-first-frontier-model-muse-wonder/">TechCrunch</a>, <a href="https://www.iclarified.com/102756/meta-launches-muse-wonder-ai-models-with-improved-memory-and-coding">iClarified</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">États-Unis</p>
+      <h3>Microsoft détaille Maia 300, sa troisième puce d'IA maison, gravée par TSMC et destinée à l'inférence</h3>
+      <p>Microsoft a publié le 12 octobre l'architecture de Maia 300, troisième génération de ses accélérateurs d'IA. Les puces de calcul sont gravées par TSMC en procédé N2P, la mémoire et les entrées-sorties sont sur des puces séparées. Chaque accélérateur dispose de huit piles de mémoire HBM4, soit 288 Go et 18 To/s de bande passante. Une baie réunit 96 accélérateurs pour 167 kW, refroidie à plus de 80&nbsp;% par liquide, et un ensemble peut compter jusqu'à 128 baies, soit 12&nbsp;288 accélérateurs. Selon Microsoft, Maia 300 traite jusqu'à 7 fois plus de jetons par baie que Maia 200, présenté en janvier, avec une performance par watt jusqu'à 2,5 fois supérieure&nbsp;; ces chiffres ne sont pas vérifiés par un tiers. La puce vise l'inférence de grands modèles de langage pour Microsoft Copilot, GitHub Copilot et Microsoft Foundry. Selon Reuters, Microsoft prévoit des déploiements de plusieurs gigawatts à partir de 2027. Plus de détails sont annoncés pour la conférence Ignite, en novembre.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://azure.microsoft.com/en-us/blog/deep-dive-into-azure-maia-300-architecture/">Microsoft Azure</a>, <a href="https://investing.com/news/stock-market-news/microsoft-plans-huge-deployment-of-its-own-ai-chips-with-an-eye-on-saving-costs-4944480">Reuters, via Investing.com</a>, <a href="https://thenextweb.com/news/microsoft-maia-300-ai-chip-2027">The Next Web</a>, <a href="https://www.upi.com/Top_News/US/2026/10/12/microsoft-azure-maia-300-ai-chips-nvidia/3511791823960">UPI</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Taïwan</p>
+      <h3>Taïwan perquisitionne trois fournisseurs soupçonnés d'avoir vendu aux ambassades un logiciel chinois présenté comme taïwanais</h3>
+      <p>Le parquet du district de Taipei a fait perquisitionner le 12 octobre dix adresses et interroger quatre personnes dans une enquête sur IP-guard, un logiciel de gestion des postes de travail développé par la société chinoise Guangzhou Yixin Technology. Selon le parquet, trois sociétés taïwanaises l'ont reconditionné pour le présenter comme un produit local&nbsp;: Information Security Technology aurait organisé l'opération, Ewill Technology aurait modifié l'interface et Kunyou Technology a remporté de 2023 à 2025 les marchés du ministère des Affaires étrangères, pour plus de 20 millions de dollars taïwanais (environ 627&nbsp;000 dollars américains). Le logiciel, qui inventorie le matériel, suit l'usage des logiciels et contrôle l'accès aux données, était installé sur les ordinateurs des représentations à l'étranger. Le ministère a relevé l'anomalie lors d'un contrôle en décembre 2025&nbsp;: une partie du code était liée à l'entreprise chinoise. Les enquêteurs visent notamment la loi sur les marchés publics. Les quatre personnes ont été libérées sous caution, avec interdiction de quitter le territoire, selon le Liberty Times.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://news.ltn.com.tw/news/society/breakingnews/5603817">Liberty Times</a>, <a href="https://udn.com/news/story/7321/9809757">United Daily News</a>, <a href="https://www.setn.com/news/1921354">SETN</a>, <a href="https://www.taipeitimes.com/News/taiwan/archives/2026/10/13/2003865870">Taipei Times</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Norvège</p>
+      <h3>La Norvège inflige 92 millions de couronnes d'amende à Xandr, filiale publicitaire de Microsoft, pour des données d'utilisateurs de Grindr</h3>
+      <p>L'autorité norvégienne de protection des données, Datatilsynet, a annoncé le 12 octobre une amende de 92 millions de couronnes, environ 8,6 millions d'euros, contre Xandr, plateforme d'enchères publicitaires rachetée par Microsoft en 2022. De juillet 2018 à avril 2020, Xandr a reçu par les enchères publicitaires en temps réel de l'application de rencontres Grindr des données pouvant révéler l'orientation sexuelle de ses utilisateurs. L'autorité considère Xandr comme responsable conjoint du traitement avec Grindr. «&nbsp;Xandr a omis de vérifier que les consentements recueillis par Grindr étaient valides&nbsp;», a déclaré sa directrice, Line Coll. Microsoft dit examiner la décision, qui porte sur des faits antérieurs au rachat&nbsp;; Xandr dispose de trois semaines pour faire appel. La procédure part d'une plainte du Conseil norvégien des consommateurs et de l'association noyb en janvier 2020&nbsp;; l'amende de 65 millions de couronnes infligée à Grindr a été confirmée en appel en 2025.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.datatilsynet.no/en/news/news-2026/microsoft-company-fined-nok-92-million-for-unlawfully-sharing-personal-data/">Datatilsynet</a>, <a href="https://www.bleepingcomputer.com/news/security/norway-fines-microsoft-ad-firm-96-million-over-grindr-data-sharing/">BleepingComputer</a>, <a href="https://techxplore.com/news/2026-10-norway-fines-microsoft-subsidiary-grindr.html">TechXplore (AFP)</a>, <a href="https://next.ink/brief-article/xandr-amende-de-86-millions-deuros-en-norvege-pour-avoir-utilise-des-donnees-de-grindr/">Next</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">Heretic, pour retirer automatiquement les refus d'un modèle de langage</h2>
+    <div class="tool-grid">
+      <div>
+        <p>Heretic est un outil en ligne de commande, écrit en Python, qui supprime les refus d'un modèle de langage ouvert (Gemma, Qwen, gpt-oss et la plupart des modèles denses) sans réentraînement. Il applique l'ablation directionnelle, ou «&nbsp;abliteration&nbsp;»&nbsp;: repérer dans les activations du modèle la direction associée au refus et la retirer des poids. Un optimiseur (Optuna) cherche les réglages qui réduisent le plus le nombre de refus tout en restant au plus près du modèle d'origine, mesuré par la divergence de Kullback-Leibler. Selon le README, sur Gemma 3 12B, le modèle produit refuse 3 requêtes «&nbsp;nuisibles&nbsp;» sur 100 contre 97 pour l'original, avec une divergence de 0,16, plus faible que celle de deux versions modifiées à la main&nbsp;; ces chiffres sont ceux du projet.</p>
+        <p>Depuis le 1er octobre, la branche principale, en version 2.0 de développement, applique par défaut une nouvelle méthode, ARA (Arbitrary-Rank Ablation), qui calcule une modification de rang arbitraire des poids, approchée par un adaptateur LoRA de rang 50 par défaut&nbsp;; les méthodes sont désormais des modules interchangeables. Des configurations fournies avec l'outil visent d'autres comportements que le refus, comme les tournures stéréotypées en écriture créative. Le dernier correctif date du 12 octobre.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/p-e-w/heretic">github.com/p-e-w/heretic</a>, consulté le 13 octobre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>AGPL-3.0, vérifiée dans le dépôt (reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>34&nbsp;895 étoiles, 3&nbsp;923 forks, 210 commits, 29 issues et 38 pull requests ouvertes au 13 octobre, dernière release v1.4.0 le 14 juin 2026</dd></div>
+        <div><dt>Qui</dt><dd>Philipp Emanuel Weidmann (p-e-w), auteur principal, avec des contributeurs extérieurs&nbsp;; premier commit en septembre 2025</dd></div>
+        <div><dt>À savoir</dt><dd>L'outil sert à retirer les garde-fous de sécurité d'un modèle&nbsp;: les versions produites répondent à des demandes que le modèle d'origine refusait. ARA n'est pas encore dans une release. Il faut Python 3.10 et PyTorch 2.2 ou plus récents&nbsp;; les modèles à espace d'états purs ne sont pas pris en charge.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-10-12.html" rel="prev">Numéro précédent&nbsp;: <span class="num">011</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

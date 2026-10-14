@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 14 octobre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Mercredi 14 octobre 2026<span class="price">4,73&nbsp;€</span></span><span class="issue" aria-label="Numéro 13">013</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Microsoft corrige plus de 1&nbsp;400 failles en une mise à jour mensuelle</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Une cyberattaque met à l'arrêt une partie du chantier du tunnel du Fehmarnbelt</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Apple ne vendra pas HomeView, son écran domestique, dans l'Union européenne</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Google ouvre Gemini 4 Argon aux développeurs et aux abonnés payants</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Alibaba met en vente en Chine ses lunettes Qwen N1</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: ONLYOFFICE Docs</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Sécurité</p>
+    <h2>Microsoft corrige plus de 1&nbsp;400 failles en une seule mise à jour mensuelle, dont une déjà exploitée dans Windows</h2>
+    <p class="deck">Le mardi 13 octobre, Microsoft a publié ses correctifs de sécurité mensuels, qui portent sur plus de 1&nbsp;400 vulnérabilités de Windows, Office, Exchange, SQL Server et .NET. L'une d'elles, dans le shell de Windows, est déjà exploitée par des attaquants, selon l'entreprise.</p>
+    <div class="body">
+      <p>Les décomptes varient selon la méthode&nbsp;: 1&nbsp;411 failles pour BleepingComputer, qui exclut 348 vulnérabilités corrigées plus tôt dans le mois, 1&nbsp;407 pour Tenable, 1&nbsp;415 pour Cisco Talos. Talos en comptait 973 en septembre et 421 en août. Selon BleepingComputer, 677 failles permettent une élévation de privilèges et 317 l'exécution de code à distance. Pour aider au tri, Microsoft a regroupé les correctifs en 15 «&nbsp;cohortes de risque&nbsp;», dont 136 failles dans les systèmes de fichiers, le stockage et la sauvegarde de Windows&nbsp;; l'entreprise présente ce classement comme expérimental.</p>
+      <p>La faille exploitée, CVE-2026-96951, notée 8,8 sur 10, permet de contourner la «&nbsp;Mark of the Web&nbsp;», la marque que Windows appose sur les fichiers téléchargés et qui déclenche le mode protégé d'Office et les alertes SmartScreen. L'attaquant doit convaincre sa cible d'ouvrir un fichier piégé, reçu par courriel ou par messagerie. C'est la troisième faille du shell de Windows exploitée en 2026, après février et avril, selon Tenable. Une autre faille, dans .NET Framework, était publique avant son correctif&nbsp;: elle permet de contourner le contrôle d'applications Windows Defender&nbsp;; elle a été signalée par James Forshaw, de Google Project Zero.</p>
+      <p>BleepingComputer relie ce volume à l'usage par Microsoft d'outils d'intelligence artificielle pour rechercher les vulnérabilités dans ses produits. Dustin Childs, de la Zero Day Initiative de TrendAI, estime auprès de CSO Online que l'IA en est «&nbsp;en partie&nbsp;» la cause&nbsp;: elle accélère la recherche de failles des deux côtés, mais «&nbsp;elle ne crée pas ces bugs à partir de rien&nbsp;». Satnam Narang, de Tenable, compte 26 failles du shell de Windows corrigées depuis janvier, contre 3 en 2025.</p>
+      <p>Ces correctifs sont les derniers pour Windows 11 version 24H2 en éditions Famille et Professionnel et pour Windows 10 Entreprise LTSB 2016, selon BleepingComputer. Le support étendu payant de Windows Server 2012 et 2012 R2 a pris fin le même jour, selon Tenable.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://msrc.microsoft.com/update-guide/releaseNote/2026-Oct">Microsoft (notes de publication)</a>, <a href="https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/">BleepingComputer</a>, <a href="https://www.tenable.com/blog/microsofts-october-2026-patch-tuesday-addresses-1407-cves-cve-2026-96951">Tenable</a>, <a href="https://www.csoonline.com/article/4234759/october-patch-tuesday-roundup-over-1400-microsoft-holes-to-be-plugged-including-three-zero-days.html">CSO Online</a>, <a href="https://blog.talosintelligence.com/microsoft-patch-tuesday-for-october-2026/">Cisco Talos</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Danemark</p>
+      <h3>Une cyberattaque met à l'arrêt une partie du chantier du tunnel du Fehmarnbelt entre le Danemark et l'Allemagne</h3>
+      <p>Femern Link Contractors (FLC), le consortium qui construit le tunnel routier et ferroviaire entre Rødbyhavn, au Danemark, et Puttgarden, en Allemagne, a signalé une cyberattaque au maître d'ouvrage public danois Sund &amp; Bælt. Les problèmes ont commencé dans la nuit de dimanche à lundi, selon TV 2 et Ingeniøren. Une grande partie du système informatique est coupée et les employés ont pour consigne de ne plus utiliser les ordinateurs ni le Wi-Fi, selon TV 2. Les badges d'accès ne fonctionnent plus et les gardiens enregistrent les ouvriers à la main aux entrées, selon Transportmagasinet, qui cite Folketidende. Plusieurs navires du chantier, qui dépendent de systèmes numériques, sont immobilisés au large de Rødbyhavn. «&nbsp;Nous sommes en dialogue avec FLC sur la situation et, à ce stade, nous n'avons pas d'autres informations&nbsp;», a déclaré à DR Jens Villemoes, chef de presse de Sund &amp; Bælt. La ministre des Transports, Signe Munk, a dit à TV 2 qu'il était trop tôt pour connaître la cause. Les auteurs ne sont pas identifiés. FLC, détenu notamment par Per Aarsleff, Vinci et BAM, emploie environ 2&nbsp;800 personnes, selon TV 2.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.dr.dk/nyheder/indland/femern-byggeri-ramt-af-cyberhaendelse">DR</a>, <a href="https://nyheder.tv2.dk/live/samfund/2026-10-13-femern-byggeri-ramt-af-hackerangreb">TV 2</a>, <a href="https://ing.dk/artikel/fehmarnbelt-tunnel-project-hit-cyber-attack">Ingeniøren</a>, <a href="https://www.transportmagasinet.dk/article/view/1250974/femernbyggeriet_ramt_af_stort_hackerangreb">Transportmagasinet</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Union européenne</p>
+      <h3>Apple ne vendra pas dans l'Union européenne HomeView, son écran domestique construit autour de Siri AI</h3>
+      <p>Apple a présenté le 13 octobre HomeView, un écran de 7 pouces à poser ou à fixer au mur, vendu 299 dollars aux États-Unis. L'appareil, équipé d'une puce A18, pilote les objets connectés de la maison, lit de la musique et répond par l'assistant Siri AI&nbsp;; il reconnaît jusqu'à six personnes à leur visage et n'affiche les messages et l'agenda d'une personne que si son iPhone ou son iPad est à proximité et a été déverrouillé récemment. Les précommandes sont ouvertes et les livraisons commencent le 13 novembre dans huit pays, dont les États-Unis, le Royaume-Uni, le Canada et l'Inde. Le communiqué d'Apple précise&nbsp;: «&nbsp;Apple HomeView n'est pas disponible à la vente dans l'Union européenne, car Siri AI n'est actuellement pas disponible dans iOS dans l'UE.&nbsp;» Apple n'a pas proposé Siri AI dans l'Union depuis sa présentation en juin. Selon l'entreprise, la Commission européenne l'obligerait, au titre des règles sur les marchés numériques, à donner aux assistants concurrents le même accès aux messages, fichiers et achats que Siri. Apple dit «&nbsp;travailler de manière constructive avec l'UE&nbsp;» et ne donne aucune date.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/">Apple</a>, <a href="https://thenextweb.com/news/apple-homeview-not-sold-eu">The Next Web</a>, <a href="https://www.theapplepost.com/2026/10/13/73186/apple-homeview-wont-launch-in-the-european-union-at-first/amp/">The Apple Post</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">États-Unis</p>
+      <h3>Google ouvre aux développeurs et aux abonnés payants Gemini 4 Argon, jusqu'ici réservé à des partenaires de cybersécurité</h3>
+      <p>Google a rendu disponible le 13 octobre Gemini 4 Argon, présenté fin septembre et réservé jusque-là aux membres de son programme Fairwind, des gouvernements et des partenaires de cybersécurité. Le modèle est accessible par l'API Gemini, dans AI Studio et sur la plateforme d'entreprise de Google, avec une limite commune d'un million de jetons pour l'entrée et la sortie. Le prix de lancement est de 2 dollars par million de jetons en entrée et 10 dollars en sortie jusqu'au 30 novembre, puis de 4 et 20 dollars. Dans l'application Gemini et le mode IA de la recherche, il est réservé aux abonnés Google AI Pro et Ultra&nbsp;; les abonnés AI Plus et les utilisateurs gratuits n'y ont pas accès, selon Android Police. Google annonce 87&nbsp;% au test de raisonnement spatial ERQA et un taux de réussite des attaques par injection de requêtes de 0,7&nbsp;% sur le banc d'essai de Gray Swan, des résultats non vérifiés par un tiers. Selon Artificial Analysis, cité par Engadget, Argon obtient sur son indice le même score que GPT-6 Astra d'OpenAI, pour 60&nbsp;% du coût par tâche aux prix de lancement. Google ouvre aussi à des centaines de partenaires supplémentaires de Fairwind une version sans les garde-fous de cybersécurité.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/">Google</a>, <a href="https://www.engadget.com/2285023/google-gemini-4-argon-is-now-available-in-the-gemini-app-and-ai-mode-in-search/">Engadget</a>, <a href="https://9to5google.com/2026/10/13/gemini-app-4-argon/">9to5Google</a>, <a href="https://www.androidpolice.com/gemini-4-argon-available-pro-ultra-subscribers/">Android Police</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Chine</p>
+      <h3>Alibaba met en vente en Chine ses lunettes Qwen N1, avec suivi du regard et paiement par l'iris sur le modèle Pro</h3>
+      <p>Alibaba a lancé le 13 octobre la vente en Chine de deux paires de lunettes sans écran, Qwen N1 et N1 Pro, sur Taobao, Tmall, JD.com et Douyin, après des précommandes ouvertes le 22 septembre. Les deux modèles ont un capteur photo de 50 mégapixels qui filme en 4K, des microphones à conduction osseuse pour parler à l'assistant Qwen (traduction, prise de notes en réunion, achats et paiements) et une batterie de branche remplaçable. Le N1 Pro ajoute le suivi du regard, qui permet de poser une question sur l'objet regardé, la confirmation des paiements par lecture de l'iris et la mesure du rythme cardiaque, de l'oxygène dans le sang et de la température de la peau. Le prix de base du N1 est de 2&nbsp;899 yuans selon la presse chinoise, 2&nbsp;999 yuans (environ 450 dollars) selon Bloomberg, cité par The Next Web&nbsp;; avec la subvention publique et les offres de lancement, il descend à 2&nbsp;218 yuans, et le N1 Pro à 2&nbsp;600 yuans, selon Sina Finance. Selon ifeng, les lunettes associent trois puces, un Snapdragon AR1 de Qualcomm, un BES2800 de Bestechnic et un HX6538 de Himax. Alibaba vend aussi Qwen Clip, des écouteurs à pince réglés avec Bose. En septembre, la Chine a publié un code de conduite volontaire qui demande aux lunettes d'IA d'allumer un voyant pendant l'enregistrement, selon The Next Web.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://thenextweb.com/news/alibaba-qwen-glasses-n1-price-launch">The Next Web</a>, <a href="https://finance.sina.com.cn/jjxw/2026-10-13/doc-inivafqi7297553.shtml">Sina Finance</a>, <a href="https://tech.ifeng.com/c/8xC8SNR1tXp">ifeng</a>, <a href="https://www.digitaltoday.co.kr/en/view/114426/alibaba-starts-selling-qwen-glasses-n1-in-china-with-translation-and-payment-features">Digital Today</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">ONLYOFFICE Docs, une suite bureautique en ligne à installer sur son propre serveur</h2>
+    <div class="tool-grid">
+      <div>
+        <p>ONLYOFFICE Docs regroupe des éditeurs de textes, de tableurs, de présentations, de formulaires et de PDF qui s'utilisent dans le navigateur et s'installent sur un serveur de l'organisation. Il lit et enregistre les formats .docx, .xlsx et .pptx et permet l'édition simultanée à plusieurs. Il s'intègre à d'autres logiciels, comme Nextcloud, ownCloud, Moodle, Odoo ou Seafile.</p>
+        <p>La version 10.0, annoncée le 10 octobre et publiée dans le dépôt le 12 octobre, ajoute selon le journal des modifications l'enregistrement au format XLS, l'export d'une présentation en vidéo, des formulaires PDF remplis par rôles et la suppression des métadonnées d'un document avant partage. La section sécurité du journal compte 43 corrections, dont des failles de script intersite, des lectures hors limites lors de la conversion de fichiers DOC, XLS et PPT et des contournements du bac à sable des macros. Un onglet d'IA ouvre une conversation pour rédiger, résumer ou traduire&nbsp;; sur un serveur, il peut utiliser n'importe quel modèle, y compris un modèle local, selon l'éditeur.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/ONLYOFFICE/DocumentServer">github.com/ONLYOFFICE/DocumentServer</a>, consulté le 14 octobre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>AGPL-3.0, vérifiée dans le dépôt (reconnue OSI), avec des conditions ajoutées au titre de la section 7&nbsp;: conserver les mentions d'origine, signaler les modifications, nommer ONLYOFFICE comme développeur d'origine dans l'interface, aucun droit sur la marque</dd></div>
+        <div><dt>Activité</dt><dd>7&nbsp;012 étoiles, 1&nbsp;321 forks, 548 commits, environ 1&nbsp;200 issues ouvertes (compteur arrondi par GitHub) et 1 pull request ouverte au 14 octobre, dernière release v10.0.0 le 12 octobre 2026</dd></div>
+        <div><dt>Qui</dt><dd>Ascensio System SIA, société établie à Riga, en Lettonie, titulaire des droits&nbsp;; dépôt ouvert en juillet 2014</dd></div>
+        <div><dt>À savoir</dt><dd>Le dépôt public regroupe plusieurs sous-projets (core, sdkjs, web-apps, server), ce qui explique son petit nombre de commits. L'édition gratuite, dite Community, est recommandée jusqu'à 20 utilisateurs&nbsp;; des éditions Enterprise et Developer sont payantes. Les fonctions d'IA ne sont plus incluses dans les versions open source et s'installent à part. Le service d'IA de la version en nuage est payant.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-10-13.html" rel="prev">Numéro précédent&nbsp;: <span class="num">012</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

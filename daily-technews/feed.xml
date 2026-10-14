@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/"/>
-  <updated>2026-10-13T07:00:00+02:00</updated>
+  <updated>2026-10-14T07:00:00+02:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Microsoft corrige plus de 1 400 failles en une seule mise à jour mensuelle, dont une déjà exploitée dans Windows</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?a=1#a1"/>
+    <published>2026-10-14T07:00:00+02:00</published>
+    <updated>2026-10-14T07:00:00+02:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Le mardi 13 octobre, Microsoft a publié ses correctifs de sécurité mensuels, qui portent sur plus de 1&amp;nbsp;400 vulnérabilités de Windows, Office, Exchange, SQL Server et .NET. L&#39;une d&#39;elles, dans le shell de Windows, est déjà exploitée par des attaquants, selon l&#39;entreprise.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Les décomptes varient selon la méthode&amp;nbsp;: 1&amp;nbsp;411 failles pour BleepingComputer, qui exclut 348 vulnérabilités corrigées plus tôt dans le mois, 1&amp;nbsp;407 pour Tenable, 1&amp;nbsp;415 pour Cisco Talos. Talos en comptait 973 en septembre et 421 en août. Selon BleepingComputer, 677 failles permettent une élévation de privilèges et 317 l&#39;exécution de code à distance. Pour aider au tri, Microsoft a regroupé les correctifs en 15 «&amp;nbsp;cohortes de risque&amp;nbsp;», dont 136 failles dans les systèmes de fichiers, le stockage et la sauvegarde de Windows&amp;nbsp;; l&#39;entreprise présente ce classement comme expérimental.&lt;/p&gt;
+&lt;p&gt;La faille exploitée, CVE-2026-96951, notée 8,8 sur 10, permet de contourner la «&amp;nbsp;Mark of the Web&amp;nbsp;», la marque que Windows appose sur les fichiers téléchargés et qui déclenche le mode protégé d&#39;Office et les alertes SmartScreen. L&#39;attaquant doit convaincre sa cible d&#39;ouvrir un fichier piégé, reçu par courriel ou par messagerie. C&#39;est la troisième faille du shell de Windows exploitée en 2026, après février et avril, selon Tenable. Une autre faille, dans .NET Framework, était publique avant son correctif&amp;nbsp;: elle permet de contourner le contrôle d&#39;applications Windows Defender&amp;nbsp;; elle a été signalée par James Forshaw, de Google Project Zero.&lt;/p&gt;
+&lt;p&gt;BleepingComputer relie ce volume à l&#39;usage par Microsoft d&#39;outils d&#39;intelligence artificielle pour rechercher les vulnérabilités dans ses produits. Dustin Childs, de la Zero Day Initiative de TrendAI, estime auprès de CSO Online que l&#39;IA en est «&amp;nbsp;en partie&amp;nbsp;» la cause&amp;nbsp;: elle accélère la recherche de failles des deux côtés, mais «&amp;nbsp;elle ne crée pas ces bugs à partir de rien&amp;nbsp;». Satnam Narang, de Tenable, compte 26 failles du shell de Windows corrigées depuis janvier, contre 3 en 2025.&lt;/p&gt;
+&lt;p&gt;Ces correctifs sont les derniers pour Windows 11 version 24H2 en éditions Famille et Professionnel et pour Windows 10 Entreprise LTSB 2016, selon BleepingComputer. Le support étendu payant de Windows Server 2012 et 2012 R2 a pris fin le même jour, selon Tenable.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://msrc.microsoft.com/update-guide/releaseNote/2026-Oct&#34;&gt;Microsoft (notes de publication)&lt;/a&gt;, &lt;a href=&#34;https://www.bleepingcomputer.com/news/microsoft/microsoft-october-2026-patch-tuesday-fixes-1-411-flaws-3-zero-days/&#34;&gt;BleepingComputer&lt;/a&gt;, &lt;a href=&#34;https://www.tenable.com/blog/microsofts-october-2026-patch-tuesday-addresses-1407-cves-cve-2026-96951&#34;&gt;Tenable&lt;/a&gt;, &lt;a href=&#34;https://www.csoonline.com/article/4234759/october-patch-tuesday-roundup-over-1400-microsoft-holes-to-be-plugged-including-three-zero-days.html&#34;&gt;CSO Online&lt;/a&gt;, &lt;a href=&#34;https://blog.talosintelligence.com/microsoft-patch-tuesday-for-october-2026/&#34;&gt;Cisco Talos&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?a=1#a1&#34;&gt;Daily Technews n° 013, mercredi 14 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Une cyberattaque met à l&#39;arrêt une partie du chantier du tunnel du Fehmarnbelt entre le Danemark et l&#39;Allemagne</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?a=2#a2"/>
+    <published>2026-10-14T06:59:59+02:00</published>
+    <updated>2026-10-14T06:59:59+02:00</updated>
+    <category term="Danemark"/>
+    <content type="html">
+&lt;p&gt;Femern Link Contractors (FLC), le consortium qui construit le tunnel routier et ferroviaire entre Rødbyhavn, au Danemark, et Puttgarden, en Allemagne, a signalé une cyberattaque au maître d&#39;ouvrage public danois Sund &amp;amp; Bælt. Les problèmes ont commencé dans la nuit de dimanche à lundi, selon TV 2 et Ingeniøren. Une grande partie du système informatique est coupée et les employés ont pour consigne de ne plus utiliser les ordinateurs ni le Wi-Fi, selon TV 2. Les badges d&#39;accès ne fonctionnent plus et les gardiens enregistrent les ouvriers à la main aux entrées, selon Transportmagasinet, qui cite Folketidende. Plusieurs navires du chantier, qui dépendent de systèmes numériques, sont immobilisés au large de Rødbyhavn. «&amp;nbsp;Nous sommes en dialogue avec FLC sur la situation et, à ce stade, nous n&#39;avons pas d&#39;autres informations&amp;nbsp;», a déclaré à DR Jens Villemoes, chef de presse de Sund &amp;amp; Bælt. La ministre des Transports, Signe Munk, a dit à TV 2 qu&#39;il était trop tôt pour connaître la cause. Les auteurs ne sont pas identifiés. FLC, détenu notamment par Per Aarsleff, Vinci et BAM, emploie environ 2&amp;nbsp;800 personnes, selon TV 2.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.dr.dk/nyheder/indland/femern-byggeri-ramt-af-cyberhaendelse&#34;&gt;DR&lt;/a&gt;, &lt;a href=&#34;https://nyheder.tv2.dk/live/samfund/2026-10-13-femern-byggeri-ramt-af-hackerangreb&#34;&gt;TV 2&lt;/a&gt;, &lt;a href=&#34;https://ing.dk/artikel/fehmarnbelt-tunnel-project-hit-cyber-attack&#34;&gt;Ingeniøren&lt;/a&gt;, &lt;a href=&#34;https://www.transportmagasinet.dk/article/view/1250974/femernbyggeriet_ramt_af_stort_hackerangreb&#34;&gt;Transportmagasinet&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?a=2#a2&#34;&gt;Daily Technews n° 013, mercredi 14 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Apple ne vendra pas dans l&#39;Union européenne HomeView, son écran domestique construit autour de Siri AI</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?a=3#a3"/>
+    <published>2026-10-14T06:59:58+02:00</published>
+    <updated>2026-10-14T06:59:58+02:00</updated>
+    <category term="Union européenne"/>
+    <content type="html">
+&lt;p&gt;Apple a présenté le 13 octobre HomeView, un écran de 7 pouces à poser ou à fixer au mur, vendu 299 dollars aux États-Unis. L&#39;appareil, équipé d&#39;une puce A18, pilote les objets connectés de la maison, lit de la musique et répond par l&#39;assistant Siri AI&amp;nbsp;; il reconnaît jusqu&#39;à six personnes à leur visage et n&#39;affiche les messages et l&#39;agenda d&#39;une personne que si son iPhone ou son iPad est à proximité et a été déverrouillé récemment. Les précommandes sont ouvertes et les livraisons commencent le 13 novembre dans huit pays, dont les États-Unis, le Royaume-Uni, le Canada et l&#39;Inde. Le communiqué d&#39;Apple précise&amp;nbsp;: «&amp;nbsp;Apple HomeView n&#39;est pas disponible à la vente dans l&#39;Union européenne, car Siri AI n&#39;est actuellement pas disponible dans iOS dans l&#39;UE.&amp;nbsp;» Apple n&#39;a pas proposé Siri AI dans l&#39;Union depuis sa présentation en juin. Selon l&#39;entreprise, la Commission européenne l&#39;obligerait, au titre des règles sur les marchés numériques, à donner aux assistants concurrents le même accès aux messages, fichiers et achats que Siri. Apple dit «&amp;nbsp;travailler de manière constructive avec l&#39;UE&amp;nbsp;» et ne donne aucune date.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.apple.com/newsroom/2026/10/meet-apple-homeview-a-new-way-to-enjoy-entertainment-and-manage-the-home/&#34;&gt;Apple&lt;/a&gt;, &lt;a href=&#34;https://thenextweb.com/news/apple-homeview-not-sold-eu&#34;&gt;The Next Web&lt;/a&gt;, &lt;a href=&#34;https://www.theapplepost.com/2026/10/13/73186/apple-homeview-wont-launch-in-the-european-union-at-first/amp/&#34;&gt;The Apple Post&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?a=3#a3&#34;&gt;Daily Technews n° 013, mercredi 14 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Google ouvre aux développeurs et aux abonnés payants Gemini 4 Argon, jusqu&#39;ici réservé à des partenaires de cybersécurité</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?a=4#a4"/>
+    <published>2026-10-14T06:59:57+02:00</published>
+    <updated>2026-10-14T06:59:57+02:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;Google a rendu disponible le 13 octobre Gemini 4 Argon, présenté fin septembre et réservé jusque-là aux membres de son programme Fairwind, des gouvernements et des partenaires de cybersécurité. Le modèle est accessible par l&#39;API Gemini, dans AI Studio et sur la plateforme d&#39;entreprise de Google, avec une limite commune d&#39;un million de jetons pour l&#39;entrée et la sortie. Le prix de lancement est de 2 dollars par million de jetons en entrée et 10 dollars en sortie jusqu&#39;au 30 novembre, puis de 4 et 20 dollars. Dans l&#39;application Gemini et le mode IA de la recherche, il est réservé aux abonnés Google AI Pro et Ultra&amp;nbsp;; les abonnés AI Plus et les utilisateurs gratuits n&#39;y ont pas accès, selon Android Police. Google annonce 87&amp;nbsp;% au test de raisonnement spatial ERQA et un taux de réussite des attaques par injection de requêtes de 0,7&amp;nbsp;% sur le banc d&#39;essai de Gray Swan, des résultats non vérifiés par un tiers. Selon Artificial Analysis, cité par Engadget, Argon obtient sur son indice le même score que GPT-6 Astra d&#39;OpenAI, pour 60&amp;nbsp;% du coût par tâche aux prix de lancement. Google ouvre aussi à des centaines de partenaires supplémentaires de Fairwind une version sans les garde-fous de cybersécurité.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/&#34;&gt;Google&lt;/a&gt;, &lt;a href=&#34;https://www.engadget.com/2285023/google-gemini-4-argon-is-now-available-in-the-gemini-app-and-ai-mode-in-search/&#34;&gt;Engadget&lt;/a&gt;, &lt;a href=&#34;https://9to5google.com/2026/10/13/gemini-app-4-argon/&#34;&gt;9to5Google&lt;/a&gt;, &lt;a href=&#34;https://www.androidpolice.com/gemini-4-argon-available-pro-ultra-subscribers/&#34;&gt;Android Police&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?a=4#a4&#34;&gt;Daily Technews n° 013, mercredi 14 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Alibaba met en vente en Chine ses lunettes Qwen N1, avec suivi du regard et paiement par l&#39;iris sur le modèle Pro</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?a=5#a5"/>
+    <published>2026-10-14T06:59:56+02:00</published>
+    <updated>2026-10-14T06:59:56+02:00</updated>
+    <category term="Chine"/>
+    <content type="html">
+&lt;p&gt;Alibaba a lancé le 13 octobre la vente en Chine de deux paires de lunettes sans écran, Qwen N1 et N1 Pro, sur Taobao, Tmall, JD.com et Douyin, après des précommandes ouvertes le 22 septembre. Les deux modèles ont un capteur photo de 50 mégapixels qui filme en 4K, des microphones à conduction osseuse pour parler à l&#39;assistant Qwen (traduction, prise de notes en réunion, achats et paiements) et une batterie de branche remplaçable. Le N1 Pro ajoute le suivi du regard, qui permet de poser une question sur l&#39;objet regardé, la confirmation des paiements par lecture de l&#39;iris et la mesure du rythme cardiaque, de l&#39;oxygène dans le sang et de la température de la peau. Le prix de base du N1 est de 2&amp;nbsp;899 yuans selon la presse chinoise, 2&amp;nbsp;999 yuans (environ 450 dollars) selon Bloomberg, cité par The Next Web&amp;nbsp;; avec la subvention publique et les offres de lancement, il descend à 2&amp;nbsp;218 yuans, et le N1 Pro à 2&amp;nbsp;600 yuans, selon Sina Finance. Selon ifeng, les lunettes associent trois puces, un Snapdragon AR1 de Qualcomm, un BES2800 de Bestechnic et un HX6538 de Himax. Alibaba vend aussi Qwen Clip, des écouteurs à pince réglés avec Bose. En septembre, la Chine a publié un code de conduite volontaire qui demande aux lunettes d&#39;IA d&#39;allumer un voyant pendant l&#39;enregistrement, selon The Next Web.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://thenextweb.com/news/alibaba-qwen-glasses-n1-price-launch&#34;&gt;The Next Web&lt;/a&gt;, &lt;a href=&#34;https://finance.sina.com.cn/jjxw/2026-10-13/doc-inivafqi7297553.shtml&#34;&gt;Sina Finance&lt;/a&gt;, &lt;a href=&#34;https://tech.ifeng.com/c/8xC8SNR1tXp&#34;&gt;ifeng&lt;/a&gt;, &lt;a href=&#34;https://www.digitaltoday.co.kr/en/view/114426/alibaba-starts-selling-qwen-glasses-n1-in-china-with-translation-and-payment-features&#34;&gt;Digital Today&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?a=5#a5&#34;&gt;Daily Technews n° 013, mercredi 14 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : ONLYOFFICE Docs, une suite bureautique en ligne à installer sur son propre serveur</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?outil#outil"/>
+    <published>2026-10-14T06:59:55+02:00</published>
+    <updated>2026-10-14T06:59:55+02:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;ONLYOFFICE Docs regroupe des éditeurs de textes, de tableurs, de présentations, de formulaires et de PDF qui s&#39;utilisent dans le navigateur et s&#39;installent sur un serveur de l&#39;organisation. Il lit et enregistre les formats .docx, .xlsx et .pptx et permet l&#39;édition simultanée à plusieurs. Il s&#39;intègre à d&#39;autres logiciels, comme Nextcloud, ownCloud, Moodle, Odoo ou Seafile.&lt;/p&gt;
+&lt;p&gt;La version 10.0, annoncée le 10 octobre et publiée dans le dépôt le 12 octobre, ajoute selon le journal des modifications l&#39;enregistrement au format XLS, l&#39;export d&#39;une présentation en vidéo, des formulaires PDF remplis par rôles et la suppression des métadonnées d&#39;un document avant partage. La section sécurité du journal compte 43 corrections, dont des failles de script intersite, des lectures hors limites lors de la conversion de fichiers DOC, XLS et PPT et des contournements du bac à sable des macros. Un onglet d&#39;IA ouvre une conversation pour rédiger, résumer ou traduire&amp;nbsp;; sur un serveur, il peut utiliser n&#39;importe quel modèle, y compris un modèle local, selon l&#39;éditeur.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/ONLYOFFICE/DocumentServer&#34;&gt;github.com/ONLYOFFICE/DocumentServer&lt;/a&gt;, consulté le 14 octobre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: AGPL-3.0, vérifiée dans le dépôt (reconnue OSI), avec des conditions ajoutées au titre de la section 7&amp;nbsp;: conserver les mentions d&#39;origine, signaler les modifications, nommer ONLYOFFICE comme développeur d&#39;origine dans l&#39;interface, aucun droit sur la marque&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 7&amp;nbsp;012 étoiles, 1&amp;nbsp;321 forks, 548 commits, environ 1&amp;nbsp;200 issues ouvertes (compteur arrondi par GitHub) et 1 pull request ouverte au 14 octobre, dernière release v10.0.0 le 12 octobre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Ascensio System SIA, société établie à Riga, en Lettonie, titulaire des droits&amp;nbsp;; dépôt ouvert en juillet 2014&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le dépôt public regroupe plusieurs sous-projets (core, sdkjs, web-apps, server), ce qui explique son petit nombre de commits. L&#39;édition gratuite, dite Community, est recommandée jusqu&#39;à 20 utilisateurs&amp;nbsp;; des éditions Enterprise et Developer sont payantes. Les fonctions d&#39;IA ne sont plus incluses dans les versions open source et s&#39;installent à part. Le service d&#39;IA de la version en nuage est payant.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-14.html?outil#outil&#34;&gt;Daily Technews n° 013, mercredi 14 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Des pirates forcent le dégivrage des installations de froid de centaines de supermarchés français, le parquet de Paris ouvre une enquête</title>

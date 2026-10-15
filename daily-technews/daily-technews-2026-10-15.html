@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 15 octobre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Jeudi 15 octobre 2026<span class="price">3,43&nbsp;€</span></span><span class="issue" aria-label="Numéro 14">014</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Une faille du VPN Ivanti Connect Secure exploitée avant son correctif</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Deezer permettra de masquer la musique entièrement générée par IA</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Les autorités européennes de protection des données veulent des lunettes connectées qui signalent qu'elles filment</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Hesai lance Kosmo, une caméra 3D qui numérise des lieux pour entraîner des robots</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Le Japon financera deux usines de puces de GlobalFoundries dans l'État de New York</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: REA</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Sécurité</p>
+    <h2>Des attaquants ont exploité une faille du VPN Ivanti Connect Secure avant son correctif, sans installer de logiciel malveillant</h2>
+    <p class="deck">Ivanti a publié le mardi 13 octobre des correctifs pour Connect Secure, son boîtier VPN d'entreprise, contre une faille déjà exploitée par des attaquants. Elle permet d'exécuter des commandes à distance sur l'appareil sans s'authentifier. L'agence américaine de cybersécurité, la CISA, l'a ajoutée le même jour à son catalogue des failles exploitées.</p>
+    <div class="body">
+      <p>La faille, CVE-2026-104935, est notée 8,6 sur 10. Elle touche les versions 25.1.1.1, 25.1.2.2 et 22.8R2.4 et les versions antérieures de ces branches&nbsp;; les versions 25.1.1.2, 25.1.3.0, 25.1.3.1 et 22.8R2.5 la corrigent. Ivanti indique qu'un «&nbsp;nombre limité de clients&nbsp;» a été touché, sans donner de chiffre. L'entreprise avait corrigé une partie du problème dans la version 25.1.3.0, en juillet, et l'exploitation a eu lieu pendant qu'elle reportait ce correctif sur les autres versions maintenues, selon son avis de sécurité.</p>
+      <p>La société de sécurité Volexity a repéré l'attaque le 5 octobre chez un client dont le boîtier, en version 22.8R2.4, était à jour. L'exploitation avait commencé le 3 octobre. Les attaquants enchaînaient trois failles&nbsp;: un contournement de l'authentification dans le script welcome.cgi, une situation de concurrence dans le module de téléversement, qui permet d'exécuter un fichier avant qu'il soit supprimé, et une élévation de privilèges jusqu'au compte root. Les deux premières forment CVE-2026-104935&nbsp;; Ivanti prévoit de corriger la troisième «&nbsp;dans les semaines à venir&nbsp;», selon The Register.</p>
+      <p>Une fois dans l'appareil, le groupe, que Volexity nomme UTA0576 et ne connaissait pas, a volé des identifiants, cherché dans l'annuaire Active Directory des mots de passe LAPS et des clés de récupération BitLocker, testé des mots de passe sur d'autres comptes et effacé des lignes des journaux. Il n'a installé ni logiciel malveillant ni porte dérobée&nbsp;: ses commandes passaient par les requêtes HTTPS de l'exploit. L'outil de contrôle d'intégrité d'Ivanti n'a donc rien détecté, selon Volexity, qui recommande une analyse du réseau et de la mémoire des boîtiers suspects. Rapid7 conseille aussi de chercher des traces de compromission après la mise à jour.</p>
+      <p>Volexity estime, avec une confiance moyenne, que le groupe s'est servi de grands modèles de langage pour écrire l'exploit et mener la suite de l'attaque, et, avec une confiance faible, que ses motifs sont criminels plutôt que liés à l'espionnage. C'est la troisième année de suite qu'une faille inconnue de Connect Secure est exploitée, après janvier 2024 et janvier 2025, selon The Register.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://hub.ivanti.com/s/article/Security-Advisory-Ivanti-Connect-Secure-CVE-2026-104935?language=en_US">avis de sécurité d'Ivanti</a>, <a href="https://www.volexity.com/blog/2026/10/13/a-series-of-unauthenticated-events-chained-exploitation-of-ivanti-connect-secure-zero-days/">Volexity</a>, <a href="https://www.theregister.com/security/2026/10/14/ivanti-patches-connect-secure-zero-day-after-researchers-confirm-in-the-wild-attacks/5303095">The Register</a>, <a href="https://www.rapid7.com/blog/post/etr-ivanti-connect-secure-zero-day-exploited-in-the-wild-cve-2026-104935/">Rapid7</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">France</p>
+      <h3>Deezer permettra de retirer de ses résultats de recherche la musique entièrement générée par IA</h3>
+      <p>Deezer a annoncé le 13 octobre un interrupteur qui retire des résultats de recherche les titres, les albums et les artistes associés que la plateforme détecte comme entièrement générés par IA. L'option, que l'utilisateur peut désactiver, doit être déployée dans tous les pays avant la fin de 2026. La musique créée par des humains avec une part limitée d'IA n'est pas concernée. Deezer exclut déjà ces titres de ses recommandations algorithmiques et de ses playlists éditoriales, et les signale par une mention depuis juin 2025. Selon l'entreprise, elle reçoit près de 90&nbsp;000 titres entièrement générés par IA par jour, plus de la moitié des livraisons certains jours, contre environ 10&nbsp;000 par jour en janvier 2025&nbsp;; ils représentent 1 à 3&nbsp;% des écoutes, et jusqu'à 85&nbsp;% des écoutes de ces titres étaient frauduleuses en 2025. Son outil de détection, qui reconnaît notamment la musique produite avec Suno et Udio, a repéré plus de 42 millions de titres de janvier 2025 à août 2026&nbsp;; Deezer le propose sous licence à d'autres acteurs depuis janvier, la Sacem en premier, selon Music Business Worldwide. Ces chiffres sont fournis par l'entreprise et ne sont pas vérifiés par un tiers. Dans un sondage Ipsos commandé par Deezer en novembre 2025 auprès de 9&nbsp;000 personnes dans huit pays, 45&nbsp;% des utilisateurs de streaming disaient vouloir filtrer cette musique.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://newsroom-deezer.com/2026/10/deezer-ai-music-toggle/">Deezer</a>, <a href="https://www.musicbusinessworldwide.com/deezer-to-let-users-block-ai-generated-music-from-search-results/">Music Business Worldwide</a>, <a href="https://techcrunch.com/2026/10/14/deezer-will-soon-let-you-filter-out-ai-generated-music/">TechCrunch</a>, <a href="https://www.engadget.com/2286898/deezer-will-let-listeners-completely-filter-out-ai-music/">Engadget</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Union européenne</p>
+      <h3>Les autorités européennes de protection des données demandent que les lunettes connectées signalent clairement qu'elles filment</h3>
+      <p>Le Comité européen de la protection des données (CEPD), qui réunit les autorités nationales comme la CNIL, a adopté le 13 octobre une déclaration sur les lunettes connectées, sans valeur contraignante et sans citer de fabricant. Selon le texte, les fabricants et les fournisseurs des services d'IA associés peuvent être responsables du traitement des données, par exemple quand une IA analyse une image de la caméra où apparaissent d'autres personnes&nbsp;; ils «&nbsp;ne devraient pas compter sur les actions des utilisateurs&nbsp;» pour informer les passants. Le CEPD constate que les indicateurs actuels laissent beaucoup de personnes ignorer qu'elles sont filmées. Il propose de combiner un voyant visible dans toutes les conditions de lumière, qui empêche l'enregistrement quand il est masqué, un signal sonore, une notification sur les téléphones à proximité et un dessin qui distingue ces lunettes de lunettes ordinaires. Un voyant blanc peut être confondu avec un reflet et reste imperceptible pour les personnes malvoyantes, note le texte. L'exemption pour usage personnel ne couvre pas un utilisateur qui publie une vidéo sur un compte public. Le CEPD juge aussi difficile de justifier la réutilisation de ces images pour entraîner une IA. «&nbsp;Même dans les espaces publics, les passants doivent comprendre clairement que quelqu'un les filme ou les photographie&nbsp;», a déclaré sa présidente, Anu Talus, citée par l'AFP. En France, le parquet a ouvert une enquête sur des plaintes pour harcèlement visant des personnes qui filmaient des femmes avec ces lunettes, selon Al Jazeera et l'AFP.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.edpb.europa.eu/system/files/2026-10/20261310_edpb_statement_smart-glasses_en.pdf">déclaration du CEPD</a>, <a href="https://www.aljazeera.com/news/2026/10/13/eu-watchdog-urges-smart-glasses-to-clearly-signal-when">Al Jazeera (AFP)</a>, <a href="https://next.ink/261574/leurope-veut-rendre-les-lunettes-connectees-beaucoup-moins-discretes/">Next</a>, <a href="https://ppc.land/edpb-says-smart-glasses-makers-cant-rely-on-wearers-to-meet-gdpr-duties/">PPC Land</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Chine</p>
+      <h3>Le fabricant chinois de lidars Hesai lance Kosmo, une caméra 3D qui numérise des lieux pour entraîner des robots</h3>
+      <p>Hesai a présenté le 14 octobre, dans son usine de Shanghai, Kosmo One, un appareil tenu à la main, en forme de bouteille, qui associe un lidar, un capteur d'image d'un pouce et une centrale inertielle synchronisés à la microseconde. Selon l'entreprise, une personne numérise une pièce de 100 m² en 15 minutes environ, avec une précision géométrique millimétrique&nbsp;; la capture atteint la définition 8K et l'export 6K. Les relevés passent ensuite sur Kosmo World, une plateforme en ligne qui en tire un modèle 3D en couleurs par la technique du 3D Gaussian Splatting, complète par IA les zones non numérisées et génère plus de 10&nbsp;000 trajectoires d'entraînement pour robots à partir d'un seul lieu, selon Hesai. Ces données doivent servir à entraîner des robots humanoïdes dans des lieux réels. Le PDG, David Li, a déclaré à Reuters qu'il existe un «&nbsp;écart important en données spatiales de qualité&nbsp;» pour les entraîner. Kosmo sert déjà à Sharpa, une jeune entreprise fondée par des cofondateurs de Hesai, dont le robot sert des glaces dans un Dairy Queen de Shanghai avec un taux de réussite de 99&nbsp;%, chiffre de l'entreprise non vérifié par un tiers. Hesai a signé des accords avec les fabricants chinois de robots Galbot et Dexmal, et cite Pixar parmi les utilisateurs de sa plateforme. Ni prix ni date de vente n'ont été communiqués. Hesai est le premier fournisseur mondial de lidars pour véhicules autonomes et en a fait passer le coût unitaire sous 200 dollars, selon Reuters.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.prnewswire.com/news-releases/building-the-data-infrastructure-for-physical-ai-hesai-launches-kosmo-3d-world-data-engine-302908956.html">communiqué de Hesai</a>, <a href="https://kelo.com/2026/10/14/chinas-hesai-launches-spatial-camera-to-boost-ai-powered-robotics-adoption/">Reuters, via KELO</a>, <a href="http://news.10jqka.com.cn/20261014/c680701015.shtml">ifeng, via 10jqka</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Japon, États-Unis</p>
+      <h3>Le Japon financera jusqu'à 21 milliards de dollars deux usines de puces de GlobalFoundries dans l'État de New York</h3>
+      <p>GlobalFoundries et le département américain du Commerce ont annoncé le 14 octobre la construction de deux usines de plaquettes de silicium de 300 mm à Malta, dans l'État de New York, financées par le Japon à hauteur de 21 milliards de dollars au plus, dans le cadre de l'accord commercial entre les deux pays. GlobalFoundries apportera ses procédés de fabrication et exploitera les sites. La première usine, d'environ 10 milliards de dollars, doit être achevée en 2029 et produire environ 900&nbsp;000 plaquettes par an&nbsp;; la seconde, du même montant, aurait une capacité équivalente. Selon le PDG de GlobalFoundries, Tim Breen, cité par Seoul Economic Daily, les deux usines augmenteraient de 10&nbsp;% la capacité américaine de production de plaquettes. GlobalFoundries ne grave pas de processeurs pour l'IA&nbsp;: ses puces servent dans l'automobile, l'industrie et les télécommunications, et Renesas, Apple, Cirrus Logic et General Motors figurent parmi les clients qui ont salué l'annonce. Le département du Commerce recevra environ 4&nbsp;% du capital de GlobalFoundries, et 955 millions de dollars de subventions déjà accordées à l'entreprise seront réaffectés à la photonique sur silicium, au silicium-germanium et à l'assemblage avancé, selon CBS6. Le chantier de la première usine doit commencer avant la fin de 2026.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://cbs6albany.com/news/local/globalfoundries-picked-for-two-new-malta-chip-fabs-in-21b-us-japan-investment-push-president-trump-malta-commerce-howard-lutnick-new-york-state-support-governor-kathy-hochul-mark-reuss-green-us-department-of-commerce-cbs6-wrgb">CBS6</a>, <a href="https://www.wsls.com/business/2026/10/14/globalfoundries-to-open-2-new-chip-plants-in-new-york-with-21-billion-in-financing-from-japan/">Associated Press, via WSLS</a>, <a href="https://en.sedaily.com/international/2026/10/15/japan-to-invest-21-billion-in-two-globalfoundries-chip">Seoul Economic Daily</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">REA, un serveur MCP qui met les outils de rétro-ingénierie à la disposition des agents d'IA</h2>
+    <div class="tool-grid">
+      <div>
+        <p>REA (Reverse Engineer Anything) relie un agent de programmation, comme Claude Code, Codex, Cursor ou Gemini CLI, à des outils d'analyse de logiciels qui existent déjà&nbsp;: Ghidra, Hopper ou IDA pour les binaires natifs, JADX ou Apktool pour Android, Binwalk ou Unblob pour les micrologiciels, WABT pour WebAssembly. Il fonctionne comme serveur MCP et en ligne de commande, et lit sans outil externe les applications JavaScript, Electron et .NET. L'agent ouvre un binaire, en demande une vue d'ensemble puis analyse une fonction précise&nbsp;; REA renvoie des résultats dans un format commun, avec les éléments qui les justifient. L'analyse s'exécute sur la machine de l'utilisateur, selon le projet.</p>
+        <p>La version 6.5.0, publiée le 14 octobre, est la sixième depuis le 8 octobre. Selon ses notes, elle ajoute l'analyse de captures réseau avec TShark, de fichiers HAR, de journaux QUIC et de bases SQLite, l'inspection hors ligne de modules WebAssembly et les architectures MIPS et RISC-V dans Ghidra. Le projet dit s'adresser à la recherche, à l'enseignement, à l'interopérabilité et à l'analyse de logiciels que l'utilisateur possède ou qu'il est autorisé à examiner.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/morluto/rea">github.com/morluto/rea</a>, consulté le 15 octobre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>MIT, vérifiée dans le dépôt (reconnue OSI), pour le code de REA&nbsp;; les composants tiers gardent leur propre licence, et les outils commerciaux pilotés (IDA Pro, Hopper, JEB) s'achètent à part</dd></div>
+        <div><dt>Activité</dt><dd>247&nbsp;442 étoiles, 62&nbsp;029 forks, 3&nbsp;235 commits, 465 issues et 350 pull requests ouvertes au 15 octobre, dernière release rea-agents 6.5.0 le 14 octobre 2026</dd></div>
+        <div><dt>Qui</dt><dd>le compte GitHub morluto, auteur de 1&nbsp;633 des 3&nbsp;235 commits&nbsp;; ni le dépôt ni le site rea.tools ne nomment de personne ou de société. Premier commit le 14 avril 2026</dd></div>
+        <div><dt>À savoir</dt><dd>REA n'apporte pas de capacité d'analyse nouvelle&nbsp;: il pilote des outils existants, dont certains payants, et demande Node.js 22, 24 ou 26. L'attention autour du dépôt a commencé le 4 octobre et il a dépassé 120&nbsp;000 étoiles en une semaine, selon Next&nbsp;; cette progression n'est pas expliquée par le projet. Plusieurs fonctions ne sont vérifiées que sur certaines plateformes, selon les notes de version. L'analyse d'un logiciel reste soumise à sa licence et au droit de la propriété intellectuelle.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-10-14.html" rel="prev">Numéro précédent&nbsp;: <span class="num">013</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

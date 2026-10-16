@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/"/>
-  <updated>2026-10-15T07:00:00+02:00</updated>
+  <updated>2026-10-16T07:00:00+02:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Citizen Lab montre qu&#39;un logiciel espion a été installé par des publicités ciblées, sans clic, chez des journalistes d&#39;Al Jazeera</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?a=1#a1"/>
+    <published>2026-10-16T07:00:00+02:00</published>
+    <updated>2026-10-16T07:00:00+02:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Le Citizen Lab, laboratoire de l&#39;université de Toronto, a publié le 15 octobre une enquête, menée avec la société Confiant, sur un mode d&#39;infection qu&#39;il nomme AdFection. Un intermédiaire publicitaire israélien, Discover-Tech, se servait des enchères publicitaires en ligne pour repérer des cibles puis leur envoyer un logiciel espion. Il suffisait que la publicité s&#39;affiche sur l&#39;appareil.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Discover-Tech exploite Controlium, une plateforme utilisée par des vendeurs de logiciels espions, selon le Citizen Lab. Quand une de ses publicités s&#39;affiche, l&#39;identifiant publicitaire et l&#39;adresse IP de l&#39;appareil sont transmis à ses serveurs. Si l&#39;appareil fait partie des cibles, il reçoit un code JavaScript qui l&#39;infecte. Les publicités elles-mêmes ne contiennent pas ce code, ce qui leur permet de passer les contrôles des régies. Discover-Tech figurait depuis 2020 sur la liste des fournisseurs approuvés de Google, selon The Register.&lt;/p&gt;
+&lt;p&gt;Le logiciel espion est celui de Candiru, société israélienne inscrite en 2021 sur la liste noire du département américain du Commerce, et que le Citizen Lab dit désormais détenue par Integrity Labs. Les chercheurs relient à cette méthode des attaques contre au moins 45 appareils d&#39;Al Jazeera en 2024 et 2025, à partir des journaux réseau fournis par la chaîne, selon The Register. Discover-Tech et Candiru n&#39;ont pas répondu aux questions du Citizen Lab ni à celles de The Register.&lt;/p&gt;
+&lt;p&gt;Les chercheurs ont analysé près de 4 milliards d&#39;enregistrements d&#39;enchères publicitaires. De mars à juin 2026, des publicités de Discover-Tech sont apparues dans plus de 70&amp;nbsp;000 applications et sur plus de 120&amp;nbsp;000 sites, dont Duolingo, Viber, Yahoo Mail, le New York Times et la BBC, selon le rapport et The Register. Des impressions ont été relevées sur les réseaux du Parlement européen, de la Commission européenne, du Secrétariat général du Conseil de l&#39;UE, de l&#39;Otan et de l&#39;ONU, et sur des réseaux gouvernementaux d&#39;une vingtaine de pays, dont la Tchéquie, l&#39;Italie, la Norvège, la Suède et le Danemark. Le Citizen Lab précise qu&#39;une impression ne prouve ni un ciblage ni une infection, et il n&#39;a constaté aucune infection dans ces institutions.&lt;/p&gt;
+&lt;p&gt;Google et Beeswax ont coupé l&#39;accès de Discover-Tech à leurs systèmes publicitaires, et Google et IAB Europe, l&#39;association européenne du secteur, l&#39;ont retiré de leurs listes de fournisseurs. Le Citizen Lab ne désigne pas de commanditaire. Il indique que l&#39;enquête se poursuit.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://citizenlab.ca/research/exposing-adfection-executive-summary/&#34;&gt;Citizen Lab&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/10/15/spyware-vendors-found-a-way-to-make-targeted-ads-even-worse/5303334&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/AdFection-Wie-Online-Werbung-zum-Einfallstor-fuer-Staatstrojaner-wird-11489744.html&#34;&gt;Heise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?a=1#a1&#34;&gt;Daily Technews n° 015, vendredi 16 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La Cour de justice de l&#39;UE impose aux banques de rembourser tout de suite les victimes d&#39;hameçonnage, même en cas de négligence alléguée</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?a=2#a2"/>
+    <published>2026-10-16T06:59:59+02:00</published>
+    <updated>2026-10-16T06:59:59+02:00</updated>
+    <category term="Union européenne"/>
+    <content type="html">
+&lt;p&gt;La Cour de justice de l&#39;Union européenne a jugé le 15 octobre, dans l&#39;affaire C-70/25, qu&#39;une banque doit rembourser immédiatement une opération de paiement non autorisée, même si elle estime que son client a commis une négligence grave. Une cliente d&#39;une banque polonaise avait saisi ses identifiants sur une copie du site de sa banque, après avoir reçu un lien d&#39;un faux acheteur d&#39;un objet qu&#39;elle vendait en ligne&amp;nbsp;; le fraudeur avait viré environ 700 euros vers son propre compte. Elle l&#39;avait signalé le lendemain, et la banque avait refusé de rembourser. Selon la Cour, qui interprète la directive sur les services de paiement (DSP2), le remboursement doit intervenir au plus tard à la fin du premier jour ouvrable après le signalement, si le client a prévenu sans retard injustifié. La seule exception est un soupçon de fraude du client lui-même, que la banque doit communiquer par écrit à l&#39;autorité nationale. La banque peut ensuite réclamer les pertes au client, mais c&#39;est à elle de prouver qu&#39;il a agi intentionnellement ou par négligence grave. En Belgique, la fédération bancaire Febelfin a indiqué qu&#39;elle se conformerait à l&#39;arrêt, selon la RTBF. En Allemagne, la fédération des associations de consommateurs vzbv demande au législateur d&#39;agir, selon Heise.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://curia.europa.eu/site/upload/docs/application/pdf/2026-10/cp260147fr.pdf&#34;&gt;communiqué de la CJUE (n° 147/26)&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/EuGH-Banken-muessen-Phishing-Schaden-erst-einmal-erstatten-11489842.html&#34;&gt;Heise&lt;/a&gt;, &lt;a href=&#34;https://www.rtbf.be/article/hameconnage-une-banque-doit-rembourser-immediatement-les-victimes-meme-en-cas-de-negligence-tranche-la-cour-de-justice-europeenne-11800628&#34;&gt;RTBF&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?a=2#a2&#34;&gt;Daily Technews n° 015, vendredi 16 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Black Forest Labs publie FLUX 3 Image Klein, un modèle d&#39;image en poids ouverts qui tourne sur une carte graphique de 8 Go</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?a=3#a3"/>
+    <published>2026-10-16T06:59:58+02:00</published>
+    <updated>2026-10-16T06:59:58+02:00</updated>
+    <category term="Allemagne"/>
+    <content type="html">
+&lt;p&gt;L&#39;entreprise allemande Black Forest Labs a publié le 15 octobre les poids de FLUX 3 Image Klein, un modèle de 5,6 milliards de paramètres, contre 9 milliards pour FLUX.2 [klein], sa version précédente de petite taille. Le modèle génère des images à partir de texte, modifie des images existantes et accepte jusqu&#39;à 10 images de référence&amp;nbsp;; il produit nativement des images en 4K et permet de placer un élément ou de limiter une retouche à une zone par un cadre. Il existe en version de base, destinée à l&#39;affinage, et en version distillée, plus rapide, déclinées en formats FP8, INT8 et NVFP4 avec Nvidia. La version INT8 fonctionne sur une carte graphique GeForce RTX de 8 Go de mémoire&amp;nbsp;; une image d&#39;un mégapixel prend environ 4 secondes sur une RTX 5090 et moins de 9 secondes sur une RTX 4070, selon l&#39;entreprise. Black Forest Labs annonce aussi un gain de 91 points Elo en génération et de 70 en édition sur FLUX.2 [klein] 9B, mesuré par ses propres évaluations. Ces chiffres ne sont pas vérifiés par un tiers. La licence FLUX Kommunity autorise l&#39;usage commercial gratuit pour les particuliers et les entreprises de moins de 5 millions de dollars de chiffre d&#39;affaires annuel&amp;nbsp;; au-delà, il faut une licence ou l&#39;API, à partir de 0,009 dollar par image 1K. Le modèle est disponible sur Hugging Face et pris en charge par ComfyUI et Diffusers.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://bfl.ai/blog/flux-3-image-klein&#34;&gt;Black Forest Labs&lt;/a&gt;, &lt;a href=&#34;https://the-decoder.com/black-forest-labs-open-weights-image-model-flux-3-image-klein-runs-on-consumer-gpus-with-just-8-gb-of-vram/&#34;&gt;The Decoder&lt;/a&gt;, &lt;a href=&#34;https://venturebeat.com/technology/black-forest-labs-opens-flux-3-image-klein-weights-with-free-commercial-use-limited-to-smaller-businesses&#34;&gt;VentureBeat&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?a=3#a3&#34;&gt;Daily Technews n° 015, vendredi 16 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>SK hynix présente une mémoire DRAM empilée directement sur les processeurs et une mémoire flash à haut débit pour l&#39;IA</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?a=4#a4"/>
+    <published>2026-10-16T06:59:57+02:00</published>
+    <updated>2026-10-16T06:59:57+02:00</updated>
+    <category term="Corée du Sud"/>
+    <content type="html">
+&lt;p&gt;Ahn Hyun, président et directeur du développement de SK hynix, a présenté le 14 octobre à Séoul, en ouverture du salon des semi-conducteurs SEDEX 2026, les mémoires que le fabricant coréen prépare pour l&#39;IA. Selon lui, la limite des systèmes d&#39;IA tient de plus en plus aux transferts de données entre les niveaux de mémoire, et SK hynix veut travailler sur l&#39;ensemble de cette hiérarchie plutôt que sur une seule puce, rapporte le Korea Herald. La première piste est une DRAM empilée en 3D, posée directement sur le processeur graphique ou le processeur d&#39;IA et reliée par des connexions verticales à travers le silicium, pour raccourcir le trajet des données. Selon MoneyToday, sa bande passante serait environ 10 fois celle de la mémoire HBM actuelle, pour une consommation réduite de moitié environ. La seconde, la HBF (High Bandwidth Flash), applique à la mémoire flash NAND l&#39;empilement de la HBM&amp;nbsp;: environ 10 fois sa capacité pour la moitié de sa bande passante, pour des charges surtout en lecture. Un projet de spécification a été publié avec des partenaires en juillet, et la version finale est visée pour janvier 2027, selon MoneyToday. Ahn Hyun a aussi évoqué une HBM adaptée à chaque client, la mémoire partagée par CXL et des SSD plus rapides. Il prévoit que les besoins de performance de l&#39;infrastructure d&#39;IA seront multipliés par environ 19 de 2026 à 2030.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.koreaherald.com/article/10902362&#34;&gt;The Korea Herald&lt;/a&gt;, &lt;a href=&#34;https://www.mt.co.kr/en/industry/2026/10/14/2026101412241926278&#34;&gt;MoneyToday&lt;/a&gt;, &lt;a href=&#34;https://en.fnnews.com/news/202610141230086326&#34;&gt;Financial News&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?a=4#a4&#34;&gt;Daily Technews n° 015, vendredi 16 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Google ouvre à tous SynthID Detector, qui repère le filigrane invisible des contenus générés par ses modèles et ceux de partenaires</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?a=5#a5"/>
+    <published>2026-10-16T06:59:56+02:00</published>
+    <updated>2026-10-16T06:59:56+02:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;Google a ouvert le 7 octobre à tous les internautes, dans le monde entier et en anglais pour l&#39;instant, SynthID Detector, un outil gratuit sur synthid.com. Il était réservé depuis 2025, sur liste d&#39;attente, aux journalistes, aux professionnels des médias et aux chercheurs. L&#39;utilisateur téléverse une image, une vidéo ou un fichier audio, et l&#39;outil cherche SynthID, un filigrane invisible ajouté au contenu au moment de sa génération. Il reconnaît les contenus produits par les modèles de Google et de ses partenaires OpenAI, Nvidia et Kakao, «&amp;nbsp;et bientôt Apple&amp;nbsp;», sans date, selon le billet de Google DeepMind. Il faut se connecter avec un compte Google, OpenAI ou Apple, selon Engadget. Google indique avoir filigrané plus de 180 milliards d&#39;images et de vidéos et l&#39;équivalent de 240&amp;nbsp;000 années d&#39;audio&amp;nbsp;; ces chiffres sont fournis par l&#39;entreprise et ne sont pas vérifiés par un tiers. L&#39;outil ne détecte pas les contenus d&#39;IA en général&amp;nbsp;: il ne voit que ceux des entreprises qui utilisent SynthID, et l&#39;absence de filigrane ne prouve pas qu&#39;un contenu est authentique, selon Search Engine Journal. Google ne publie pas de taux de faux positifs ou de faux négatifs.&lt;/p&gt;
+&lt;p&gt;Information du 7 octobre. Sources&amp;nbsp;: &lt;a href=&#34;https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/&#34;&gt;Google&lt;/a&gt;, &lt;a href=&#34;https://www.engadget.com/2279565/google-synth-id-detector-ai-detection-website-is-now-available/&#34;&gt;Engadget&lt;/a&gt;, &lt;a href=&#34;https://www.searchenginejournal.com/google-opens-synthid-watermark-detector-to-public/592226/&#34;&gt;Search Engine Journal&lt;/a&gt;, &lt;a href=&#34;https://www.lemondeinformatique.fr/actualites/lire-detecteur-d-ia-google-ouvre-synthid-detector-au-grand-public-100842.html&#34;&gt;Le Monde Informatique&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?a=5#a5&#34;&gt;Daily Technews n° 015, vendredi 16 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : PandoraBox, une borne qui analyse les clés USB avant qu&#39;elles entrent dans un réseau</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?outil#outil"/>
+    <published>2026-10-16T06:59:55+02:00</published>
+    <updated>2026-10-16T06:59:55+02:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;PandoraBox est une «&amp;nbsp;station blanche&amp;nbsp;»&amp;nbsp;: une borne à écran tactile où l&#39;on branche une clé USB pour faire analyser ses fichiers avant de l&#39;utiliser sur un poste de travail. La borne monte la clé en lecture seule et soumet chaque fichier aux empreintes de MalwareBazaar, à CIRCL Hashlookup, à l&#39;antivirus ClamAV, archives comprises, et à YARA-X avec les règles YARA Forge, plus des contrôles qui repèrent les programmes déguisés en documents et les PDF contenant du JavaScript. Les fichiers dangereux s&#39;affichent à l&#39;écran et ne sont supprimés de la clé qu&#39;après confirmation. Un fichier qui n&#39;a pas pu être analysé entièrement, comme une archive protégée par mot de passe, n&#39;est jamais déclaré sain. Le matériel de référence est un mini-PC Lenovo ThinkCentre M720q reconditionné avec un écran Waveshare de 7 pouces&amp;nbsp;; tout ordinateur x86_64 UEFI avec 2 Go de mémoire convient, selon le projet.&lt;/p&gt;
+&lt;p&gt;Une dépêche publiée le 15 octobre sur LinuxFr par son auteur présente une réécriture complète. La borne ne dépend plus du projet Pandora du CIRCL luxembourgeois, dont la première version était dérivée, et abandonne le moteur Comodo. Elle est distribuée comme image système construite sur Debian 13, avec Secure Boot, une partition système en lecture seule vérifiée par dm-verity et USBGuard, qui n&#39;autorise que les périphériques de stockage. Chaque moteur d&#39;analyse tourne isolé et sans accès au réseau, la borne fonctionne hors ligne par défaut, et les mises à jour sont signées et réversibles après des démarrages ratés.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/sourcentis/pandora-box&#34;&gt;github.com/sourcentis/pandora-box&lt;/a&gt;, consulté le 16 octobre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: GPL 3.0 ou ultérieure, vérifiée dans le dépôt (reconnue OSI), pour le logiciel&amp;nbsp;; le boîtier imprimable en 3D est sous CERN-OHL-S v2, aussi reconnue OSI&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 38 étoiles, 8 forks, 97 commits, 10 issues et 0 pull request ouvertes au 16 octobre&amp;nbsp;; aucune release publiée pour la réécriture, premier commit le 1er octobre 2026, dernier le 15 octobre&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Sourcentis, société de Bertrange au Luxembourg, qui publie aussi les logiciels libres Mercator et Deming&amp;nbsp;; tous les commits sont signés de Didier Barzin, seul développeur visible du projet&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le projet est en développement, sans numéro de version pour la réécriture. Les images et les signatures ne sont signées qu&#39;avec des clés de développement, et les clés de publication «&amp;nbsp;ne sont pas encore définies&amp;nbsp;», selon la dépêche. Aucun audit externe n&#39;a été mené&amp;nbsp;; il figure à la feuille de route, avec l&#39;analyse des macros Office et des exécutables, qui n&#39;est pas encore faite. La détection repose sur des bases tierces (abuse.ch, CIRCL, ClamAV).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-16.html?outil#outil&#34;&gt;Daily Technews n° 015, vendredi 16 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Des attaquants ont exploité une faille du VPN Ivanti Connect Secure avant son correctif, sans installer de logiciel malveillant</title>

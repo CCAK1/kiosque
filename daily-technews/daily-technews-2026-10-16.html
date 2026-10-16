@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 16 octobre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Vendredi 16 octobre 2026<span class="price">8,90&nbsp;€</span></span><span class="issue" aria-label="Numéro 15">015</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Un logiciel espion installé par des publicités ciblées, sans clic</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Hameçonnage&nbsp;: les banques doivent rembourser d'abord, selon la Cour de justice de l'UE</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Black Forest Labs publie FLUX 3 Image Klein en poids ouverts</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">SK hynix présente de la DRAM empilée sur les processeurs et une mémoire flash à haut débit</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Google ouvre à tous SynthID Detector</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: PandoraBox</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Sécurité</p>
+    <h2>Citizen Lab montre qu'un logiciel espion a été installé par des publicités ciblées, sans clic, chez des journalistes d'Al Jazeera</h2>
+    <p class="deck">Le Citizen Lab, laboratoire de l'université de Toronto, a publié le 15 octobre une enquête, menée avec la société Confiant, sur un mode d'infection qu'il nomme AdFection. Un intermédiaire publicitaire israélien, Discover-Tech, se servait des enchères publicitaires en ligne pour repérer des cibles puis leur envoyer un logiciel espion. Il suffisait que la publicité s'affiche sur l'appareil.</p>
+    <div class="body">
+      <p>Discover-Tech exploite Controlium, une plateforme utilisée par des vendeurs de logiciels espions, selon le Citizen Lab. Quand une de ses publicités s'affiche, l'identifiant publicitaire et l'adresse IP de l'appareil sont transmis à ses serveurs. Si l'appareil fait partie des cibles, il reçoit un code JavaScript qui l'infecte. Les publicités elles-mêmes ne contiennent pas ce code, ce qui leur permet de passer les contrôles des régies. Discover-Tech figurait depuis 2020 sur la liste des fournisseurs approuvés de Google, selon The Register.</p>
+      <p>Le logiciel espion est celui de Candiru, société israélienne inscrite en 2021 sur la liste noire du département américain du Commerce, et que le Citizen Lab dit désormais détenue par Integrity Labs. Les chercheurs relient à cette méthode des attaques contre au moins 45 appareils d'Al Jazeera en 2024 et 2025, à partir des journaux réseau fournis par la chaîne, selon The Register. Discover-Tech et Candiru n'ont pas répondu aux questions du Citizen Lab ni à celles de The Register.</p>
+      <p>Les chercheurs ont analysé près de 4 milliards d'enregistrements d'enchères publicitaires. De mars à juin 2026, des publicités de Discover-Tech sont apparues dans plus de 70&nbsp;000 applications et sur plus de 120&nbsp;000 sites, dont Duolingo, Viber, Yahoo Mail, le New York Times et la BBC, selon le rapport et The Register. Des impressions ont été relevées sur les réseaux du Parlement européen, de la Commission européenne, du Secrétariat général du Conseil de l'UE, de l'Otan et de l'ONU, et sur des réseaux gouvernementaux d'une vingtaine de pays, dont la Tchéquie, l'Italie, la Norvège, la Suède et le Danemark. Le Citizen Lab précise qu'une impression ne prouve ni un ciblage ni une infection, et il n'a constaté aucune infection dans ces institutions.</p>
+      <p>Google et Beeswax ont coupé l'accès de Discover-Tech à leurs systèmes publicitaires, et Google et IAB Europe, l'association européenne du secteur, l'ont retiré de leurs listes de fournisseurs. Le Citizen Lab ne désigne pas de commanditaire. Il indique que l'enquête se poursuit.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://citizenlab.ca/research/exposing-adfection-executive-summary/">Citizen Lab</a>, <a href="https://www.theregister.com/security/2026/10/15/spyware-vendors-found-a-way-to-make-targeted-ads-even-worse/5303334">The Register</a>, <a href="https://www.heise.de/news/AdFection-Wie-Online-Werbung-zum-Einfallstor-fuer-Staatstrojaner-wird-11489744.html">Heise</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Union européenne</p>
+      <h3>La Cour de justice de l'UE impose aux banques de rembourser tout de suite les victimes d'hameçonnage, même en cas de négligence alléguée</h3>
+      <p>La Cour de justice de l'Union européenne a jugé le 15 octobre, dans l'affaire C-70/25, qu'une banque doit rembourser immédiatement une opération de paiement non autorisée, même si elle estime que son client a commis une négligence grave. Une cliente d'une banque polonaise avait saisi ses identifiants sur une copie du site de sa banque, après avoir reçu un lien d'un faux acheteur d'un objet qu'elle vendait en ligne&nbsp;; le fraudeur avait viré environ 700 euros vers son propre compte. Elle l'avait signalé le lendemain, et la banque avait refusé de rembourser. Selon la Cour, qui interprète la directive sur les services de paiement (DSP2), le remboursement doit intervenir au plus tard à la fin du premier jour ouvrable après le signalement, si le client a prévenu sans retard injustifié. La seule exception est un soupçon de fraude du client lui-même, que la banque doit communiquer par écrit à l'autorité nationale. La banque peut ensuite réclamer les pertes au client, mais c'est à elle de prouver qu'il a agi intentionnellement ou par négligence grave. En Belgique, la fédération bancaire Febelfin a indiqué qu'elle se conformerait à l'arrêt, selon la RTBF. En Allemagne, la fédération des associations de consommateurs vzbv demande au législateur d'agir, selon Heise.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://curia.europa.eu/site/upload/docs/application/pdf/2026-10/cp260147fr.pdf">communiqué de la CJUE (n° 147/26)</a>, <a href="https://www.heise.de/news/EuGH-Banken-muessen-Phishing-Schaden-erst-einmal-erstatten-11489842.html">Heise</a>, <a href="https://www.rtbf.be/article/hameconnage-une-banque-doit-rembourser-immediatement-les-victimes-meme-en-cas-de-negligence-tranche-la-cour-de-justice-europeenne-11800628">RTBF</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Allemagne</p>
+      <h3>Black Forest Labs publie FLUX 3 Image Klein, un modèle d'image en poids ouverts qui tourne sur une carte graphique de 8 Go</h3>
+      <p>L'entreprise allemande Black Forest Labs a publié le 15 octobre les poids de FLUX 3 Image Klein, un modèle de 5,6 milliards de paramètres, contre 9 milliards pour FLUX.2 [klein], sa version précédente de petite taille. Le modèle génère des images à partir de texte, modifie des images existantes et accepte jusqu'à 10 images de référence&nbsp;; il produit nativement des images en 4K et permet de placer un élément ou de limiter une retouche à une zone par un cadre. Il existe en version de base, destinée à l'affinage, et en version distillée, plus rapide, déclinées en formats FP8, INT8 et NVFP4 avec Nvidia. La version INT8 fonctionne sur une carte graphique GeForce RTX de 8 Go de mémoire&nbsp;; une image d'un mégapixel prend environ 4 secondes sur une RTX 5090 et moins de 9 secondes sur une RTX 4070, selon l'entreprise. Black Forest Labs annonce aussi un gain de 91 points Elo en génération et de 70 en édition sur FLUX.2 [klein] 9B, mesuré par ses propres évaluations. Ces chiffres ne sont pas vérifiés par un tiers. La licence FLUX Kommunity autorise l'usage commercial gratuit pour les particuliers et les entreprises de moins de 5 millions de dollars de chiffre d'affaires annuel&nbsp;; au-delà, il faut une licence ou l'API, à partir de 0,009 dollar par image 1K. Le modèle est disponible sur Hugging Face et pris en charge par ComfyUI et Diffusers.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://bfl.ai/blog/flux-3-image-klein">Black Forest Labs</a>, <a href="https://the-decoder.com/black-forest-labs-open-weights-image-model-flux-3-image-klein-runs-on-consumer-gpus-with-just-8-gb-of-vram/">The Decoder</a>, <a href="https://venturebeat.com/technology/black-forest-labs-opens-flux-3-image-klein-weights-with-free-commercial-use-limited-to-smaller-businesses">VentureBeat</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Corée du Sud</p>
+      <h3>SK hynix présente une mémoire DRAM empilée directement sur les processeurs et une mémoire flash à haut débit pour l'IA</h3>
+      <p>Ahn Hyun, président et directeur du développement de SK hynix, a présenté le 14 octobre à Séoul, en ouverture du salon des semi-conducteurs SEDEX 2026, les mémoires que le fabricant coréen prépare pour l'IA. Selon lui, la limite des systèmes d'IA tient de plus en plus aux transferts de données entre les niveaux de mémoire, et SK hynix veut travailler sur l'ensemble de cette hiérarchie plutôt que sur une seule puce, rapporte le Korea Herald. La première piste est une DRAM empilée en 3D, posée directement sur le processeur graphique ou le processeur d'IA et reliée par des connexions verticales à travers le silicium, pour raccourcir le trajet des données. Selon MoneyToday, sa bande passante serait environ 10 fois celle de la mémoire HBM actuelle, pour une consommation réduite de moitié environ. La seconde, la HBF (High Bandwidth Flash), applique à la mémoire flash NAND l'empilement de la HBM&nbsp;: environ 10 fois sa capacité pour la moitié de sa bande passante, pour des charges surtout en lecture. Un projet de spécification a été publié avec des partenaires en juillet, et la version finale est visée pour janvier 2027, selon MoneyToday. Ahn Hyun a aussi évoqué une HBM adaptée à chaque client, la mémoire partagée par CXL et des SSD plus rapides. Il prévoit que les besoins de performance de l'infrastructure d'IA seront multipliés par environ 19 de 2026 à 2030.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.koreaherald.com/article/10902362">The Korea Herald</a>, <a href="https://www.mt.co.kr/en/industry/2026/10/14/2026101412241926278">MoneyToday</a>, <a href="https://en.fnnews.com/news/202610141230086326">Financial News</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">États-Unis</p>
+      <h3>Google ouvre à tous SynthID Detector, qui repère le filigrane invisible des contenus générés par ses modèles et ceux de partenaires</h3>
+      <p>Google a ouvert le 7 octobre à tous les internautes, dans le monde entier et en anglais pour l'instant, SynthID Detector, un outil gratuit sur synthid.com. Il était réservé depuis 2025, sur liste d'attente, aux journalistes, aux professionnels des médias et aux chercheurs. L'utilisateur téléverse une image, une vidéo ou un fichier audio, et l'outil cherche SynthID, un filigrane invisible ajouté au contenu au moment de sa génération. Il reconnaît les contenus produits par les modèles de Google et de ses partenaires OpenAI, Nvidia et Kakao, «&nbsp;et bientôt Apple&nbsp;», sans date, selon le billet de Google DeepMind. Il faut se connecter avec un compte Google, OpenAI ou Apple, selon Engadget. Google indique avoir filigrané plus de 180 milliards d'images et de vidéos et l'équivalent de 240&nbsp;000 années d'audio&nbsp;; ces chiffres sont fournis par l'entreprise et ne sont pas vérifiés par un tiers. L'outil ne détecte pas les contenus d'IA en général&nbsp;: il ne voit que ceux des entreprises qui utilisent SynthID, et l'absence de filigrane ne prouve pas qu'un contenu est authentique, selon Search Engine Journal. Google ne publie pas de taux de faux positifs ou de faux négatifs.</p>
+      <p class="meta">Information du 7 octobre. Sources&nbsp;: <a href="https://blog.google/innovation-and-ai/models-and-research/google-deepmind/synth-id-ai-content/">Google</a>, <a href="https://www.engadget.com/2279565/google-synth-id-detector-ai-detection-website-is-now-available/">Engadget</a>, <a href="https://www.searchenginejournal.com/google-opens-synthid-watermark-detector-to-public/592226/">Search Engine Journal</a>, <a href="https://www.lemondeinformatique.fr/actualites/lire-detecteur-d-ia-google-ouvre-synthid-detector-au-grand-public-100842.html">Le Monde Informatique</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">PandoraBox, une borne qui analyse les clés USB avant qu'elles entrent dans un réseau</h2>
+    <div class="tool-grid">
+      <div>
+        <p>PandoraBox est une «&nbsp;station blanche&nbsp;»&nbsp;: une borne à écran tactile où l'on branche une clé USB pour faire analyser ses fichiers avant de l'utiliser sur un poste de travail. La borne monte la clé en lecture seule et soumet chaque fichier aux empreintes de MalwareBazaar, à CIRCL Hashlookup, à l'antivirus ClamAV, archives comprises, et à YARA-X avec les règles YARA Forge, plus des contrôles qui repèrent les programmes déguisés en documents et les PDF contenant du JavaScript. Les fichiers dangereux s'affichent à l'écran et ne sont supprimés de la clé qu'après confirmation. Un fichier qui n'a pas pu être analysé entièrement, comme une archive protégée par mot de passe, n'est jamais déclaré sain. Le matériel de référence est un mini-PC Lenovo ThinkCentre M720q reconditionné avec un écran Waveshare de 7 pouces&nbsp;; tout ordinateur x86_64 UEFI avec 2 Go de mémoire convient, selon le projet.</p>
+        <p>Une dépêche publiée le 15 octobre sur LinuxFr par son auteur présente une réécriture complète. La borne ne dépend plus du projet Pandora du CIRCL luxembourgeois, dont la première version était dérivée, et abandonne le moteur Comodo. Elle est distribuée comme image système construite sur Debian 13, avec Secure Boot, une partition système en lecture seule vérifiée par dm-verity et USBGuard, qui n'autorise que les périphériques de stockage. Chaque moteur d'analyse tourne isolé et sans accès au réseau, la borne fonctionne hors ligne par défaut, et les mises à jour sont signées et réversibles après des démarrages ratés.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/sourcentis/pandora-box">github.com/sourcentis/pandora-box</a>, consulté le 16 octobre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>GPL 3.0 ou ultérieure, vérifiée dans le dépôt (reconnue OSI), pour le logiciel&nbsp;; le boîtier imprimable en 3D est sous CERN-OHL-S v2, aussi reconnue OSI</dd></div>
+        <div><dt>Activité</dt><dd>38 étoiles, 8 forks, 97 commits, 10 issues et 0 pull request ouvertes au 16 octobre&nbsp;; aucune release publiée pour la réécriture, premier commit le 1er octobre 2026, dernier le 15 octobre</dd></div>
+        <div><dt>Qui</dt><dd>Sourcentis, société de Bertrange au Luxembourg, qui publie aussi les logiciels libres Mercator et Deming&nbsp;; tous les commits sont signés de Didier Barzin, seul développeur visible du projet</dd></div>
+        <div><dt>À savoir</dt><dd>Le projet est en développement, sans numéro de version pour la réécriture. Les images et les signatures ne sont signées qu'avec des clés de développement, et les clés de publication «&nbsp;ne sont pas encore définies&nbsp;», selon la dépêche. Aucun audit externe n'a été mené&nbsp;; il figure à la feuille de route, avec l'analyse des macros Office et des exécutables, qui n'est pas encore faite. La détection repose sur des bases tierces (abuse.ch, CIRCL, ClamAV).</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-10-15.html" rel="prev">Numéro précédent&nbsp;: <span class="num">014</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

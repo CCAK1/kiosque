@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 19 octobre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Lundi 19 octobre 2026<span class="price">6,35&nbsp;€</span></span><span class="issue" aria-label="Numéro 16">016</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">L'application de sauvegarde de ConnectWise détournée vers des centaines de comptes Microsoft 365</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">La Chine propose de restreindre l'exportation de 23 technologies d'IA</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Le Royaume-Uni veut placer les logiciels professionnels de Microsoft sous surveillance renforcée</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Linux 7.3 publié, avec un nombre record de contributeurs</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">GNOME OS ouvre une version Preview aux utilisateurs</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: SkillSpector</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Sécurité</p>
+    <h2>Un attaquant a utilisé l'application de sauvegarde de ConnectWise pour se connecter à des centaines de comptes Microsoft 365 d'entreprises</h2>
+    <p class="deck">Un attaquant s'est servi des identifiants de ConnectWise Cloud Backup, un service de sauvegarde de Microsoft 365 vendu aux prestataires informatiques, pour se connecter aux environnements Microsoft 365 de leurs clients. La société de sécurité Huntress l'a révélé le 16 octobre. ConnectWise a suspendu le service le 17 octobre et ne donne pas de date de reprise.</p>
+    <div class="body">
+      <p>ConnectWise Cloud Backup, l'ancien SkyKick racheté par ConnectWise en 2024, accède aux données de ses clients par des applications enregistrées dans Entra ID, l'annuaire de Microsoft. Ces applications disposent de droits en lecture et en écriture sur la messagerie, OneDrive, SharePoint et Teams, selon BleepingComputer. D'après Huntress, l'attaquant s'est authentifié directement en tant qu'application, avec un identifiant stocké dans l'environnement de l'éditeur, puis a obtenu des jetons d'accès à l'API Microsoft Graph chez les clients. Aucun utilisateur n'ouvrant de session, l'authentification multifacteur n'a pas joué. ConnectWise ne sait pas encore comment cet identifiant a été obtenu ni si une faille de son produit y a contribué, selon The Hacker News.</p>
+      <p>L'activité a commencé le 15 octobre à 1 h 58 UTC, selon Huntress. Dans une cinquantaine d'environnements qu'elle surveille, des applications de ConnectWise se sont attribué des rôles d'administration, surtout celui d'administrateur Exchange. Chez un client, l'application liée à Teams s'est donné le rôle d'administrateur général, puis a ajouté des secrets à deux autres applications, dont celle de Huntress, en cinq minutes environ. Huntress a d'abord confirmé des connexions non autorisées dans 162 environnements, puis a relevé près de 1&nbsp;000 environnements avec des tentatives de connexion depuis l'adresse IP de l'attaquant, dont plus de 300 réussies. Une seconde vague le même jour a visé 16 organisations des secteurs des politiques publiques, de la sécurité nationale, du commerce et des minerais critiques, sans succès, selon The Hacker News.</p>
+      <p>ConnectWise a désactivé sept applications le 17 octobre et suspendu Cloud Backup en révoquant les certificats des connexions concernées. Les sauvegardes programmées ne tournent plus, et les archives comme la restauration sont inaccessibles. Selon l'entreprise, les archives restent chiffrées et isolées, et rien n'indique que les données sauvegardées des partenaires aient été compromises. Ses services SaaS Security et Cloud Management sont aussi hors ligne par précaution. ConnectWise prévient que les jetons déjà émis peuvent rester valides jusqu'à leur expiration.</p>
+      <p>Huntress recommande de désactiver les applications de ConnectWise sans les supprimer, de chercher les secrets et certificats ajoutés aux applications depuis le 13 octobre et de retirer les rôles d'administration accordés sans raison. Dans l'environnement qu'elle a examiné, elle n'a trouvé aucun accès aux courriels ni aux fichiers, mais elle rappelle que les lectures de l'annuaire par Graph ne laissent pas de trace dans les journaux d'audit&nbsp;: un accès aux données ne peut donc pas être exclu. Elle n'a observé aucune nouvelle activité malveillante depuis le 15 octobre.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://www.huntress.com/blog/vendor-credential-enables-unauthorized-access">Huntress</a>, <a href="https://www.bleepingcomputer.com/news/security/hackers-breach-microsoft-365-tenants-via-connectwise-supply-chain-attack/">BleepingComputer</a>, <a href="https://thehackernews.com/2026/10/connectwise-suspends-cloud-backup-after.html">The Hacker News</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Chine</p>
+      <h3>La Chine propose de restreindre l'exportation de 23 technologies d'IA, dont les agents conçus pour la défense</h3>
+      <p>Les ministères chinois du Commerce et de la Science ont publié le 16 octobre un projet de révision du catalogue des technologies dont l'exportation est interdite ou restreinte. Il y ajoute 40 technologies&nbsp;: 23 dans l'intelligence artificielle, 12 dans le photovoltaïque et 5 dans la biomédecine&nbsp;; 14 seraient interdites et 26 soumises à autorisation, selon les réponses du porte-parole du ministère du Commerce rapportées par Beijing News. Seraient interdites, selon l'Associated Press, les technologies de base des grands modèles entraînés sur des données nationales sensibles et les agents d'IA conçus pour la défense ou les infrastructures d'information critiques. Les modèles de 2&nbsp;000 milliards de paramètres ou plus, ou dotés de capacités au premier rang mondial, pourraient être soumis à autorisation. Le porte-parole cite aussi parmi les interdictions la génération et la modification de code malveillant par l'IA, et parmi les restrictions la découverte de failles assistée par l'IA. L'accès à un modèle par une API, une application ou un service en ligne n'est pas concerné, pas plus que les technologies déjà publiques en open source ou dans des publications. Déployer un modèle sur des serveurs à l'étranger compte en revanche comme une exportation. Depuis le 16 octobre, toute exportation des technologies listées doit être déclarée au ministère au préalable. Le projet est soumis à consultation pendant un mois, selon l'agence Belga. Le porte-parole indique que la révision ne vise aucun pays et doit garantir que l'IA «&nbsp;reste toujours sous contrôle humain&nbsp;».</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.bjnews.com.cn/detail/1792137269129878.html">réponses du porte-parole du ministère du Commerce (Beijing News)</a>, <a href="https://www.usnews.com/news/business/articles/2026-10-16/china-moves-to-curb-tech-exports-including-ai-citing-national-security-risks">Associated Press, via US News</a>, <a href="https://www.dhnet.be/dernieres-depeches/2026/10/16/la-chine-envisage-des-controles-a-lexportation-de-technologies-dia-CIFKFUNKWVFYPCEX6S2WBO3FQA/">Belga, via La DH</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Royaume-Uni</p>
+      <h3>L'autorité britannique de la concurrence propose de placer les logiciels professionnels de Microsoft sous surveillance renforcée</h3>
+      <p>La Competition and Markets Authority (CMA), l'autorité britannique de la concurrence, a proposé le 16 octobre de reconnaître à Microsoft un «&nbsp;statut de marché stratégique&nbsp;» pour ses logiciels professionnels, au terme d'une enquête ouverte en mai. Sont concernés Word, Excel, Outlook, PowerPoint, Teams, Copilot et les produits de sécurité, de serveur et de système d'exploitation de l'entreprise, utilisés par plus d'un million d'entreprises et d'organismes publics britanniques et par environ 20 millions de personnes chaque mois, selon la CMA. L'autorité estime que Microsoft occupe une position forte dans cinq domaines&nbsp;: les systèmes d'exploitation pour PC, les suites bureautiques, les logiciels de sécurité, les systèmes d'exploitation pour serveurs et les bases de données relationnelles. Ce statut ne suppose aucune infraction, mais il permettrait à la CMA d'imposer des règles de conduite. Sa feuille de route cite quatre pistes&nbsp;: la possibilité de choisir d'autres outils d'IA que Copilot et de les mettre en concurrence avec lui, la vente groupée des produits de sécurité, le choix du nuage où héberger ses licences et l'intégration des produits tiers aux logiciels de Microsoft. Les commentaires sont attendus jusqu'au 13 novembre, et la décision finale doit tomber au plus tard en février 2027. Microsoft dit ne pas partager l'analyse de la CMA&nbsp;: «&nbsp;Tous nos produits, y compris Copilot, sont ouverts et interopérables&nbsp;», a déclaré un porte-parole, selon The Register.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.gov.uk/government/news/cma-takes-first-steps-to-ensure-choice-in-business-software">communiqué de la CMA</a>, <a href="https://www.theregister.com/software/2026/10/16/british-watchdog-seeks-tougher-terms-around-microsofts-dominance-of-business-software/5303520">The Register</a>, <a href="https://www.hl.co.uk/shares/stock-market-news/company--news/competition-watchdog-mulls-tightening-oversight-of-microsoft">Sharecast, via Hargreaves Lansdown</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Open source</p>
+      <h3>Linus Torvalds publie Linux 7.3, une version à 18&nbsp;765 modifications signées par 3&nbsp;021 développeurs</h3>
+      <p>Linus Torvalds a publié le 18 octobre la version 7.3 du noyau Linux, à la date prévue. Elle compte 18&nbsp;765 modifications, hors fusions, signées par 3&nbsp;021 développeurs, dont 807 contribuent pour la première fois, un record pour le projet selon LWN. Cette version achève le travail sur les sous-ordonnanceurs de sched_ext, qui permet d'écrire des politiques d'ordonnancement des processus sous forme de programmes BPF. Elle ajoute un appel système fchroot(), des données par processeur partagées entre programmes BPF, le suivi de la mémoire réellement utilisée par les machines virtuelles, les flux de données alternatifs dans le pilote NTFS ntfs3, des améliorations du serveur de fichiers SMB, et failfs, un système de fichiers de test qui fait échouer toutes les opérations. Selon Phoronix, elle prépare aussi la prise en charge des futurs processeurs AMD Zen 6, améliore les performances de Btrfs et ajoute un pilote pour la manette Steam Controller de 2026 de Valve. Des correctifs de dernière minute contournent un défaut de certains micrologiciels des SSD Samsung 990 PRO et 990 EVO Plus. La fenêtre d'intégration de Linux 7.4 s'ouvre dans la foulée&nbsp;; Phoronix indique qu'on ne sait pas encore laquelle des versions 7.3 et 7.4 sera la version maintenue à long terme de l'année.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/tag/?h=v7.3">étiquette v7.3 du dépôt de Linus Torvalds</a>, <a href="https://lwn.net/Articles/1101143/">LWN</a>, <a href="https://www.phoronix.com/news/Linux-7.3-Released">Phoronix</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Open source</p>
+      <h3>GNOME OS publie une version Preview destinée aux utilisateurs, construite sur la dernière version stable de GNOME</h3>
+      <p>Le projet GNOME a annoncé le 16 octobre GNOME OS Preview, une édition de son système d'exploitation destinée aux utilisateurs avertis qui veulent s'en servir au quotidien. Jusqu'ici, GNOME OS n'existait qu'en version Nightly, reconstruite chaque jour à partir du code en développement et réservée aux développeurs et testeurs du bureau GNOME. La Preview est construite à partir de la dernière version stable de GNOME, la 51.1 au moment de l'annonce, et partage ses branches avec les environnements d'exécution Flatpak stables du projet, selon le billet d'Adrian Vovk, développeur de GNOME OS. Le système se met à jour en téléchargeant une image complète, par systemd-sysupdate, et les applications sont distribuées en Flatpak. La Preview n'a que quelques semaines et a été peu testée&nbsp;; des problèmes sont attendus. Avant de déclarer une version stable, l'équipe doit encore livrer un véritable installateur, des mises à jour différentielles, une meilleure intégration du TPM avec une interface de récupération, la généralisation de systemd-homed pour les comptes utilisateur, une meilleure prise en charge des processeurs ARM et des téléphones, et des applications préinstallées en Flatpak. Les utilisateurs de la Preview devront probablement réinstaller le système d'ici quelques années pour passer à une version stable. Aucune date n'est donnée.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://blogs.gnome.org/adrianvovk/2026/10/16/gnome-os-preview/">billet d'Adrian Vovk (GNOME)</a>, <a href="https://lwn.net/Articles/1101057/">LWN</a>, <a href="https://www.phoronix.com/news/GNOME-OS-Preview">Phoronix</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">SkillSpector, le scanner de NVIDIA qui inspecte les «&nbsp;skills&nbsp;» des agents d'IA avant leur installation</h2>
+    <div class="tool-grid">
+      <div>
+        <p>SkillSpector analyse une «&nbsp;skill&nbsp;», c'est-à-dire un ensemble d'instructions et de scripts qu'on ajoute à un agent de programmation comme Claude Code, Codex CLI ou Gemini CLI, ou un serveur MCP, avant qu'on l'installe. Il accepte un dépôt Git, une URL, une archive zip, un dossier ou un simple fichier SKILL.md. Le README annonce 71 motifs de vulnérabilité répartis en 17 catégories, dont l'injection de prompt, l'exfiltration de données, l'élévation de privilèges et l'empoisonnement d'outils MCP. L'analyse statique examine le code à la recherche d'appels comme exec, eval ou subprocess, suit le trajet des variables d'environnement et des fichiers jusqu'aux envois réseau, applique des signatures YARA et interroge la base OSV.dev pour les dépendances vulnérables. L'outil rend un score de 0 à 100&nbsp;; au-delà de 50, il recommande de ne pas installer. Une seconde passe facultative confie les résultats à un modèle de langage, qui peut confirmer ou aggraver un résultat mais jamais l'abaisser. Les rapports sortent en texte, JSON, Markdown ou SARIF, et l'outil peut lui-même tourner comme serveur MCP. NVIDIA s'en sert comme étage de sécurité de son outil SkillEvaluator, qui prépare des skills à la publication, selon sa documentation.</p>
+        <p>La version 2.13.0, publiée le 16 octobre, reprend 55 modifications sur la 2.12.0. Elle repère les caractères invisibles qui inversent le sens d'affichage du texte et les commandes shell encodées, désactive le fournisseur Codex CLI, limite l'écoute du serveur MCP en HTTP à la machine locale et fait de GLM-5.3 le modèle par défaut quand l'analyse passe par le service NVIDIA Build.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/NVIDIA/SkillSpector">github.com/NVIDIA/SkillSpector</a>, consulté le 19 octobre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>Apache 2.0, vérifiée dans le dépôt (reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>environ 20&nbsp;500 étoiles et 1&nbsp;800 forks (valeurs arrondies affichées par GitHub, l'API étant inaccessible), 1&nbsp;483 commits, 75 issues et 87 pull requests ouvertes au 19 octobre&nbsp;; dernière release v2.13.0 le 16 octobre 2026, premier commit le 21 mars 2026</dd></div>
+        <div><dt>Qui</dt><dd>NVIDIA, dont l'organisation GitHub héberge le dépôt&nbsp;; la page ne nomme aucun mainteneur individuel</dd></div>
+        <div><dt>À savoir</dt><dd>L'analyse est seulement statique&nbsp;: l'outil n'exécute rien, ne lit ni le texte contenu dans des images ni le code compilé ou chiffré, et peut manquer des motifs écrits dans une autre langue que l'anglais, selon le README, qui le présente comme une protection supplémentaire et non comme un bac à sable. Hors ligne, la recherche de dépendances vulnérables se rabat sur une courte liste intégrée. Avec un fournisseur hébergé, la passe par modèle de langage envoie le contenu des fichiers analysés à ce fournisseur, sauf option --no-llm. Le projet annonce une précision d'environ 87&nbsp;% pour cette passe, chiffre non vérifié par un tiers, selon Help Net Security. Python 3.12 ou plus récent est requis.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-10-16.html" rel="prev">Numéro précédent&nbsp;: <span class="num">015</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

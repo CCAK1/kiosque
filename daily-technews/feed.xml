@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-10-19T07:00:00+02:00</updated>
+  <updated>2026-10-20T07:00:00+02:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Une faille du noyau Linux permet à une machine virtuelle de lire la mémoire de son hôte, les distributions publient leurs correctifs</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-10-20T07:00:00+02:00</published>
+    <updated>2026-10-20T07:00:00+02:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;La faille CVE-2026-99999, baptisée PwnEscape par son découvreur, touche la pile réseau du noyau Linux de la plupart des versions maintenues. Du code exécuté dans une machine virtuelle peut lire la mémoire du noyau de l&#39;hôte, et, en laboratoire, en prendre le contrôle. Les détails techniques ont été publiés et Debian a diffusé ses correctifs le 19 octobre. La faille est notée 9,3 sur 10.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Le défaut se trouve dans le code IPv4 du noyau hôte, pas dans l&#39;hyperviseur KVM lui-même. Une machine virtuelle transmet avec ses paquets, par l&#39;interface virtio, des métadonnées qui indiquent où le noyau doit écrire la somme de contrôle du paquet. Le noyau ne vérifiait pas correctement cette position et écrivait la somme au mauvais endroit, selon heise. Chaque paquet émis par la machine virtuelle pouvait ainsi faire remonter environ 32 octets de mémoire de l&#39;hôte, selon Next. Le problème remonte à deux modifications de 2008 et 2010. Le correctif ajoute une vérification de cette position dans cinq fonctions du noyau.&lt;/p&gt;
+&lt;p&gt;Le chercheur Paulos Yibelo, de pwn.ai, a trouvé la faille dans le cadre d&#39;un concours doté d&#39;un million de dollars organisé par Vercel autour de son bac à sable. Selon son billet, l&#39;équipe a utilisé le modèle GPT-5.6 Sol d&#39;OpenAI comme moteur de raisonnement, pour moins de 700 dollars de jetons d&#39;API&amp;nbsp;; heise précise que la recherche a duré trois jours. Ces chiffres sont ceux des auteurs, non vérifiés par un tiers. En laboratoire, ils disent avoir exécuté un programme avec les droits administrateur sur l&#39;hôte et l&#39;avoir fait planter. Seule la lecture de mémoire a été démontrée en production, selon Vercel cité par Next.&lt;/p&gt;
+&lt;p&gt;La faille a été signalée en privé aux mainteneurs le 4 septembre. Le correctif a été accepté le 8 octobre dans l&#39;arbre réseau du noyau, puis intégré à la branche principale le 14 octobre&amp;nbsp;; l&#39;identifiant CVE et les versions stables ont suivi le lendemain. Les versions 5.10.272, 5.15.223, 6.1.190, 6.6.159, 6.12.113, 6.18.57 et 7.2.11 sont corrigées, et Linux 7.3, publié le 18 octobre, n&#39;est pas touché, selon Next. Debian a publié ses noyaux corrigés le 19 octobre&amp;nbsp;; Ubuntu et Red Hat n&#39;avaient pas encore diffusé les leurs au moment de l&#39;article de heise.&lt;/p&gt;
+&lt;p&gt;L&#39;hébergeur allemand Hetzner a déployé une protection temporaire fondée sur eBPF, sans redémarrage, et Netcup a redémarré ses hôtes de virtualisation, selon heise. AWS indique que son service EC2 n&#39;est pas exposé, selon The Register. Aucune exploitation n&#39;a été observée. Les auteurs écrivent s&#39;attendre à des exploits fonctionnels contre des configurations par défaut en moins d&#39;un mois.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://pwn.ai/blog/pwnescape&#34;&gt;pwn.ai&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/virtualization/2026/10/19/linux-kvm-guest-host-escape-rated-critical-may-represent-a-new-way-to-attack-penguin-powered-networking/5303744&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html&#34;&gt;Heise&lt;/a&gt;, &lt;a href=&#34;https://next.ink/brief-article/une-faille-dans-le-noyau-linux-permet-a-une-machine-virtuelle-de-lire-la-memoire-de-lhote/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Ahold Delhaize confirme que la coupure de ses systèmes aux États-Unis et en Europe a été causée par des actions malveillantes</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-10-20T06:59:59+02:00</published>
+    <updated>2026-10-20T06:59:59+02:00</updated>
+    <category term="Pays-Bas"/>
+    <content type="html">
+&lt;p&gt;Le groupe de distribution néerlandais Ahold Delhaize a confirmé le 19 octobre que l&#39;activité suspecte détectée le 12 octobre dans ses systèmes résultait d&#39;«&amp;nbsp;actions malveillantes&amp;nbsp;». Le groupe avait alors coupé par précaution ses systèmes informatiques, sites et applications dans la plupart de ses enseignes aux États-Unis et en Europe&amp;nbsp;; les magasins sont restés ouverts. Le site et l&#39;application d&#39;Albert Heijn, Etos et Gall &amp;amp; Gall fonctionnent de nouveau, mais les livraisons à domicile d&#39;Albert Heijn ne reprendront que vendredi. Le commerce en ligne est rétabli en Belgique et en Europe centrale et du Sud-Est. Aux États-Unis, les achats en ligne chez Food Lion et Stop &amp;amp; Shop doivent reprendre «&amp;nbsp;dans les prochains jours&amp;nbsp;». Le groupe dit n&#39;avoir, à ce stade de l&#39;enquête, aucun indice de vol de données sensibles de clients, de salariés ou de partenaires. Il a prévenu le centre néerlandais de cybersécurité et a porté plainte auprès de la police néerlandaise le 19 octobre. Il ne décrit pas la nature de l&#39;attaque, et aucune revendication n&#39;a été rapportée. Ahold Delhaize n&#39;a pas répondu à The Register, qui demandait si l&#39;incident était lié aux attaques contre les contrôleurs de réfrigération de supermarchés français.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://newsroom.aholddelhaize.com/ahold-delhaize-update-on-status-of-cybersecurity-incident/&#34;&gt;Ahold Delhaize&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/10/19/grocery-giant-ahold-delhaize-confirms-cyberattack-forced-us-and-european-systems-offline/5303970&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://therecord.media/ahold-delhaize-cyberattack-grocery&#34;&gt;The Record&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Le Japon lance la sonde MMX, qui doit rapporter sur Terre des échantillons de Phobos, une lune de Mars</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-10-20T06:59:58+02:00</published>
+    <updated>2026-10-20T06:59:58+02:00</updated>
+    <category term="Japon"/>
+    <content type="html">
+&lt;p&gt;Un lanceur H3, pour son dixième vol, a décollé le 20 octobre à 4 h 41 heure japonaise (le 19 octobre à 21 h 41 à Paris) du centre spatial de Tanegashima, avec la sonde MMX (Martian Moons eXploration) de l&#39;agence spatiale japonaise JAXA. La sonde, d&#39;environ 4,5 tonnes, s&#39;est séparée du lanceur 71 minutes après le décollage et a été placée sur l&#39;orbite prévue, selon JAXA. Elle doit entrer en orbite autour de Mars en août 2027, étudier Phobos puis Déimos, quitter les environs de Mars en novembre 2030 et larguer une capsule d&#39;échantillons au retour, attendue en juillet 2031, selon Kyodo. Elle doit prélever environ 10 grammes de sol de Phobos, selon Next&amp;nbsp;; aucune mission n&#39;a encore rapporté d&#39;échantillons d&#39;une lune de Mars. Le petit rover Idefix, développé par le CNES et le centre aérospatial allemand DLR, doit observer la surface et préparer l&#39;atterrissage de la sonde principale, qui emporte aussi le spectromètre infrarouge MIRS du LESIA et du CNES et le spectromètre MEGANE de la Nasa. Le lancement, prévu en 2024, avait été repoussé après l&#39;échec du premier vol du H3.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://global.jaxa.jp/press/2026/10/20261020-1_e.html&#34;&gt;JAXA&lt;/a&gt;, &lt;a href=&#34;https://www.nippon.com/en/news/yjj2026102000118/japan-successfully-launches-rocket-with-martian-moon-probe.html&#34;&gt;Jiji, via Nippon.com&lt;/a&gt;, &lt;a href=&#34;https://qazinform.com/news/japan-launches-worlds-first-mars-moon-sample-return-mission-4163ef&#34;&gt;Kyodo, via Kazinform&lt;/a&gt;, &lt;a href=&#34;https://next.ink/262715/mmx-pret-a-decoller-en-compagnie-didefix-vers-phobos-un-des-deux-satellites-de-mars/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Deutsche Telekom, Orange, Telefónica et Vodafone envisagent une candidature commune aux fréquences européennes de téléphonie par satellite</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-10-20T06:59:57+02:00</published>
+    <updated>2026-10-20T06:59:57+02:00</updated>
+    <category term="Europe"/>
+    <content type="html">
+&lt;p&gt;Les quatre opérateurs ont annoncé le 19 octobre avoir signé une lettre d&#39;intention pour étudier une candidature conjointe lors de la prochaine attribution, dans l&#39;Union européenne, des fréquences des services mobiles par satellite, qui permettent de joindre directement un téléphone depuis l&#39;espace. Ils construiraient en Europe l&#39;infrastructure au sol et assureraient la coordination, sans investir directement dans une constellation, confiée à un partenaire satellitaire «&amp;nbsp;encore à choisir&amp;nbsp;», selon le communiqué. Tous les opérateurs mobiles auraient un accès ouvert et non discriminatoire au service. Ces fréquences de la bande des 2 GHz, aujourd&#39;hui utilisées notamment pour l&#39;Internet à bord des avions, doivent se libérer à partir de mi-2029&amp;nbsp;: les droits actuels expirent en mai 2027 et la Commission européenne propose de les prolonger de deux ans, selon heise. Une partie du spectre doit être réservée aux communications publiques et rattachée au programme de constellation européen IRIS². Les accords existants restent en place&amp;nbsp;: Deutsche Telekom doit couvrir des zones blanches allemandes avec Starlink à partir de 2028 et Vodafone travaille avec AST SpaceMobile. La lettre ne fixe aucun calendrier.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.vodafone.com/news/newsroom/technology/four-european-operators-sign-letter-of-intent-to-explore-a-joint-bid-for-mobile-satellite-services&#34;&gt;communiqué de Vodafone&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Telekom-Vodafone-Telefonica-und-Orange-planen-gemeinsames-Satelliten-Gebot-11492848.html&#34;&gt;Heise&lt;/a&gt;, &lt;a href=&#34;https://thenextweb.com/news/europe-carriers-joint-satellite-spectrum-bid-mss&#34;&gt;The Next Web&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Le département américain de la Sécurité intérieure ordonne le retrait des produits DeepSeek des administrations fédérales civiles</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=5&amp;utm_source=rss#a5"/>
+    <published>2026-10-20T06:59:56+02:00</published>
+    <updated>2026-10-20T06:59:56+02:00</updated>
+    <category term="États-Unis, Chine"/>
+    <content type="html">
+&lt;p&gt;Le secrétaire à la Sécurité intérieure a ordonné d&#39;exclure des achats des agences fédérales civiles les produits et services informatiques de Hangzhou DeepSeek Artificial Intelligence et de ses entités affiliées, et de retirer de leurs systèmes tous les produits DeepSeek ainsi que les produits tiers «&amp;nbsp;développés à partir de mises en œuvre de DeepSeek&amp;nbsp;», selon l&#39;avis déposé le 19 octobre et publié le 20 octobre au Federal Register. L&#39;ordre s&#39;appuie sur la loi de 2018 sur la sécurité de la chaîne d&#39;approvisionnement des achats fédéraux (FASCSA), après une recommandation du Federal Acquisition Security Council&amp;nbsp;; sa mise en œuvre revient à l&#39;agence de cybersécurité CISA. Le ministère invoque un risque de transfert de données sensibles vers le gouvernement chinois et la possibilité que les modèles contiennent des logiciels malveillants ou des vulnérabilités, selon Engadget. The Register relève que l&#39;ordre ne précise ni délai ni ce que recouvre «&amp;nbsp;développé à partir de&amp;nbsp;»&amp;nbsp;: accès continu à l&#39;API, ou code écrit avec l&#39;aide de DeepSeek. DeepSeek n&#39;a pas réagi publiquement.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://public-inspection.federalregister.gov/2026-21447.pdf&#34;&gt;Federal Register (DHS, document 2026-21447)&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/10/20/deepseek-deep-sixed-at-all-us-federal-civilian-agencies/5304010&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.engadget.com/2290535/homeland-security-bans-deepseek-use-in-federal-civilian-agencies/&#34;&gt;Engadget&lt;/a&gt;, &lt;a href=&#34;https://next.ink/brief-article/les-etats-unis-bannissent-lia-chinoise-deepseek-dans-ladministration-civile-federale/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : ReactOS, le système d&#39;exploitation libre compatible Windows, peut désormais s&#39;installer sur une partition NTFS</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-10-20T06:59:55+02:00</published>
+    <updated>2026-10-20T06:59:55+02:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;ReactOS est un système d&#39;exploitation libre qui reproduit l&#39;architecture de Windows NT, de façon à faire tourner des applications et des pilotes écrits pour Windows sans code de Microsoft. Le projet a commencé en 1996&amp;nbsp;; il s&#39;installe sur un PC ou dans une machine virtuelle et se présente avec une interface proche de celle de Windows Server 2003.&lt;/p&gt;
+&lt;p&gt;Le 10 octobre, la modification n° 9316, signée de Justin Miller avec Carl Bialorucki, a été intégrée à la branche principale&amp;nbsp;: le programme d&#39;installation sait désormais formater une partition en NTFS, le système de fichiers de Windows, et y écrire un secteur de démarrage. Le développeur a corrigé le formatage pour qu&#39;il passe la vérification chkdsk de Windows 11. D&#39;autres corrections du pilote NTFS ont suivi jusqu&#39;au 17 octobre, dont l&#39;installation des additions invitées de VirtualBox sur une partition NTFS. Ces changements figurent dans les versions de développement, pas encore dans une version publiée.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/reactos/reactos&#34;&gt;github.com/reactos/reactos&lt;/a&gt;, consulté le 20 octobre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: GPL-2.0, vérifiée dans le fichier COPYING du dépôt (reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 18&amp;nbsp;269 étoiles, 2&amp;nbsp;272 forks, 89&amp;nbsp;876 commits, 118 pull requests ouvertes au 20 octobre&amp;nbsp;; dernière release 0.4.16 le 28 août 2026. Le projet suit ses bogues dans son propre Jira, pas dans les issues GitHub, d&#39;où un compteur d&#39;issues à zéro&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: une communauté de développeurs bénévoles et quelques salariés, autour de l&#39;association ReactOS Deutschland e.V., qui recueille les dons&amp;nbsp;; Carl Bialorucki a été embauché en 2025 pour améliorer la suite de tests&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le projet se déclare lui-même en version alpha et déconseille un usage en production. Le formatage NTFS de l&#39;installateur est seulement rapide&amp;nbsp;: il écrit les métadonnées sans effacer le reste du volume, et le formatage complet n&#39;est pas pris en charge, selon la discussion de la modification. La compatibilité vise surtout Windows Server 2003 et les applications 32 bits&amp;nbsp;; beaucoup d&#39;applications et de pilotes récents ne fonctionnent pas.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Un attaquant a utilisé l&#39;application de sauvegarde de ConnectWise pour se connecter à des centaines de comptes Microsoft 365 d&#39;entreprises</title>

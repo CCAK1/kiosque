@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-10-20T07:00:00+02:00</updated>
+  <updated>2026-10-21T07:00:00+02:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Les clés privées de huit certificats intermédiaires de l&#39;autorité indienne eMudhra tenaient sur un octet, les navigateurs les bloquent</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-10-21T07:00:00+02:00</published>
+    <updated>2026-10-21T07:00:00+02:00</updated>
+    <category term="Inde"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Huit certificats intermédiaires de l&#39;autorité de certification indienne eMudhra reposaient sur des clés privées réduites à un nombre compris entre 1 et 255. N&#39;importe qui pouvait les retrouver à partir des certificats publics et s&#39;en servir pour émettre de faux certificats HTTPS ou de signature de code. Mozilla, Google et Apple ont bloqué ces certificats, et Mozilla a retiré la racine d&#39;eMudhra de sa liste de confiance le 20 octobre.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Mozilla a reçu le signalement d&#39;un membre de la communauté le 17 octobre à 20 h 06 UTC et a bloqué les certificats dans Firefox à 22 h 59 UTC par OneCRL, sa liste centralisée de certificats révoqués, sans mise à jour du navigateur, selon le message publié le 20 octobre par Dennis Jackson, de Mozilla, sur la liste dev-security-policy. Le même jour, Mozilla a publié une mise à jour de NSS, sa bibliothèque cryptographique, qui retire la racine ayant signé ces intermédiaires. Google et Apple ont aussi bloqué les certificats, selon The Register. eMudhra les a révoqués.&lt;/p&gt;
+&lt;p&gt;Les clés sont de type P-384&amp;nbsp;: elles devraient être un nombre aléatoire de 384 bits. Celles d&#39;eMudhra valent 4, 56, 66, 115, 155, 156, 230 et 237, selon le chercheur Scott Helme, qui dit les avoir toutes retrouvées en moins d&#39;une seconde sur un ordinateur portable, au plus 255 essais par clé. Les huit autorités concernées, six pour les certificats de sites web et deux pour la signature de code, ont été créées en avril 2025 et certifiées en mai 2025 par la racine AAA Certificate Services de Sectigo, selon la même analyse. heise cite aussi les racines emSign d&#39;eMudhra parmi celles que les administrateurs peuvent retirer.&lt;/p&gt;
+&lt;p&gt;Aucun certificat de site web émis par ces autorités n&#39;apparaît dans les journaux publics de Certificate Transparency, que Chrome, Firefox et Safari exigent&amp;nbsp;: un faux certificat n&#39;aurait donc pas été accepté par défaut dans ces navigateurs, selon Scott Helme. Les programmes qui ne vérifient ni la révocation ni ces journaux, comme curl ou les bibliothèques de Python, Node, Go et Java dans leur configuration par défaut, restent exposés tant que leur magasin de certificats n&#39;est pas mis à jour. Cloudflare a mis à jour ses applications WARP et 1.1.1.1 le 20 octobre et dit n&#39;avoir observé aucune exploitation sur ses services.&lt;/p&gt;
+&lt;p&gt;Selon eMudhra, cité par Scott Helme, un bogue dans le script de la cérémonie de génération des clés a créé une seconde paire de clés faible dans le module matériel de sécurité, et une erreur humaine a conduit à utiliser cette paire pour la demande de certificat. eMudhra indique avoir émis plus de 60 millions de certificats, un chiffre fourni par l&#39;entreprise et non vérifié par un tiers. L&#39;entreprise n&#39;a pas répondu aux questions de The Register.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/0R3XLJL6FuE/m/Kp1v6CPuAAAJ&#34;&gt;Mozilla (liste dev-security-policy)&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/10/20/indian-certification-authority-emudhras-private-keys-compromised-one-of-them-was-the-number-4/5304312&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/en/news/eMudhra-incident-compromises-eight-CA-certificates-11494689.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://blog.cloudflare.com/emudhra-certificate-compromise/&#34;&gt;Cloudflare&lt;/a&gt;, &lt;a href=&#34;https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/&#34;&gt;Scott Helme&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 018, mercredi 21 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Un pirate a remplacé les binaires de cinq versions de l&#39;outil en ligne de commande d&#39;OVHcloud sur GitHub par un programme qui vole des secrets</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-10-21T06:59:59+02:00</published>
+    <updated>2026-10-21T06:59:59+02:00</updated>
+    <category term="France"/>
+    <content type="html">
+&lt;p&gt;Le 19 octobre, entre 14 h 47 et 16 h 21 (heure de Paris), les fichiers téléchargeables des versions v0.11.0 à v0.15.0 du client en ligne de commande d&#39;OVHcloud, qui sert à piloter un compte de l&#39;hébergeur, ont été remplacés sur GitHub par un binaire conçu pour récupérer les secrets stockés sur le disque, selon Octave Klaba, directeur général d&#39;OVHcloud, cité par BleepingComputer et Next. Le pirate a utilisé le compte GitHub d&#39;un développeur d&#39;OVHcloud. L&#39;option de GitHub qui rend une version publiée non modifiable n&#39;était pas activée, ce qui a permis de changer les fichiers sans passer par la chaîne d&#39;intégration et ses contrôles. Un utilisateur a repéré l&#39;anomalie parce que l&#39;empreinte SHA-256 de l&#39;archive Linux ARM vérifiée par sa propre chaîne d&#39;intégration ne correspondait plus, et l&#39;a signalée dans un ticket public du dépôt. OVHcloud a retiré les fichiers, publié une version v0.16.0 non modifiable et diffusé un avis de sécurité le 20 octobre. Les installations compilées depuis les sources et les images Docker ne sont pas touchées, selon BleepingComputer. L&#39;entreprise demande à ceux qui ont exécuté une version piégée de révoquer tous les secrets présents sur la machine, dont les clés d&#39;API OVHcloud et les clés SSH. Elle n&#39;a pas indiqué combien de copies ont été téléchargées.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://github.com/ovh/ovhcloud-cli/issues/300&#34;&gt;ticket n° 300 du dépôt ovhcloud-cli&lt;/a&gt;, &lt;a href=&#34;https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/&#34;&gt;BleepingComputer&lt;/a&gt;, &lt;a href=&#34;https://next.ink/262824/le-client-en-ligne-de-commande-dovhcloud-compromis-par-un-pirate-sur-github/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 018, mercredi 21 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Une coupure de courant dans une zone londonienne de Google Cloud perturbe des dizaines de services pendant près de huit heures, Revolut touché</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-10-21T06:59:58+02:00</published>
+    <updated>2026-10-21T06:59:58+02:00</updated>
+    <category term="Royaume-Uni"/>
+    <content type="html">
+&lt;p&gt;Selon la page d&#39;état de Google Cloud, «&amp;nbsp;un incident d&#39;alimentation électrique&amp;nbsp;» a provoqué une panne dans la zone europe-west2-b, l&#39;une des trois zones de la région de Londres, le 20 octobre à partir de 7 h 08, heure de Londres. Google a déclaré l&#39;incident atténué pour la plupart des clients vers 15 h 00, en précisant qu&#39;un très petit nombre restait touché. La liste des produits affectés compte plusieurs dizaines de services, dont Compute Engine, Cloud Storage, Cloud SQL, BigQuery et Kubernetes Engine&amp;nbsp;; Google recommandait de déplacer les charges vers une autre zone ou région. La banque en ligne Revolut a signalé dès le matin que 31 fonctions étaient partiellement indisponibles, dont la connexion, les paiements par carte, les virements et les retraits aux distributeurs, selon heise, et a indiqué que l&#39;argent et les données de ses clients étaient en sécurité. Golem relie ces pannes à celle de Google Cloud&amp;nbsp;; Revolut n&#39;avait pas confirmé la cause au moment de l&#39;article de heise. Google annonce une analyse de l&#39;incident après son enquête interne.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj&#34;&gt;Google Cloud (page d&#39;état)&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/paas-and-iaas/2026/10/20/google-cloud-says-a-power-event-caused-todays-outage/5304160&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Revolut-Banking-und-Support-nicht-erreichbar-11493640.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://www.golem.de/news/onlinebank-revolut-meldet-probleme-wegen-ausfall-von-google-cloud-2610-214308.html&#34;&gt;Golem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 018, mercredi 21 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Amazon et Google publient en open source des versions de PyTorch qui font tourner les modèles sur leurs propres puces d&#39;IA</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-10-21T06:59:57+02:00</published>
+    <updated>2026-10-21T06:59:57+02:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;AWS a présenté le 19 octobre TorchNeuron, une couche sous licence Apache 2.0 qui permet d&#39;entraîner des modèles écrits avec la bibliothèque PyTorch sur ses puces Trainium 2 et Trainium 3. Dans le cas simple, il suffit de remplacer le périphérique cuda par neuron dans le code, selon Next&amp;nbsp;; certaines fonctions ne sont pas encore prises en charge. AWS dit aussi proposer au projet PyTorch des modifications pour en retirer du code propre aux GPU de Nvidia, selon TechCrunch. Le 20 octobre, à la PyTorch Conference, Google a publié en open source TorchTPU, développé avec l&#39;équipe PyTorch de Meta, qui exécute du code PyTorch sur ses puces TPU avec peu de modifications, dont les TPU Ironwood, validés jusqu&#39;à environ 8&amp;nbsp;000 puces selon Google. Google annonce un taux d&#39;utilisation de 52&amp;nbsp;% de la puissance de calcul pour l&#39;entraînement du modèle Qwen 3 8B, chiffre fourni par l&#39;entreprise et non vérifié par un tiers. Les deux outils visent les développeurs dont le code est aujourd&#39;hui écrit pour CUDA, la plateforme logicielle des GPU de Nvidia.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus&#34;&gt;Google Cloud&lt;/a&gt;, &lt;a href=&#34;https://github.com/aws-neuron/torch-neuronx&#34;&gt;dépôt torch-neuronx d&#39;AWS&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://next.ink/262948/avec-torchneuron-amazon-veut-faciliter-lentrainement-des-modeles-sur-ses-puces-trainium/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 018, mercredi 21 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Submergés de signalements, les mainteneurs de curl traiteront en public les failles de gravité faible ou moyenne à partir du 26 octobre</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?a=5&amp;utm_source=rss#a5"/>
+    <published>2026-10-21T06:59:56+02:00</published>
+    <updated>2026-10-21T06:59:56+02:00</updated>
+    <category term="Open source"/>
+    <content type="html">
+&lt;p&gt;Daniel Stenberg, mainteneur principal de curl, l&#39;outil en ligne de commande et la bibliothèque libcurl de transfert de données par URL, a annoncé le 20 octobre qu&#39;à partir du 26 octobre les signalements de vulnérabilités jugées de gravité faible ou moyenne devront être déposés comme tickets publics sur le dépôt GitHub du projet. Seules les failles de gravité élevée ou critique resteront traitées en privé sur la plateforme HackerOne&amp;nbsp;; les signalements déjà reçus et classés faibles ou moyens y seront clos puis rendus publics. Il invoque un afflux de rapports qui ne devrait pas baisser dans les prochains mois et des mainteneurs épuisés, et indique que plus de 90&amp;nbsp;% des soumissions de ces dernières années ont pu être rapidement évaluées en dessous du niveau élevé. Selon lui, beaucoup de rapports produits avec l&#39;IA décrivent des combinaisons d&#39;options peu susceptibles de se produire en pratique. Le projet avait déjà fermé son programme de primes plus tôt en 2026 à cause des signalements générés par IA, rappelle The Register. La version 8.23.0, publiée le 14 octobre, corrigeait 24 vulnérabilités, selon l&#39;annonce du projet sur la liste oss-security.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://daniel.haxx.se/blog/2026/10/20/do-minor-curl-vulnerabilities-in-the-open/&#34;&gt;billet de Daniel Stenberg&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/10/20/swamped-curl-maintainers-take-low-level-flaws-public-to-survive-vulnerability-avalanche/5304198&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.golem.de/news/ki-reports-ueberlasten-curl-entwickler-wir-muessen-handeln-um-zu-ueberleben-2610-214288.html&#34;&gt;Golem&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 018, mercredi 21 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : Pi-hole, le filtre DNS qui bloque la publicité sur tout un réseau domestique, corrige 15 failles dont 5 de gravité élevée</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-10-21T06:59:55+02:00</published>
+    <updated>2026-10-21T06:59:55+02:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;Pi-hole est un serveur DNS qui s&#39;installe sur une petite machine du réseau local, souvent un Raspberry Pi, ou dans un conteneur. Les appareils du réseau lui envoient leurs requêtes DNS&amp;nbsp;; il refuse de résoudre les domaines inscrits sur des listes de blocage de publicité et de pistage, ce qui filtre ces contenus pour tous les appareils, téléviseurs et téléphones compris, sans logiciel à installer sur chacun. Une interface web affiche les requêtes et les domaines bloqués.&lt;/p&gt;
+&lt;p&gt;Le 17 octobre, le projet a publié FTL v6.8, Web v6.6.1 et Core v6.5, qui corrigent 15 failles, dont 5 de gravité élevée, selon heise&amp;nbsp;: plusieurs permettent à un compte local de prendre les droits administrateur, une autre de lire des fichiers par l&#39;interface web. Les images Docker corrigées portent l&#39;étiquette 2026.10.0. La mise à jour se fait avec la commande pihole -up.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/pi-hole/pi-hole&#34;&gt;github.com/pi-hole/pi-hole&lt;/a&gt;, consulté le 21 octobre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: EUPL 1.2 (licence publique de l&#39;Union européenne), vérifiée dans le fichier LICENSE des dépôts Core, FTL et Web (reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 61&amp;nbsp;365 étoiles, 3&amp;nbsp;328 forks, 7&amp;nbsp;292 commits, 23 issues et 15 pull requests ouvertes au 21 octobre&amp;nbsp;; dernière release v6.5 le 17 octobre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: la société Pi-hole LLC, titulaire des droits d&#39;auteur, avec des contributeurs extérieurs crédités à chaque version&amp;nbsp;; premier commit en juin 2014&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Pi-hole ne filtre que par nom de domaine&amp;nbsp;: il ne bloque pas les publicités servies depuis le même domaine que le contenu, comme celles de YouTube. Les appareils réglés pour utiliser un autre serveur DNS, ou le DNS chiffré de leur navigateur, échappent au filtrage. Cette version change certains comportements&amp;nbsp;: les valeurs invalides du fichier pihole.toml sont réinitialisées et les requêtes plus anciennes que la durée de conservation configurée sont supprimées dès la première nuit.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 018, mercredi 21 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Une faille du noyau Linux permet à une machine virtuelle de lire la mémoire de son hôte, les distributions publient leurs correctifs</title>

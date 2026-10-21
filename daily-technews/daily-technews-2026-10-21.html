@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 21 octobre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Mercredi 21 octobre 2026<span class="price">3,53&nbsp;€</span></span><span class="issue" aria-label="Numéro 18">018</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Les clés de huit certificats d'eMudhra devinées en moins d'une seconde</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">L'outil en ligne de commande d'OVHcloud piégé sur GitHub</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Panne de courant chez Google Cloud à Londres, Revolut touché</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">TorchNeuron et TorchTPU&nbsp;: PyTorch sur les puces d'Amazon et de Google</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">curl traitera en public ses failles mineures</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Pi-hole</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Inde</p>
+    <h2>Les clés privées de huit certificats intermédiaires de l'autorité indienne eMudhra tenaient sur un octet, les navigateurs les bloquent</h2>
+    <p class="deck">Huit certificats intermédiaires de l'autorité de certification indienne eMudhra reposaient sur des clés privées réduites à un nombre compris entre 1 et 255. N'importe qui pouvait les retrouver à partir des certificats publics et s'en servir pour émettre de faux certificats HTTPS ou de signature de code. Mozilla, Google et Apple ont bloqué ces certificats, et Mozilla a retiré la racine d'eMudhra de sa liste de confiance le 20 octobre.</p>
+    <div class="body">
+      <p>Mozilla a reçu le signalement d'un membre de la communauté le 17 octobre à 20 h 06 UTC et a bloqué les certificats dans Firefox à 22 h 59 UTC par OneCRL, sa liste centralisée de certificats révoqués, sans mise à jour du navigateur, selon le message publié le 20 octobre par Dennis Jackson, de Mozilla, sur la liste dev-security-policy. Le même jour, Mozilla a publié une mise à jour de NSS, sa bibliothèque cryptographique, qui retire la racine ayant signé ces intermédiaires. Google et Apple ont aussi bloqué les certificats, selon The Register. eMudhra les a révoqués.</p>
+      <p>Les clés sont de type P-384&nbsp;: elles devraient être un nombre aléatoire de 384 bits. Celles d'eMudhra valent 4, 56, 66, 115, 155, 156, 230 et 237, selon le chercheur Scott Helme, qui dit les avoir toutes retrouvées en moins d'une seconde sur un ordinateur portable, au plus 255 essais par clé. Les huit autorités concernées, six pour les certificats de sites web et deux pour la signature de code, ont été créées en avril 2025 et certifiées en mai 2025 par la racine AAA Certificate Services de Sectigo, selon la même analyse. heise cite aussi les racines emSign d'eMudhra parmi celles que les administrateurs peuvent retirer.</p>
+      <p>Aucun certificat de site web émis par ces autorités n'apparaît dans les journaux publics de Certificate Transparency, que Chrome, Firefox et Safari exigent&nbsp;: un faux certificat n'aurait donc pas été accepté par défaut dans ces navigateurs, selon Scott Helme. Les programmes qui ne vérifient ni la révocation ni ces journaux, comme curl ou les bibliothèques de Python, Node, Go et Java dans leur configuration par défaut, restent exposés tant que leur magasin de certificats n'est pas mis à jour. Cloudflare a mis à jour ses applications WARP et 1.1.1.1 le 20 octobre et dit n'avoir observé aucune exploitation sur ses services.</p>
+      <p>Selon eMudhra, cité par Scott Helme, un bogue dans le script de la cérémonie de génération des clés a créé une seconde paire de clés faible dans le module matériel de sécurité, et une erreur humaine a conduit à utiliser cette paire pour la demande de certificat. eMudhra indique avoir émis plus de 60 millions de certificats, un chiffre fourni par l'entreprise et non vérifié par un tiers. L'entreprise n'a pas répondu aux questions de The Register.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://groups.google.com/a/mozilla.org/g/dev-security-policy/c/0R3XLJL6FuE/m/Kp1v6CPuAAAJ">Mozilla (liste dev-security-policy)</a>, <a href="https://www.theregister.com/security/2026/10/20/indian-certification-authority-emudhras-private-keys-compromised-one-of-them-was-the-number-4/5304312">The Register</a>, <a href="https://www.heise.de/en/news/eMudhra-incident-compromises-eight-CA-certificates-11494689.html">heise</a>, <a href="https://blog.cloudflare.com/emudhra-certificate-compromise/">Cloudflare</a>, <a href="https://scotthelme.co.uk/eight-bits-of-trust-emudhras-ca-keys-cracked-in-milliseconds/">Scott Helme</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">France</p>
+      <h3>Un pirate a remplacé les binaires de cinq versions de l'outil en ligne de commande d'OVHcloud sur GitHub par un programme qui vole des secrets</h3>
+      <p>Le 19 octobre, entre 14 h 47 et 16 h 21 (heure de Paris), les fichiers téléchargeables des versions v0.11.0 à v0.15.0 du client en ligne de commande d'OVHcloud, qui sert à piloter un compte de l'hébergeur, ont été remplacés sur GitHub par un binaire conçu pour récupérer les secrets stockés sur le disque, selon Octave Klaba, directeur général d'OVHcloud, cité par BleepingComputer et Next. Le pirate a utilisé le compte GitHub d'un développeur d'OVHcloud. L'option de GitHub qui rend une version publiée non modifiable n'était pas activée, ce qui a permis de changer les fichiers sans passer par la chaîne d'intégration et ses contrôles. Un utilisateur a repéré l'anomalie parce que l'empreinte SHA-256 de l'archive Linux ARM vérifiée par sa propre chaîne d'intégration ne correspondait plus, et l'a signalée dans un ticket public du dépôt. OVHcloud a retiré les fichiers, publié une version v0.16.0 non modifiable et diffusé un avis de sécurité le 20 octobre. Les installations compilées depuis les sources et les images Docker ne sont pas touchées, selon BleepingComputer. L'entreprise demande à ceux qui ont exécuté une version piégée de révoquer tous les secrets présents sur la machine, dont les clés d'API OVHcloud et les clés SSH. Elle n'a pas indiqué combien de copies ont été téléchargées.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://github.com/ovh/ovhcloud-cli/issues/300">ticket n° 300 du dépôt ovhcloud-cli</a>, <a href="https://www.bleepingcomputer.com/news/security/ovhcloud-cli-releases-backdoored-on-github-to-steal-developer-secrets/">BleepingComputer</a>, <a href="https://next.ink/262824/le-client-en-ligne-de-commande-dovhcloud-compromis-par-un-pirate-sur-github/">Next</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Royaume-Uni</p>
+      <h3>Une coupure de courant dans une zone londonienne de Google Cloud perturbe des dizaines de services pendant près de huit heures, Revolut touché</h3>
+      <p>Selon la page d'état de Google Cloud, «&nbsp;un incident d'alimentation électrique&nbsp;» a provoqué une panne dans la zone europe-west2-b, l'une des trois zones de la région de Londres, le 20 octobre à partir de 7 h 08, heure de Londres. Google a déclaré l'incident atténué pour la plupart des clients vers 15 h 00, en précisant qu'un très petit nombre restait touché. La liste des produits affectés compte plusieurs dizaines de services, dont Compute Engine, Cloud Storage, Cloud SQL, BigQuery et Kubernetes Engine&nbsp;; Google recommandait de déplacer les charges vers une autre zone ou région. La banque en ligne Revolut a signalé dès le matin que 31 fonctions étaient partiellement indisponibles, dont la connexion, les paiements par carte, les virements et les retraits aux distributeurs, selon heise, et a indiqué que l'argent et les données de ses clients étaient en sécurité. Golem relie ces pannes à celle de Google Cloud&nbsp;; Revolut n'avait pas confirmé la cause au moment de l'article de heise. Google annonce une analyse de l'incident après son enquête interne.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://status.cloud.google.com/incidents/Xs2XTHzAVC9YnafnPyzj">Google Cloud (page d'état)</a>, <a href="https://www.theregister.com/paas-and-iaas/2026/10/20/google-cloud-says-a-power-event-caused-todays-outage/5304160">The Register</a>, <a href="https://www.heise.de/news/Revolut-Banking-und-Support-nicht-erreichbar-11493640.html">heise</a>, <a href="https://www.golem.de/news/onlinebank-revolut-meldet-probleme-wegen-ausfall-von-google-cloud-2610-214308.html">Golem</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">États-Unis</p>
+      <h3>Amazon et Google publient en open source des versions de PyTorch qui font tourner les modèles sur leurs propres puces d'IA</h3>
+      <p>AWS a présenté le 19 octobre TorchNeuron, une couche sous licence Apache 2.0 qui permet d'entraîner des modèles écrits avec la bibliothèque PyTorch sur ses puces Trainium 2 et Trainium 3. Dans le cas simple, il suffit de remplacer le périphérique cuda par neuron dans le code, selon Next&nbsp;; certaines fonctions ne sont pas encore prises en charge. AWS dit aussi proposer au projet PyTorch des modifications pour en retirer du code propre aux GPU de Nvidia, selon TechCrunch. Le 20 octobre, à la PyTorch Conference, Google a publié en open source TorchTPU, développé avec l'équipe PyTorch de Meta, qui exécute du code PyTorch sur ses puces TPU avec peu de modifications, dont les TPU Ironwood, validés jusqu'à environ 8&nbsp;000 puces selon Google. Google annonce un taux d'utilisation de 52&nbsp;% de la puissance de calcul pour l'entraînement du modèle Qwen 3 8B, chiffre fourni par l'entreprise et non vérifié par un tiers. Les deux outils visent les développeurs dont le code est aujourd'hui écrit pour CUDA, la plateforme logicielle des GPU de Nvidia.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://cloud.google.com/blog/topics/ai-infrastructure/torchtpu-is-now-open-source-run-native-pytorch-on-tpus">Google Cloud</a>, <a href="https://github.com/aws-neuron/torch-neuronx">dépôt torch-neuronx d'AWS</a>, <a href="https://techcrunch.com/2026/10/20/google-has-joined-amazon-in-attacking-nvidias-stronghold-with-ai-app-developers/">TechCrunch</a>, <a href="https://next.ink/262948/avec-torchneuron-amazon-veut-faciliter-lentrainement-des-modeles-sur-ses-puces-trainium/">Next</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Open source</p>
+      <h3>Submergés de signalements, les mainteneurs de curl traiteront en public les failles de gravité faible ou moyenne à partir du 26 octobre</h3>
+      <p>Daniel Stenberg, mainteneur principal de curl, l'outil en ligne de commande et la bibliothèque libcurl de transfert de données par URL, a annoncé le 20 octobre qu'à partir du 26 octobre les signalements de vulnérabilités jugées de gravité faible ou moyenne devront être déposés comme tickets publics sur le dépôt GitHub du projet. Seules les failles de gravité élevée ou critique resteront traitées en privé sur la plateforme HackerOne&nbsp;; les signalements déjà reçus et classés faibles ou moyens y seront clos puis rendus publics. Il invoque un afflux de rapports qui ne devrait pas baisser dans les prochains mois et des mainteneurs épuisés, et indique que plus de 90&nbsp;% des soumissions de ces dernières années ont pu être rapidement évaluées en dessous du niveau élevé. Selon lui, beaucoup de rapports produits avec l'IA décrivent des combinaisons d'options peu susceptibles de se produire en pratique. Le projet avait déjà fermé son programme de primes plus tôt en 2026 à cause des signalements générés par IA, rappelle The Register. La version 8.23.0, publiée le 14 octobre, corrigeait 24 vulnérabilités, selon l'annonce du projet sur la liste oss-security.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://daniel.haxx.se/blog/2026/10/20/do-minor-curl-vulnerabilities-in-the-open/">billet de Daniel Stenberg</a>, <a href="https://www.theregister.com/security/2026/10/20/swamped-curl-maintainers-take-low-level-flaws-public-to-survive-vulnerability-avalanche/5304198">The Register</a>, <a href="https://www.golem.de/news/ki-reports-ueberlasten-curl-entwickler-wir-muessen-handeln-um-zu-ueberleben-2610-214288.html">Golem</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">Pi-hole, le filtre DNS qui bloque la publicité sur tout un réseau domestique, corrige 15 failles dont 5 de gravité élevée</h2>
+    <div class="tool-grid">
+      <div>
+        <p>Pi-hole est un serveur DNS qui s'installe sur une petite machine du réseau local, souvent un Raspberry Pi, ou dans un conteneur. Les appareils du réseau lui envoient leurs requêtes DNS&nbsp;; il refuse de résoudre les domaines inscrits sur des listes de blocage de publicité et de pistage, ce qui filtre ces contenus pour tous les appareils, téléviseurs et téléphones compris, sans logiciel à installer sur chacun. Une interface web affiche les requêtes et les domaines bloqués.</p>
+        <p>Le 17 octobre, le projet a publié FTL v6.8, Web v6.6.1 et Core v6.5, qui corrigent 15 failles, dont 5 de gravité élevée, selon heise&nbsp;: plusieurs permettent à un compte local de prendre les droits administrateur, une autre de lire des fichiers par l'interface web. Les images Docker corrigées portent l'étiquette 2026.10.0. La mise à jour se fait avec la commande pihole -up.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/pi-hole/pi-hole">github.com/pi-hole/pi-hole</a>, consulté le 21 octobre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>EUPL 1.2 (licence publique de l'Union européenne), vérifiée dans le fichier LICENSE des dépôts Core, FTL et Web (reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>61&nbsp;365 étoiles, 3&nbsp;328 forks, 7&nbsp;292 commits, 23 issues et 15 pull requests ouvertes au 21 octobre&nbsp;; dernière release v6.5 le 17 octobre 2026</dd></div>
+        <div><dt>Qui</dt><dd>la société Pi-hole LLC, titulaire des droits d'auteur, avec des contributeurs extérieurs crédités à chaque version&nbsp;; premier commit en juin 2014</dd></div>
+        <div><dt>À savoir</dt><dd>Pi-hole ne filtre que par nom de domaine&nbsp;: il ne bloque pas les publicités servies depuis le même domaine que le contenu, comme celles de YouTube. Les appareils réglés pour utiliser un autre serveur DNS, ou le DNS chiffré de leur navigateur, échappent au filtrage. Cette version change certains comportements&nbsp;: les valeurs invalides du fichier pihole.toml sont réinitialisées et les requêtes plus anciennes que la durée de conservation configurée sont supprimées dès la première nuit.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-10-20.html" rel="prev">Numéro précédent&nbsp;: <span class="num">017</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

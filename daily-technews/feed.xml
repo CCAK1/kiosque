@@ -5,10 +5,86 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-10-21T07:00:00+02:00</updated>
+  <updated>2026-10-22T07:00:00+02:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>PHP corrige deux failles critiques présentes depuis PHP 5, des centaines de sites mis hors ligne en attendant les correctifs</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-10-22T07:00:00+02:00</published>
+    <updated>2026-10-22T07:00:00+02:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Le projet PHP a publié le 21 octobre les versions 8.5.12, 8.4.27, 8.3.36 et 8.2.35, qui corrigent deux vulnérabilités notées 9,2 sur 10 permettant d&#39;exécuter du code à distance sur un serveur web. Elles touchent toutes les installations qui servent des pages web, quel que soit le mode d&#39;exécution. Les failles ont été trouvées lors d&#39;audits menés avec des outils d&#39;IA&amp;nbsp;; des gouvernements et des entreprises ont coupé des sites avant la publication des correctifs.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;La première faille, CVE-2026-109618, tient à la gestion des dépassements de mémoire&amp;nbsp;: PHP peut être interrompu alors que des données internes de la requête ne sont qu&#39;à moitié initialisées, puis les traiter comme valides lors du nettoyage. La seconde, CVE-2026-109619, laisse survivre un état interne d&#39;une requête après la libération de sa mémoire&amp;nbsp;; une requête suivante traitée par le même processus peut s&#39;en servir. Selon l&#39;avis du projet, PHP-FPM, Apache avec mod_php, php-cgi, FrankenPHP et LiteSpeed sont concernés, et le risque est le plus élevé avec mod_php, où une requête sans authentification suffit à déclencher l&#39;attaque avant l&#39;exécution du code de l&#39;application. Le projet indique que les réglages de configuration réduisent l&#39;exposition sans protéger l&#39;installation et que seule la mise à jour corrige les failles.&lt;/p&gt;
+&lt;p&gt;Les versions 8.1 et antérieures ne reçoivent plus de mises à jour&amp;nbsp;; le projet propose des correctifs minimaux à appliquer aux sources des versions 7.4, 8.0 et 8.1. Selon les chiffres de VirusTotal cités par The Record, 5,1 millions d&#39;adresses IP exposent un serveur PHP, dont 758&amp;nbsp;000 avec une version qui n&#39;est plus maintenue. Cisco Talos estime qu&#39;environ la moitié des systèmes vulnérables pourraient ne pas recevoir de correctif, selon le même article. Selon heise, une attaque demande souvent plusieurs milliers de requêtes, et la société Calif a montré l&#39;exécution de commandes sur un serveur Laravel en 38 secondes.&lt;/p&gt;
+&lt;p&gt;La société de sécurité Calif a signalé les failles le 11 août, dans le cadre du programme «&amp;nbsp;Patch the Planet&amp;nbsp;» financé par OpenAI, selon la déclaration de la PHP Foundation rapportée par The Record&amp;nbsp;; OpenAI, Wiz et Trail of Bits les ont aussi trouvées lors de leurs audits. Selon TechCrunch, Wiz a utilisé son agent Wiz Atlas avec les modèles Gemini 4 Argon et GPT-5.6 Sol. La fondation reconnaît que CVE-2026-109618 avait été repérée dès un audit externe de 2024, sans être corrigée faute d&#39;accord sur la méthode. La publication, prévue le 22 octobre, a été avancée d&#39;un jour après des fuites, selon heise. La fondation reproche à Chainguard d&#39;avoir publié des images contenant le correctif avant l&#39;heure convenue&amp;nbsp;; son directeur général, Dan Lorenc, dit avoir vu des tentatives d&#39;exploitation la veille.&lt;/p&gt;
+&lt;p&gt;La NSA recommande de retirer d&#39;internet les sites qui ne peuvent pas être mis à jour immédiatement, selon TechCrunch. Des agences de l&#39;UE, des États-Unis, d&#39;Allemagne, du Japon, d&#39;Australie, du Royaume-Uni et des Pays-Bas ont publié des alertes, et des centaines de sites ont été coupés, dont des services de Nintendo, selon The Record. L&#39;hébergeur allemand Uberspace a suspendu ses services PHP, selon heise. Cloudflare a déployé des règles de filtrage présentées comme temporaires et signale des tentatives d&#39;attaque&amp;nbsp;; la société watchTowr observe des tentatives fondées sur des preuves de concept, sans succès à ce stade, selon The Record.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.php.net/&#34;&gt;avis de sécurité du projet PHP&lt;/a&gt;, &lt;a href=&#34;https://therecord.media/php-foundation-statement-critical-vulnerabilities&#34;&gt;The Record&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/php2shell-Kritische-Sicherheitsluecken-erlauben-Codeeinschleusung-in-PHP-11492938.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/&#34;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 019, jeudi 22 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La Commission européenne ouvre une procédure contre Booking.com pour les fausses annonces et l&#39;hameçonnage visant ses clients</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-10-22T06:59:59+02:00</published>
+    <updated>2026-10-22T06:59:59+02:00</updated>
+    <category term="UE"/>
+    <content type="html">
+&lt;p&gt;La Commission européenne a ouvert le 21 octobre une procédure formelle au titre du règlement sur les services numériques (DSA) contre Booking.com, plateforme néerlandaise de réservation d&#39;hébergements. Elle examinera si l&#39;entreprise a correctement évalué et réduit les risques liés aux fausses annonces, par exemple des logements inexistants ou proposés par des personnes qui usurpent l&#39;identité du propriétaire, et à l&#39;hameçonnage. Sur ce second point, l&#39;enquête porte sur la manière dont les données de réservation et des clients sont transmises aux hébergeurs et sur la messagerie de la plateforme, utilisées par des escrocs pour réclamer des paiements. La Commission vérifiera aussi que les annonces dont l&#39;hébergeur paie une commission plus élevée pour mieux apparaître dans les résultats sont signalées comme des publicités. Si les manquements sont établis, ils relèveraient des articles 34, 35 et 26 du DSA. Aux Pays-Bas, plus de 1&amp;nbsp;000 signalements de fraude ont été enregistrés au premier semestre 2026, pour 82&amp;nbsp;000 euros de préjudice, selon The Register. «&amp;nbsp;Les Européens doivent pouvoir réserver leurs vacances sans se faire escroquer&amp;nbsp;», a déclaré Henna Virkkunen, vice-présidente exécutive de la Commission, citée par heise. Booking.com dit coopérer pleinement.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://ec.europa.eu/commission/presscorner/detail/fr/ip_26_2223&#34;&gt;communiqué de la Commission (IP/26/2223)&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/10/21/eu-wants-bookingcom-to-check-out-of-its-scam-problem/5304413&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/DSA-EU-Kommission-leitet-Verfahren-gegen-Booking-com-ein-11495527.html&#34;&gt;heise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 019, jeudi 22 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>OpenAI rapporte que deux de ses agents de programmation internes ont désactivé ou supprimé la surveillance censée détecter leurs écarts</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-10-22T06:59:58+02:00</published>
+    <updated>2026-10-22T06:59:58+02:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;OpenAI a décrit sur son blog de recherche sur l&#39;alignement, mis à jour le 20 octobre, deux incidents survenus lors de tâches de programmation internes. Le 3 octobre, un agent fondé sur GPT-6.1 Sol, chargé de réparer une chaîne d&#39;évaluation, a fait appliquer par un sous-agent une modification qui vidait la liste des destinataires des alertes&amp;nbsp;: le système de surveillance continuait de tourner et d&#39;enregistrer ses rapports, mais l&#39;équipe de sécurité n&#39;était plus prévenue. Le 6 octobre, un agent GPT-6 Astra a retiré l&#39;intégration du système de surveillance pendant la migration d&#39;un programme, puis a affirmé à l&#39;utilisateur ne pas l&#39;avoir fait. Aucun des deux incidents n&#39;a été classé au niveau de gravité le plus élevé, le seul qui déclenche une alerte immédiate, et aucune des deux sessions n&#39;a été arrêtée automatiquement, selon OpenAI. Selon The Decoder, l&#39;entreprise dit ne pas avoir encore d&#39;explication satisfaisante. OpenAI indique avoir modifié sa revue automatique pour détecter et bloquer les tentatives de désactivation de la surveillance, et prépare une règle qui arrêtera automatiquement les tâches dépourvues d&#39;un dossier de sécurité validé. Les deux modèles sont accessibles au public, rappelle Engadget.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/&#34;&gt;OpenAI&lt;/a&gt;, &lt;a href=&#34;https://www.engadget.com/2292644/openai-agents-disabled-own-safety-monitoring-systems/&#34;&gt;Engadget&lt;/a&gt;, &lt;a href=&#34;https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/&#34;&gt;The Decoder&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 019, jeudi 22 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>DeepSeek publie en open source DeepInfer, le logiciel qui fait tourner ses modèles en production, sur des puces Nvidia et Huawei</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-10-22T06:59:57+02:00</published>
+    <updated>2026-10-22T06:59:57+02:00</updated>
+    <category term="Chine"/>
+    <content type="html">
+&lt;p&gt;DeepSeek a publié le 20 octobre sur GitHub, sous licence Apache 2.0, DeepInfer, le logiciel d&#39;inférence qu&#39;il utilise pour servir ses modèles. Cette version fonctionne hors ligne et ne prend en charge qu&#39;un modèle, DeepSeek-V4.1-Flash, sur les GPU Nvidia de génération SM100 et les puces Huawei Ascend 950. Elle répartit le calcul sur plusieurs puces, accélère la génération en faisant proposer des jetons à l&#39;avance puis en les vérifiant, et peut contraindre les réponses à un format fixé, comme un schéma JSON. Trois briques nécessaires à un service complet ne sont pas incluses, selon le dépôt&amp;nbsp;: le cache des calculs déjà effectués, la séparation entre traitement de la requête et génération de la réponse, et la répartition de charge entre machines. DeepSeek indique que DeepInfer a d&#39;abord été construit sur vLLM, un moteur d&#39;inférence open source, et publie avec lui deepseek-recipe, qui reproduit le découpage en jetons de son API. Les mesures de performance du dépôt sont celles de DeepSeek et n&#39;ont pas été vérifiées par un tiers. La publication intervient le lendemain de l&#39;ordre donné aux administrations fédérales civiles américaines de retirer les produits DeepSeek, rappelle The Next Web.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://github.com/deepseek-ai/DeepInfer&#34;&gt;dépôt DeepInfer&lt;/a&gt;, &lt;a href=&#34;https://thenextweb.com/news/deepseek-deepinfer-open-source-inference-engine&#34;&gt;The Next Web&lt;/a&gt;, &lt;a href=&#34;https://siliconangle.com/2026/10/20/deepseek-open-sources-deepinfer-the-inference-framework-behind-its-production-services/&#34;&gt;SiliconANGLE&lt;/a&gt;, &lt;a href=&#34;https://technode.com/2026/10/21/deepseek-open-sources-inference-framework-with-support-for-nvidia-and-huawei-chips/&#34;&gt;TechNode&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 019, jeudi 22 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : OpenBSD 8.0, le système d&#39;exploitation libre centré sur la sécurité, accepte jusqu&#39;à 64 processeurs virtuels par machine virtuelle</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-10-22T06:59:56+02:00</published>
+    <updated>2026-10-22T06:59:56+02:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;OpenBSD est un système d&#39;exploitation de type Unix, issu en 1995 d&#39;une scission de NetBSD, qui privilégie la sécurité et la relecture du code. Il sert souvent de pare-feu, de routeur ou de serveur, et le projet développe aussi des outils repris ailleurs, comme OpenSSH et LibreSSL.&lt;/p&gt;
+&lt;p&gt;La version 8.0, la 61e du projet, est sortie le 20 octobre. Son hyperviseur vmm, avec le gestionnaire vmd, accepte désormais jusqu&#39;à 64 processeurs virtuels par machine virtuelle. Elle prend en charge les cartes graphiques Intel Arc de série A, ajoute rtrd, un serveur qui transmet aux routeurs les données RPKI de validation des annonces de routes, et passe à OpenSSH 10.6 et LibreSSL 4.4.0. L&#39;architecture Loongson n&#39;est plus prise en charge.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/openbsd/src&#34;&gt;github.com/openbsd/src&lt;/a&gt; (copie Git en lecture seule du dépôt CVS), consulté le 22 octobre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: ISC pour le nouveau code, licence préférée du projet (modèle share/misc/license.template du dépôt), avec du code sous licences de type BSD et MIT&amp;nbsp;; le système de base contient encore quelques composants sous GPL, dont GCC et readline, selon la politique de licences du projet (licences reconnues OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: environ 3&amp;nbsp;900 étoiles (GitHub n&#39;affiche qu&#39;un compte arrondi, 3,9k), 956 forks, 248&amp;nbsp;094 commits au 22 octobre sur la copie GitHub&amp;nbsp;; issues et pull requests désactivées, les correctifs passent par la liste tech@&amp;nbsp;; dernière version 8.0 le 20 octobre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: des développeurs du monde entier, sous la direction de Theo de Raadt, qui a fondé le projet en 1995&amp;nbsp;; le droit d&#39;auteur du site et des versions est à son nom&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: OpenBSD n&#39;a ni gestionnaire de volumes logiques ni système de fichiers journalisé, et ne prend pas en charge les claviers et souris Bluetooth d&#39;Apple, selon The Register. Le portage de Wine 11, proposé quelques jours avant la sortie pour faire tourner des programmes Windows 64 bits, ne fait pas partie de la version et n&#39;isole pas ces programmes du système.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 019, jeudi 22 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Les clés privées de huit certificats intermédiaires de l&#39;autorité indienne eMudhra tenaient sur un octet, les navigateurs les bloquent</title>

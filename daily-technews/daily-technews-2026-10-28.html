@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 28 octobre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Mercredi 28 octobre 2026<span class="price">2,99&nbsp;€</span></span><span class="issue" aria-label="Numéro 23">023</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">OpenAI et Anthropic disent avoir réfuté l'hypothèse du temps exponentiel</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Appels aux violences&nbsp;: retrait en 24 heures sur demande administrative</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Cinq plaintes RGPD contre Scale AI et sa plateforme Outlier</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">GMO Internet&nbsp;: les pirates publient des données</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Failles PHP&nbsp;: la CISA confirme des attaques</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Lean 4</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">États-Unis</p>
+    <h2>OpenAI et Anthropic publient chacun un algorithme qui résout le problème 3-SAT en temps sous-exponentiel, ce qui réfuterait l'hypothèse du temps exponentiel</h2>
+    <p class="deck">OpenAI a publié le 26 octobre un article intitulé «&nbsp;The Exponential Time Hypothesis is False&nbsp;», produit par ses modèles internes. Quelques heures plus tard, Anthropic a mis en ligne un résultat du même type, attribué à un modèle Claude de recherche interne. Les deux textes décrivent un algorithme qui décide en temps sous-exponentiel si une formule logique de type 3-SAT peut être satisfaite, ce que l'hypothèse du temps exponentiel (ETH), formulée en 1999, tient pour impossible. Aucun des deux résultats n'a encore été relu par des chercheurs extérieurs.</p>
+    <div class="body">
+      <p>Le problème 3-SAT consiste à savoir si l'on peut donner une valeur vrai ou faux à n variables de façon à satisfaire une liste de contraintes portant chacune sur trois variables. L'ETH, proposée par Russell Impagliazzo et Ramamohan Paturi, affirme qu'il existe une constante δ positive telle qu'aucun algorithme ne le résout en moins de 2 puissance (δ·n) étapes. Elle sert d'hypothèse de départ à une grande partie des résultats de complexité algorithmique. Les deux entreprises annoncent un algorithme qui compte les affectations qui satisfont la formule en un temps de l'ordre de 2 puissance (n·log log n / racine de log n). Le dépôt d'Anthropic précise que le résultat est «&nbsp;purement asymptotique&nbsp;» et ne dit rien de la résolution de formules en pratique.</p>
+      <p>Chaque résultat est accompagné d'une formalisation dans l'assistant de preuve Lean 4, écrite par des modèles d'IA&nbsp;: un programme vérifie que la démonstration est correcte, à partir d'un énoncé formel. Anthropic note qu'aucune machine ne vérifie que cet énoncé dit la même chose que l'article, et a réduit le fichier pour qu'un lecteur puisse le contrôler. Le dépôt d'OpenAI indique que la version formalisée prouve une borne un peu moins fine que celle de l'article, daté du 25 octobre.</p>
+      <p>OpenAI a confié l'examen du résultat à un groupe mené par Russell Impagliazzo et Ramamohan Paturi, de l'université de Californie à San Diego, et par Ryan Williams, du MIT. Leur participation «&nbsp;ne doit pas être prise comme une validation&nbsp;» de la conclusion d'OpenAI, selon ForkLog. Ryan Williams a jugé certaines parties de la preuve routinières et d'autres assez inhabituelles pour mériter une étude collective, selon TechCrunch. Le responsable scientifique d'OpenAI, Dan Roberts, lui a dit que l'entreprise avait vérifié que le résultat ne casse aucun système de chiffrement.</p>
+      <p>Anthropic a publié son résultat après que le mathématicien Levent Alpöge a écrit que les résultats d'OpenAI s'appuyaient sur des travaux existants, selon TechCrunch. Une réfutation de l'ETH ne tranche pas la question P contre NP&nbsp;: 3-SAT reste, en l'état des connaissances, impossible à résoudre en temps polynomial. Le même jour, OpenAI a publié d'autres résultats en mathématiques et en physique, dont une preuve de la conjecture de lissage local de Sogge, avec des groupes de relecture distincts selon les disciplines.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://github.com/openai/math/blob/main/lean/docs/378.md">OpenAI (dépôt math)</a>, <a href="https://github.com/anthropics/formal-math/tree/main/eth">Anthropic (dépôt formal-math)</a>, <a href="https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/">TechCrunch</a>, <a href="https://forklog.com/en/openai-says-its-ai-refuted-the-exponential-time-hypothesis/">ForkLog</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">France</p>
+      <h3>Le Sénat adopte un amendement du gouvernement qui oblige les hébergeurs à retirer en 24 heures, sur demande de l'administration, les appels aux violences et aux dégradations</h3>
+      <p>Le Sénat a adopté le 27 octobre l'amendement n° 94 du gouvernement au projet de loi sur la réparation des dommages causés par des dégradations dans l'espace public. Le texte étend la procédure de retrait administratif, jusqu'ici réservée notamment au terrorisme et à la pédocriminalité, aux contenus qui provoquent directement à des atteintes aux personnes, des vols ou des dégradations et risquent de créer un «&nbsp;trouble grave à l'ordre public&nbsp;». Un hébergeur qui ne retire pas un contenu signalé dans les 24 heures encourt 6 mois de prison et 150&nbsp;000 euros d'amende, et une entreprise jusqu'à 2&nbsp;% de son chiffre d'affaires mondial. Faute de retrait, l'administration pourra demander le blocage et le déréférencement du site, selon l'exposé des motifs. Le retrait se fait sans juge&nbsp;; Next rappelle que le Conseil constitutionnel avait censuré en 2020 un dispositif voisin de la loi Avia. L'amendement a été déposé après les violences du 17 octobre. Le site Blast a publié un courrier du 22 octobre dans lequel Matignon demandait à Orange, SFR, Bouygues Telecom et Free de se préparer à bloquer pendant quelques heures Snapchat, TikTok et Instagram par filtrage DNS le week-end des 24 et 25 octobre&nbsp;; des représentants du gouvernement et des opérateurs ont confirmé ces préparatifs à Politico, selon heise. Le blocage n'a pas eu lieu.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.senat.fr/amendements/2026-2027/87/Amdt_94.html">Sénat (amendement n° 94)</a>, <a href="https://next.ink/263962/mobilisations-matignon-voulait-couper-les-reseaux-le-gouvernement-veut-elargir-pharos/">Next</a>, <a href="https://www.heise.de/news/Frankreich-erwog-Internet-Sperren-waehrend-Protesten-11502333.html">heise</a>, <a href="https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ">Blast</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">UE</p>
+      <h3>noyb dépose cinq plaintes dans quatre pays européens contre Scale AI, accusée de surveiller les travailleurs qui entraînent des modèles d'IA sur sa plateforme Outlier</h3>
+      <p>L'association autrichienne noyb a déposé le 27 octobre, avec l'association de juristes Intérêt à agir, le groupe de recherche DiPLab et Reversing.Works, cinq plaintes au titre du RGPD contre l'entreprise américaine Scale AI&nbsp;: une en France, une en Italie, une aux Pays-Bas et deux en Autriche. Elles visent Outlier, plateforme sur laquelle plus de 900&nbsp;000 travailleurs indépendants rédigent des requêtes et classent des réponses pour entraîner des modèles d'IA, selon noyb. Pendant qu'ils travaillent, des traceurs de TikTok, LinkedIn, Facebook, Sprig et Datadog envoient toutes les quelques secondes à ces sociétés l'adresse IP, des identifiants et la page consultée. Les travailleurs doivent aussi se soumettre à répétition à une vérification biométrique par vidéo du visage et pièce d'identité, menée par le prestataire Persona. Les plaignants invoquent l'absence de base légale pour les traceurs, une collecte excessive de données biométriques et des demandes d'accès restées sans réponse, et demandent une enquête et une amende. Un rapport de DiPLab publié mi-octobre sur douze pays européens évalue le revenu moyen des travailleurs interrogés à 1&nbsp;214 euros par mois, selon Next. Scale AI a qualifié les accusations d'«&nbsp;infondées et inexactes&nbsp;» et affirme que ses pratiques sont communiquées aux contributeurs et soumises à leur consentement, selon The Register.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://noyb.eu/en/ai-training-platform-outlier-illegally-surveils-european-platform-workers">noyb</a>, <a href="https://www.theregister.com/legal/2026/10/27/eu-privacy-advocates-accuse-us-data-annotation-firm-of-snooping-on-contractors/5305757">The Register</a>, <a href="https://next.ink/264263/travail-du-clic-scale-ai-poursuivie-en-justice-dans-quatre-pays-europeens/">Next</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Japon</p>
+      <h3>Les pirates du service de bureaux virtuels de GMO Internet publient des données présentées comme celles de l'entreprise et de ses clients</h3>
+      <p>GMO Internet a constaté le 27 octobre à 12 h 30, heure de Tokyo, que des personnes présentées comme les attaquants avaient publié des informations qu'ils attribuent à l'entreprise et à ses clients, selon son dixième communiqué sur l'incident. Le groupe japonais a fermé le 21 octobre Onamae Desktop Cloud, un service de bureaux Windows virtuels qu'il recommandait pour faire tourner des logiciels de trading, après avoir découvert un accès non autorisé&nbsp;; jusqu'à 26&nbsp;739 serveurs virtuels ont pu être touchés, selon The Register. Des clients ont signalé des opérations qu'ils n'avaient pas passées sur leurs comptes de trading, et GMO a demandé aux courtiers de bloquer les ordres venant de ce service. Les attaquants réclament environ 8 milliards de yens, soit près de 50 millions de dollars&nbsp;; GMO refuse de payer. L'entreprise verse 5&nbsp;000 yens à chaque client, promet de couvrir les pertes liées aux transactions frauduleuses et analyse les ordinateurs de clients qu'elle a récupérés pour y chercher des logiciels malveillants. Son unité de cybersécurité a relié des attaques contre une vingtaine d'entreprises japonaises à l'outil chinois de test d'intrusion par IA Artex, sans l'associer publiquement à cet incident, selon TechCrunch.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://internet.gmo/en/news/article/256/">GMO Internet</a>, <a href="https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/">TechCrunch</a>, <a href="https://www.theregister.com/security/2026/10/27/japanese-virtual-desktop-cloud-hacked-so-hard-it-asks-to-be-banned/5305610">The Register</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Sécurité</p>
+      <h3>L'agence américaine CISA confirme l'exploitation des deux failles critiques de PHP corrigées le 21 octobre</h3>
+      <p>La CISA, l'agence américaine de cybersécurité, a ajouté le 26 octobre les failles CVE-2026-109618 et CVE-2026-109619 de PHP, surnommées PHP2Shell, à son catalogue de vulnérabilités exploitées. Les administrations fédérales ont jusqu'au 29 octobre pour appliquer les correctifs, selon The Register. Les deux failles, notées 9,2 sur 10, permettent d'exécuter du code sur un serveur PHP sans authentification. Le chercheur Adel Karimi, de Perplexity, a enregistré le 24 octobre 35 exécutions de commandes réussies sur trois serveurs pièges sous PHP 8.4.26, depuis deux adresses IP, toutes liées à la première faille. Il précise que la configuration de ses serveurs favorisait l'attaque. Un laboratoire de l'université de Delft a relevé plus de 50&nbsp;000 requêtes d'exploitation venues de plus de 600 adresses dans 70 pays, dont 171 ont envoyé du code d'attaque ou des logiciels malveillants. Amazon avait détecté des tentatives dès le 17 octobre, quatre jours avant la publication des correctifs. Les versions corrigées sont PHP 8.5.12, 8.4.27, 8.3.36 et 8.2.35.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA</a>, <a href="https://www.theregister.com/cyber-crime/2026/10/27/cisa-confirms-php2shell-under-attack-as-researchers-clock-successful-exploits/5305681">The Register</a>, <a href="https://www.heise.de/news/php2shell-Erfolgreiche-Angriffe-bestaetigt-noch-viele-Instanzen-ungepatcht-11501167.html">heise</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">Lean 4</h2>
+    <div class="tool-grid">
+      <div>
+        <p>Lean 4 est à la fois un langage de programmation et un assistant de preuve&nbsp;: on y écrit un énoncé mathématique sous forme formelle, puis une démonstration que le noyau du logiciel vérifie pas à pas. Une preuve acceptée par Lean ne dépend que d'un petit nombre d'axiomes listés, que l'on peut afficher. La bibliothèque communautaire Mathlib, distincte du dépôt, fournit les définitions et théorèmes de base de nombreuses branches des mathématiques.</p>
+        <p>Les deux démonstrations de la réfutation de l'hypothèse du temps exponentiel publiées par OpenAI et Anthropic les 26 et 27 octobre ont été formalisées en Lean 4, et le dépôt d'Anthropic donne les commandes pour les revérifier sur sa propre machine. Lean a publié le 27 octobre la préversion v4.36.0-rc2.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/leanprover/lean4">github.com/leanprover/lean4</a>, consulté le 28 octobre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>Apache 2.0, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>9&nbsp;710 étoiles, 1&nbsp;071 forks, 41&nbsp;785 commits et 751 pull requests ouvertes au 28 octobre&nbsp;; les issues ouvertes ne sont affichées qu'en compteur arrondi («&nbsp;1.1k&nbsp;»)&nbsp;; dernière préversion v4.36.0-rc2 le 27 octobre 2026, premier commit en juillet 2013</dd></div>
+        <div><dt>Qui</dt><dd>Créé par Leonardo de Moura chez Microsoft Research, développé aujourd'hui par la Lean FRO, une organisation à but non lucratif dont le site cite parmi ses soutiens la fondation Alfred P. Sloan, la fondation Simons et Amazon</dd></div>
+        <div><dt>À savoir</dt><dd>Lean vérifie qu'une preuve démontre l'énoncé formel, pas que cet énoncé traduit fidèlement le texte mathématique&nbsp;: ce contrôle reste humain. La vérification de gros projets demande des ressources (environ 8 minutes sur 24 processeurs virtuels et 7 Go de mémoire pour la preuve d'Anthropic, selon son dépôt). Le langage évolue vite, et les projets fixent une version précise de Lean et de Mathlib. Étoiles et forks relevés sur un service miroir, l'API GitHub étant inaccessible depuis la session.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-10-27.html" rel="prev">Numéro précédent&nbsp;: <span class="num">022</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

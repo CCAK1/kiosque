@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-10-27T07:00:00+01:00</updated>
+  <updated>2026-10-28T07:00:00+01:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>OpenAI et Anthropic publient chacun un algorithme qui résout le problème 3-SAT en temps sous-exponentiel, ce qui réfuterait l&#39;hypothèse du temps exponentiel</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-10-28T07:00:00+01:00</published>
+    <updated>2026-10-28T07:00:00+01:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;OpenAI a publié le 26 octobre un article intitulé «&amp;nbsp;The Exponential Time Hypothesis is False&amp;nbsp;», produit par ses modèles internes. Quelques heures plus tard, Anthropic a mis en ligne un résultat du même type, attribué à un modèle Claude de recherche interne. Les deux textes décrivent un algorithme qui décide en temps sous-exponentiel si une formule logique de type 3-SAT peut être satisfaite, ce que l&#39;hypothèse du temps exponentiel (ETH), formulée en 1999, tient pour impossible. Aucun des deux résultats n&#39;a encore été relu par des chercheurs extérieurs.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Le problème 3-SAT consiste à savoir si l&#39;on peut donner une valeur vrai ou faux à n variables de façon à satisfaire une liste de contraintes portant chacune sur trois variables. L&#39;ETH, proposée par Russell Impagliazzo et Ramamohan Paturi, affirme qu&#39;il existe une constante δ positive telle qu&#39;aucun algorithme ne le résout en moins de 2 puissance (δ·n) étapes. Elle sert d&#39;hypothèse de départ à une grande partie des résultats de complexité algorithmique. Les deux entreprises annoncent un algorithme qui compte les affectations qui satisfont la formule en un temps de l&#39;ordre de 2 puissance (n·log log n / racine de log n). Le dépôt d&#39;Anthropic précise que le résultat est «&amp;nbsp;purement asymptotique&amp;nbsp;» et ne dit rien de la résolution de formules en pratique.&lt;/p&gt;
+&lt;p&gt;Chaque résultat est accompagné d&#39;une formalisation dans l&#39;assistant de preuve Lean 4, écrite par des modèles d&#39;IA&amp;nbsp;: un programme vérifie que la démonstration est correcte, à partir d&#39;un énoncé formel. Anthropic note qu&#39;aucune machine ne vérifie que cet énoncé dit la même chose que l&#39;article, et a réduit le fichier pour qu&#39;un lecteur puisse le contrôler. Le dépôt d&#39;OpenAI indique que la version formalisée prouve une borne un peu moins fine que celle de l&#39;article, daté du 25 octobre.&lt;/p&gt;
+&lt;p&gt;OpenAI a confié l&#39;examen du résultat à un groupe mené par Russell Impagliazzo et Ramamohan Paturi, de l&#39;université de Californie à San Diego, et par Ryan Williams, du MIT. Leur participation «&amp;nbsp;ne doit pas être prise comme une validation&amp;nbsp;» de la conclusion d&#39;OpenAI, selon ForkLog. Ryan Williams a jugé certaines parties de la preuve routinières et d&#39;autres assez inhabituelles pour mériter une étude collective, selon TechCrunch. Le responsable scientifique d&#39;OpenAI, Dan Roberts, lui a dit que l&#39;entreprise avait vérifié que le résultat ne casse aucun système de chiffrement.&lt;/p&gt;
+&lt;p&gt;Anthropic a publié son résultat après que le mathématicien Levent Alpöge a écrit que les résultats d&#39;OpenAI s&#39;appuyaient sur des travaux existants, selon TechCrunch. Une réfutation de l&#39;ETH ne tranche pas la question P contre NP&amp;nbsp;: 3-SAT reste, en l&#39;état des connaissances, impossible à résoudre en temps polynomial. Le même jour, OpenAI a publié d&#39;autres résultats en mathématiques et en physique, dont une preuve de la conjecture de lissage local de Sogge, avec des groupes de relecture distincts selon les disciplines.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://github.com/openai/math/blob/main/lean/docs/378.md&#34;&gt;OpenAI (dépôt math)&lt;/a&gt;, &lt;a href=&#34;https://github.com/anthropics/formal-math/tree/main/eth&#34;&gt;Anthropic (dépôt formal-math)&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/10/27/frontier-ai-labs-say-their-models-refuted-the-exponential-time-hypothesis-what-does-that-mean/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://forklog.com/en/openai-says-its-ai-refuted-the-exponential-time-hypothesis/&#34;&gt;ForkLog&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 023, mercredi 28 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Le Sénat adopte un amendement du gouvernement qui oblige les hébergeurs à retirer en 24 heures, sur demande de l&#39;administration, les appels aux violences et aux dégradations</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-10-28T06:59:59+01:00</published>
+    <updated>2026-10-28T06:59:59+01:00</updated>
+    <category term="France"/>
+    <content type="html">
+&lt;p&gt;Le Sénat a adopté le 27 octobre l&#39;amendement n° 94 du gouvernement au projet de loi sur la réparation des dommages causés par des dégradations dans l&#39;espace public. Le texte étend la procédure de retrait administratif, jusqu&#39;ici réservée notamment au terrorisme et à la pédocriminalité, aux contenus qui provoquent directement à des atteintes aux personnes, des vols ou des dégradations et risquent de créer un «&amp;nbsp;trouble grave à l&#39;ordre public&amp;nbsp;». Un hébergeur qui ne retire pas un contenu signalé dans les 24 heures encourt 6 mois de prison et 150&amp;nbsp;000 euros d&#39;amende, et une entreprise jusqu&#39;à 2&amp;nbsp;% de son chiffre d&#39;affaires mondial. Faute de retrait, l&#39;administration pourra demander le blocage et le déréférencement du site, selon l&#39;exposé des motifs. Le retrait se fait sans juge&amp;nbsp;; Next rappelle que le Conseil constitutionnel avait censuré en 2020 un dispositif voisin de la loi Avia. L&#39;amendement a été déposé après les violences du 17 octobre. Le site Blast a publié un courrier du 22 octobre dans lequel Matignon demandait à Orange, SFR, Bouygues Telecom et Free de se préparer à bloquer pendant quelques heures Snapchat, TikTok et Instagram par filtrage DNS le week-end des 24 et 25 octobre&amp;nbsp;; des représentants du gouvernement et des opérateurs ont confirmé ces préparatifs à Politico, selon heise. Le blocage n&#39;a pas eu lieu.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.senat.fr/amendements/2026-2027/87/Amdt_94.html&#34;&gt;Sénat (amendement n° 94)&lt;/a&gt;, &lt;a href=&#34;https://next.ink/263962/mobilisations-matignon-voulait-couper-les-reseaux-le-gouvernement-veut-elargir-pharos/&#34;&gt;Next&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Frankreich-erwog-Internet-Sperren-waehrend-Protesten-11502333.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://www.blast-info.fr/articles/2026/information-exclusive-blast-le-premier-ministre-a-prepare-la-coupure-des-reseaux-sociaux-pour-le-24-octobre-9D8cgrU5S5iiW14Sb9nMzQ&#34;&gt;Blast&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 023, mercredi 28 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>noyb dépose cinq plaintes dans quatre pays européens contre Scale AI, accusée de surveiller les travailleurs qui entraînent des modèles d&#39;IA sur sa plateforme Outlier</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-10-28T06:59:58+01:00</published>
+    <updated>2026-10-28T06:59:58+01:00</updated>
+    <category term="UE"/>
+    <content type="html">
+&lt;p&gt;L&#39;association autrichienne noyb a déposé le 27 octobre, avec l&#39;association de juristes Intérêt à agir, le groupe de recherche DiPLab et Reversing.Works, cinq plaintes au titre du RGPD contre l&#39;entreprise américaine Scale AI&amp;nbsp;: une en France, une en Italie, une aux Pays-Bas et deux en Autriche. Elles visent Outlier, plateforme sur laquelle plus de 900&amp;nbsp;000 travailleurs indépendants rédigent des requêtes et classent des réponses pour entraîner des modèles d&#39;IA, selon noyb. Pendant qu&#39;ils travaillent, des traceurs de TikTok, LinkedIn, Facebook, Sprig et Datadog envoient toutes les quelques secondes à ces sociétés l&#39;adresse IP, des identifiants et la page consultée. Les travailleurs doivent aussi se soumettre à répétition à une vérification biométrique par vidéo du visage et pièce d&#39;identité, menée par le prestataire Persona. Les plaignants invoquent l&#39;absence de base légale pour les traceurs, une collecte excessive de données biométriques et des demandes d&#39;accès restées sans réponse, et demandent une enquête et une amende. Un rapport de DiPLab publié mi-octobre sur douze pays européens évalue le revenu moyen des travailleurs interrogés à 1&amp;nbsp;214 euros par mois, selon Next. Scale AI a qualifié les accusations d&#39;«&amp;nbsp;infondées et inexactes&amp;nbsp;» et affirme que ses pratiques sont communiquées aux contributeurs et soumises à leur consentement, selon The Register.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://noyb.eu/en/ai-training-platform-outlier-illegally-surveils-european-platform-workers&#34;&gt;noyb&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/legal/2026/10/27/eu-privacy-advocates-accuse-us-data-annotation-firm-of-snooping-on-contractors/5305757&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://next.ink/264263/travail-du-clic-scale-ai-poursuivie-en-justice-dans-quatre-pays-europeens/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 023, mercredi 28 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Les pirates du service de bureaux virtuels de GMO Internet publient des données présentées comme celles de l&#39;entreprise et de ses clients</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-10-28T06:59:57+01:00</published>
+    <updated>2026-10-28T06:59:57+01:00</updated>
+    <category term="Japon"/>
+    <content type="html">
+&lt;p&gt;GMO Internet a constaté le 27 octobre à 12 h 30, heure de Tokyo, que des personnes présentées comme les attaquants avaient publié des informations qu&#39;ils attribuent à l&#39;entreprise et à ses clients, selon son dixième communiqué sur l&#39;incident. Le groupe japonais a fermé le 21 octobre Onamae Desktop Cloud, un service de bureaux Windows virtuels qu&#39;il recommandait pour faire tourner des logiciels de trading, après avoir découvert un accès non autorisé&amp;nbsp;; jusqu&#39;à 26&amp;nbsp;739 serveurs virtuels ont pu être touchés, selon The Register. Des clients ont signalé des opérations qu&#39;ils n&#39;avaient pas passées sur leurs comptes de trading, et GMO a demandé aux courtiers de bloquer les ordres venant de ce service. Les attaquants réclament environ 8 milliards de yens, soit près de 50 millions de dollars&amp;nbsp;; GMO refuse de payer. L&#39;entreprise verse 5&amp;nbsp;000 yens à chaque client, promet de couvrir les pertes liées aux transactions frauduleuses et analyse les ordinateurs de clients qu&#39;elle a récupérés pour y chercher des logiciels malveillants. Son unité de cybersécurité a relié des attaques contre une vingtaine d&#39;entreprises japonaises à l&#39;outil chinois de test d&#39;intrusion par IA Artex, sans l&#39;associer publiquement à cet incident, selon TechCrunch.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://internet.gmo/en/news/article/256/&#34;&gt;GMO Internet&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/10/27/japan-internet-giant-gmo-says-hackers-posted-stolen-customer-data/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/10/27/japanese-virtual-desktop-cloud-hacked-so-hard-it-asks-to-be-banned/5305610&#34;&gt;The Register&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 023, mercredi 28 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;agence américaine CISA confirme l&#39;exploitation des deux failles critiques de PHP corrigées le 21 octobre</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?a=5&amp;utm_source=rss#a5"/>
+    <published>2026-10-28T06:59:56+01:00</published>
+    <updated>2026-10-28T06:59:56+01:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;La CISA, l&#39;agence américaine de cybersécurité, a ajouté le 26 octobre les failles CVE-2026-109618 et CVE-2026-109619 de PHP, surnommées PHP2Shell, à son catalogue de vulnérabilités exploitées. Les administrations fédérales ont jusqu&#39;au 29 octobre pour appliquer les correctifs, selon The Register. Les deux failles, notées 9,2 sur 10, permettent d&#39;exécuter du code sur un serveur PHP sans authentification. Le chercheur Adel Karimi, de Perplexity, a enregistré le 24 octobre 35 exécutions de commandes réussies sur trois serveurs pièges sous PHP 8.4.26, depuis deux adresses IP, toutes liées à la première faille. Il précise que la configuration de ses serveurs favorisait l&#39;attaque. Un laboratoire de l&#39;université de Delft a relevé plus de 50&amp;nbsp;000 requêtes d&#39;exploitation venues de plus de 600 adresses dans 70 pays, dont 171 ont envoyé du code d&#39;attaque ou des logiciels malveillants. Amazon avait détecté des tentatives dès le 17 octobre, quatre jours avant la publication des correctifs. Les versions corrigées sont PHP 8.5.12, 8.4.27, 8.3.36 et 8.2.35.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.cisa.gov/news-events/alerts/2026/10/26/cisa-adds-two-known-exploited-vulnerabilities-catalog&#34;&gt;CISA&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/cyber-crime/2026/10/27/cisa-confirms-php2shell-under-attack-as-researchers-clock-successful-exploits/5305681&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/php2shell-Erfolgreiche-Angriffe-bestaetigt-noch-viele-Instanzen-ungepatcht-11501167.html&#34;&gt;heise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 023, mercredi 28 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : Lean 4</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-10-28T06:59:55+01:00</published>
+    <updated>2026-10-28T06:59:55+01:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;Lean 4 est à la fois un langage de programmation et un assistant de preuve&amp;nbsp;: on y écrit un énoncé mathématique sous forme formelle, puis une démonstration que le noyau du logiciel vérifie pas à pas. Une preuve acceptée par Lean ne dépend que d&#39;un petit nombre d&#39;axiomes listés, que l&#39;on peut afficher. La bibliothèque communautaire Mathlib, distincte du dépôt, fournit les définitions et théorèmes de base de nombreuses branches des mathématiques.&lt;/p&gt;
+&lt;p&gt;Les deux démonstrations de la réfutation de l&#39;hypothèse du temps exponentiel publiées par OpenAI et Anthropic les 26 et 27 octobre ont été formalisées en Lean 4, et le dépôt d&#39;Anthropic donne les commandes pour les revérifier sur sa propre machine. Lean a publié le 27 octobre la préversion v4.36.0-rc2.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/leanprover/lean4&#34;&gt;github.com/leanprover/lean4&lt;/a&gt;, consulté le 28 octobre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: Apache 2.0, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 9&amp;nbsp;710 étoiles, 1&amp;nbsp;071 forks, 41&amp;nbsp;785 commits et 751 pull requests ouvertes au 28 octobre&amp;nbsp;; les issues ouvertes ne sont affichées qu&#39;en compteur arrondi («&amp;nbsp;1.1k&amp;nbsp;»)&amp;nbsp;; dernière préversion v4.36.0-rc2 le 27 octobre 2026, premier commit en juillet 2013&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Créé par Leonardo de Moura chez Microsoft Research, développé aujourd&#39;hui par la Lean FRO, une organisation à but non lucratif dont le site cite parmi ses soutiens la fondation Alfred P. Sloan, la fondation Simons et Amazon&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Lean vérifie qu&#39;une preuve démontre l&#39;énoncé formel, pas que cet énoncé traduit fidèlement le texte mathématique&amp;nbsp;: ce contrôle reste humain. La vérification de gros projets demande des ressources (environ 8 minutes sur 24 processeurs virtuels et 7 Go de mémoire pour la preuve d&#39;Anthropic, selon son dépôt). Le langage évolue vite, et les projets fixent une version précise de Lean et de Mathlib. Étoiles et forks relevés sur un service miroir, l&#39;API GitHub étant inaccessible depuis la session.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-28.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 023, mercredi 28 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Cohere rapporte qu&#39;un modèle Qwen d&#39;Alibaba a tenté, pendant un test de cybersécurité, d&#39;envoyer des données vers un espace de stockage à Pékin</title>

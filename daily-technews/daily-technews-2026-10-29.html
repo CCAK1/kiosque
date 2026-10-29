@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 29 octobre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Jeudi 29 octobre 2026<span class="price">4,43&nbsp;€</span></span><span class="issue" aria-label="Numéro 24">024</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Google réserve Gemini 4 Carbon à des organisations de cyberdéfense</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Corée du Sud&nbsp;: trois nouvelles intrusions dans la finance</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Tailscale corrige les failles SSH révélées par le rapport Tailworm</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Nvidia publie un modèle ouvert de transcription en 40 langues</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">SK Hynix prévoit une pénurie de mémoire jusqu'en 2030</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: DuckDB</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">États-Unis</p>
+    <h2>Google présente Gemini 4 Carbon, un modèle qu'il réserve d'abord à des organisations de cyberdéfense en raison de ses capacités à exploiter des failles</h2>
+    <p class="deck">Google a présenté le 28 octobre Gemini 4 Carbon, le successeur de Gemini 4 Argon, sorti deux semaines plus tôt. L'entreprise le décrit comme son modèle le plus performant en cybersécurité et sur les tâches longues. Il n'est pas ouvert au public&nbsp;: Google le diffuse d'abord à une partie des organisations de cyberdéfense de son programme Fairwind, sans date pour les développeurs, les entreprises et le grand public.</p>
+    <div class="body">
+      <p>Les résultats publiés viennent de Google et n'ont pas été vérifiés par un tiers, sauf mention contraire. Sur SEC-bench Pro, qui mesure la recherche de vulnérabilités, Carbon obtient 88,2&nbsp;%. Sur ExploitGym, qui mesure l'écriture de programmes d'exploitation de failles, il atteint 54,8&nbsp;%, contre 42,0&nbsp;% pour Argon, selon WinBuzzer. Sur CWE-bench, un test de correction de code vulnérable conçu par Collinear, il obtient 71,0&nbsp;% en une tentative. L'indice de l'organisme indépendant Artificial Analysis le place premier avec un score de 59, devant Claude Opus 5.5 (58) et GPT-6 Astra (57), selon WinBuzzer.</p>
+      <p>Le même organisme mesure pour Carbon un taux d'hallucination de 11&nbsp;%, contre 4&nbsp;% pour Argon, d'après WinBuzzer. Google affirme de son côté que Carbon formule environ deux fois moins d'affirmations non étayées qu'Argon, qu'aucune attaque n'a réussi contre lui dans le test d'injection indirecte de consignes de Gray Swan (0,7&nbsp;% de réussite contre Argon) et que les alertes internes de comportement non aligné de forte gravité ont baissé de près de 80&nbsp;%. Les résultats en cybersécurité ont été mesurés sans les garde-fous du modèle.</p>
+      <p>Fairwind compte plus de 650 partenaires, dont des autorités nationales de cybersécurité et des opérateurs d'infrastructures critiques, selon WinBuzzer. Google DeepMind contrôle les organisations candidates, qui doivent utiliser une authentification multifacteur résistante à l'hameçonnage et n'ont pas le droit de revendre l'accès. Argon avait suivi le même parcours&nbsp;: réservé à Fairwind le 30 septembre, puis ouvert plus largement le 13 octobre. Google dit participer au dispositif volontaire de test des modèles avant diffusion du gouvernement américain.</p>
+      <p>Le prix de lancement est de 2 dollars par million de jetons en entrée et de 10 dollars en sortie, comme Argon, avec une remise de 95&nbsp;% sur les entrées mises en cache. Google annonce ensuite 4 et 20 dollars, sans date. Le site allemand heise relève que Google n'a donné aucune date de mise à disposition générale.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/">Google</a>, <a href="https://www.heise.de/news/Gemini-Argon-war-gestern-jetzt-kommt-Carbon-11503849.html">heise</a>, <a href="https://winbuzzer.com/2026/10/28/gemini-4-carbon-ai-leads-test-for-fixing-vulnerable-code-xcxwbn/">WinBuzzer</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Corée du Sud</p>
+      <h3>Daishin Securities, Mirae Asset Global Investments et Bithumb signalent des intrusions, la vague de cyberattaques contre la finance sud-coréenne s'étend</h3>
+      <p>La société de courtage Daishin Securities a annoncé le 28 octobre la fuite des données de 38&nbsp;490 clients&nbsp;: noms, adresses électroniques et postales, numéros de téléphone, noms de banque et numéros de compte, selon le Korea JoongAng Daily. Un accès anormal avait été détecté le 17 octobre sur un serveur lié à l'ouverture de comptes en ligne, partagé avec un prestataire&nbsp;; l'entreprise a examiné plus de 60&nbsp;000 requêtes déguisées en trafic normal avant de confirmer la fuite. Elle dit n'avoir trouvé aucune trace d'accès à ses systèmes de négociation. Le gestionnaire d'actifs Mirae Asset Global Investments enquête sur un intrus qui a créé un compte et téléchargé des données de systèmes internes réservés aux salariés. La plateforme de cryptomonnaies Bithumb a détecté le 27 octobre un accès non autorisé à sa messagerie interne, hébergée par un prestataire, et affirme que ses systèmes de négociation n'ont pas été touchés. Le régulateur financier a envoyé des inspecteurs chez Daishin et la police a ouvert une enquête préliminaire. Les autorités avaient signalé le 21 octobre environ 4,4 millions de tentatives de sondage venues d'adresses IP nord-coréennes, en précisant que ces adresses ne suffisent pas à désigner un auteur. Des chercheurs de CrowdStrike ont relié la vague de septembre à un attaquant présumé basé en Chine utilisant l'outil de test d'intrusion par IA Artex, selon TechCrunch&nbsp;; l'origine des nouvelles intrusions n'est pas établie.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.koreajoongangdaily.com/business/hacks-spread-from-banks-to-brokerage-asset-manager-and-crypto-exchange/12943743">Korea JoongAng Daily</a>, <a href="https://www.koreaherald.com/article/10917639">The Korea Herald</a>, <a href="https://techcrunch.com/2026/10/28/south-koreas-financial-industry-hit-by-fresh-wave-of-cyberattacks/">TechCrunch</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Sécurité</p>
+      <h3>Tailscale corrige des failles de sa fonction SSH qui permettaient d'obtenir les droits root depuis un appareil déjà compromis</h3>
+      <p>Tailscale, qui édite un logiciel de réseau privé fondé sur WireGuard, a publié le 28 octobre la version 1.104.4 et quatre bulletins de sécurité (TS-2026-014 à TS-2026-017). Les correctifs répondent au rapport «&nbsp;Tailworm&nbsp;» de la chercheuse Erica Windisch, publié le 24 octobre, deux heures après son envoi à l'entreprise, selon Tailscale. Le rapport décrit comment, quand Tailscale SSH est activé, un appareil compromis autorisé par les règles du réseau peut obtenir les droits root sur le serveur auquel il se connecte, notamment par la redirection de ports SSH. Tailscale reconnaît que certaines protections appliquées après l'autorisation «&nbsp;n'ont pas fonctionné comme prévu&nbsp;», confirme trois des cinq problèmes signalés dans ses fonctions Serve et Funnel et conteste les deux autres, qu'il juge conformes à leur conception. L'entreprise rejette le terme de ver&nbsp;: l'attaque ne se propage pas d'elle-même et suppose que l'attaquant contrôle déjà un appareil du réseau et que les règles lui autorisent l'accès SSH. Elle recommande de passer à la version 1.104.4 et de restreindre les règles SSH. Le rapport, qui compte 11 constats issus de trois jours de tests en laboratoire sur la version 1.104.2, n'avait été reproduit publiquement par aucun autre chercheur, et aucune attaque réelle n'avait été signalée, selon The Hacker News.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://tailscale.com/blog/tailscale-ssh-findings-fixes">Tailscale</a>, <a href="https://www.heise.de/news/Tailscale-SSH-Update-stopft-Tailworm-Sicherheitsluecken-11502847.html">heise</a>, <a href="https://thehackernews.com/2026/10/unpatched-tailscale-ssh-flaws-could-let.html">The Hacker News</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">États-Unis</p>
+      <h3>Nvidia publie Nemotron 3.5 Transcribe, un modèle ouvert qui transcrit 40 langues et attribue les paroles à chaque intervenant</h3>
+      <p>Nvidia a mis en ligne le 28 octobre sur Hugging Face les poids de Nemotron 3.5 Transcribe, sous licence OpenMDW-1.1. Le modèle compte 34 milliards de paramètres, dont 4,3 milliards actifs à chaque étape, selon sa fiche, et associe un encodeur audio à un modèle de langage à mélange d'experts. Il transcrit 40 langues, traduit 31 langues vers et depuis l'anglais, traite des enregistrements d'une heure au plus et distingue jusqu'à huit intervenants. Il fonctionne sur des fichiers enregistrés, pas sur un flux en direct, selon TechCrunch. Nvidia annonce un taux d'erreur moyen de 4,71&nbsp;% sur les neuf jeux de test anglais de l'Open ASR Leaderboard de Hugging Face, chiffre non vérifié par un tiers&nbsp;; l'indice AA-WER d'Artificial Analysis le classe premier ex aequo des modèles ouverts à 2,8&nbsp;%, selon SQ Magazine. Nvidia publie aussi la version 2 de Granary, un jeu de données vocales de 463&nbsp;062 heures en 48 langues.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://huggingface.co/nvidia/NVIDIA-Nemotron-3.5-Transcribe-30B-A4B">Nvidia (fiche du modèle)</a>, <a href="https://techcrunch.com/2026/10/28/voice-ai-in-vogue-nvidia-releases-new-open-transcription-model/">TechCrunch</a>, <a href="https://sqmagazine.co.uk/nvidia-open-nemotron-3-5-transcribe-model/">SQ Magazine</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Corée du Sud</p>
+      <h3>SK Hynix dépasse 100&nbsp;000 milliards de wons de chiffre d'affaires trimestriel et prévoit une demande de mémoire supérieure à l'offre jusqu'en 2030</h3>
+      <p>SK Hynix a publié le 28 octobre un chiffre d'affaires de 104&nbsp;600 milliards de wons (78,1 milliards de dollars) pour le troisième trimestre, en hausse de 328&nbsp;% sur un an, et un résultat d'exploitation de 87&nbsp;680 milliards de wons, selon The Register. Le fabricant sud-coréen produit notamment de la mémoire HBM, des puces de DRAM empilées et placées à côté des processeurs d'accélération de l'IA pour leur fournir des données à haut débit&nbsp;; il prévoit que sa génération HBM4 dépassera la précédente, HBM3E, en volume et en revenus dès le quatrième trimestre. L'entreprise a signé des contrats de long terme avec 14 grands clients, qui absorberont plus de la moitié de sa production de 2027 et 2028, et en discute de plus longs que les cinq ans habituels, selon heise. Elle attribue la pénurie qu'elle prévoit jusqu'en 2030 à la difficulté technique et aux longs délais de construction des usines. Son directeur financier, Kim Woo-hyun, s'attend à une baisse des livraisons de PC et de téléphones en raison de la hausse du prix de la mémoire. Le bénéfice net a baissé de 58&nbsp;% sur un trimestre, en raison de pertes de change et de pertes comptables sur des participations, selon heise.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://news.skhynix.com/en/q3-2026-business-results/">SK Hynix</a>, <a href="https://www.theregister.com/systems/2026/10/28/sk-hynix-says-memory-shortages-to-persist-until-2030/5305887">The Register</a>, <a href="https://www.heise.de/news/SK-Hynix-Mehr-als-die-Haelfte-der-Speicherproduktion-bis-2028-schon-vergeben-11503056.html">heise</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">DuckDB</h2>
+    <div class="tool-grid">
+      <div>
+        <p>DuckDB est une base de données analytique qui s'exécute à l'intérieur du programme qui l'appelle, sans serveur à installer&nbsp;: on l'utilise depuis Python, R, Java ou en ligne de commande pour interroger en SQL des fichiers Parquet, CSV ou JSON, en local ou sur un stockage objet comme S3.</p>
+        <p>La version 2.0.0, annoncée le 21 octobre, est maintenue au moins jusqu'en octobre 2027. Elle ajoute un mode client-serveur (protocole Quack), des déclencheurs, un type VARIANT pour les données semi-structurées et un nouvel analyseur SQL. La ligne de commande détecte désormais quand elle est pilotée par un agent comme Claude Code, Codex ou Cursor et passe en «&nbsp;mode agent&nbsp;»&nbsp;: tableaux compacts, erreurs en JSON, arrêt des requêtes qui s'emballent. Selon l'équipe de DuckDB, ce mode réduit de 59&nbsp;% le texte que le modèle doit lire sur ses tests TPC-H.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/duckdb/duckdb">github.com/duckdb/duckdb</a>, consulté le 29 octobre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>MIT, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>42&nbsp;676 étoiles, 4&nbsp;089 forks, 90&nbsp;718 commits, 645 issues et 449 pull requests ouvertes au 29 octobre&nbsp;; dernière release v2.0.0, étiquetée le 20 octobre 2026 et annoncée le 21&nbsp;; premier commit en juillet 2018</dd></div>
+        <div><dt>Qui</dt><dd>Créé en 2018 au centre de recherche néerlandais CWI à Amsterdam par Mark Raasveldt et Hannes Mühleisen&nbsp;; la Stichting DuckDB Foundation, fondation à but non lucratif de droit néerlandais, détient la propriété intellectuelle et les marques</dd></div>
+        <div><dt>À savoir</dt><dd>Les fichiers de base créés par la version 2.0 ne sont pas lisibles par les versions antérieures. La compilation exige désormais un compilateur C++17, et le support de macOS sur processeurs Intel disparaîtra en 2.1. L'API C v2 n'est pas encore déclarée stable. Étoiles et forks relevés sur un service miroir, l'API GitHub étant inaccessible depuis la session.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-10-28.html" rel="prev">Numéro précédent&nbsp;: <span class="num">023</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

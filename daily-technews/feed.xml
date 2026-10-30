@@ -5,10 +5,86 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-10-29T07:00:00+01:00</updated>
+  <updated>2026-10-30T07:00:00+01:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Binance évalue à 6,3 milliards de dollars les actifs sortis de ses portefeuilles lors d&#39;une attaque partie de l&#39;ordinateur d&#39;un ingénieur</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-10-30T07:00:00+01:00</published>
+    <updated>2026-10-30T07:00:00+01:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;La plateforme d&#39;échange de cryptomonnaies Binance a suspendu les retraits le jeudi 29 octobre après des sorties de fonds non autorisées. Elle estime le montant touché à environ 6,3 milliards de dollars, dont environ 3 milliards ont été gelés. CoinDesk et heise le décrivent comme le plus gros vol de cryptomonnaies recensé&amp;nbsp;; le précédent, chez Bybit début 2025, portait sur 1,4 milliard de dollars, selon heise.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Selon les premiers résultats de l&#39;enquête de Binance, rapportés par CoinDesk et Inc42, l&#39;attaque est partie de l&#39;ordinateur portable compromis d&#39;un ingénieur DevOps. L&#39;attaquant a atteint un conteneur de service et y a soumis des ordres de retrait non autorisés. Binance dit n&#39;avoir trouvé aucune trace de fuite des clés privées de ses portefeuilles. Elle a révoqué l&#39;autorisation de l&#39;adresse concernée et annonce un rapport technique détaillé une fois l&#39;enquête terminée.&lt;/p&gt;
+&lt;p&gt;Tether dit avoir gelé plus de 1,57 milliard de dollars en USDT et Circle plus de 800 millions en USDC, selon CoinDesk. D&#39;après la société d&#39;analyse Arkham, citée par CoinDesk, les portefeuilles de l&#39;attaquant ont contenu à un moment plus de 5,7 milliards de dollars, dont environ 1,5 milliard en bitcoins et 900 millions en ether. L&#39;attaquant a aussi déposé des USDT volés sur la plateforme de prêt Aave pour emprunter au moins 20&amp;nbsp;000 WETH, soit environ 44 millions de dollars. Aave a suspendu les nouveaux dépôts et emprunts sur ses marchés V3 et V4, selon Inc42.&lt;/p&gt;
+&lt;p&gt;La société d&#39;analyse TRM Labs attribue l&#39;attaque «&amp;nbsp;avec un haut degré de confiance&amp;nbsp;» à TraderTraitor, un groupe nord-coréen, selon CoinDesk. L&#39;enquêteur indépendant ZachXBT désigne le groupe Lazarus comme l&#39;auteur probable. Binance n&#39;a pas désigné d&#39;auteur et dit travailler avec les forces de l&#39;ordre.&lt;/p&gt;
+&lt;p&gt;Binance affirme qu&#39;elle couvrira toutes les pertes avec son fonds de garantie SAFU et ses fonds propres&amp;nbsp;; sa codirigeante Yi He l&#39;a confirmé sur X. Les dépôts ont repris et les retraits doivent reprendre dans les 48 heures, selon heise. En Inde, la plateforme CoinDCX a suspendu par précaution les nouvelles positions sur ses contrats à terme, selon Inc42.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7&#34;&gt;Binance&lt;/a&gt;, &lt;a href=&#34;https://www.coindesk.com/business/2026/10/29/potential-multi-billion-binance-hack-hitting-crypto-markets&#34;&gt;CoinDesk&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/6-3-Milliarden-US-Dollar-Neuer-groesster-Krypto-Coup-aller-Zeiten-trifft-Binance-11505601.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://inc42.com/buzz/binance-hit-by-record-6-3-bn-crypto-breach-suspends-withdrawals/&#34;&gt;Inc42&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 025, vendredi 30 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Mistral publie les poids de Mistral Large 4, un modèle de 1 000 milliards de paramètres, sous une licence MIT modifiée</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-10-30T06:59:59+01:00</published>
+    <updated>2026-10-30T06:59:59+01:00</updated>
+    <category term="France"/>
+    <content type="html">
+&lt;p&gt;Mistral AI a mis en ligne le 29 octobre sur Hugging Face les poids de Mistral Large 4, surnommé «&amp;nbsp;Le Chonk&amp;nbsp;» et présenté en préversion début octobre. Selon la fiche du modèle, il compte environ 1&amp;nbsp;000 milliards de paramètres, dont 49 milliards actifs pour chaque jeton, accepte du texte et des images et traite jusqu&#39;à un million de jetons de contexte&amp;nbsp;; il a été entraîné sur 3&amp;nbsp;800 GPU Nvidia Grace Blackwell dans les centres de données européens de Mistral. La licence, «&amp;nbsp;Mistral Ecosystem Open-Weight License&amp;nbsp;», est une version modifiée de la licence MIT&amp;nbsp;: l&#39;usage commercial est libre, mais une entreprise qui vend l&#39;accès au modèle comme service doit obtenir une licence commerciale auprès de Mistral. Selon Mistral, le modèle obtient 48&amp;nbsp;% à l&#39;indice Coding Agent d&#39;Artificial Analysis, à égalité avec le modèle chinois GLM-5.3, en consommant 47&amp;nbsp;% de jetons de moins par tâche&amp;nbsp;; ces chiffres n&#39;ont pas été vérifiés par un tiers. Une variante spécialisée dans les tests d&#39;intrusion et l&#39;audit de vulnérabilités est réservée à des partenaires contrôlés, dont Orange Cyberdefense, pour des tests sur des systèmes dont ils ont l&#39;autorisation. L&#39;agence européenne de cybersécurité ENISA dit tester le modèle pour auditer du code et analyser des journaux.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://mistral.ai/news/mistral-large-4-oss/&#34;&gt;Mistral AI&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Mistral-Large-4-Modellgewichte-veroeffentlicht-Coding-Leistung-verbessert-11504965.html&#34;&gt;heise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 025, vendredi 30 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Le SPF Finances belge coupe MyMinfin et Tax-on-web après une cyberattaque et repousse une échéance fiscale au 16 novembre</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-10-30T06:59:58+01:00</published>
+    <updated>2026-10-30T06:59:58+01:00</updated>
+    <category term="Belgique"/>
+    <content type="html">
+&lt;p&gt;Le service public fédéral Finances a annoncé le mercredi 28 octobre une cyberattaque contre ses services numériques et a mis hors ligne par précaution son portail fiscal MyMinfin. Son porte-parole Francis Adyns a cité aussi Tax-on-web et Biztax parmi les services coupés, selon The Register. L&#39;administration dit n&#39;avoir à ce stade aucun indice de fuite de données. Selon Francis Adyns, l&#39;attaque a été stoppée en quelques heures et les attaquants n&#39;ont pas pu s&#39;étendre pour prendre le contrôle d&#39;applications ou accéder à des données&amp;nbsp;; les services doivent être rétablis dans un environnement isolé. L&#39;échéance du 31 octobre pour certaines déclarations de revenus, dont celles des indépendants et des revenus de sociétés étrangères, passe au 16 novembre, selon The Register. L&#39;auteur de l&#39;attaque n&#39;a pas été identifié. Début octobre, le SPF avait déjà mis hors ligne de nombreux sites à cause des failles critiques de PHP&amp;nbsp;; aucun lien n&#39;a été établi entre les deux épisodes, selon The Record.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://therecord.media/cyberattack-disrupts-belgian-tax-services-before-deadline&#34;&gt;The Record&lt;/a&gt;, &lt;a href=&#34;https://www.euronews.com/2026/10/28/belgiums-finance-and-tax-agency-hit-by-cyberattack&#34;&gt;Euronews&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 025, vendredi 30 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Les douanes malaisiennes saisissent 30 serveurs à puces d&#39;IA déclarés comme composants électroniques, en transit vers un autre pays d&#39;Asie</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-10-30T06:59:57+01:00</published>
+    <updated>2026-10-30T06:59:57+01:00</updated>
+    <category term="Malaisie"/>
+    <content type="html">
+&lt;p&gt;Les douanes de l&#39;aéroport de Kuala Lumpur ont annoncé le 28 octobre la saisie, dans la zone franche de l&#39;aéroport, de 30 serveurs équipés de puces d&#39;IA avancées, d&#39;une valeur de 49,5 millions de ringgits (12,1 millions de dollars), selon The Sun. «&amp;nbsp;Les serveurs étaient déclarés comme “composants électroniques” pour échapper aux contrôles&amp;nbsp;», a déclaré la directrice des douanes de l&#39;aéroport, Aspalila Ag Tuah. La cargaison venait d&#39;un pays asiatique non nommé et devait être réexportée vers un autre, la Malaisie servant de point de transit pour contourner les restrictions à l&#39;exportation. Les autorités l&#39;attribuent à un réseau organisé&amp;nbsp;: c&#39;est le cinquième cas lié à ce réseau cette année, pour plus de 24 millions de dollars au total. La saisie date du 15 octobre, selon heise, qui cite l&#39;agence Bernama&amp;nbsp;: aucune arrestation n&#39;a eu lieu et l&#39;entreprise qui a organisé l&#39;envoi a été convoquée. Le fabricant des puces n&#39;a pas été nommé. En juin, 72 serveurs avaient été saisis dans la même zone franche. La Malaisie impose depuis 2025 un permis et une notification préalable pour l&#39;exportation et le transit des puces d&#39;IA américaines.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://newswav.com/article/malaysia-foils-12-mn-ai-chip-smuggling-bid-A2610_lUtsRy&#34;&gt;The Sun (via Newswav)&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Malaysia-Zoll-beschlagnahmt-KI-Chips-im-Wert-von-rund-12-Millionen-US-Dollar-11505399.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-chips-worth-12-1-million-seized-at-malaysia-airport-customs-authority-says/articleshow/135255556.cms&#34;&gt;Reuters (via The Economic Times)&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 025, vendredi 30 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : Project Quarry</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-10-30T06:59:56+01:00</published>
+    <updated>2026-10-30T06:59:56+01:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;Project Quarry est un framework Python qui analyse les conversations d&#39;agents d&#39;IA (messages, appels d&#39;outils, résultats et ordre des événements) pour y repérer des comportements à risque. On écrit des règles dans un langage dédié&amp;nbsp;; chaque règle est compilée en automate à états finis, puis exécutée sur la conversation. Une règle peut aussi interroger un modèle quand les vérifications locales ne suffisent pas.&lt;/p&gt;
+&lt;p&gt;Cisco l&#39;a publié le 28 octobre, en version 0.1.0. Selon Amy Chang, responsable de la recherche sur les menaces liées à l&#39;IA chez Cisco, interrogée par The Register, l&#39;outil examine toute la session d&#39;un agent plutôt qu&#39;une action isolée&amp;nbsp;: lire un fichier sensible ou envoyer une requête vers l&#39;extérieur peut être légitime, mais la suite des deux signale une fuite de données. Cisco le compare à Snort pour le trafic réseau et à YARA pour l&#39;identification des logiciels malveillants.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/cisco-ai-defense/project-quarry&#34;&gt;github.com/cisco-ai-defense/project-quarry&lt;/a&gt;, consulté le 30 octobre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: Apache 2.0, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 42 étoiles, 3 forks, 22 commits, 0 issue et 0 pull request ouvertes au 30 octobre&amp;nbsp;; dernière release 0.1.0 le 28 octobre 2026&amp;nbsp;; premier commit le 27 octobre&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: L&#39;équipe AI Defense de Cisco (organisation GitHub cisco-ai-defense)&amp;nbsp;; le billet de présentation est signé par Amy Chang, Adam Swanda, Ravikumar Balakrishnan et Konstantin Berlin&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Version alpha&amp;nbsp;: la syntaxe des règles peut changer avant la version 1.0, ce qui obligera à réécrire les règles existantes. Python 3.11 à 3.13 seulement. Les règles sémantiques demandent un fournisseur de modèle configuré&amp;nbsp;; les exemples fournis les remplacent par des mots-clés, non destinés à la production. Projet porté par un acteur commercial, sans gouvernance externe.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 025, vendredi 30 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Google présente Gemini 4 Carbon, un modèle qu&#39;il réserve d&#39;abord à des organisations de cyberdéfense en raison de ses capacités à exploiter des failles</title>

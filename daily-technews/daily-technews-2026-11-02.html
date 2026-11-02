@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 2 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Lundi 2 novembre 2026<span class="price">3,02&nbsp;€</span></span><span class="issue" aria-label="Numéro 26">026</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Cursor&nbsp;: une extension Claude Code piégée</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Linux 7.4&nbsp;: près de 20&nbsp;000 commits, dont beaucoup venus de l'IA</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Chine&nbsp;: Apple Intelligence en test, avec Qwen dans Siri</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">France&nbsp;: les députés votent une taxe au gigaoctet</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Inde&nbsp;: entraîner l'IA sur des données sans les transférer</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: OpenShot</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Sécurité</p>
+    <h2>La boutique d'extensions de Cursor a diffusé pendant onze heures une version piégée de l'extension Claude Code qui installait une porte dérobée SSH</h2>
+    <p class="deck">Le jeudi 29 octobre, la boutique d'extensions de l'éditeur de code Cursor a distribué comme mise à jour deux versions modifiées de l'extension Claude Code d'Anthropic, 2.1.312 et 2.1.313. Elles tentaient d'ouvrir aux attaquants un accès SSH aux machines des développeurs. Cursor a retiré ces versions, fermé temporairement sa boutique et dit qu'aucune autre extension n'a été modifiée&nbsp;; Anthropic affirme que ses propres systèmes ne sont pas en cause.</p>
+    <div class="body">
+      <p>Les versions malveillantes sont restées en ligne entre 2 h 27 et 13 h 35, heure du Pacifique, soit de 10 h 27 à 21 h 35 à Paris, selon l'avis de Cursor, qui cite Windows et macOS. La société de sécurité Phorion les a repérées la première, selon The Register. Selon The Hacker News, au plus 5&nbsp;000 utilisateurs les ont installées&nbsp;; Cursor n'a pas publié de chiffre et doit contacter directement les utilisateurs concernés. Le paquet portait l'identifiant légitime de l'extension d'Anthropic&nbsp;: un chargeur de 66 lignes avait été inséré avant le code d'origine, selon The Hacker News.</p>
+      <p>Selon l'avis de Cursor, le code relevait le nom de la machine et de l'utilisateur, le système, l'adresse e-mail Git, l'adresse IP publique et les noms des variables d'environnement. Il tentait ensuite d'ajouter une clé SSH de l'attaquant, étiquetée «&nbsp;svc-telemetry&nbsp;», d'activer le service SSH et d'ouvrir un tunnel SSH inversé, relancé environ toutes les 60 secondes par une tâche planifiée sous Windows ou un LaunchAgent sous macOS. Cursor indique que cette étape échoue en général sans droits d'administrateur&nbsp;; la clé et le mécanisme de persistance restent toutefois écrits sur le disque, selon The Register. Désinstaller l'extension ne suffit pas&nbsp;: Cursor publie des scripts de nettoyage et demande de changer les identifiants et les sessions accessibles depuis les machines touchées.</p>
+      <p>Cursor dit avoir changé ses clés, reconstruit sa boutique avant de la rouvrir et fait couper le serveur de l'attaquant avec l'aide de l'hébergeur. Felix Rieseberg, ingénieur chez Anthropic, a déclaré qu'un acteur malveillant avait utilisé un accès à la boutique de Cursor pour y publier une copie modifiée, et que ni les systèmes d'Anthropic ni les ordinateurs de ses employés n'avaient été compromis. Microsoft confirme que la version malveillante n'a jamais été publiée sur le Visual Studio Marketplace ni sur npm, selon The Hacker News.</p>
+      <p>Ni Cursor ni Anthropic n'ont expliqué comment l'attaquant a pu publier une mise à jour sous l'identifiant d'Anthropic dans la boutique de Cursor. L'auteur de l'attaque n'a pas été identifié.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://cursor.com/blog/claude-code-extension-security-notice">Cursor</a>, <a href="https://www.theregister.com/cyber-crime/2026/10/30/anthropic-that-claude-code-extension-compromise-couldnt-be-us/5306682">The Register</a>, <a href="https://thehackernews.com/2026/10/official-claude-code-vs-code-extension.html">The Hacker News</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Open source</p>
+      <h3>Linus Torvalds publie la première version candidate de Linux 7.4, après une fenêtre de fusion de près de 20&nbsp;000 commits remplie de correctifs trouvés par l'IA</h3>
+      <p>Linus Torvalds a publié le dimanche 1er novembre la première version candidate de Linux 7.4. La fenêtre de fusion, les deux semaines pendant lesquelles les nouveautés entrent dans le noyau, a compté «&nbsp;presque 20&nbsp;000 commits contre les 15&nbsp;000 habituels&nbsp;», écrit-il dans son annonce&nbsp;; Phoronix la décrit comme la plus grosse de l'histoire du noyau, dont le code approche 42 millions de lignes. Torvalds qualifie la version de «&nbsp;grosse, et pleine de correctifs de problèmes trouvés par l'IA&nbsp;». Il se dit «&nbsp;beaucoup plus satisfait&nbsp;» que ce flux de travail déclenché par l'IA arrive pendant la fenêtre de fusion plutôt que pendant la phase de stabilisation, les semaines de test des versions candidates, et parle d'un «&nbsp;modèle beaucoup plus sain&nbsp;». Selon The Register, il précise que les correctifs suggérés par l'IA sont souvent réécrits, et environ un tiers des changements sont des définitions de registres des processeurs graphiques AMD. Torvalds avance une autre explication à la taille de la version&nbsp;: les développeurs s'attendent à ce que Linux 7.4 soit la prochaine version maintenue à long terme (LTS).</p>
+      <p class="meta">Sources&nbsp;: <a href="https://lkml.iu.edu/hypermail/linux/kernel/2611.0/00796.html">annonce de Linus Torvalds (LKML)</a>, <a href="https://www.theregister.com/os-platforms/2026/11/01/linus-torvalds-says-linux-kernel-is-out-of-stabilization-phase-and-using-much-healthier-model-for-ai-contributions/5306852">The Register</a>, <a href="https://www.phoronix.com/news/Linux-7.4-Merge-Window">Phoronix</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Chine</p>
+      <h3>Apple ouvre le 4 novembre en Chine le test d'Apple Intelligence, avec l'assistant Qwen d'Alibaba intégré à Siri</h3>
+      <p>Apple a annoncé sur son site d'actualités en Chine que la première version bêta pour développeurs d'iOS 27.3, attendue le mercredi 4 novembre, activera des fonctions d'Apple Intelligence dans le pays&nbsp;; la diffusion au public est prévue en décembre, sans date précise. Apple dit s'être associé à Alibaba pour intégrer son assistant Qwen à Siri, aux outils d'écriture et à l'intelligence visuelle. L'utilisateur pourra interroger Qwen sur un texte, une image ou un document depuis ces fonctions, en se connectant avec un compte Qwen ou avec son identifiant Apple, selon TechNode. Les premières fonctions sont les outils d'écriture, les Genmoji, l'outil de retouche photo Clean Up, les résumés et le tri des notifications, l'intelligence visuelle et la traduction en direct avec les AirPods, sur iPhone 15 Pro et modèles plus récents, selon MacRumors. La nouvelle version de Siri annoncée à la WWDC 2026 et le générateur d'images Image Playground ne sont pas inclus. Selon Apple, Apple Intelligence n'arrivera sur le Mac, l'iPad et les autres appareils en Chine qu'après les autorisations nécessaires.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.apple.com.cn/newsroom/2026/10/apple-intelligence-features-are-coming-to-users-in-china/">Apple (site chinois)</a>, <a href="https://macrumors.com/2026/10/30/apple-says-ios-27-3-beta-coming-next-week/">MacRumors</a>, <a href="https://technode.com/2026/11/02/apple-confirms-qwen-integration-for-china-ai-rollout-with-beta-testing-starting-november/">TechNode</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">France</p>
+      <h3>L'Assemblée nationale adopte, contre l'avis du gouvernement, une taxe de 0,055 euro par gigaoctet envoyé par les fournisseurs de contenus</h3>
+      <p>Les députés ont adopté le vendredi 30 octobre, lors de l'examen en première lecture du projet de loi de finances pour 2027, l'amendement I-1358 du député socialiste Laurent Lhardit, qui crée une taxe sur les flux de données envoyés aux internautes en France. Selon Next, 35 députés étaient présents, 21 ont pris part au vote et 11 ont voté pour. Le taux est de 0,055 euro par gigaoctet, contre 0,10 euro dans la proposition initiale du PS, selon Next. Les fournisseurs d'accès mesureraient les volumes envoyés par chaque émetteur, de façon anonymisée et consolidée, et les transmettraient à l'administration fiscale, sous la supervision de l'Arcep&nbsp;; pour les réseaux de diffusion de contenus (CDN), la taxe porterait sur les flux sortants. Elle serait plafonnée à 15&nbsp;% du chiffre d'affaires réalisé en France ou à 2&nbsp;% du chiffre d'affaires mondial, selon Univers Freebox et KultureGeek. Laurent Lhardit estime le rendement à 10 milliards d'euros, payés surtout par les grandes plateformes&nbsp;; le ministre des Comptes publics, David Amiel, estime qu'environ la moitié pèserait sur des fournisseurs plus petits, dont des entreprises françaises. Le gouvernement et le rapporteur général Philippe Juvin ont donné un avis défavorable&nbsp;; David Amiel juge le dispositif impossible à appliquer sans capteurs de flux, selon Next. Le texte doit encore passer au Sénat, et le gouvernement peut écarter l'amendement s'il engage sa responsabilité avec l'article 49.3.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://next.ink/264997/le-parti-socialiste-a-fait-passer-sa-taxe-au-gigaoctet-a-lassemblee-nationale/">Next</a>, <a href="https://www.universfreebox.com/article/598917/netflix-youtube-meme-tf1-bientot-taxes-pour-leur-trafic-sur-les-reseaux-des-operateurs-les-deputes-adoptent-finalement-un-amendement-qui-pourrait-rapporter-5-milliards-deuros">Univers Freebox</a>, <a href="https://kulturegeek.fr/news-362953/lassemblee-nationale-adopte-taxe-gigaoctet-parti-socialiste">KultureGeek</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Inde</p>
+      <h3>Le ministère indien du numérique propose un cadre où les modèles d'IA s'entraînent sur des données chiffrées sans jamais y accéder en clair</h3>
+      <p>Le ministère indien de l'Électronique et des Technologies de l'information (MeitY) a publié fin octobre «&nbsp;DEPA for AI Training&nbsp;», un cadre de partage de données pour l'entraînement des modèles d'IA, conçu avec le groupe de réflexion iSPIRT, selon Inc42. Des fournisseurs de données, comme des hôpitaux, des banques ou des administrations, déposent des jeux de données anonymisés et chiffrés sur des plateformes d'échange. Les entreprises, start-up et chercheurs qui veulent entraîner un modèle en demandent l'accès&nbsp;; un système de contrats électroniques vérifie chaque demande contre les règles de partage fixées par le fournisseur. L'entraînement se fait dans des environnements sécurisés matériels, où les données restent chiffrées et isolées pendant le traitement, avec de la confidentialité différentielle&nbsp;; toute l'activité y est journalisée de façon non modifiable pour l'audit, selon The Register. «&nbsp;Le modèle va vers les données, plutôt que les données vers le modèle&nbsp;», résume le conseiller scientifique principal du gouvernement, Ajay Kumar Sood, cité par The Register. Les modèles entraînés devront passer des évaluations indépendantes sur les biais, la sécurité et l'explicabilité avant un déploiement pilote, selon Inc42. Le cadre vise la santé, la finance et l'éducation&nbsp;; il n'a pas de date d'application.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.meity.gov.in/static/uploads/2026/10/02d8224e4cd6c8c29be5a5198e795158.pdf">MeitY</a>, <a href="https://www.theregister.com/public-sector/2026/11/02/india-floats-ai-plan-under-which-the-model-travels-to-the-data-rather-than-the-data-travelling-to-the-model/5306872">The Register</a>, <a href="https://inc42.com/buzz/meity-floats-new-privacy-led-framework-to-unlock-data-for-training-ai-models/">Inc42</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">OpenShot</h2>
+    <div class="tool-grid">
+      <div>
+        <p>OpenShot est un logiciel de montage vidéo pour Linux, macOS et Windows, écrit en Python avec l'interface Qt, qui s'appuie sur la bibliothèque libopenshot pour le traitement vidéo. Il gère le montage sur plusieurs pistes, les transitions, les titres et l'animation 2D.</p>
+        <p>La version 4.1, publiée le 31 octobre, ajoute «&nbsp;Auto-Optimize&nbsp;», qui prépare des fichiers 4K ou plus lourds pour un montage plus fluide tout en gardant les originaux pour l'export, et une commande en ligne qui permet à des scripts ou à des agents d'IA de créer, modifier et exporter des projets. Elle apporte aussi des versions natives pour Linux sur processeurs ARM64. La version de maintenance 4.1.1 met à jour FFmpeg et ajoute des préréglages d'export pour les encodeurs matériels d'AMD, de Nvidia et d'Intel.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/OpenShot/openshot-qt">github.com/OpenShot/openshot-qt</a>, consulté le 2 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>GNU GPL version 3 ou ultérieure, vérifiée dans le fichier COPYING et les en-têtes du code (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>6&nbsp;724 étoiles, 831 forks, 5&nbsp;895 commits, 310 issues et 43 pull requests ouvertes au 2 novembre&nbsp;; dernière release v4.1.1 le 1er novembre 2026&nbsp;; premier commit du dépôt le 3 novembre 2013</dd></div>
+        <div><dt>Qui</dt><dd>La société OpenShot Studios, titulaire des droits sur le code depuis 2008&nbsp;; Jonathan Thomas en est l'auteur principal, selon les en-têtes du code</dd></div>
+        <div><dt>À savoir</dt><dd>Les versions ARM64 pour Linux ne sont pour l'instant proposées que par le dépôt PPA quotidien et le canal Snap «&nbsp;edge&nbsp;». La version 4.1 demande libopenshot 1.1.0 ou plus récente. Le projet repose sur une petite société, sans fondation ni gouvernance externe.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-10-30.html" rel="prev">Numéro précédent&nbsp;: <span class="num">025</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

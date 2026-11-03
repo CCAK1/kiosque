@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-11-02T07:00:00+01:00</updated>
+  <updated>2026-11-03T07:00:00+01:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Google coupe un réseau de 1,3 million de boîtiers Android TV piégés dès l&#39;usine et bannit leur fabricant chinois Videostrong</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-11-03T07:00:00+01:00</published>
+    <updated>2026-11-03T07:00:00+01:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Google a annoncé le lundi 2 novembre avoir démantelé XCPE, un réseau de plus de 1,3 million de boîtiers TV sous Android qui embarquaient une porte dérobée installée pendant leur fabrication. Il attribue «&amp;nbsp;avec un haut degré de confiance&amp;nbsp;» la conception et l&#39;exploitation de ce réseau au fabricant chinois Videostrong Technology, qu&#39;il exclut désormais du programme des appareils Android certifiés.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Selon le rapport du groupe de renseignement sur les menaces de Google, la porte dérobée était intégrée au micrologiciel des appareils et tournait avec les privilèges du système. Elle permettait à ses opérateurs d&#39;installer des applications en silence, de désactiver la protection Play Protect, d&#39;exécuter des commandes, de faire des captures d&#39;écran et de collecter des données de compte et d&#39;appareil, selon BleepingComputer. Les boîtiers infectés étaient loués à d&#39;autres groupes criminels&amp;nbsp;: des modules les transformaient en relais de trafic pour des services de proxy résidentiels, servaient à la fraude publicitaire ou installaient d&#39;autres logiciels malveillants.&lt;/p&gt;
+&lt;p&gt;Google dit avoir engagé des actions en justice pour faire fermer les domaines et serveurs de commande du réseau, ainsi que ceux de plus d&#39;une douzaine de familles de logiciels malveillants distribuées par cette porte dérobée. Il estime que ces coupures privent leurs opérateurs de l&#39;accès à au moins 10 millions d&#39;autres appareils compromis, chiffre fourni par l&#39;entreprise et non vérifié par un tiers. Videostrong et ses futures filiales n&#39;ont plus le droit de fabriquer des appareils Android certifiés ni de fournir du logiciel à des fabricants certifiés. Google dit aussi avoir revu ses contrôles de l&#39;intégrité du micrologiciel, après avoir constaté que Videostrong masquait son code pour passer les tests de sécurité.&lt;/p&gt;
+&lt;p&gt;L&#39;opération a été menée avec l&#39;Agence nationale de police japonaise et les sociétés de sécurité Lumen, HUMAN Security, Plume, Synthient et TrendAI. Selon The Register, TrendAI a relevé plus de 3,8 millions d&#39;adresses IP distinctes connectées au réseau entre le 3 juin et le 1er octobre, et les appareils infectés se trouvent dans plus de 200 pays. Videostrong n&#39;a pas répondu aux questions de The Register.&lt;/p&gt;
+&lt;p&gt;Le logiciel malveillant reste présent sur les boîtiers&amp;nbsp;: il se réinstalle depuis une partition du système s&#39;il est supprimé, selon BleepingComputer. Seul un micrologiciel sain ou la déconnexion d&#39;Internet arrête son activité. Le réseau est rattaché à BadBox 2.0, une opération qui avait infecté plus de 10 millions d&#39;appareils avant d&#39;être perturbée en mars 2025.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet&#34;&gt;Google Threat Intelligence Group&lt;/a&gt;, &lt;a href=&#34;https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/&#34;&gt;BleepingComputer&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045&#34;&gt;The Register&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Des pirates réchauffent à distance les congélateurs de supermarchés en Belgique, en Suède, en Irlande et en Estonie, trois semaines après la France</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-11-03T06:59:59+01:00</published>
+    <updated>2026-11-03T06:59:59+01:00</updated>
+    <category term="Europe"/>
+    <content type="html">
+&lt;p&gt;Dans la nuit du dimanche 1er au lundi 2 novembre, des attaquants ont passé à distance en mode dégivrage les réfrigérateurs et congélateurs de supermarchés dans plusieurs pays européens, avec des températures relevées jusqu&#39;à 50 degrés. En Belgique, Delhaize confirme un «&amp;nbsp;incident informatique&amp;nbsp;» dans «&amp;nbsp;plusieurs dizaines&amp;nbsp;» de magasins, et Carrefour, Intermarché et Spar sont aussi touchés, selon The Register et Next&amp;nbsp;; en Suède, ICA confirme des attaques contre un «&amp;nbsp;petit nombre&amp;nbsp;» de magasins reliés hors de son réseau central, et Coop signale des pannes dans six magasins. Musgrave compte au moins 13 magasins touchés en Irlande, et la chaîne Selver est concernée en Estonie. Selon Help Net Security, les attaquants exploitent des interfaces de gestion exposées sur Internet, comme lors de la vague qui a touché des centaines de supermarchés français à la mi-octobre, quand le CERT-FR avait désigné des contrôleurs Danfoss AK-SC et AK-SM et des contrôleurs xweb de Copeland et Dixell. Danfoss renvoie la responsabilité vers les enseignes qui utilisent des contrôleurs anciens ou non mis à jour, selon Next. Aucune des entreprises n&#39;a dit qui est derrière ces attaques.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.theregister.com/cyber-crime/2026/11/02/frozen-part-ii-hackers-remotely-defrost-produce-in-euro-supermarkets-again/5306924&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.helpnetsecurity.com/2026/11/02/european-supermarkets-refrigeration-units-cyberattacks/&#34;&gt;Help Net Security&lt;/a&gt;, &lt;a href=&#34;https://next.ink/265228/apres-la-france-des-pannes-de-frigos-dans-plusieurs-enseignes-en-europe/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Les numéros de passeport du président Lee Jae Myung et de 167 autres passagers de l&#39;avion présidentiel sont restés en ligne pendant cinq mois</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-11-03T06:59:58+01:00</published>
+    <updated>2026-11-03T06:59:58+01:00</updated>
+    <category term="Corée du Sud"/>
+    <content type="html">
+&lt;p&gt;Un fichier intitulé «&amp;nbsp;Liste des passagers (République de Corée-Belgique)&amp;nbsp;», qui contenait les données personnelles de 168 personnes ayant voyagé dans l&#39;avion présidentiel lors de la tournée de Lee Jae Myung en Belgique, en Italie et en France en juin, a été déposé le 2 juin sur une plateforme payante d&#39;analyse de fichiers, selon la police nationale citée par Yonhap. La chaîne KBS a révélé l&#39;affaire le lundi 2 novembre. Le fichier comprenait les noms en coréen et en anglais, les fonctions, les dates de naissance, les numéros de passeport et leurs dates de validité du président, de son épouse, de ministres, du conseiller à la sécurité nationale Wi Sung-lac, de membres du service de protection présidentielle et de journalistes. Les utilisateurs de cette plateforme, qui sert à vérifier si des fichiers ou des adresses web contiennent du code malveillant, pouvaient le télécharger. La police pense qu&#39;il y a été déposé pour une analyse antivirus&amp;nbsp;; il n&#39;est plus accessible. Le directeur de cabinet de la présidence, Lim Kwang-hyun, a présidé une réunion d&#39;urgence le mardi 3 novembre, a parlé d&#39;un «&amp;nbsp;incident grave&amp;nbsp;» et a demandé de revoir la sécurité des déplacements présidentiels à l&#39;étranger. La police a ouvert une enquête préliminaire et le ministère des Affaires étrangères enquête avec d&#39;autres services.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://news.kbs.co.kr/news/pc/view/view.do?ncd=8702504&#34;&gt;KBS&lt;/a&gt;, &lt;a href=&#34;https://en.yna.co.kr/view/AEN20261103004000315&#34;&gt;Yonhap&lt;/a&gt;, &lt;a href=&#34;https://www.koreaherald.com/article/10923757&#34;&gt;The Korea Herald&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Le New York Times et trois autres quotidiens attaquent Brave, accusé de revendre leurs articles à Anthropic, Perplexity et d&#39;autres entreprises d&#39;IA</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-11-03T06:59:57+01:00</published>
+    <updated>2026-11-03T06:59:57+01:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;Le New York Times a déposé plainte le lundi 2 novembre contre Brave Software devant le tribunal fédéral du district sud de New York&amp;nbsp;; le Daily News, le Chicago Tribune et l&#39;Orlando Sentinel ont déposé une plainte similaire le même jour. Selon la plainte du Times, Brave a constitué avec son robot d&#39;indexation un index de plus de 30 milliards de pages web, que les éditeurs ne peuvent pas bloquer, et le vend par son API de recherche à des entreprises d&#39;IA, dont Anthropic, Perplexity, Mistral, xAI et Cohere, qui ne sont pas poursuivies. La plainte vise aussi l&#39;option «&amp;nbsp;Paywall blocker&amp;nbsp;» du navigateur Brave, présentée par l&#39;entreprise comme un moyen de contourner les murs payants, et le blocage des publicités des éditeurs alors que Brave vend les siennes. Le Times demande une injonction et des dommages et intérêts, sans montant public, selon TechCrunch. Un porte-parole du journal a dit à Reuters que Brave avait ignoré ses demandes répétées de cesser, selon Heise. Brave n&#39;avait pas répondu à TechCrunch lundi. Le Times poursuit déjà OpenAI, Microsoft et Perplexity pour des faits comparables.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://nytco-assets.nytimes.com/2026/11/new-york-times-brave-complaint-11-2-26.pdf&#34;&gt;plainte du New York Times&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Urheberrechtsverletzungen-New-York-Times-verklagt-Brave-Software-11508651.html&#34;&gt;Heise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Marvell rachète Lumentum, fabricant de lasers et d&#39;émetteurs-récepteurs optiques pour centres de données, pour 115 milliards de dollars en actions</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=5&amp;utm_source=rss#a5"/>
+    <published>2026-11-03T06:59:56+01:00</published>
+    <updated>2026-11-03T06:59:56+01:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;Le fabricant de puces Marvell a annoncé le lundi 2 novembre un accord pour racheter Lumentum, entièrement en actions, pour une valeur d&#39;entreprise de 115 milliards de dollars&amp;nbsp;: chaque action Lumentum sera échangée contre 4,5 actions Marvell, soit environ 1&amp;nbsp;132 dollars par action et une prime de 23,9&amp;nbsp;% sur le cours du 28 octobre, selon le communiqué. Lumentum fabrique des lasers, des émetteurs-récepteurs optiques, des commutateurs de circuits optiques et des semi-conducteurs en phosphure d&#39;indium, le matériau des lasers qui transmettent les données par fibre. Marvell conçoit des puces d&#39;interconnexion électrique et optique, de commutation réseau et des processeurs sur mesure. Selon The Register, le cuivre atteint ses limites dans les grappes de serveurs d&#39;IA&amp;nbsp;: un signal à 400 Gbit/s n&#39;y porte qu&#39;à environ 1,25 mètre, et cette portée est divisée par deux à chaque doublement du débit par voie, alors que la fibre porte à des kilomètres. Les actionnaires de Marvell détiendront environ 67&amp;nbsp;% de l&#39;ensemble. La clôture est prévue au premier semestre 2028, sous réserve du vote des actionnaires et des autorisations réglementaires.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.sec.gov/Archives/edgar/data/0001633978/000119312526442758/d163169dex991.htm&#34;&gt;communiqué de Marvell et Lumentum (SEC)&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/systems/2026/11/02/marvell-wants-to-be-a-copper-topper-bets-115b-on-photonics-leader-to-push-optical-networking/5307028&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://next.ink/265207/marvell-veut-soffrir-lumentum-et-ses-puces-optiques-pour-115-milliards-de-dollars/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : dsh-superagent, l&#39;agent de programmation que DeepSeek fait travailler sur ses propres dépôts</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-11-03T06:59:55+01:00</published>
+    <updated>2026-11-03T06:59:55+01:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;dsh-superagent est un agent de programmation attaché à un seul dépôt GitHub. Il écoute GitHub et, en option, la messagerie Feishu&amp;nbsp;; quand une personne autorisée lui demande un travail, ou quand une règle écrite par l&#39;équipe le permet, il ouvre une tâche, la traite dans sa propre session et son propre répertoire, et répond dans la conversation d&#39;origine, par exemple avec une pull request. Un panneau web liste ce qui demande une intervention humaine.&lt;/p&gt;
+&lt;p&gt;L&#39;équipe DeepSeek Harness l&#39;a publié le samedi 31 octobre comme prototype de recherche, tiré de son travail quotidien. Par défaut, les demandes implicites (messages non adressés, messages de robots, relances de personnes non autorisées) sont seulement journalisées, et l&#39;agent n&#39;active pas la fusion automatique sous son propre compte, selon Help Net Security et la documentation du dépôt.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/deepseek-ai/dsh-superagent-prototype&#34;&gt;github.com/deepseek-ai/dsh-superagent-prototype&lt;/a&gt;, consulté le 3 novembre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: MIT, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 12&amp;nbsp;820 étoiles, 1&amp;nbsp;329 forks, 1 commit, 0 issue et 0 pull request ouvertes au 3 novembre&amp;nbsp;; aucune release publiée&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: L&#39;équipe DeepSeek Harness de la société chinoise DeepSeek, titulaire des droits selon le fichier de licence&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le README le présente comme un prototype «&amp;nbsp;pour référence seulement&amp;nbsp;», qui n&#39;est pas un produit officiel de DeepSeek, peut contenir des bogues et diffère de la version interne. Il fonctionne comme module de DeepSeek Harness, l&#39;environnement d&#39;agents de DeepSeek, qui doit être relié à un fournisseur de modèle, et demande Node.js 22.19 ou plus, pnpm, tmux, Python et la ligne de commande GitHub. Le dépôt a été publié en un seul commit, sans historique de développement.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>La boutique d&#39;extensions de Cursor a diffusé pendant onze heures une version piégée de l&#39;extension Claude Code qui installait une porte dérobée SSH</title>
@@ -770,94 +859,5 @@
 &lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Pi-hole ne filtre que par nom de domaine&amp;nbsp;: il ne bloque pas les publicités servies depuis le même domaine que le contenu, comme celles de YouTube. Les appareils réglés pour utiliser un autre serveur DNS, ou le DNS chiffré de leur navigateur, échappent au filtrage. Cette version change certains comportements&amp;nbsp;: les valeurs invalides du fichier pihole.toml sont réinitialisées et les requêtes plus anciennes que la durée de conservation configurée sont supprimées dès la première nuit.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-21.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 018, mercredi 21 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Une faille du noyau Linux permet à une machine virtuelle de lire la mémoire de son hôte, les distributions publient leurs correctifs</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#a1</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=1&amp;utm_source=rss#a1"/>
-    <published>2026-10-20T07:00:00+02:00</published>
-    <updated>2026-10-20T07:00:00+02:00</updated>
-    <category term="Sécurité"/>
-    <content type="html">
-&lt;p&gt;&lt;strong&gt;La faille CVE-2026-99999, baptisée PwnEscape par son découvreur, touche la pile réseau du noyau Linux de la plupart des versions maintenues. Du code exécuté dans une machine virtuelle peut lire la mémoire du noyau de l&#39;hôte, et, en laboratoire, en prendre le contrôle. Les détails techniques ont été publiés et Debian a diffusé ses correctifs le 19 octobre. La faille est notée 9,3 sur 10.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Le défaut se trouve dans le code IPv4 du noyau hôte, pas dans l&#39;hyperviseur KVM lui-même. Une machine virtuelle transmet avec ses paquets, par l&#39;interface virtio, des métadonnées qui indiquent où le noyau doit écrire la somme de contrôle du paquet. Le noyau ne vérifiait pas correctement cette position et écrivait la somme au mauvais endroit, selon heise. Chaque paquet émis par la machine virtuelle pouvait ainsi faire remonter environ 32 octets de mémoire de l&#39;hôte, selon Next. Le problème remonte à deux modifications de 2008 et 2010. Le correctif ajoute une vérification de cette position dans cinq fonctions du noyau.&lt;/p&gt;
-&lt;p&gt;Le chercheur Paulos Yibelo, de pwn.ai, a trouvé la faille dans le cadre d&#39;un concours doté d&#39;un million de dollars organisé par Vercel autour de son bac à sable. Selon son billet, l&#39;équipe a utilisé le modèle GPT-5.6 Sol d&#39;OpenAI comme moteur de raisonnement, pour moins de 700 dollars de jetons d&#39;API&amp;nbsp;; heise précise que la recherche a duré trois jours. Ces chiffres sont ceux des auteurs, non vérifiés par un tiers. En laboratoire, ils disent avoir exécuté un programme avec les droits administrateur sur l&#39;hôte et l&#39;avoir fait planter. Seule la lecture de mémoire a été démontrée en production, selon Vercel cité par Next.&lt;/p&gt;
-&lt;p&gt;La faille a été signalée en privé aux mainteneurs le 4 septembre. Le correctif a été accepté le 8 octobre dans l&#39;arbre réseau du noyau, puis intégré à la branche principale le 14 octobre&amp;nbsp;; l&#39;identifiant CVE et les versions stables ont suivi le lendemain. Les versions 5.10.272, 5.15.223, 6.1.190, 6.6.159, 6.12.113, 6.18.57 et 7.2.11 sont corrigées, et Linux 7.3, publié le 18 octobre, n&#39;est pas touché, selon Next. Debian a publié ses noyaux corrigés le 19 octobre&amp;nbsp;; Ubuntu et Red Hat n&#39;avaient pas encore diffusé les leurs au moment de l&#39;article de heise.&lt;/p&gt;
-&lt;p&gt;L&#39;hébergeur allemand Hetzner a déployé une protection temporaire fondée sur eBPF, sans redémarrage, et Netcup a redémarré ses hôtes de virtualisation, selon heise. AWS indique que son service EC2 n&#39;est pas exposé, selon The Register. Aucune exploitation n&#39;a été observée. Les auteurs écrivent s&#39;attendre à des exploits fonctionnels contre des configurations par défaut en moins d&#39;un mois.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://pwn.ai/blog/pwnescape&#34;&gt;pwn.ai&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/virtualization/2026/10/19/linux-kvm-guest-host-escape-rated-critical-may-represent-a-new-way-to-attack-penguin-powered-networking/5303744&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/PwnEscape-Kritische-Luecke-in-Linux-Kernel-erlaubt-VM-Ausbruch-11492131.html&#34;&gt;Heise&lt;/a&gt;, &lt;a href=&#34;https://next.ink/brief-article/une-faille-dans-le-noyau-linux-permet-a-une-machine-virtuelle-de-lire-la-memoire-de-lhote/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Ahold Delhaize confirme que la coupure de ses systèmes aux États-Unis et en Europe a été causée par des actions malveillantes</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#a2</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=2&amp;utm_source=rss#a2"/>
-    <published>2026-10-20T06:59:59+02:00</published>
-    <updated>2026-10-20T06:59:59+02:00</updated>
-    <category term="Pays-Bas"/>
-    <content type="html">
-&lt;p&gt;Le groupe de distribution néerlandais Ahold Delhaize a confirmé le 19 octobre que l&#39;activité suspecte détectée le 12 octobre dans ses systèmes résultait d&#39;«&amp;nbsp;actions malveillantes&amp;nbsp;». Le groupe avait alors coupé par précaution ses systèmes informatiques, sites et applications dans la plupart de ses enseignes aux États-Unis et en Europe&amp;nbsp;; les magasins sont restés ouverts. Le site et l&#39;application d&#39;Albert Heijn, Etos et Gall &amp;amp; Gall fonctionnent de nouveau, mais les livraisons à domicile d&#39;Albert Heijn ne reprendront que vendredi. Le commerce en ligne est rétabli en Belgique et en Europe centrale et du Sud-Est. Aux États-Unis, les achats en ligne chez Food Lion et Stop &amp;amp; Shop doivent reprendre «&amp;nbsp;dans les prochains jours&amp;nbsp;». Le groupe dit n&#39;avoir, à ce stade de l&#39;enquête, aucun indice de vol de données sensibles de clients, de salariés ou de partenaires. Il a prévenu le centre néerlandais de cybersécurité et a porté plainte auprès de la police néerlandaise le 19 octobre. Il ne décrit pas la nature de l&#39;attaque, et aucune revendication n&#39;a été rapportée. Ahold Delhaize n&#39;a pas répondu à The Register, qui demandait si l&#39;incident était lié aux attaques contre les contrôleurs de réfrigération de supermarchés français.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://newsroom.aholddelhaize.com/ahold-delhaize-update-on-status-of-cybersecurity-incident/&#34;&gt;Ahold Delhaize&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/10/19/grocery-giant-ahold-delhaize-confirms-cyberattack-forced-us-and-european-systems-offline/5303970&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://therecord.media/ahold-delhaize-cyberattack-grocery&#34;&gt;The Record&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Le Japon lance la sonde MMX, qui doit rapporter sur Terre des échantillons de Phobos, une lune de Mars</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#a3</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=3&amp;utm_source=rss#a3"/>
-    <published>2026-10-20T06:59:58+02:00</published>
-    <updated>2026-10-20T06:59:58+02:00</updated>
-    <category term="Japon"/>
-    <content type="html">
-&lt;p&gt;Un lanceur H3, pour son dixième vol, a décollé le 20 octobre à 4 h 41 heure japonaise (le 19 octobre à 21 h 41 à Paris) du centre spatial de Tanegashima, avec la sonde MMX (Martian Moons eXploration) de l&#39;agence spatiale japonaise JAXA. La sonde, d&#39;environ 4,5 tonnes, s&#39;est séparée du lanceur 71 minutes après le décollage et a été placée sur l&#39;orbite prévue, selon JAXA. Elle doit entrer en orbite autour de Mars en août 2027, étudier Phobos puis Déimos, quitter les environs de Mars en novembre 2030 et larguer une capsule d&#39;échantillons au retour, attendue en juillet 2031, selon Kyodo. Elle doit prélever environ 10 grammes de sol de Phobos, selon Next&amp;nbsp;; aucune mission n&#39;a encore rapporté d&#39;échantillons d&#39;une lune de Mars. Le petit rover Idefix, développé par le CNES et le centre aérospatial allemand DLR, doit observer la surface et préparer l&#39;atterrissage de la sonde principale, qui emporte aussi le spectromètre infrarouge MIRS du LESIA et du CNES et le spectromètre MEGANE de la Nasa. Le lancement, prévu en 2024, avait été repoussé après l&#39;échec du premier vol du H3.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://global.jaxa.jp/press/2026/10/20261020-1_e.html&#34;&gt;JAXA&lt;/a&gt;, &lt;a href=&#34;https://www.nippon.com/en/news/yjj2026102000118/japan-successfully-launches-rocket-with-martian-moon-probe.html&#34;&gt;Jiji, via Nippon.com&lt;/a&gt;, &lt;a href=&#34;https://qazinform.com/news/japan-launches-worlds-first-mars-moon-sample-return-mission-4163ef&#34;&gt;Kyodo, via Kazinform&lt;/a&gt;, &lt;a href=&#34;https://next.ink/262715/mmx-pret-a-decoller-en-compagnie-didefix-vers-phobos-un-des-deux-satellites-de-mars/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Deutsche Telekom, Orange, Telefónica et Vodafone envisagent une candidature commune aux fréquences européennes de téléphonie par satellite</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#a4</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=4&amp;utm_source=rss#a4"/>
-    <published>2026-10-20T06:59:57+02:00</published>
-    <updated>2026-10-20T06:59:57+02:00</updated>
-    <category term="Europe"/>
-    <content type="html">
-&lt;p&gt;Les quatre opérateurs ont annoncé le 19 octobre avoir signé une lettre d&#39;intention pour étudier une candidature conjointe lors de la prochaine attribution, dans l&#39;Union européenne, des fréquences des services mobiles par satellite, qui permettent de joindre directement un téléphone depuis l&#39;espace. Ils construiraient en Europe l&#39;infrastructure au sol et assureraient la coordination, sans investir directement dans une constellation, confiée à un partenaire satellitaire «&amp;nbsp;encore à choisir&amp;nbsp;», selon le communiqué. Tous les opérateurs mobiles auraient un accès ouvert et non discriminatoire au service. Ces fréquences de la bande des 2 GHz, aujourd&#39;hui utilisées notamment pour l&#39;Internet à bord des avions, doivent se libérer à partir de mi-2029&amp;nbsp;: les droits actuels expirent en mai 2027 et la Commission européenne propose de les prolonger de deux ans, selon heise. Une partie du spectre doit être réservée aux communications publiques et rattachée au programme de constellation européen IRIS². Les accords existants restent en place&amp;nbsp;: Deutsche Telekom doit couvrir des zones blanches allemandes avec Starlink à partir de 2028 et Vodafone travaille avec AST SpaceMobile. La lettre ne fixe aucun calendrier.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.vodafone.com/news/newsroom/technology/four-european-operators-sign-letter-of-intent-to-explore-a-joint-bid-for-mobile-satellite-services&#34;&gt;communiqué de Vodafone&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Telekom-Vodafone-Telefonica-und-Orange-planen-gemeinsames-Satelliten-Gebot-11492848.html&#34;&gt;Heise&lt;/a&gt;, &lt;a href=&#34;https://thenextweb.com/news/europe-carriers-joint-satellite-spectrum-bid-mss&#34;&gt;The Next Web&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Le département américain de la Sécurité intérieure ordonne le retrait des produits DeepSeek des administrations fédérales civiles</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#a5</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=5&amp;utm_source=rss#a5"/>
-    <published>2026-10-20T06:59:56+02:00</published>
-    <updated>2026-10-20T06:59:56+02:00</updated>
-    <category term="États-Unis, Chine"/>
-    <content type="html">
-&lt;p&gt;Le secrétaire à la Sécurité intérieure a ordonné d&#39;exclure des achats des agences fédérales civiles les produits et services informatiques de Hangzhou DeepSeek Artificial Intelligence et de ses entités affiliées, et de retirer de leurs systèmes tous les produits DeepSeek ainsi que les produits tiers «&amp;nbsp;développés à partir de mises en œuvre de DeepSeek&amp;nbsp;», selon l&#39;avis déposé le 19 octobre et publié le 20 octobre au Federal Register. L&#39;ordre s&#39;appuie sur la loi de 2018 sur la sécurité de la chaîne d&#39;approvisionnement des achats fédéraux (FASCSA), après une recommandation du Federal Acquisition Security Council&amp;nbsp;; sa mise en œuvre revient à l&#39;agence de cybersécurité CISA. Le ministère invoque un risque de transfert de données sensibles vers le gouvernement chinois et la possibilité que les modèles contiennent des logiciels malveillants ou des vulnérabilités, selon Engadget. The Register relève que l&#39;ordre ne précise ni délai ni ce que recouvre «&amp;nbsp;développé à partir de&amp;nbsp;»&amp;nbsp;: accès continu à l&#39;API, ou code écrit avec l&#39;aide de DeepSeek. DeepSeek n&#39;a pas réagi publiquement.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://public-inspection.federalregister.gov/2026-21447.pdf&#34;&gt;Federal Register (DHS, document 2026-21447)&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/10/20/deepseek-deep-sixed-at-all-us-federal-civilian-agencies/5304010&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.engadget.com/2290535/homeland-security-bans-deepseek-use-in-federal-civilian-agencies/&#34;&gt;Engadget&lt;/a&gt;, &lt;a href=&#34;https://next.ink/brief-article/les-etats-unis-bannissent-lia-chinoise-deepseek-dans-ladministration-civile-federale/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>L&#39;outil open source du jour : ReactOS, le système d&#39;exploitation libre compatible Windows, peut désormais s&#39;installer sur une partition NTFS</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html#outil</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?outil&amp;utm_source=rss#outil"/>
-    <published>2026-10-20T06:59:55+02:00</published>
-    <updated>2026-10-20T06:59:55+02:00</updated>
-    <category term="L&#39;outil open source du jour"/>
-    <content type="html">
-&lt;p&gt;ReactOS est un système d&#39;exploitation libre qui reproduit l&#39;architecture de Windows NT, de façon à faire tourner des applications et des pilotes écrits pour Windows sans code de Microsoft. Le projet a commencé en 1996&amp;nbsp;; il s&#39;installe sur un PC ou dans une machine virtuelle et se présente avec une interface proche de celle de Windows Server 2003.&lt;/p&gt;
-&lt;p&gt;Le 10 octobre, la modification n° 9316, signée de Justin Miller avec Carl Bialorucki, a été intégrée à la branche principale&amp;nbsp;: le programme d&#39;installation sait désormais formater une partition en NTFS, le système de fichiers de Windows, et y écrire un secteur de démarrage. Le développeur a corrigé le formatage pour qu&#39;il passe la vérification chkdsk de Windows 11. D&#39;autres corrections du pilote NTFS ont suivi jusqu&#39;au 17 octobre, dont l&#39;installation des additions invitées de VirtualBox sur une partition NTFS. Ces changements figurent dans les versions de développement, pas encore dans une version publiée.&lt;/p&gt;
-&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/reactos/reactos&#34;&gt;github.com/reactos/reactos&lt;/a&gt;, consulté le 20 octobre.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: GPL-2.0, vérifiée dans le fichier COPYING du dépôt (reconnue OSI)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 18&amp;nbsp;269 étoiles, 2&amp;nbsp;272 forks, 89&amp;nbsp;876 commits, 118 pull requests ouvertes au 20 octobre&amp;nbsp;; dernière release 0.4.16 le 28 août 2026. Le projet suit ses bogues dans son propre Jira, pas dans les issues GitHub, d&#39;où un compteur d&#39;issues à zéro&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: une communauté de développeurs bénévoles et quelques salariés, autour de l&#39;association ReactOS Deutschland e.V., qui recueille les dons&amp;nbsp;; Carl Bialorucki a été embauché en 2025 pour améliorer la suite de tests&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le projet se déclare lui-même en version alpha et déconseille un usage en production. Le formatage NTFS de l&#39;installateur est seulement rapide&amp;nbsp;: il écrit les métadonnées sans effacer le reste du volume, et le formatage complet n&#39;est pas pris en charge, selon la discussion de la modification. La compatibilité vise surtout Windows Server 2003 et les applications 32 bits&amp;nbsp;; beaucoup d&#39;applications et de pilotes récents ne fonctionnent pas.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-20.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 017, mardi 20 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

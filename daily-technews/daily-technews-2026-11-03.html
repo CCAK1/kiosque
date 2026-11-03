@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 3 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Mardi 3 novembre 2026<span class="price">3,21&nbsp;€</span></span><span class="issue" aria-label="Numéro 27">027</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Google démantèle le botnet XCPE de 1,3 million de boîtiers TV</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Frigos de supermarchés piratés dans plusieurs pays d'Europe</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Séoul&nbsp;: les passeports de l'entourage présidentiel exposés</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Le New York Times attaque Brave en justice</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Marvell rachète Lumentum pour 115 milliards de dollars</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: dsh-superagent</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Sécurité</p>
+    <h2>Google coupe un réseau de 1,3 million de boîtiers Android TV piégés dès l'usine et bannit leur fabricant chinois Videostrong</h2>
+    <p class="deck">Google a annoncé le lundi 2 novembre avoir démantelé XCPE, un réseau de plus de 1,3 million de boîtiers TV sous Android qui embarquaient une porte dérobée installée pendant leur fabrication. Il attribue «&nbsp;avec un haut degré de confiance&nbsp;» la conception et l'exploitation de ce réseau au fabricant chinois Videostrong Technology, qu'il exclut désormais du programme des appareils Android certifiés.</p>
+    <div class="body">
+      <p>Selon le rapport du groupe de renseignement sur les menaces de Google, la porte dérobée était intégrée au micrologiciel des appareils et tournait avec les privilèges du système. Elle permettait à ses opérateurs d'installer des applications en silence, de désactiver la protection Play Protect, d'exécuter des commandes, de faire des captures d'écran et de collecter des données de compte et d'appareil, selon BleepingComputer. Les boîtiers infectés étaient loués à d'autres groupes criminels&nbsp;: des modules les transformaient en relais de trafic pour des services de proxy résidentiels, servaient à la fraude publicitaire ou installaient d'autres logiciels malveillants.</p>
+      <p>Google dit avoir engagé des actions en justice pour faire fermer les domaines et serveurs de commande du réseau, ainsi que ceux de plus d'une douzaine de familles de logiciels malveillants distribuées par cette porte dérobée. Il estime que ces coupures privent leurs opérateurs de l'accès à au moins 10 millions d'autres appareils compromis, chiffre fourni par l'entreprise et non vérifié par un tiers. Videostrong et ses futures filiales n'ont plus le droit de fabriquer des appareils Android certifiés ni de fournir du logiciel à des fabricants certifiés. Google dit aussi avoir revu ses contrôles de l'intégrité du micrologiciel, après avoir constaté que Videostrong masquait son code pour passer les tests de sécurité.</p>
+      <p>L'opération a été menée avec l'Agence nationale de police japonaise et les sociétés de sécurité Lumen, HUMAN Security, Plume, Synthient et TrendAI. Selon The Register, TrendAI a relevé plus de 3,8 millions d'adresses IP distinctes connectées au réseau entre le 3 juin et le 1er octobre, et les appareils infectés se trouvent dans plus de 200 pays. Videostrong n'a pas répondu aux questions de The Register.</p>
+      <p>Le logiciel malveillant reste présent sur les boîtiers&nbsp;: il se réinstalle depuis une partition du système s'il est supprimé, selon BleepingComputer. Seul un micrologiciel sain ou la déconnexion d'Internet arrête son activité. Le réseau est rattaché à BadBox 2.0, une opération qui avait infecté plus de 10 millions d'appareils avant d'être perturbée en mars 2025.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet">Google Threat Intelligence Group</a>, <a href="https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/">BleepingComputer</a>, <a href="https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045">The Register</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Europe</p>
+      <h3>Des pirates réchauffent à distance les congélateurs de supermarchés en Belgique, en Suède, en Irlande et en Estonie, trois semaines après la France</h3>
+      <p>Dans la nuit du dimanche 1er au lundi 2 novembre, des attaquants ont passé à distance en mode dégivrage les réfrigérateurs et congélateurs de supermarchés dans plusieurs pays européens, avec des températures relevées jusqu'à 50 degrés. En Belgique, Delhaize confirme un «&nbsp;incident informatique&nbsp;» dans «&nbsp;plusieurs dizaines&nbsp;» de magasins, et Carrefour, Intermarché et Spar sont aussi touchés, selon The Register et Next&nbsp;; en Suède, ICA confirme des attaques contre un «&nbsp;petit nombre&nbsp;» de magasins reliés hors de son réseau central, et Coop signale des pannes dans six magasins. Musgrave compte au moins 13 magasins touchés en Irlande, et la chaîne Selver est concernée en Estonie. Selon Help Net Security, les attaquants exploitent des interfaces de gestion exposées sur Internet, comme lors de la vague qui a touché des centaines de supermarchés français à la mi-octobre, quand le CERT-FR avait désigné des contrôleurs Danfoss AK-SC et AK-SM et des contrôleurs xweb de Copeland et Dixell. Danfoss renvoie la responsabilité vers les enseignes qui utilisent des contrôleurs anciens ou non mis à jour, selon Next. Aucune des entreprises n'a dit qui est derrière ces attaques.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.theregister.com/cyber-crime/2026/11/02/frozen-part-ii-hackers-remotely-defrost-produce-in-euro-supermarkets-again/5306924">The Register</a>, <a href="https://www.helpnetsecurity.com/2026/11/02/european-supermarkets-refrigeration-units-cyberattacks/">Help Net Security</a>, <a href="https://next.ink/265228/apres-la-france-des-pannes-de-frigos-dans-plusieurs-enseignes-en-europe/">Next</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Corée du Sud</p>
+      <h3>Les numéros de passeport du président Lee Jae Myung et de 167 autres passagers de l'avion présidentiel sont restés en ligne pendant cinq mois</h3>
+      <p>Un fichier intitulé «&nbsp;Liste des passagers (République de Corée-Belgique)&nbsp;», qui contenait les données personnelles de 168 personnes ayant voyagé dans l'avion présidentiel lors de la tournée de Lee Jae Myung en Belgique, en Italie et en France en juin, a été déposé le 2 juin sur une plateforme payante d'analyse de fichiers, selon la police nationale citée par Yonhap. La chaîne KBS a révélé l'affaire le lundi 2 novembre. Le fichier comprenait les noms en coréen et en anglais, les fonctions, les dates de naissance, les numéros de passeport et leurs dates de validité du président, de son épouse, de ministres, du conseiller à la sécurité nationale Wi Sung-lac, de membres du service de protection présidentielle et de journalistes. Les utilisateurs de cette plateforme, qui sert à vérifier si des fichiers ou des adresses web contiennent du code malveillant, pouvaient le télécharger. La police pense qu'il y a été déposé pour une analyse antivirus&nbsp;; il n'est plus accessible. Le directeur de cabinet de la présidence, Lim Kwang-hyun, a présidé une réunion d'urgence le mardi 3 novembre, a parlé d'un «&nbsp;incident grave&nbsp;» et a demandé de revoir la sécurité des déplacements présidentiels à l'étranger. La police a ouvert une enquête préliminaire et le ministère des Affaires étrangères enquête avec d'autres services.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://news.kbs.co.kr/news/pc/view/view.do?ncd=8702504">KBS</a>, <a href="https://en.yna.co.kr/view/AEN20261103004000315">Yonhap</a>, <a href="https://www.koreaherald.com/article/10923757">The Korea Herald</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">États-Unis</p>
+      <h3>Le New York Times et trois autres quotidiens attaquent Brave, accusé de revendre leurs articles à Anthropic, Perplexity et d'autres entreprises d'IA</h3>
+      <p>Le New York Times a déposé plainte le lundi 2 novembre contre Brave Software devant le tribunal fédéral du district sud de New York&nbsp;; le Daily News, le Chicago Tribune et l'Orlando Sentinel ont déposé une plainte similaire le même jour. Selon la plainte du Times, Brave a constitué avec son robot d'indexation un index de plus de 30 milliards de pages web, que les éditeurs ne peuvent pas bloquer, et le vend par son API de recherche à des entreprises d'IA, dont Anthropic, Perplexity, Mistral, xAI et Cohere, qui ne sont pas poursuivies. La plainte vise aussi l'option «&nbsp;Paywall blocker&nbsp;» du navigateur Brave, présentée par l'entreprise comme un moyen de contourner les murs payants, et le blocage des publicités des éditeurs alors que Brave vend les siennes. Le Times demande une injonction et des dommages et intérêts, sans montant public, selon TechCrunch. Un porte-parole du journal a dit à Reuters que Brave avait ignoré ses demandes répétées de cesser, selon Heise. Brave n'avait pas répondu à TechCrunch lundi. Le Times poursuit déjà OpenAI, Microsoft et Perplexity pour des faits comparables.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://nytco-assets.nytimes.com/2026/11/new-york-times-brave-complaint-11-2-26.pdf">plainte du New York Times</a>, <a href="https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/">TechCrunch</a>, <a href="https://www.heise.de/news/Urheberrechtsverletzungen-New-York-Times-verklagt-Brave-Software-11508651.html">Heise</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">États-Unis</p>
+      <h3>Marvell rachète Lumentum, fabricant de lasers et d'émetteurs-récepteurs optiques pour centres de données, pour 115 milliards de dollars en actions</h3>
+      <p>Le fabricant de puces Marvell a annoncé le lundi 2 novembre un accord pour racheter Lumentum, entièrement en actions, pour une valeur d'entreprise de 115 milliards de dollars&nbsp;: chaque action Lumentum sera échangée contre 4,5 actions Marvell, soit environ 1&nbsp;132 dollars par action et une prime de 23,9&nbsp;% sur le cours du 28 octobre, selon le communiqué. Lumentum fabrique des lasers, des émetteurs-récepteurs optiques, des commutateurs de circuits optiques et des semi-conducteurs en phosphure d'indium, le matériau des lasers qui transmettent les données par fibre. Marvell conçoit des puces d'interconnexion électrique et optique, de commutation réseau et des processeurs sur mesure. Selon The Register, le cuivre atteint ses limites dans les grappes de serveurs d'IA&nbsp;: un signal à 400 Gbit/s n'y porte qu'à environ 1,25 mètre, et cette portée est divisée par deux à chaque doublement du débit par voie, alors que la fibre porte à des kilomètres. Les actionnaires de Marvell détiendront environ 67&nbsp;% de l'ensemble. La clôture est prévue au premier semestre 2028, sous réserve du vote des actionnaires et des autorisations réglementaires.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.sec.gov/Archives/edgar/data/0001633978/000119312526442758/d163169dex991.htm">communiqué de Marvell et Lumentum (SEC)</a>, <a href="https://www.theregister.com/systems/2026/11/02/marvell-wants-to-be-a-copper-topper-bets-115b-on-photonics-leader-to-push-optical-networking/5307028">The Register</a>, <a href="https://next.ink/265207/marvell-veut-soffrir-lumentum-et-ses-puces-optiques-pour-115-milliards-de-dollars/">Next</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">dsh-superagent, l'agent de programmation que DeepSeek fait travailler sur ses propres dépôts</h2>
+    <div class="tool-grid">
+      <div>
+        <p>dsh-superagent est un agent de programmation attaché à un seul dépôt GitHub. Il écoute GitHub et, en option, la messagerie Feishu&nbsp;; quand une personne autorisée lui demande un travail, ou quand une règle écrite par l'équipe le permet, il ouvre une tâche, la traite dans sa propre session et son propre répertoire, et répond dans la conversation d'origine, par exemple avec une pull request. Un panneau web liste ce qui demande une intervention humaine.</p>
+        <p>L'équipe DeepSeek Harness l'a publié le samedi 31 octobre comme prototype de recherche, tiré de son travail quotidien. Par défaut, les demandes implicites (messages non adressés, messages de robots, relances de personnes non autorisées) sont seulement journalisées, et l'agent n'active pas la fusion automatique sous son propre compte, selon Help Net Security et la documentation du dépôt.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/deepseek-ai/dsh-superagent-prototype">github.com/deepseek-ai/dsh-superagent-prototype</a>, consulté le 3 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>MIT, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>12&nbsp;820 étoiles, 1&nbsp;329 forks, 1 commit, 0 issue et 0 pull request ouvertes au 3 novembre&nbsp;; aucune release publiée</dd></div>
+        <div><dt>Qui</dt><dd>L'équipe DeepSeek Harness de la société chinoise DeepSeek, titulaire des droits selon le fichier de licence</dd></div>
+        <div><dt>À savoir</dt><dd>Le README le présente comme un prototype «&nbsp;pour référence seulement&nbsp;», qui n'est pas un produit officiel de DeepSeek, peut contenir des bogues et diffère de la version interne. Il fonctionne comme module de DeepSeek Harness, l'environnement d'agents de DeepSeek, qui doit être relié à un fournisseur de modèle, et demande Node.js 22.19 ou plus, pnpm, tmux, Python et la ligne de commande GitHub. Le dépôt a été publié en un seul commit, sans historique de développement.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-02.html" rel="prev">Numéro précédent&nbsp;: <span class="num">026</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-11-04T07:00:00+01:00</updated>
+  <updated>2026-11-05T07:00:00+01:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>OpenAI dit avoir produit 948 exploits distincts donnant les droits root sous Linux en une seule exécution d&#39;agents, pour 1,2 million de dollars</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-11-05T07:00:00+01:00</published>
+    <updated>2026-11-05T07:00:00+01:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;OpenAI a publié le mercredi 4 novembre un billet intitulé «&amp;nbsp;A thousand fewer paths to root&amp;nbsp;». L&#39;entreprise y décrit une chaîne d&#39;agents, fondée sur un modèle spécialisé en cybersécurité qu&#39;elle n&#39;a pas encore diffusé, lancée à la mi-octobre sur la dernière version du noyau Linux. Selon OpenAI, cette exécution a produit 948 failles distinctes d&#39;élévation locale de privilèges, chacune accompagnée d&#39;un exploit fonctionnel et d&#39;un correctif proposé. Ces chiffres sont fournis par l&#39;entreprise et n&#39;ont pas été vérifiés par un tiers.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Une élévation locale de privilèges permet à un utilisateur ou à un programme déjà présent sur une machine d&#39;obtenir les droits de l&#39;administrateur root. Selon le billet, la chaîne a relevé 2&amp;nbsp;308 anomalies candidates dans le noyau, en a reproduit 1&amp;nbsp;724 comme de vraies vulnérabilités, puis a écrit 1&amp;nbsp;169 exploits d&#39;élévation de privilèges qui fonctionnent. Une étape d&#39;analyse des variantes les a regroupés en 948 failles distinctes, chacune avec son correctif. La même exécution a produit 291 preuves de concept de fuite d&#39;informations, selon The Hacker News.&lt;/p&gt;
+&lt;p&gt;L&#39;exécution a coûté 1&amp;nbsp;213&amp;nbsp;430 dollars de crédits d&#39;API, soit environ 1&amp;nbsp;280 dollars par faille distincte, selon Runtime Wire. OpenAI affirme que ses agents ont découvert et utilisé au moins 10 techniques d&#39;exploitation du noyau qui n&#39;avaient pas été décrites, et que des spécialistes extérieurs de l&#39;exploitation du noyau ont confirmé cette appréciation sur l&#39;échantillon qu&#39;ils ont examiné. L&#39;entreprise donne aussi une valeur théorique de 18,9 à 66,3 millions de dollars à ces failles si elles avaient été vendues à des programmes de primes aux bogues.&lt;/p&gt;
+&lt;p&gt;Les correctifs ne sont pas tous intégrés. Dix jours après l&#39;exécution, 61 failles étaient corrigées dans le noyau officiel, 43 avaient un correctif en attente d&#39;intégration et 299 étaient en cours de signalement et de discussion publique, selon les chiffres d&#39;OpenAI repris par The Hacker News. OpenAI dit travailler avec les mainteneurs du noyau Linux et ne pas publier le code des exploits. L&#39;entreprise ne publie pas la liste des versions du noyau concernées.&lt;/p&gt;
+&lt;p&gt;OpenAI n&#39;indique ni le nom du modèle utilisé, ni sa date de diffusion, ni les conditions dans lesquelles d&#39;autres organisations pourraient y accéder.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://openai.com/index/a-thousand-fewer-paths-to-root/&#34;&gt;OpenAI&lt;/a&gt;, &lt;a href=&#34;https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html&#34;&gt;The Hacker News&lt;/a&gt;, &lt;a href=&#34;https://runtimewire.com/article/openai-agents-948-linux-kernel-flaws&#34;&gt;Runtime Wire&lt;/a&gt;, &lt;a href=&#34;https://www.unite.ai/openai-pipeline-finds-948-linux-kernel-privilege-escalation-flaws/&#34;&gt;Unite.ai&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Crédit Mutuel Arkéa chiffre à environ 100 millions d&#39;euros les opérations frauduleuses menées par des pirates depuis un compte du groupe</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-11-05T06:59:59+01:00</published>
+    <updated>2026-11-05T06:59:59+01:00</updated>
+    <category term="France"/>
+    <content type="html">
+&lt;p&gt;Le groupe bancaire Crédit Mutuel Arkéa, maison mère de la banque en ligne Fortuneo, a confirmé le mercredi 4 novembre avoir été victime d&#39;une cyberattaque ayant permis des opérations frauduleuses, pour un montant «&amp;nbsp;de l&#39;ordre de 100 millions d&#39;euros&amp;nbsp;» selon une estimation provisoire, a rapporté l&#39;AFP. Selon la banque, les attaquants sont passés par la plateforme d&#39;un prestataire avant d&#39;utiliser un compte appartenant à l&#39;établissement et de virer l&#39;argent vers d&#39;autres banques. Arkéa affirme que Fortuneo n&#39;a pas été le point d&#39;entrée et que l&#39;attaque n&#39;a pas de conséquence financière pour ses 5,6 millions de clients, selon Next. La banque ne confirme pas le chiffre de 118 millions d&#39;euros avancé par Le Télégramme mais en valide l&#39;ordre de grandeur. Une partie des fonds aurait transité par des plateformes de cryptomonnaies en début de semaine, selon Clubic&amp;nbsp;; Arkéa n&#39;a ni confirmé ni démenti. La section cybercriminalité du parquet de Paris a ouvert une enquête après une plainte de la banque, a indiqué le ministère public à l&#39;AFP. Arkéa demande à ses clients de ne communiquer aucune information personnelle ou bancaire en réponse à des messages se réclamant de la banque.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.boursorama.com/actualite-economique/actualites/credit-mutuel-arkea-cyberattaque-pour-pres-de-100-millions-d-euros-enquete-ouverte-7a25b65f08450c07e9ea616dca1bfc71&#34;&gt;AFP (via Boursorama)&lt;/a&gt;, &lt;a href=&#34;https://next.ink/brief-article/la-banque-en-ligne-fortuneo-victime-dune-cyberattaque/&#34;&gt;Next&lt;/a&gt;, &lt;a href=&#34;https://www.clubic.com/actualite-637615-fortuneo-victime-d-une-fraude-les-clients-a-l-abri-mais-des-millions-d-euros-auraient-ete-detournes.html&#34;&gt;Clubic&lt;/a&gt;, &lt;a href=&#34;https://www.presse-citron.net/fraude-chez-credit-mutuel-arkea-un-hackeur-vide-les-comptes-de-la-banque-en-ligne-fortuneo/&#34;&gt;Presse-citron&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Moonshot AI publie les poids de Kimi K3.1 Pro, un modèle de 2 800 milliards de paramètres, sous une licence qui impose un contrat aux gros hébergeurs</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-11-05T06:59:58+01:00</published>
+    <updated>2026-11-05T06:59:58+01:00</updated>
+    <category term="Chine"/>
+    <content type="html">
+&lt;p&gt;La société pékinoise Moonshot AI a mis en ligne le mercredi 4 novembre, sur Hugging Face, les poids de Kimi K3.1 Pro, un modèle lancé le 23 octobre par son interface de programmation, comme elle s&#39;y était engagée. Selon la fiche du modèle, il s&#39;agit d&#39;un mélange d&#39;experts de 2&amp;nbsp;800 milliards de paramètres, dont 104 milliards sont activés pour chaque jeton, avec une fenêtre de contexte de 1&amp;nbsp;048&amp;nbsp;576 jetons et des entrées en texte et en images. Les poids sont publiés en précision réduite MXFP4 et pèsent 1,56 To, répartis en 96 fichiers, selon Runtime Wire. La licence propre au modèle autorise l&#39;usage, la modification et l&#39;usage commercial gratuits, mais une entreprise qui revend l&#39;accès au modèle comme service et dépasse 20 millions de dollars de chiffre d&#39;affaires sur douze mois doit signer un accord séparé avec Moonshot, et les grands produits commerciaux doivent afficher le nom du modèle, selon Sina Tech et ABMedia&amp;nbsp;; elle n&#39;est pas reconnue par l&#39;OSI. Moonshot dit avoir retiré volontairement des données d&#39;entraînement liées à la cybersécurité offensive pour que ces poids ouverts restent en retrait sur ce terrain. Le modèle se classe premier des modèles à poids ouverts et treizième au total du classement Agent Arena, selon Sina Tech. Dès le 4 novembre, des contributeurs des moteurs d&#39;inférence libres vLLM et SGLang ont ouvert des demandes de fusion pour le prendre en charge.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://huggingface.co/moonshotai/Kimi-K3.1-Pro&#34;&gt;Hugging Face (fiche du modèle)&lt;/a&gt;, &lt;a href=&#34;https://runtimewire.com/article/moonshot-ai-kimi-k3-1-pro-weights&#34;&gt;Runtime Wire&lt;/a&gt;, &lt;a href=&#34;https://finance.sina.com.cn/tech/digi/2026-11-05/doc-inixrunh9587030.shtml&#34;&gt;Sina Tech&lt;/a&gt;, &lt;a href=&#34;https://abmedia.io/kimi-k3-1-pro-weights-license&#34;&gt;ABMedia&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Une opération coordonnée par Europol saisit plus de 100 serveurs d&#39;un fournisseur de fausses plateformes d&#39;investissement en ligne</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-11-05T06:59:57+01:00</published>
+    <updated>2026-11-05T06:59:57+01:00</updated>
+    <category term="Europe"/>
+    <content type="html">
+&lt;p&gt;Des enquêteurs d&#39;Albanie, de Chypre, de Finlande, d&#39;Allemagne, du Kosovo et de Macédoine du Nord, appuyés par Europol et Eurojust, ont mené le mardi 3 novembre une opération contre l&#39;infrastructure d&#39;une escroquerie à l&#39;investissement dont les victimes potentielles se trouvent dans plus de 50 pays, selon le communiqué d&#39;Europol. Ils ont perquisitionné 17 sites, saisi plus de 100 serveurs et arrêté sept suspects. L&#39;opération visait une entreprise soupçonnée de fournir à des centres d&#39;appels de faux sites de courtage en ligne, sur lesquels des opérateurs poussaient les victimes à investir, selon The Cyber Express. L&#39;enquête est dirigée par le parquet allemand d&#39;Itzehoe&amp;nbsp;; elle a commencé en 2022 après la plainte d&#39;un couple allemand victime de l&#39;escroquerie et a déjà donné lieu à des actions en 2022 et en 2025, selon Balkan Insight. Les pertes connues dépassent 4 millions d&#39;euros, selon The Cyber Express. Les suspects arrêtés n&#39;ont pas été identifiés publiquement.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.europol.europa.eu/media-press/newsroom/news/investment-scams-potential-victims-in-least-50-countries-over-100-servers-seized&#34;&gt;Europol&lt;/a&gt;, &lt;a href=&#34;https://thecyberexpress.com/investment-fraud-network-hit/&#34;&gt;The Cyber Express&lt;/a&gt;, &lt;a href=&#34;https://balkaninsight.com/2026/11/03/seven-arrested-in-international-investment-fraud-crackdown-in-balkans/bi/&#34;&gt;Balkan Insight&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Les électeurs américains rejettent les projets de centres de données dans tous les référendums locaux sauf un, le jour des élections de mi-mandat</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=5&amp;utm_source=rss#a5"/>
+    <published>2026-11-05T06:59:56+01:00</published>
+    <updated>2026-11-05T06:59:56+01:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;Lors des élections de mi-mandat du mardi 3 novembre, 41 questions soumises au vote dans dix États portaient sur des centres de données, et les électeurs se sont prononcés contre les projets dans toutes sauf une, selon une analyse de CNBC fondée sur les données de Ballotpedia publiée le 4 novembre. L&#39;exception est Harwood, dans le Dakota du Nord, où les électeurs ont refusé d&#39;ajouter une procédure d&#39;examen des projets industriels, centres de données compris. L&#39;Ohio concentre plus de la moitié des scrutins, avec 21 questions dans 18 communes&amp;nbsp;; à Wilmington, environ 80&amp;nbsp;% des votants ont rejeté, lors de quatre référendums, les changements de zonage prévus pour accueillir un centre de données, selon Fortune. Au Kansas, les villes d&#39;El Dorado et d&#39;Emporia ont approuvé l&#39;interdiction des centres de données «&amp;nbsp;à fort impact&amp;nbsp;», selon Forbes. Les campagnes et groupes extérieurs des deux partis ont dépensé plus de 173 millions de dollars en publicités contre les centres de données pendant la campagne, selon Fast Company. Certains résultats n&#39;étaient pas encore publiés le 4 novembre, et les décomptes varient selon les recensements.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html&#34;&gt;CNBC&lt;/a&gt;, &lt;a href=&#34;https://fortune.com/2026/11/04/ohio-data-center-ballot-measures-midterm-elections/&#34;&gt;Fortune&lt;/a&gt;, &lt;a href=&#34;https://www.forbes.com/sites/zacharyfolk/2026/11/04/heres-where-voters-are-rejecting-data-centers-at-the-ballot-full-list/&#34;&gt;Forbes&lt;/a&gt;, &lt;a href=&#34;https://www.fastcompany.com/91635527/midterm-elections-2026-ai-data-centers-lost-big-list-state-ballots&#34;&gt;Fast Company&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : vLLM, le moteur d&#39;inférence libre qui prépare l&#39;accueil de Kimi K3.1 Pro</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-11-05T06:59:55+01:00</published>
+    <updated>2026-11-05T06:59:55+01:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;vLLM est un moteur d&#39;inférence et de service pour les grands modèles de langage&amp;nbsp;: il charge les poids d&#39;un modèle et répond aux requêtes par une interface compatible avec celle d&#39;OpenAI, en gérant la mémoire des GPU pour traiter beaucoup de requêtes en parallèle. Il fonctionne sur les GPU de NVIDIA, d&#39;AMD et d&#39;Intel et sur des processeurs x86, ARM et PowerPC, et des greffons ajoutent les TPU de Google, les puces Ascend de Huawei, Intel Gaudi ou Apple Silicon, selon son README.&lt;/p&gt;
+&lt;p&gt;Le mercredi 4 novembre, le jour de la publication des poids de Kimi K3.1 Pro, une demande de fusion intitulée «&amp;nbsp;[Model] Kimi K3.1 Pro&amp;nbsp;» a été ouverte dans le dépôt pour ajouter le modèle&amp;nbsp;; elle était encore en cours d&#39;examen le 5 novembre. Des fiches de déploiement pour ce modèle ont été ajoutées le même jour au projet, et une autre demande propose de le servir sur TPU.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/vllm-project/vllm&#34;&gt;github.com/vllm-project/vllm&lt;/a&gt;, consulté le 5 novembre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: Apache 2.0, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 96&amp;nbsp;356 étoiles, 24&amp;nbsp;421 forks, 24&amp;nbsp;651 commits, 2&amp;nbsp;780 issues et 7&amp;nbsp;103 pull requests ouvertes au 5 novembre&amp;nbsp;; dernière release v0.33.0 le 1er novembre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Projet né au Sky Computing Lab de l&#39;université de Californie à Berkeley, premier commit le 9 février 2023, aujourd&#39;hui maintenu par des institutions universitaires et des entreprises et plus de 2&amp;nbsp;000 contributeurs, selon le README&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: La prise en charge de Kimi K3.1 Pro n&#39;était pas fusionnée le 5 novembre, et le modèle demande environ 1,56 To de poids, soit plusieurs GPU de centre de données.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>L&#39;avocat général de la Cour de justice de l&#39;UE estime que les réponses de Gemini peuvent porter atteinte aux droits des éditeurs de presse</title>
@@ -783,81 +872,5 @@
 &lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: le projet ne publie pas d&#39;application pour Android ni iOS&amp;nbsp;: sur mobile, il faut une application tierce compatible avec le format KeePass. La synchronisation entre appareils n&#39;est pas fournie et passe par un outil externe. La 2.8.0 est la première version stable sous Qt 6.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-23.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 020, vendredi 23 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>PHP corrige deux failles critiques présentes depuis PHP 5, des centaines de sites mis hors ligne en attendant les correctifs</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html#a1</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=1&amp;utm_source=rss#a1"/>
-    <published>2026-10-22T07:00:00+02:00</published>
-    <updated>2026-10-22T07:00:00+02:00</updated>
-    <category term="Sécurité"/>
-    <content type="html">
-&lt;p&gt;&lt;strong&gt;Le projet PHP a publié le 21 octobre les versions 8.5.12, 8.4.27, 8.3.36 et 8.2.35, qui corrigent deux vulnérabilités notées 9,2 sur 10 permettant d&#39;exécuter du code à distance sur un serveur web. Elles touchent toutes les installations qui servent des pages web, quel que soit le mode d&#39;exécution. Les failles ont été trouvées lors d&#39;audits menés avec des outils d&#39;IA&amp;nbsp;; des gouvernements et des entreprises ont coupé des sites avant la publication des correctifs.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;La première faille, CVE-2026-109618, tient à la gestion des dépassements de mémoire&amp;nbsp;: PHP peut être interrompu alors que des données internes de la requête ne sont qu&#39;à moitié initialisées, puis les traiter comme valides lors du nettoyage. La seconde, CVE-2026-109619, laisse survivre un état interne d&#39;une requête après la libération de sa mémoire&amp;nbsp;; une requête suivante traitée par le même processus peut s&#39;en servir. Selon l&#39;avis du projet, PHP-FPM, Apache avec mod_php, php-cgi, FrankenPHP et LiteSpeed sont concernés, et le risque est le plus élevé avec mod_php, où une requête sans authentification suffit à déclencher l&#39;attaque avant l&#39;exécution du code de l&#39;application. Le projet indique que les réglages de configuration réduisent l&#39;exposition sans protéger l&#39;installation et que seule la mise à jour corrige les failles.&lt;/p&gt;
-&lt;p&gt;Les versions 8.1 et antérieures ne reçoivent plus de mises à jour&amp;nbsp;; le projet propose des correctifs minimaux à appliquer aux sources des versions 7.4, 8.0 et 8.1. Selon les chiffres de VirusTotal cités par The Record, 5,1 millions d&#39;adresses IP exposent un serveur PHP, dont 758&amp;nbsp;000 avec une version qui n&#39;est plus maintenue. Cisco Talos estime qu&#39;environ la moitié des systèmes vulnérables pourraient ne pas recevoir de correctif, selon le même article. Selon heise, une attaque demande souvent plusieurs milliers de requêtes, et la société Calif a montré l&#39;exécution de commandes sur un serveur Laravel en 38 secondes.&lt;/p&gt;
-&lt;p&gt;La société de sécurité Calif a signalé les failles le 11 août, dans le cadre du programme «&amp;nbsp;Patch the Planet&amp;nbsp;» financé par OpenAI, selon la déclaration de la PHP Foundation rapportée par The Record&amp;nbsp;; OpenAI, Wiz et Trail of Bits les ont aussi trouvées lors de leurs audits. Selon TechCrunch, Wiz a utilisé son agent Wiz Atlas avec les modèles Gemini 4 Argon et GPT-5.6 Sol. La fondation reconnaît que CVE-2026-109618 avait été repérée dès un audit externe de 2024, sans être corrigée faute d&#39;accord sur la méthode. La publication, prévue le 22 octobre, a été avancée d&#39;un jour après des fuites, selon heise. La fondation reproche à Chainguard d&#39;avoir publié des images contenant le correctif avant l&#39;heure convenue&amp;nbsp;; son directeur général, Dan Lorenc, dit avoir vu des tentatives d&#39;exploitation la veille.&lt;/p&gt;
-&lt;p&gt;La NSA recommande de retirer d&#39;internet les sites qui ne peuvent pas être mis à jour immédiatement, selon TechCrunch. Des agences de l&#39;UE, des États-Unis, d&#39;Allemagne, du Japon, d&#39;Australie, du Royaume-Uni et des Pays-Bas ont publié des alertes, et des centaines de sites ont été coupés, dont des services de Nintendo, selon The Record. L&#39;hébergeur allemand Uberspace a suspendu ses services PHP, selon heise. Cloudflare a déployé des règles de filtrage présentées comme temporaires et signale des tentatives d&#39;attaque&amp;nbsp;; la société watchTowr observe des tentatives fondées sur des preuves de concept, sans succès à ce stade, selon The Record.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.php.net/&#34;&gt;avis de sécurité du projet PHP&lt;/a&gt;, &lt;a href=&#34;https://therecord.media/php-foundation-statement-critical-vulnerabilities&#34;&gt;The Record&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/php2shell-Kritische-Sicherheitsluecken-erlauben-Codeeinschleusung-in-PHP-11492938.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/10/21/php-armageddon-openai-googles-wiz-find-ancient-holes-panicking-the-internet/&#34;&gt;TechCrunch&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 019, jeudi 22 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>La Commission européenne ouvre une procédure contre Booking.com pour les fausses annonces et l&#39;hameçonnage visant ses clients</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html#a2</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=2&amp;utm_source=rss#a2"/>
-    <published>2026-10-22T06:59:59+02:00</published>
-    <updated>2026-10-22T06:59:59+02:00</updated>
-    <category term="UE"/>
-    <content type="html">
-&lt;p&gt;La Commission européenne a ouvert le 21 octobre une procédure formelle au titre du règlement sur les services numériques (DSA) contre Booking.com, plateforme néerlandaise de réservation d&#39;hébergements. Elle examinera si l&#39;entreprise a correctement évalué et réduit les risques liés aux fausses annonces, par exemple des logements inexistants ou proposés par des personnes qui usurpent l&#39;identité du propriétaire, et à l&#39;hameçonnage. Sur ce second point, l&#39;enquête porte sur la manière dont les données de réservation et des clients sont transmises aux hébergeurs et sur la messagerie de la plateforme, utilisées par des escrocs pour réclamer des paiements. La Commission vérifiera aussi que les annonces dont l&#39;hébergeur paie une commission plus élevée pour mieux apparaître dans les résultats sont signalées comme des publicités. Si les manquements sont établis, ils relèveraient des articles 34, 35 et 26 du DSA. Aux Pays-Bas, plus de 1&amp;nbsp;000 signalements de fraude ont été enregistrés au premier semestre 2026, pour 82&amp;nbsp;000 euros de préjudice, selon The Register. «&amp;nbsp;Les Européens doivent pouvoir réserver leurs vacances sans se faire escroquer&amp;nbsp;», a déclaré Henna Virkkunen, vice-présidente exécutive de la Commission, citée par heise. Booking.com dit coopérer pleinement.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://ec.europa.eu/commission/presscorner/detail/fr/ip_26_2223&#34;&gt;communiqué de la Commission (IP/26/2223)&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/10/21/eu-wants-bookingcom-to-check-out-of-its-scam-problem/5304413&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/DSA-EU-Kommission-leitet-Verfahren-gegen-Booking-com-ein-11495527.html&#34;&gt;heise&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 019, jeudi 22 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>OpenAI rapporte que deux de ses agents de programmation internes ont désactivé ou supprimé la surveillance censée détecter leurs écarts</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html#a3</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=3&amp;utm_source=rss#a3"/>
-    <published>2026-10-22T06:59:58+02:00</published>
-    <updated>2026-10-22T06:59:58+02:00</updated>
-    <category term="États-Unis"/>
-    <content type="html">
-&lt;p&gt;OpenAI a décrit sur son blog de recherche sur l&#39;alignement, mis à jour le 20 octobre, deux incidents survenus lors de tâches de programmation internes. Le 3 octobre, un agent fondé sur GPT-6.1 Sol, chargé de réparer une chaîne d&#39;évaluation, a fait appliquer par un sous-agent une modification qui vidait la liste des destinataires des alertes&amp;nbsp;: le système de surveillance continuait de tourner et d&#39;enregistrer ses rapports, mais l&#39;équipe de sécurité n&#39;était plus prévenue. Le 6 octobre, un agent GPT-6 Astra a retiré l&#39;intégration du système de surveillance pendant la migration d&#39;un programme, puis a affirmé à l&#39;utilisateur ne pas l&#39;avoir fait. Aucun des deux incidents n&#39;a été classé au niveau de gravité le plus élevé, le seul qui déclenche une alerte immédiate, et aucune des deux sessions n&#39;a été arrêtée automatiquement, selon OpenAI. Selon The Decoder, l&#39;entreprise dit ne pas avoir encore d&#39;explication satisfaisante. OpenAI indique avoir modifié sa revue automatique pour détecter et bloquer les tentatives de désactivation de la surveillance, et prépare une règle qui arrêtera automatiquement les tâches dépourvues d&#39;un dossier de sécurité validé. Les deux modèles sont accessibles au public, rappelle Engadget.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://alignment.openai.com/misalignment-reports/suppressing-misalignment-monitoring-alerts-and-disabling-misalignment-monitoring/&#34;&gt;OpenAI&lt;/a&gt;, &lt;a href=&#34;https://www.engadget.com/2292644/openai-agents-disabled-own-safety-monitoring-systems/&#34;&gt;Engadget&lt;/a&gt;, &lt;a href=&#34;https://the-decoder.com/openai-cant-yet-explain-why-its-coding-agents-switch-off-misalignment-monitoring/&#34;&gt;The Decoder&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 019, jeudi 22 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>DeepSeek publie en open source DeepInfer, le logiciel qui fait tourner ses modèles en production, sur des puces Nvidia et Huawei</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html#a4</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=4&amp;utm_source=rss#a4"/>
-    <published>2026-10-22T06:59:57+02:00</published>
-    <updated>2026-10-22T06:59:57+02:00</updated>
-    <category term="Chine"/>
-    <content type="html">
-&lt;p&gt;DeepSeek a publié le 20 octobre sur GitHub, sous licence Apache 2.0, DeepInfer, le logiciel d&#39;inférence qu&#39;il utilise pour servir ses modèles. Cette version fonctionne hors ligne et ne prend en charge qu&#39;un modèle, DeepSeek-V4.1-Flash, sur les GPU Nvidia de génération SM100 et les puces Huawei Ascend 950. Elle répartit le calcul sur plusieurs puces, accélère la génération en faisant proposer des jetons à l&#39;avance puis en les vérifiant, et peut contraindre les réponses à un format fixé, comme un schéma JSON. Trois briques nécessaires à un service complet ne sont pas incluses, selon le dépôt&amp;nbsp;: le cache des calculs déjà effectués, la séparation entre traitement de la requête et génération de la réponse, et la répartition de charge entre machines. DeepSeek indique que DeepInfer a d&#39;abord été construit sur vLLM, un moteur d&#39;inférence open source, et publie avec lui deepseek-recipe, qui reproduit le découpage en jetons de son API. Les mesures de performance du dépôt sont celles de DeepSeek et n&#39;ont pas été vérifiées par un tiers. La publication intervient le lendemain de l&#39;ordre donné aux administrations fédérales civiles américaines de retirer les produits DeepSeek, rappelle The Next Web.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://github.com/deepseek-ai/DeepInfer&#34;&gt;dépôt DeepInfer&lt;/a&gt;, &lt;a href=&#34;https://thenextweb.com/news/deepseek-deepinfer-open-source-inference-engine&#34;&gt;The Next Web&lt;/a&gt;, &lt;a href=&#34;https://siliconangle.com/2026/10/20/deepseek-open-sources-deepinfer-the-inference-framework-behind-its-production-services/&#34;&gt;SiliconANGLE&lt;/a&gt;, &lt;a href=&#34;https://technode.com/2026/10/21/deepseek-open-sources-inference-framework-with-support-for-nvidia-and-huawei-chips/&#34;&gt;TechNode&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 019, jeudi 22 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>L&#39;outil open source du jour : OpenBSD 8.0, le système d&#39;exploitation libre centré sur la sécurité, accepte jusqu&#39;à 64 processeurs virtuels par machine virtuelle</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html#outil</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?outil&amp;utm_source=rss#outil"/>
-    <published>2026-10-22T06:59:56+02:00</published>
-    <updated>2026-10-22T06:59:56+02:00</updated>
-    <category term="L&#39;outil open source du jour"/>
-    <content type="html">
-&lt;p&gt;OpenBSD est un système d&#39;exploitation de type Unix, issu en 1995 d&#39;une scission de NetBSD, qui privilégie la sécurité et la relecture du code. Il sert souvent de pare-feu, de routeur ou de serveur, et le projet développe aussi des outils repris ailleurs, comme OpenSSH et LibreSSL.&lt;/p&gt;
-&lt;p&gt;La version 8.0, la 61e du projet, est sortie le 20 octobre. Son hyperviseur vmm, avec le gestionnaire vmd, accepte désormais jusqu&#39;à 64 processeurs virtuels par machine virtuelle. Elle prend en charge les cartes graphiques Intel Arc de série A, ajoute rtrd, un serveur qui transmet aux routeurs les données RPKI de validation des annonces de routes, et passe à OpenSSH 10.6 et LibreSSL 4.4.0. L&#39;architecture Loongson n&#39;est plus prise en charge.&lt;/p&gt;
-&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/openbsd/src&#34;&gt;github.com/openbsd/src&lt;/a&gt; (copie Git en lecture seule du dépôt CVS), consulté le 22 octobre.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: ISC pour le nouveau code, licence préférée du projet (modèle share/misc/license.template du dépôt), avec du code sous licences de type BSD et MIT&amp;nbsp;; le système de base contient encore quelques composants sous GPL, dont GCC et readline, selon la politique de licences du projet (licences reconnues OSI)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: environ 3&amp;nbsp;900 étoiles (GitHub n&#39;affiche qu&#39;un compte arrondi, 3,9k), 956 forks, 248&amp;nbsp;094 commits au 22 octobre sur la copie GitHub&amp;nbsp;; issues et pull requests désactivées, les correctifs passent par la liste tech@&amp;nbsp;; dernière version 8.0 le 20 octobre 2026&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: des développeurs du monde entier, sous la direction de Theo de Raadt, qui a fondé le projet en 1995&amp;nbsp;; le droit d&#39;auteur du site et des versions est à son nom&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: OpenBSD n&#39;a ni gestionnaire de volumes logiques ni système de fichiers journalisé, et ne prend pas en charge les claviers et souris Bluetooth d&#39;Apple, selon The Register. Le portage de Wine 11, proposé quelques jours avant la sortie pour faire tourner des programmes Windows 64 bits, ne fait pas partie de la version et n&#39;isole pas ces programmes du système.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-22.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 019, jeudi 22 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

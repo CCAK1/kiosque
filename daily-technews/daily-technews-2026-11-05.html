@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 5 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Jeudi 5 novembre 2026<span class="price">2,58&nbsp;€</span></span><span class="issue" aria-label="Numéro 29">029</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Noyau Linux&nbsp;: 948 exploits root produits par des agents d'OpenAI</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Crédit Mutuel Arkéa&nbsp;: une cyberattaque d'environ 100 millions d'euros</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Kimi K3.1 Pro&nbsp;: les poids publiés sur Hugging Face</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Europol&nbsp;: plus de 100 serveurs de fausses plateformes d'investissement saisis</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Élections de mi-mandat&nbsp;: les centres de données rejetés dans 40 référendums sur 41</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: vLLM</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">États-Unis</p>
+    <h2>OpenAI dit avoir produit 948 exploits distincts donnant les droits root sous Linux en une seule exécution d'agents, pour 1,2 million de dollars</h2>
+    <p class="deck">OpenAI a publié le mercredi 4 novembre un billet intitulé «&nbsp;A thousand fewer paths to root&nbsp;». L'entreprise y décrit une chaîne d'agents, fondée sur un modèle spécialisé en cybersécurité qu'elle n'a pas encore diffusé, lancée à la mi-octobre sur la dernière version du noyau Linux. Selon OpenAI, cette exécution a produit 948 failles distinctes d'élévation locale de privilèges, chacune accompagnée d'un exploit fonctionnel et d'un correctif proposé. Ces chiffres sont fournis par l'entreprise et n'ont pas été vérifiés par un tiers.</p>
+    <div class="body">
+      <p>Une élévation locale de privilèges permet à un utilisateur ou à un programme déjà présent sur une machine d'obtenir les droits de l'administrateur root. Selon le billet, la chaîne a relevé 2&nbsp;308 anomalies candidates dans le noyau, en a reproduit 1&nbsp;724 comme de vraies vulnérabilités, puis a écrit 1&nbsp;169 exploits d'élévation de privilèges qui fonctionnent. Une étape d'analyse des variantes les a regroupés en 948 failles distinctes, chacune avec son correctif. La même exécution a produit 291 preuves de concept de fuite d'informations, selon The Hacker News.</p>
+      <p>L'exécution a coûté 1&nbsp;213&nbsp;430 dollars de crédits d'API, soit environ 1&nbsp;280 dollars par faille distincte, selon Runtime Wire. OpenAI affirme que ses agents ont découvert et utilisé au moins 10 techniques d'exploitation du noyau qui n'avaient pas été décrites, et que des spécialistes extérieurs de l'exploitation du noyau ont confirmé cette appréciation sur l'échantillon qu'ils ont examiné. L'entreprise donne aussi une valeur théorique de 18,9 à 66,3 millions de dollars à ces failles si elles avaient été vendues à des programmes de primes aux bogues.</p>
+      <p>Les correctifs ne sont pas tous intégrés. Dix jours après l'exécution, 61 failles étaient corrigées dans le noyau officiel, 43 avaient un correctif en attente d'intégration et 299 étaient en cours de signalement et de discussion publique, selon les chiffres d'OpenAI repris par The Hacker News. OpenAI dit travailler avec les mainteneurs du noyau Linux et ne pas publier le code des exploits. L'entreprise ne publie pas la liste des versions du noyau concernées.</p>
+      <p>OpenAI n'indique ni le nom du modèle utilisé, ni sa date de diffusion, ni les conditions dans lesquelles d'autres organisations pourraient y accéder.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://openai.com/index/a-thousand-fewer-paths-to-root/">OpenAI</a>, <a href="https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html">The Hacker News</a>, <a href="https://runtimewire.com/article/openai-agents-948-linux-kernel-flaws">Runtime Wire</a>, <a href="https://www.unite.ai/openai-pipeline-finds-948-linux-kernel-privilege-escalation-flaws/">Unite.ai</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">France</p>
+      <h3>Crédit Mutuel Arkéa chiffre à environ 100 millions d'euros les opérations frauduleuses menées par des pirates depuis un compte du groupe</h3>
+      <p>Le groupe bancaire Crédit Mutuel Arkéa, maison mère de la banque en ligne Fortuneo, a confirmé le mercredi 4 novembre avoir été victime d'une cyberattaque ayant permis des opérations frauduleuses, pour un montant «&nbsp;de l'ordre de 100 millions d'euros&nbsp;» selon une estimation provisoire, a rapporté l'AFP. Selon la banque, les attaquants sont passés par la plateforme d'un prestataire avant d'utiliser un compte appartenant à l'établissement et de virer l'argent vers d'autres banques. Arkéa affirme que Fortuneo n'a pas été le point d'entrée et que l'attaque n'a pas de conséquence financière pour ses 5,6 millions de clients, selon Next. La banque ne confirme pas le chiffre de 118 millions d'euros avancé par Le Télégramme mais en valide l'ordre de grandeur. Une partie des fonds aurait transité par des plateformes de cryptomonnaies en début de semaine, selon Clubic&nbsp;; Arkéa n'a ni confirmé ni démenti. La section cybercriminalité du parquet de Paris a ouvert une enquête après une plainte de la banque, a indiqué le ministère public à l'AFP. Arkéa demande à ses clients de ne communiquer aucune information personnelle ou bancaire en réponse à des messages se réclamant de la banque.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.boursorama.com/actualite-economique/actualites/credit-mutuel-arkea-cyberattaque-pour-pres-de-100-millions-d-euros-enquete-ouverte-7a25b65f08450c07e9ea616dca1bfc71">AFP (via Boursorama)</a>, <a href="https://next.ink/brief-article/la-banque-en-ligne-fortuneo-victime-dune-cyberattaque/">Next</a>, <a href="https://www.clubic.com/actualite-637615-fortuneo-victime-d-une-fraude-les-clients-a-l-abri-mais-des-millions-d-euros-auraient-ete-detournes.html">Clubic</a>, <a href="https://www.presse-citron.net/fraude-chez-credit-mutuel-arkea-un-hackeur-vide-les-comptes-de-la-banque-en-ligne-fortuneo/">Presse-citron</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Chine</p>
+      <h3>Moonshot AI publie les poids de Kimi K3.1 Pro, un modèle de 2&nbsp;800 milliards de paramètres, sous une licence qui impose un contrat aux gros hébergeurs</h3>
+      <p>La société pékinoise Moonshot AI a mis en ligne le mercredi 4 novembre, sur Hugging Face, les poids de Kimi K3.1 Pro, un modèle lancé le 23 octobre par son interface de programmation, comme elle s'y était engagée. Selon la fiche du modèle, il s'agit d'un mélange d'experts de 2&nbsp;800 milliards de paramètres, dont 104 milliards sont activés pour chaque jeton, avec une fenêtre de contexte de 1&nbsp;048&nbsp;576 jetons et des entrées en texte et en images. Les poids sont publiés en précision réduite MXFP4 et pèsent 1,56 To, répartis en 96 fichiers, selon Runtime Wire. La licence propre au modèle autorise l'usage, la modification et l'usage commercial gratuits, mais une entreprise qui revend l'accès au modèle comme service et dépasse 20 millions de dollars de chiffre d'affaires sur douze mois doit signer un accord séparé avec Moonshot, et les grands produits commerciaux doivent afficher le nom du modèle, selon Sina Tech et ABMedia&nbsp;; elle n'est pas reconnue par l'OSI. Moonshot dit avoir retiré volontairement des données d'entraînement liées à la cybersécurité offensive pour que ces poids ouverts restent en retrait sur ce terrain. Le modèle se classe premier des modèles à poids ouverts et treizième au total du classement Agent Arena, selon Sina Tech. Dès le 4 novembre, des contributeurs des moteurs d'inférence libres vLLM et SGLang ont ouvert des demandes de fusion pour le prendre en charge.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://huggingface.co/moonshotai/Kimi-K3.1-Pro">Hugging Face (fiche du modèle)</a>, <a href="https://runtimewire.com/article/moonshot-ai-kimi-k3-1-pro-weights">Runtime Wire</a>, <a href="https://finance.sina.com.cn/tech/digi/2026-11-05/doc-inixrunh9587030.shtml">Sina Tech</a>, <a href="https://abmedia.io/kimi-k3-1-pro-weights-license">ABMedia</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Europe</p>
+      <h3>Une opération coordonnée par Europol saisit plus de 100 serveurs d'un fournisseur de fausses plateformes d'investissement en ligne</h3>
+      <p>Des enquêteurs d'Albanie, de Chypre, de Finlande, d'Allemagne, du Kosovo et de Macédoine du Nord, appuyés par Europol et Eurojust, ont mené le mardi 3 novembre une opération contre l'infrastructure d'une escroquerie à l'investissement dont les victimes potentielles se trouvent dans plus de 50 pays, selon le communiqué d'Europol. Ils ont perquisitionné 17 sites, saisi plus de 100 serveurs et arrêté sept suspects. L'opération visait une entreprise soupçonnée de fournir à des centres d'appels de faux sites de courtage en ligne, sur lesquels des opérateurs poussaient les victimes à investir, selon The Cyber Express. L'enquête est dirigée par le parquet allemand d'Itzehoe&nbsp;; elle a commencé en 2022 après la plainte d'un couple allemand victime de l'escroquerie et a déjà donné lieu à des actions en 2022 et en 2025, selon Balkan Insight. Les pertes connues dépassent 4 millions d'euros, selon The Cyber Express. Les suspects arrêtés n'ont pas été identifiés publiquement.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.europol.europa.eu/media-press/newsroom/news/investment-scams-potential-victims-in-least-50-countries-over-100-servers-seized">Europol</a>, <a href="https://thecyberexpress.com/investment-fraud-network-hit/">The Cyber Express</a>, <a href="https://balkaninsight.com/2026/11/03/seven-arrested-in-international-investment-fraud-crackdown-in-balkans/bi/">Balkan Insight</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">États-Unis</p>
+      <h3>Les électeurs américains rejettent les projets de centres de données dans tous les référendums locaux sauf un, le jour des élections de mi-mandat</h3>
+      <p>Lors des élections de mi-mandat du mardi 3 novembre, 41 questions soumises au vote dans dix États portaient sur des centres de données, et les électeurs se sont prononcés contre les projets dans toutes sauf une, selon une analyse de CNBC fondée sur les données de Ballotpedia publiée le 4 novembre. L'exception est Harwood, dans le Dakota du Nord, où les électeurs ont refusé d'ajouter une procédure d'examen des projets industriels, centres de données compris. L'Ohio concentre plus de la moitié des scrutins, avec 21 questions dans 18 communes&nbsp;; à Wilmington, environ 80&nbsp;% des votants ont rejeté, lors de quatre référendums, les changements de zonage prévus pour accueillir un centre de données, selon Fortune. Au Kansas, les villes d'El Dorado et d'Emporia ont approuvé l'interdiction des centres de données «&nbsp;à fort impact&nbsp;», selon Forbes. Les campagnes et groupes extérieurs des deux partis ont dépensé plus de 173 millions de dollars en publicités contre les centres de données pendant la campagne, selon Fast Company. Certains résultats n'étaient pas encore publiés le 4 novembre, et les décomptes varient selon les recensements.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html">CNBC</a>, <a href="https://fortune.com/2026/11/04/ohio-data-center-ballot-measures-midterm-elections/">Fortune</a>, <a href="https://www.forbes.com/sites/zacharyfolk/2026/11/04/heres-where-voters-are-rejecting-data-centers-at-the-ballot-full-list/">Forbes</a>, <a href="https://www.fastcompany.com/91635527/midterm-elections-2026-ai-data-centers-lost-big-list-state-ballots">Fast Company</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">vLLM, le moteur d'inférence libre qui prépare l'accueil de Kimi K3.1 Pro</h2>
+    <div class="tool-grid">
+      <div>
+        <p>vLLM est un moteur d'inférence et de service pour les grands modèles de langage&nbsp;: il charge les poids d'un modèle et répond aux requêtes par une interface compatible avec celle d'OpenAI, en gérant la mémoire des GPU pour traiter beaucoup de requêtes en parallèle. Il fonctionne sur les GPU de NVIDIA, d'AMD et d'Intel et sur des processeurs x86, ARM et PowerPC, et des greffons ajoutent les TPU de Google, les puces Ascend de Huawei, Intel Gaudi ou Apple Silicon, selon son README.</p>
+        <p>Le mercredi 4 novembre, le jour de la publication des poids de Kimi K3.1 Pro, une demande de fusion intitulée «&nbsp;[Model] Kimi K3.1 Pro&nbsp;» a été ouverte dans le dépôt pour ajouter le modèle&nbsp;; elle était encore en cours d'examen le 5 novembre. Des fiches de déploiement pour ce modèle ont été ajoutées le même jour au projet, et une autre demande propose de le servir sur TPU.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/vllm-project/vllm">github.com/vllm-project/vllm</a>, consulté le 5 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>Apache 2.0, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>96&nbsp;356 étoiles, 24&nbsp;421 forks, 24&nbsp;651 commits, 2&nbsp;780 issues et 7&nbsp;103 pull requests ouvertes au 5 novembre&nbsp;; dernière release v0.33.0 le 1er novembre 2026</dd></div>
+        <div><dt>Qui</dt><dd>Projet né au Sky Computing Lab de l'université de Californie à Berkeley, premier commit le 9 février 2023, aujourd'hui maintenu par des institutions universitaires et des entreprises et plus de 2&nbsp;000 contributeurs, selon le README</dd></div>
+        <div><dt>À savoir</dt><dd>La prise en charge de Kimi K3.1 Pro n'était pas fusionnée le 5 novembre, et le modèle demande environ 1,56 To de poids, soit plusieurs GPU de centre de données.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-04.html" rel="prev">Numéro précédent&nbsp;: <span class="num">028</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

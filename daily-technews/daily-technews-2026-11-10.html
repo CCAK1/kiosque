@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 10 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Mardi 10 novembre 2026<span class="price">3,79&nbsp;€</span></span><span class="issue" aria-label="Numéro 32">032</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Frigos de supermarchés sabotés&nbsp;: la France accuse l'Iran</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Anthropic sort Fable 5.2 et Mythos 5.2, Mythos arrive chez Cisco et IBM</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Cybersécurité&nbsp;: dix collectivités sanctionnées par la CNIL</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Outlook.com rejette des courriels légitimes, Microsoft enquête</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Séoul inflige 631,9 milliards de wons d'amende à Baemin et Coupang Eats</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Notepad++</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">France</p>
+    <h2>La France attribue à une unité des Gardiens de la révolution iraniens le sabotage des frigos de plus de 700 supermarchés</h2>
+    <p class="deck">Le ministère de l'Europe et des Affaires étrangères a attribué à l'Iran, le lundi 9 novembre, la campagne qui a déréglé dans la nuit du 11 au 12 octobre les contrôleurs de réfrigération de plus de 700 supermarchés français. Il désigne Shahid Kaveh, une unité offensive rattachée au centre électronique et cyber du Corps des gardiens de la révolution islamique (CGRI). Selon la déclaration du ministère, les attaques ont provoqué des dégâts matériels, des incendies et des pertes alimentaires estimées à plusieurs dizaines de millions d'euros.</p>
+    <div class="body">
+      <p>Le centre de coordination des crises cyber (C4), qui réunit l'ANSSI, le commandement de la cyberdéfense, la DGA, la DGSE et la DGSI, a publié le même jour son rapport technique, référencé CERTFR-2026-CTI-009. Selon Next, qui l'a analysé, les attaquants ont modifié les paramètres de dégivrage de contrôleurs de froid Danfoss accessibles depuis Internet, par le protocole industriel Modbus TCP (port 502), qui ne prévoit ni authentification ni chiffrement. Le rapport relève au moins 15 départs de feu. Les enseignes citées sont Casino, Leclerc, Coopérative U, Metro, Carrefour et Intermarché&nbsp;; des boucheries, un abattoir et des usines agroalimentaires coopératives ont aussi été touchés, selon Next.</p>
+      <p>Le C4 s'appuie notamment sur des traces d'utilisation du farsi dans l'infrastructure d'attaque, sur l'outil de balayage FOFA employé pour le repérage et sur la revendication relayée le 13 octobre par CyberbanNews, un canal lié à l'unité, selon Next. The Register indique que Shahid Kaveh est plus connue sous le nom de CyberAv3ngers et que, selon le rapport, elle dispose depuis au moins juin 2024 de scripts pour repérer, atteindre et piloter des équipements industriels Schneider Electric, Siemens et Rockwell. La même infrastructure a servi à repérer des équipements Schneider Electric de petits producteurs d'énergie et d'eau en France. La procureure de Paris, Laure Beccuau, a annoncé une procédure judiciaire visant Hamid Reza Lashgarian, présenté comme le chef du centre cyber du CGRI, et deux de ses adjoints, selon Next.</p>
+      <p>Le ministère qualifie l'opération de «&nbsp;première campagne cyberoffensive menée à des fins de pur sabotage sur le territoire national&nbsp;». La France convoque l'ambassadeur d'Iran, proposera de nouvelles sanctions européennes contre les entités et les personnes impliquées et dit se réserver le droit de prendre d'autres mesures, publiques ou non. La déclaration rappelle que l'Union européenne a sanctionné en mars 2026 l'entité Emennet Pasargad, liée à des actions contre Charlie Hebdo en 2023 et pendant les Jeux olympiques de Paris en 2024.</p>
+      <p>Selon The Register, des attaques semblables ont visé début novembre des réfrigérateurs et congélateurs commerciaux en Belgique, en Irlande, au Luxembourg et en Suède, et le gouvernement américain a adressé une alerte aux distributeurs alimentaires. Le piratage de chambres froides de l'Établissement français du sang n'est pas attribué à ce stade, bien que le mode opératoire soit proche, selon Next.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://www.diplomatie.gouv.fr/fr/presse-et-ressources/decouvrir-et-informer/actualites/declaration-d-attribution-a-l-iran-de-cyberattaques-visant-la-france">ministère de l'Europe et des Affaires étrangères</a>, <a href="https://cert.cyber.gouv.fr/cti/CERTFR-2026-CTI-009/">CERT-FR (rapport du C4)</a>, <a href="https://next.ink/266516/cyberattaque-contre-les-frigos-de-700-supermarches-pourquoi-la-france-accuse-liran/">Next</a>, <a href="https://www.theregister.com/security/2026/11/09/france-blames-iran-for-supermarket-hack-meltdowns/5308591">The Register</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">États-Unis</p>
+      <h3>Anthropic sort Fable 5.2 et Mythos 5.2, et Cisco et IBM intègrent Mythos à leurs outils de recherche de failles</h3>
+      <p>Anthropic a publié le lundi 9 novembre Claude Fable 5.2 et Claude Mythos 5.2, qui reposent selon l'entreprise sur le même modèle&nbsp;: Fable, doté de protections renforcées en cybersécurité et en biologie, est ouvert à tous les utilisateurs et proposé sur AWS, Google Cloud et Microsoft Azure, tandis que Mythos est réservé à des organisations vérifiées. Le prix est de 8 dollars par million de jetons en entrée, contre 10 dollars pour la version précédente selon TechCrunch, et de 40 dollars en sortie&nbsp;; un mode rapide, jusqu'à 2,5 fois plus rapide selon Anthropic, coûte le double. L'entreprise annonce des réponses jusqu'à 30&nbsp;% plus rapides que la version 5.1 et dit que Fable 5.2 a formalisé le dernier théorème de Fermat dans le langage de preuve Lean en une trentaine d'heures avec environ 1&nbsp;000 agents, résultats non vérifiés par un tiers. Elle indique aussi que les deux modèles soupçonnent plus souvent que les précédents d'être en cours d'évaluation, ce qui complique l'estimation de leur comportement réel. Le mardi 10 novembre, Cisco a annoncé que les outils de test d'intrusion de sa suite AI Defense peuvent appeler Mythos sans surcoût de licence, et IBM a annoncé son intégration à Concert, son outil d'analyse des risques des applications, sans date ni prix, selon The Register.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.anthropic.com/claude-fable-and-mythos-5-2">Anthropic</a>, <a href="https://techcrunch.com/2026/11/09/anthropic-releases-new-mythos-and-fable-models-amid-rsi-concerns/">TechCrunch</a>, <a href="https://www.theregister.com/ai-and-ml/2026/11/10/anthropics-super-bug-finding-mythos-model-is-going-into-cisco-and-ibm-products/5308616">The Register</a>, <a href="https://www.heise.de/news/Anthropic-Claude-Fable-5-2-ist-guenstiger-aber-Tempo-kostet-extra-11518102.html">Heise</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">France</p>
+      <h3>La CNIL inflige dix amendes de 3&nbsp;000 à 20&nbsp;000 euros à des collectivités et à un établissement public pour défauts de cybersécurité</h3>
+      <p>La CNIL a annoncé le lundi 9 novembre dix sanctions prononcées en procédure simplifiée contre des collectivités territoriales et un établissement public, qu'elle ne nomme pas. Les amendes vont de 3&nbsp;000 à 20&nbsp;000 euros, le maximum de cette procédure&nbsp;; leur montant tient compte, selon la CNIL, du nombre et de la gravité des manquements, de la sensibilité des données (données de mineurs, coordonnées bancaires), du budget de chaque collectivité et des mesures prises pour se mettre en conformité. Les manquements relevés au titre de la sécurité des données sont l'absence d'authentification à plusieurs facteurs pour les accès à distance des administrateurs, des prestataires disposant d'un accès permanent au réseau ou de comptes partagés, une journalisation et un cloisonnement du réseau insuffisants, des systèmes d'exploitation de serveurs qui ne sont plus mis à jour et des mots de passe trop faibles, transmis en clair aux usagers ou mal conservés. Certaines collectivités n'avaient pas mené d'analyse d'impact pour des téléservices destinés aux parents ou pour de la vidéoprotection sur la voie publique. La CNIL avait fait de la cybersécurité des collectivités un thème de contrôle en 2025, après la hausse des cyberattaques&nbsp;; certaines collectivités contrôlées avaient déjà subi des violations de données. D'autres procédures sont en cours, selon Next et Zataz.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.cnil.fr/fr/sanctions-cybersecurite-collectivites-territoriales">CNIL</a>, <a href="https://next.ink/brief-article/manquements-relatifs-a-la-cybersecurite-des-services-publics-sanctionnes-par-la-cnil/">Next</a>, <a href="https://www.zataz.com/cybersecurite-la-cnil-sanctionne-dix-collectivites/">Zataz</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Messagerie</p>
+      <h3>Outlook.com rejette depuis début novembre des courriels légitimes de petits expéditeurs, et Microsoft reconnaît une dégradation du service</h3>
+      <p>Des messages envoyés vers des adresses Outlook.com, Hotmail, Live et MSN sont refusés depuis début novembre avec des erreurs «&nbsp;550 5.7.1&nbsp;» ou «&nbsp;550 5.7.23&nbsp;», qui invoquent un échec de la vérification SPF ou l'absence d'enregistrements SPF, DKIM et DMARC, les mécanismes qui permettent d'authentifier le domaine d'un expéditeur. Le service MailRoute relève ces rejets depuis le 5 novembre, selon Heise. Le lundi 9 novembre, un modérateur de Microsoft a indiqué sur le forum d'aide de l'entreprise qu'un incident du service Exchange touchait l'envoi de courriels vers ces adresses, qu'il était «&nbsp;classé comme une dégradation du service&nbsp;» et que les équipes techniques en cherchaient la cause. Les règles publiées par Microsoft n'imposent SPF, DKIM et DMARC qu'aux expéditeurs de plus de 5&nbsp;000 messages par jour, mais les rejets touchent aussi de petits domaines, dont des messages d'une ligne, selon The Register. Neil Jenkins, de Fastmail, a signalé des cas où SPF et DKIM étaient valides et où seul l'enregistrement DMARC manquait, selon Heise. Des administrateurs disent que la publication d'un enregistrement DMARC minimal a rétabli la distribution, d'autres signalent des rejets malgré une configuration complète, et un nouvel envoi passe parfois. Microsoft n'a pas publié d'avis officiel sur un changement de règles.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://learn.microsoft.com/en-us/answers/questions/6063210/spf-validation-error">Microsoft Q&amp;A</a>, <a href="https://www.theregister.com/applications/2026/11/09/outlookcom-bounces-legit-emails-as-microsofts-authentication-crackdown-goes-sideways/5308428">The Register</a>, <a href="https://www.heise.de/news/Outlook-com-Die-Mail-ist-echt-und-sie-kommt-trotzdem-nicht-an-11517776.html">Heise</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Corée du Sud</p>
+      <h3>La Corée du Sud inflige 631,9 milliards de wons d'amende à Baemin et Coupang Eats pour avoir imposé aux restaurants leurs meilleures conditions</h3>
+      <p>La Commission coréenne de la concurrence (KFTC) a annoncé le lundi 9 novembre des amendes provisoires de 331,1 milliards de wons contre Woowa Brothers, qui exploite l'application de livraison de repas Baemin, et de 300,8 milliards de wons, environ 222,8 millions de dollars, contre Coupang pour son service Coupang Eats. Le total de 631,9 milliards de wons est le plus élevé qu'elle ait infligé dans le secteur des applications de livraison, selon JKN. La KFTC conclut à un abus de position dominante&nbsp;: les deux plateformes réservaient les avantages de leurs abonnements («&nbsp;Baemin Club&nbsp;», «&nbsp;Wow&nbsp;») aux restaurants qui leur accordaient des conditions au moins aussi favorables que sur les applications concurrentes, ce qui a freiné la concurrence sur les commissions et les prix. Selon Retail Insight Network, Coupang a appliqué de juillet 2023 à janvier 2026 ces exigences sur six points, dont les prix des plats, le minimum de commande, les remises et les frais de livraison, et a retiré au moins une fois le statut «&nbsp;Wow Store&nbsp;» à 57&nbsp;907 restaurants qui ne s'y conformaient pas. Baemin est aussi sanctionné pour avoir réduit la visibilité des restaurants qui livrent eux-mêmes au profit de son propre service de livraison et pour avoir affiché des délais de livraison plus courts que la réalité. Coupang juge l'amende excessive, plus de 600 fois celle infligée dans une affaire semblable, et Woowa Brothers dit regretter que ses explications n'aient pas été retenues&nbsp;; les deux entreprises prévoient de contester la décision, selon JKN et Analytics Insight.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://news.jkn.co.kr/editions/english/post/1080489">JKN</a>, <a href="https://www.retail-insight-network.com/news/south-korea-fines-coupang-won300-8bn/">Retail Insight Network</a>, <a href="https://www.analyticsinsight.net/news/coupang-hit-with-usd-220-million-fine-what-went-wrong">Analytics Insight</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">Notepad++, l'éditeur de texte pour Windows qui corrige six failles dans sa version 8.9.9</h2>
+    <div class="tool-grid">
+      <div>
+        <p>Notepad++ est un éditeur de texte et de code source pour Windows, écrit en C++ et fondé sur le composant d'édition Scintilla. Il colore la syntaxe de plusieurs dizaines de langages, ouvre plusieurs documents par onglets, cherche et remplace dans des dossiers entiers et accepte des extensions qui ajoutent par exemple l'encodage Base64, la comparaison de fichiers ou l'exécution de scripts.</p>
+        <p>La version 8.9.9, publiée le vendredi 6 novembre, corrige six failles décrites dans des avis de sécurité sur GitHub, selon Heise. La plus grave, notée «&nbsp;élevée&nbsp;», est un dépassement de mémoire dans le décodeur SAML de l'extension mimeTools, livrée avec l'éditeur, qui peut permettre l'exécution de code si l'utilisateur décode un message piégé. Les autres touchent notamment le mécanisme d'enregistrement des fichiers protégés par le contrôle de compte d'utilisateur de Windows et la réception de messages d'autres processus. Aucun numéro CVE n'était encore attribué le 9 novembre. La version accélère aussi la recherche dans les fichiers et passe à Scintilla 5.6.9.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/notepad-plus-plus/notepad-plus-plus">github.com/notepad-plus-plus/notepad-plus-plus</a>, consulté le 10 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>GNU GPL version 3, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>29&nbsp;828 étoiles, 5&nbsp;427 forks, 7&nbsp;206 commits, environ 2&nbsp;900 issues ouvertes (nombre arrondi affiché par GitHub) et 32 pull requests ouvertes au 10 novembre&nbsp;; dernière release v8.9.9 le 6 novembre 2026</dd></div>
+        <div><dt>Qui</dt><dd>Don Ho, développeur qui a créé Notepad++ en 2003 et en reste le mainteneur principal, avec des contributeurs bénévoles</dd></div>
+        <div><dt>À savoir</dt><dd>Windows uniquement&nbsp;: sous Linux ou macOS, il ne fonctionne que par une couche de compatibilité comme Wine. Une partie des fonctions repose sur des extensions maintenues par des tiers, dont mimeTools, où se trouvait la faille la plus grave de cette version.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-09.html" rel="prev">Numéro précédent&nbsp;: <span class="num">031</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

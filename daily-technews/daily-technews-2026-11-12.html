@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 12 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Jeudi 12 novembre 2026<span class="price">2,45&nbsp;€</span></span><span class="issue" aria-label="Numéro 34">034</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Yandex Cloud déclare perdus 2,84&nbsp;% des données de ses clients</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Maersk confirme un vol de données revendiqué par WhiteArmor</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">La Pologne coupe la plateforme ePUAP après une cyberattaque</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Git corrige six failles, dont une exécution de code au clonage</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Alibaba ouvre la préversion de Qwen4-Max</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Zellij</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Russie</p>
+    <h2>Yandex déclare perdus 2,84&nbsp;% des données des clients de son cloud après les dégâts subis en octobre par ses centres de données</h2>
+    <p class="deck">Yandex Cloud, la plateforme d'informatique en nuage du groupe russe Yandex, a indiqué le mardi 10 novembre dans un billet de son blog que ses ingénieurs ont rétabli l'accès à 97,16&nbsp;% des données de ses clients, et que les 2,84&nbsp;% restants ne peuvent pas être récupérés. L'entreprise attribue cette perte à des «&nbsp;dommages critiques au matériel&nbsp;» et à l'absence de sauvegardes sur la plateforme chez les clients concernés. Selon la presse russe, trois centres de données de Yandex ont été frappés par des drones début octobre.</p>
+    <div class="body">
+      <p>Le billet de Yandex Cloud indique seulement qu'«&nbsp;en octobre, l'infrastructure des centres de données de Yandex a été endommagée&nbsp;», sans nommer la cause. Selon iXBT et Important Stories, les attaques de drones ont visé des sites situés dans les régions de Riazan, de Kalouga et de Vladimir. Selon The Register, la frappe du début octobre a provoqué un incendie puis une panne dans la zone de disponibilité ru-central1-b, et d'autres frappes, dont une à la mi-octobre, ont perturbé des services cloud et de paiement. Des médias ukrainiens ont affirmé que l'opération avait été ordonnée par Kiev, ce que The Register indique ne pas pouvoir confirmer.</p>
+      <p>Yandex ne donne ni le volume de données perdu, ni le nombre de machines virtuelles ou de clients touchés, selon Important Stories. L'entreprise avait auparavant annoncé avoir rétabli l'accès à environ 90&nbsp;% des données, selon iXBT. Le billet précise que les clients qui utilisaient les outils de sauvegarde de la plateforme n'ont rien perdu&nbsp;: le stockage objet Object Storage, le service Cloud Backup, les instantanés de disques et les sauvegardes standard des bases de données gérées.</p>
+      <p>Yandex Cloud annonce deux mesures. Toutes les nouvelles machines virtuelles sont désormais créées avec la sauvegarde activée, que l'utilisateur peut désactiver dans la console. Une nouvelle zone de disponibilité, ru-central1-f, a ouvert le mercredi 11 novembre dans un lieu que l'entreprise ne divulgue pas, avec des ressources limitées par des quotas au démarrage et sans traitement local du trafic des points de terminaison privés, que d'autres zones prennent en charge.</p>
+      <p>Une zone de disponibilité regroupe un ou plusieurs centres de données dotés de leur propre alimentation et de leur propre réseau&nbsp;; répartir une application et ses copies de données sur plusieurs zones permet de continuer à fonctionner quand l'une d'elles tombe.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://yandex.cloud/ru/blog/recovery">Yandex Cloud</a>, <a href="https://www.theregister.com/off-prem/2026/11/12/russian-cloud-yandex-says-drone-attacks-on-its-datacenters-caused-data-loss/5309234">The Register</a>, <a href="https://www.ixbt.com/news/2026/11/10/iandeks-priznal-bezvozvratnuiu-poteriu-casti-dannyx-klientov-yandex-cloud-posle-atak-bespilotnikov.html">iXBT</a>, <a href="https://istories.media/news/2026/11/10/pochti-3-klientskikh-dannikh-yandeksa-bezvozvratno-poteryani/">Important Stories</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Danemark</p>
+      <h3>Maersk confirme un vol de données dans un système issu d'une acquisition, revendiqué par le groupe de rançongiciel WhiteArmor</h3>
+      <p>Le groupe danois de transport maritime et de logistique A.P. Moller-Maersk a indiqué le mercredi 11 novembre enquêter sur un incident de sécurité informatique avec vol de données, limité selon lui à un système local hérité d'une société acquise précédemment, qu'il ne nomme pas. Selon sa déclaration, citée par The Register et BleepingComputer, «&nbsp;les constatations à ce stade indiquent fortement qu'aucune donnée sensible n'a été divulguée&nbsp;», le système a été isolé et aucun impact n'a été relevé sur les autres systèmes ni sur ceux des clients et partenaires reliés par API ou par échange de données informatisé (EDI). Maersk n'attend pas de perturbation des réservations et des expéditions. Selon BleepingComputer, le groupe de rançongiciel WhiteArmor a inscrit Maersk sur son site de fuite le week-end précédent et réclame 5 millions de dollars en bitcoins sous 30 jours. Il dit avoir pris environ 100 Go de données des plateformes de LF Logistics, racheté par Maersk en 2022, dont près de 30&nbsp;000 fiches de chauffeurs, des mots de passe en clair et des reçus de livraison&nbsp;; ces affirmations ne sont pas vérifiées et Maersk ne les a pas commentées.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.maersk.com/news/articles/2026/11/11/it-security-incident">Maersk</a>, <a href="https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/">BleepingComputer</a>, <a href="https://www.theregister.com/security/2026/11/11/shipping-giant-maersk-probes-it-security-incident-data-theft/5309096">The Register</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Pologne</p>
+      <h3>La Pologne coupe ePUAP, sa plateforme de démarches administratives en ligne, après une cyberattaque, et l'ABW enquête</h3>
+      <p>Le ministre polonais du Numérique, Krzysztof Gawkowski, a annoncé sur X le mardi 10 novembre au soir que «&nbsp;la cyberattaque contre le système d'État ePUAP a été détectée et arrêtée&nbsp;». ePUAP est la plateforme nationale qui permet aux citoyens et aux administrations d'échanger des courriers officiels en ligne. Le ministère l'a déconnectée du réseau extérieur, une mesure qu'il présente comme préventive&nbsp;: selon Marek Gieorgica, directeur de la communication du ministère, cité par The Record et naTemat, le système n'a été ni compromis ni perturbé par l'attaque. Selon The Record, il sera remis en service quand les spécialistes de la sécurité auront terminé leurs travaux, sans date annoncée&nbsp;; le ministre assure, selon naTemat, que l'infrastructure du Centre informatique de l'État (COI) est sûre. Les boîtes de réception ePUAP sont indisponibles, et le Profil de confiance, l'identité numérique qui sert à signer des démarches, peut être touché. L'Agence de sécurité intérieure (ABW) a été saisie, selon naTemat. Le ministère n'a pas dit si des données avaient été volées ni désigné d'auteur.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://therecord.media/poland-shuts-down-government-services-platform-cyberattack">The Record</a>, <a href="https://natemat.pl/675169,epuap-pilnie-wylaczony-po-ataku-hakerow-sprawa-juz-zajmuje-sie-abw">naTemat</a>, <a href="https://lodz.tvp.pl/cyberatak-epuap-system-wylaczony-kiedy-zacznie-dzialac,96420288">TVP</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Open source</p>
+      <h3>Git corrige six vulnérabilités, dont une qui permet d'exécuter du code pendant le clonage récursif d'un dépôt piégé</h3>
+      <p>Le projet Git a publié le mardi 10 novembre la version 2.56.1 et des versions de maintenance pour les séries 2.50 à 2.55, qui corrigent six vulnérabilités, selon le billet d'Elijah Newren, ingénieur chez GitHub. La plus grave, CVE-2026-111760, vient d'une troncature d'entier dans la gestion de l'index&nbsp;: un chemin de fichier très long passe les contrôles sous un nom puis est écrit sous un nom plus court. Selon LinuxSecurity, un attaquant peut ainsi remplacer le fichier .git d'un sous-module par un lien symbolique vers un répertoire contenant des scripts automatiques (hooks), qui s'exécutent lorsqu'une victime clone le dépôt avec ses sous-modules. Les cinq autres failles permettent à un serveur malveillant d'écrire hors du répertoire des références lors du clonage d'un dépôt vide, ou provoquent des corruptions de mémoire et des lectures hors limites avec des messages à plus de deux signatures GPG, des correctifs binaires, de très grosses fusions et des flux git fast-import, selon Help Net Security. Aucune exploitation n'est signalée. GitHub recommande de mettre à jour aussi les copies de Git intégrées aux applications et, en attendant, de ne pas cloner récursivement de dépôts non fiables&nbsp;; GitHub Enterprise Server reçoit des correctifs à appliquer par ses administrateurs.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/">GitHub</a>, <a href="https://www.helpnetsecurity.com/2026/11/11/git-project-security-updates/">Help Net Security</a>, <a href="https://linuxsecurity.com/howtos/learn-tips-and-tricks/how-to-clone-a-git-repository-safely">LinuxSecurity</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Chine</p>
+      <h3>Alibaba ouvre en préversion Qwen4-Max, un modèle qui lit texte, images et vidéos avec un contexte d'un million de tokens</h3>
+      <p>Alibaba a ouvert le mercredi 11 novembre une préversion de Qwen4-Max, le modèle de tête de sa future famille Qwen 4, selon TechNode et l'agence Cailian. Selon la documentation de Qwen Cloud, le modèle accepte du texte, des images et des vidéos, pour l'analyse de captures d'écran, de documents et de vidéos, avec un contexte d'un million de tokens et une sortie limitée à 393&nbsp;216 tokens, raisonnement compris. Il prend en charge l'appel de fonctions, la recherche web, les sorties structurées en JSON et des interfaces compatibles avec celles d'OpenAI et d'Anthropic. La préversion n'est accessible que par Token Plan, l'abonnement d'Alibaba destiné aux outils de programmation, sans facturation à l'usage, et dans les applications Qwen, Qoder, QwenWork et QwenStudio. Elle court jusqu'au 25 novembre à minuit, heure de Pékin, date à laquelle ce modèle sera retiré. Alibaba n'a publié ni nombre de paramètres, ni résultats de tests, ni poids du modèle, ni date de sortie de la version finale.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://docs.qwencloud.com/developer-guides/getting-started/latest-model">Qwen Cloud</a>, <a href="https://technode.com/2026/11/11/alibaba-opens-qwen4-max-preview-with-a-million-token-context-window/">TechNode</a>, <a href="https://finance.eastmoney.com/a/202611113928231724.html">Cailian</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">Zellij, l'espace de travail pour terminal qui devient aussi un émulateur de terminal dans sa version 0.46</h2>
+    <div class="tool-grid">
+      <div>
+        <p>Zellij est un multiplexeur de terminal&nbsp;: il découpe une fenêtre de terminal en panneaux et en onglets, et garde les sessions ouvertes quand l'utilisateur se déconnecte. Il propose des panneaux flottants et empilés, des dispositions décrites dans des fichiers (layouts), le partage d'une session entre plusieurs utilisateurs, un client web intégré et des extensions écrites dans tout langage compilé en WebAssembly. Il est écrit en Rust.</p>
+        <p>La version 0.46.0, publiée le mercredi 11 novembre, ajoute un mode émulateur de terminal de bureau, lancé par la commande zellij terminal, qui fonctionne sous Linux, macOS et Windows selon les notes de version. Le multiplexeur ne change pas, et les deux modes partagent les mêmes sessions. Les binaires compilés avec musl n'incluent pas ce mode&nbsp;: il faut les binaires gnu.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/zellij-org/zellij">github.com/zellij-org/zellij</a>, consulté le 12 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>MIT, vérifiée dans le fichier LICENSE.md du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>36&nbsp;017 étoiles, 1&nbsp;529 forks, 3&nbsp;459 commits et 383 pull requests ouvertes au 12 novembre&nbsp;; environ 1&nbsp;600 issues ouvertes, chiffre arrondi affiché par GitHub&nbsp;; dernière release v0.46.0 le 11 novembre 2026</dd></div>
+        <div><dt>Qui</dt><dd>Le collectif zellij-org, mené par Aram Drevekenin, auteur de 247 des commits de l'année écoulée&nbsp;; projet commencé en juillet 2020</dd></div>
+        <div><dt>À savoir</dt><dd>Le développement repose largement sur une seule personne. Le README affiche des sponsors, dont la société de trading G-Research. Le mode émulateur de terminal est une nouveauté de cette version et n'existe pas dans les binaires musl.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-11.html" rel="prev">Numéro précédent&nbsp;: <span class="num">033</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

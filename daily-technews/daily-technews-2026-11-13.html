@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 13 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Vendredi 13 novembre 2026<span class="price">3,98&nbsp;€</span></span><span class="issue" aria-label="Numéro 35">035</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Apache corrige une faille critique de son module HTTP/2</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Une panne mondiale de Microsoft 365 coupe Exchange, Teams et Intune</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">La justice américaine fait saisir 1,2 milliard de dollars volés à Binance</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">La police neutralise les serveurs de Gootloader, CastleRAT et StealC</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Bruxelles propose le Digital Fairness Act contre les interfaces manipulatrices</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: libghostty</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Open source</p>
+    <h2>Apache corrige dans son serveur web une faille critique du module HTTP/2 qui permet d'exécuter du code à distance</h2>
+    <p class="deck">La fondation Apache a publié le mercredi 11 novembre la version 2.4.71 de son serveur web Apache HTTP Server, qui corrige trois vulnérabilités. La plus grave, CVE-2026-119618, classée critique par le projet, se trouve dans mod_http2, le module qui gère le protocole HTTP/2, et peut mener à l'exécution de code à distance. Elle touche les versions 2.4.55 à 2.4.70. Aucune exploitation n'est signalée.</p>
+    <div class="body">
+      <p>Selon l'avis de sécurité du projet, la faille vient d'une ressource partagée utilisée sans synchronisation correcte dans la fonction assign_headers() de mod_http2. Selon la société de sécurité Wiz, citée par Next, des accès simultanés à cette ressource corrompent le tas, la zone de mémoire allouée pendant l'exécution, ce qui permet d'exécuter des commandes avec les droits du processus qui traite les requêtes, et non avec ceux de l'administrateur root. Les versions autonomes du module mod_h2 publiées sur GitHub, de la 2.0.8 à la 2.0.42, sont aussi concernées. La version 2.4.67, publiée en mai pour corriger une autre faille du même module, est vulnérable.</p>
+      <p>Le projet attribue la découverte à l'outil d'analyse de code open source d'Anthropic, qui l'a signalée le 26 octobre, puis à Anthony Weems et Simon Scannell, de l'équipe de recherche en vulnérabilités de Google Cloud, qui l'ont signalée le 3 novembre. Apache ne publie pas de score de gravité. Red Hat retient un score CVSS de 9,8 sur 10, selon Next. Les avis divergent sur la difficulté de l'attaque&nbsp;: selon Next, Red Hat affirme que des travaux publics ont montré une exploitation fiable, sans les détailler, tandis que Wiz indique qu'aucun code d'exploitation n'est disponible. Selon heise, le chercheur Kevin Beaumont juge l'exploitation difficile, car la répartition aléatoire des adresses mémoire (ASLR) complique l'écriture d'un code d'attaque.</p>
+      <p>Seuls les serveurs où HTTP/2 est activé sont exposés&nbsp;: le module n'est pas chargé par défaut, selon heise. Faute de mise à jour possible, Wiz recommande de retirer h2 et h2c de la directive Protocols de la configuration pour ne garder que HTTP/1.1. Selon Next, au 12 novembre, Arch Linux, Alpine et AlmaLinux avaient publié un correctif, ainsi que la branche de développement de Debian, mais pas encore les versions stables de Debian, ni Ubuntu, ni Fedora. La version 2.4.71 corrige aussi une faille notée importante dans le module mod_md, qui fait planter un processus du serveur, et une faille de gravité faible dans mod_vhost_alias.</p>
+      <p>HTTP/2 permet de faire passer plusieurs requêtes en parallèle dans une seule connexion, et Apache les traite dans des fils d'exécution distincts. Quand deux fils lisent et modifient la même donnée sans mécanisme de verrouillage, le résultat dépend de l'ordre dans lequel ils s'exécutent&nbsp;: c'est ce que l'on appelle une situation de compétition.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://httpd.apache.org/security/vulnerabilities_24.html">Apache HTTP Server</a>, <a href="https://next.ink/266955/une-faille-critique-dans-apache-http-2-permet-la-prise-de-controle-a-distance/">Next</a>, <a href="https://www.heise.de/news/Kritische-Sicherheitsluecke-in-Apache2-ermoeglicht-Codeeinschleusung-11523150.html">heise</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">États-Unis</p>
+      <h3>Une panne mondiale de Microsoft 365 coupe Exchange Online, Teams et Intune dans la nuit de jeudi à vendredi</h3>
+      <p>Plusieurs services en ligne de Microsoft sont en panne dans le monde depuis le jeudi 12 novembre vers 19 heures, heure de Paris, selon The Register et Next&nbsp;: la messagerie Exchange Online, Teams, SharePoint Online, Copilot, Defender, et l'outil de gestion des appareils Intune, selon heise et The Register. Microsoft indique sur sa page d'état qu'un nombre inhabituel de serveurs échouent à leurs contrôles de santé automatiques et sont retirés du service, ce qui reporte la charge sur le reste de l'infrastructure. L'entreprise soupçonne un composant qui traite ces contrôles, a suspendu ses déploiements, selon Next, et examine si l'annulation de quelques modifications récentes de configuration pourrait aider, selon heise. Exchange recevait de nouveau des courriels vers 23 heures, avec des retards selon les régions, selon heise. À 1 h 35, dans la dernière mise à jour citée par The Register, Microsoft indiquait qu'un processus central surchargeait les serveurs rétablis, que ses mesures n'avaient «&nbsp;pas apporté le soulagement attendu&nbsp;» et qu'il isolait une partie de l'infrastructure, sans calendrier de rétablissement complet. Les incidents portent les numéros EX1550543 et MO1550821 dans la console d'administration.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.theregister.com/saas/2026/11/12/microsoft-struggling-to-fix-massive-cloud-outage-thats-taken-down-email-and-intune/5309531">The Register</a>, <a href="https://www.heise.de/news/Microsoft-365-Stoerung-Serverausfaelle-legen-Teams-Exchange-und-Copilot-lahm-11523565.html">heise</a>, <a href="https://next.ink/brief-article/outlook-teams-plusieurs-services-de-microsoft-sont-en-panne/">Next</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Corée du Nord, États-Unis</p>
+      <h3>La justice américaine fait saisir 1,2 milliard de dollars volés à Binance et coupe les serveurs d'une arnaque nord-coréenne par fausses visioconférences</h3>
+      <p>Le département de la Justice des États-Unis a annoncé le jeudi 12 novembre avoir obtenu d'un tribunal l'autorisation de saisir ou de bloquer plus de 1,2 milliard de dollars de cryptomonnaies volées à la plateforme d'échange Binance vers le 29 octobre. Le FBI attribue ce vol de plus de 6 milliards de dollars à TraderTraitor, des membres de l'armée nord-coréenne. Les autorités et des entreprises du secteur ont gelé plus de 2,7 milliards de dollars au total. Le même jour, la justice a fait saisir les serveurs en ligne de FaceStealer, une campagne nord-coréenne qui a volé plus de 400 millions de dollars en 18 mois selon le FBI. Les pirates envoient des invitations à des réunions vidéo depuis des comptes volés à des victimes précédentes, enregistrent la webcam de la cible et diffusent la vidéo préenregistrée d'un contact qu'elle connaît, ou des vidéos truquées de personnalités des cryptomonnaies. Ils simulent ensuite une panne de son et proposent un «&nbsp;correctif&nbsp;», qui installe un logiciel malveillant. Selon le département de la Justice, la campagne vise de plus en plus les développeurs et mainteneurs de logiciels open source, pour accéder à leurs dépôts de code. Le FBI a saisi plus de 900 vidéos de victimes. Selon The Record, le FBI ne sait pas si FaceStealer a servi dans le vol de Binance&nbsp;; selon The Register, Binance affirme que les attaquants ont commencé en juin par de faux entretiens d'embauche.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency">département de la Justice des États-Unis</a>, <a href="https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted">The Record</a>, <a href="https://www.theregister.com/cyber-crime/2026/11/12/doj-takes-aim-at-12b-in-binance-loot-as-fbi-disrupts-north-korean-scam/5309523">The Register</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Europe</p>
+      <h3>Une opération policière menée depuis l'Allemagne neutralise 235 serveurs des logiciels malveillants Gootloader, CastleRAT et StealC</h3>
+      <p>Le parquet général de Francfort et l'Office fédéral de police criminelle allemand (BKA) ont annoncé le jeudi 12 novembre une nouvelle phase de l'opération Endgame, menée du 9 au 11 novembre avec les polices des Pays-Bas, du Danemark, du Royaume-Uni, des États-Unis et du Canada, Europol, Eurojust et des entreprises de sécurité. Selon Europol, cité par Help Net Security, 235 serveurs et 257 noms de domaine ont été neutralisés, et 681 sites web infectés ont été nettoyés&nbsp;; le BKA compte plus de 40 de ces serveurs en Allemagne. Les enquêteurs ont récupéré environ 6,4 millions d'identifiants de connexion appartenant à plus de 40&nbsp;000 victimes. Gootloader, actif depuis 2020, est un chargeur qui installe d'autres logiciels, dont des rançongiciels&nbsp;: ses opérateurs placent de faux documents juridiques sur des sites piratés, souvent sous WordPress, et manipulent les résultats des moteurs de recherche pour que les victimes les téléchargent. CastleRAT, connu depuis 2025, donne aux attaquants le contrôle à distance d'un ordinateur. StealC vole des mots de passe et des sessions&nbsp;; il avait déjà été visé en juin, et selon The Record, ses opérateurs avaient reconstruit leur réseau. Aucune arrestation n'est annoncée. Les données des victimes de CastleRAT sont transmises à des services d'alerte, dont Have I Been Pwned, et l'agence allemande de sécurité informatique (BSI) prévient les victimes en Allemagne.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.presseportal.de/blaulicht/pm/7/6389442">BKA</a>, <a href="https://therecord.media/european-authorities-take-down-stealic-malware-second-time">The Record</a>, <a href="https://www.helpnetsecurity.com/2026/11/12/europol-operation-endgame-malware-takedown/">Help Net Security</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">UE</p>
+      <h3>La Commission européenne propose le Digital Fairness Act, qui interdit les interfaces manipulatrices et oblige à laisser couper le défilement infini</h3>
+      <p>La Commission européenne a présenté le mercredi 11 novembre sa proposition de Digital Fairness Act, une révision des règles de protection des consommateurs en ligne. Le texte interdit les interfaces conçues pour forcer un achat, comme un faux message de stock presque épuisé, et impose d'afficher les prix réels des achats en monnaie virtuelle dans les applications et le prix maximal dans les files d'attente de billetterie. Les utilisateurs devront pouvoir désactiver les fonctions qui poussent à un usage compulsif, comme la lecture automatique et le défilement infini, selon Euronews, ainsi que les systèmes qui simulent une relation personnelle, dont des robots conversationnels, selon Next. Les mécaniques de jeu payantes qui font progresser plus vite (pay-to-win) sont interdites aux mineurs. Les essais gratuits ne pourront plus devenir des abonnements payants sans accord, la résiliation devra être simple, et les consommateurs auront droit à un interlocuteur humain au service client. La Commission propose aussi de pouvoir enquêter elle-même sur les infractions de grande ampleur et d'infliger des amendes jusqu'à 6&nbsp;% du chiffre d'affaires mondial. Elle estime que les mesures feront économiser jusqu'à 13,7 milliards d'euros par an aux consommateurs. Le texte doit maintenant être examiné par le Parlement européen et le Conseil. Selon Euronews, l'association de défense des droits numériques EDRi juge que les règles reposent trop sur la désactivation par l'utilisateur.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2407">Commission européenne</a>, <a href="https://www.euronews.com/2026/11/11/eu-targets-subscription-traps-addictive-design-and-hidden-fees-with-new-digital-rules">Euronews</a>, <a href="https://next.ink/266856/abonnements-jeux-ia-leurope-veut-dejouer-les-arnaques-du-numerique-avec-le-dfa/">Next</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">libghostty, le moteur du terminal Ghostty publié en bibliothèque, passe en version 1.0 et équipe déjà les IDE de JetBrains</h2>
+    <div class="tool-grid">
+      <div>
+        <p>libghostty-vt est le cœur d'émulation du terminal Ghostty, extrait en bibliothèque utilisable par d'autres programmes. Elle interprète les séquences de contrôle envoyées par les applications en ligne de commande et tient l'état de l'écran, du curseur et de l'historique&nbsp;; l'application qui l'intègre se charge de l'affichage et de l'interface. Le README la décrit comme une bibliothèque C et Zig sans dépendance&nbsp;; elle fonctionne sous Linux, macOS, Windows, FreeBSD, Android, iOS et en WebAssembly, selon heise.</p>
+        <p>La version 1.0, annoncée le 6 novembre par Mitchell Hashimoto, fige l'interface binaire&nbsp;: les mises à jour de la série 1.x ne demandent pas de recompiler les programmes qui l'utilisent. La version 1.0.1 a suivi le 11 novembre, selon heise. Les terminaux des IDE de JetBrains reposent sur la bibliothèque depuis la version 2026.3. Les mainteneurs de Neovim ont approuvé son intégration à la place de libvterm, en attendant une version publiée pour la fusionner, et des développeurs de KDE testent un terminal construit dessus.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/ghostty-org/ghostty">github.com/ghostty-org/ghostty</a>, consulté le 13 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>MIT, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>Dépôt ghostty-org/ghostty, partagé avec l'application Ghostty&nbsp;: 64&nbsp;037 étoiles, 3&nbsp;902 forks, 18&nbsp;821 commits, 146 issues et 125 pull requests ouvertes au 13 novembre&nbsp;; dernière version de la bibliothèque vt-1.0.1, publiée le 11 novembre 2026</dd></div>
+        <div><dt>Qui</dt><dd>Mitchell Hashimoto, qui a lancé Ghostty en 2022 et détient le droit d'auteur avec les contributeurs du projet selon le fichier LICENSE</dd></div>
+        <div><dt>À savoir</dt><dd>La bibliothèque ne fait pas l'affichage, laissé au programme qui l'intègre. La stabilité de l'interface n'est garantie qu'à l'intérieur de la série 1.x. L'intégration à Neovim est approuvée mais pas encore fusionnée. Le chiffre de 12,5 millions d'utilisateurs actifs des IDE de JetBrains, cité par Mitchell Hashimoto, vient d'un rapport de JetBrains et n'est pas vérifié par un tiers.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-12.html" rel="prev">Numéro précédent&nbsp;: <span class="num">034</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

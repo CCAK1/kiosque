@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-11-12T07:00:00+01:00</updated>
+  <updated>2026-11-13T07:00:00+01:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Apache corrige dans son serveur web une faille critique du module HTTP/2 qui permet d&#39;exécuter du code à distance</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-11-13T07:00:00+01:00</published>
+    <updated>2026-11-13T07:00:00+01:00</updated>
+    <category term="Open source"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;La fondation Apache a publié le mercredi 11 novembre la version 2.4.71 de son serveur web Apache HTTP Server, qui corrige trois vulnérabilités. La plus grave, CVE-2026-119618, classée critique par le projet, se trouve dans mod_http2, le module qui gère le protocole HTTP/2, et peut mener à l&#39;exécution de code à distance. Elle touche les versions 2.4.55 à 2.4.70. Aucune exploitation n&#39;est signalée.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Selon l&#39;avis de sécurité du projet, la faille vient d&#39;une ressource partagée utilisée sans synchronisation correcte dans la fonction assign_headers() de mod_http2. Selon la société de sécurité Wiz, citée par Next, des accès simultanés à cette ressource corrompent le tas, la zone de mémoire allouée pendant l&#39;exécution, ce qui permet d&#39;exécuter des commandes avec les droits du processus qui traite les requêtes, et non avec ceux de l&#39;administrateur root. Les versions autonomes du module mod_h2 publiées sur GitHub, de la 2.0.8 à la 2.0.42, sont aussi concernées. La version 2.4.67, publiée en mai pour corriger une autre faille du même module, est vulnérable.&lt;/p&gt;
+&lt;p&gt;Le projet attribue la découverte à l&#39;outil d&#39;analyse de code open source d&#39;Anthropic, qui l&#39;a signalée le 26 octobre, puis à Anthony Weems et Simon Scannell, de l&#39;équipe de recherche en vulnérabilités de Google Cloud, qui l&#39;ont signalée le 3 novembre. Apache ne publie pas de score de gravité. Red Hat retient un score CVSS de 9,8 sur 10, selon Next. Les avis divergent sur la difficulté de l&#39;attaque&amp;nbsp;: selon Next, Red Hat affirme que des travaux publics ont montré une exploitation fiable, sans les détailler, tandis que Wiz indique qu&#39;aucun code d&#39;exploitation n&#39;est disponible. Selon heise, le chercheur Kevin Beaumont juge l&#39;exploitation difficile, car la répartition aléatoire des adresses mémoire (ASLR) complique l&#39;écriture d&#39;un code d&#39;attaque.&lt;/p&gt;
+&lt;p&gt;Seuls les serveurs où HTTP/2 est activé sont exposés&amp;nbsp;: le module n&#39;est pas chargé par défaut, selon heise. Faute de mise à jour possible, Wiz recommande de retirer h2 et h2c de la directive Protocols de la configuration pour ne garder que HTTP/1.1. Selon Next, au 12 novembre, Arch Linux, Alpine et AlmaLinux avaient publié un correctif, ainsi que la branche de développement de Debian, mais pas encore les versions stables de Debian, ni Ubuntu, ni Fedora. La version 2.4.71 corrige aussi une faille notée importante dans le module mod_md, qui fait planter un processus du serveur, et une faille de gravité faible dans mod_vhost_alias.&lt;/p&gt;
+&lt;p&gt;HTTP/2 permet de faire passer plusieurs requêtes en parallèle dans une seule connexion, et Apache les traite dans des fils d&#39;exécution distincts. Quand deux fils lisent et modifient la même donnée sans mécanisme de verrouillage, le résultat dépend de l&#39;ordre dans lequel ils s&#39;exécutent&amp;nbsp;: c&#39;est ce que l&#39;on appelle une situation de compétition.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://httpd.apache.org/security/vulnerabilities_24.html&#34;&gt;Apache HTTP Server&lt;/a&gt;, &lt;a href=&#34;https://next.ink/266955/une-faille-critique-dans-apache-http-2-permet-la-prise-de-controle-a-distance/&#34;&gt;Next&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Kritische-Sicherheitsluecke-in-Apache2-ermoeglicht-Codeeinschleusung-11523150.html&#34;&gt;heise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 035, vendredi 13 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Une panne mondiale de Microsoft 365 coupe Exchange Online, Teams et Intune dans la nuit de jeudi à vendredi</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-11-13T06:59:59+01:00</published>
+    <updated>2026-11-13T06:59:59+01:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;Plusieurs services en ligne de Microsoft sont en panne dans le monde depuis le jeudi 12 novembre vers 19 heures, heure de Paris, selon The Register et Next&amp;nbsp;: la messagerie Exchange Online, Teams, SharePoint Online, Copilot, Defender, et l&#39;outil de gestion des appareils Intune, selon heise et The Register. Microsoft indique sur sa page d&#39;état qu&#39;un nombre inhabituel de serveurs échouent à leurs contrôles de santé automatiques et sont retirés du service, ce qui reporte la charge sur le reste de l&#39;infrastructure. L&#39;entreprise soupçonne un composant qui traite ces contrôles, a suspendu ses déploiements, selon Next, et examine si l&#39;annulation de quelques modifications récentes de configuration pourrait aider, selon heise. Exchange recevait de nouveau des courriels vers 23 heures, avec des retards selon les régions, selon heise. À 1 h 35, dans la dernière mise à jour citée par The Register, Microsoft indiquait qu&#39;un processus central surchargeait les serveurs rétablis, que ses mesures n&#39;avaient «&amp;nbsp;pas apporté le soulagement attendu&amp;nbsp;» et qu&#39;il isolait une partie de l&#39;infrastructure, sans calendrier de rétablissement complet. Les incidents portent les numéros EX1550543 et MO1550821 dans la console d&#39;administration.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.theregister.com/saas/2026/11/12/microsoft-struggling-to-fix-massive-cloud-outage-thats-taken-down-email-and-intune/5309531&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Microsoft-365-Stoerung-Serverausfaelle-legen-Teams-Exchange-und-Copilot-lahm-11523565.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://next.ink/brief-article/outlook-teams-plusieurs-services-de-microsoft-sont-en-panne/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 035, vendredi 13 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La justice américaine fait saisir 1,2 milliard de dollars volés à Binance et coupe les serveurs d&#39;une arnaque nord-coréenne par fausses visioconférences</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-11-13T06:59:58+01:00</published>
+    <updated>2026-11-13T06:59:58+01:00</updated>
+    <category term="Corée du Nord, États-Unis"/>
+    <content type="html">
+&lt;p&gt;Le département de la Justice des États-Unis a annoncé le jeudi 12 novembre avoir obtenu d&#39;un tribunal l&#39;autorisation de saisir ou de bloquer plus de 1,2 milliard de dollars de cryptomonnaies volées à la plateforme d&#39;échange Binance vers le 29 octobre. Le FBI attribue ce vol de plus de 6 milliards de dollars à TraderTraitor, des membres de l&#39;armée nord-coréenne. Les autorités et des entreprises du secteur ont gelé plus de 2,7 milliards de dollars au total. Le même jour, la justice a fait saisir les serveurs en ligne de FaceStealer, une campagne nord-coréenne qui a volé plus de 400 millions de dollars en 18 mois selon le FBI. Les pirates envoient des invitations à des réunions vidéo depuis des comptes volés à des victimes précédentes, enregistrent la webcam de la cible et diffusent la vidéo préenregistrée d&#39;un contact qu&#39;elle connaît, ou des vidéos truquées de personnalités des cryptomonnaies. Ils simulent ensuite une panne de son et proposent un «&amp;nbsp;correctif&amp;nbsp;», qui installe un logiciel malveillant. Selon le département de la Justice, la campagne vise de plus en plus les développeurs et mainteneurs de logiciels open source, pour accéder à leurs dépôts de code. Le FBI a saisi plus de 900 vidéos de victimes. Selon The Record, le FBI ne sait pas si FaceStealer a servi dans le vol de Binance&amp;nbsp;; selon The Register, Binance affirme que les attaquants ont commencé en juin par de faux entretiens d&#39;embauche.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.justice.gov/opa/pr/justice-department-announces-actions-disrupt-north-koreas-massive-theft-cryptocurrency&#34;&gt;département de la Justice des États-Unis&lt;/a&gt;, &lt;a href=&#34;https://therecord.media/stolen-binance-crypto-recovered-doj-facestealer-disrupted&#34;&gt;The Record&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/cyber-crime/2026/11/12/doj-takes-aim-at-12b-in-binance-loot-as-fbi-disrupts-north-korean-scam/5309523&#34;&gt;The Register&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 035, vendredi 13 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Une opération policière menée depuis l&#39;Allemagne neutralise 235 serveurs des logiciels malveillants Gootloader, CastleRAT et StealC</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-11-13T06:59:57+01:00</published>
+    <updated>2026-11-13T06:59:57+01:00</updated>
+    <category term="Europe"/>
+    <content type="html">
+&lt;p&gt;Le parquet général de Francfort et l&#39;Office fédéral de police criminelle allemand (BKA) ont annoncé le jeudi 12 novembre une nouvelle phase de l&#39;opération Endgame, menée du 9 au 11 novembre avec les polices des Pays-Bas, du Danemark, du Royaume-Uni, des États-Unis et du Canada, Europol, Eurojust et des entreprises de sécurité. Selon Europol, cité par Help Net Security, 235 serveurs et 257 noms de domaine ont été neutralisés, et 681 sites web infectés ont été nettoyés&amp;nbsp;; le BKA compte plus de 40 de ces serveurs en Allemagne. Les enquêteurs ont récupéré environ 6,4 millions d&#39;identifiants de connexion appartenant à plus de 40&amp;nbsp;000 victimes. Gootloader, actif depuis 2020, est un chargeur qui installe d&#39;autres logiciels, dont des rançongiciels&amp;nbsp;: ses opérateurs placent de faux documents juridiques sur des sites piratés, souvent sous WordPress, et manipulent les résultats des moteurs de recherche pour que les victimes les téléchargent. CastleRAT, connu depuis 2025, donne aux attaquants le contrôle à distance d&#39;un ordinateur. StealC vole des mots de passe et des sessions&amp;nbsp;; il avait déjà été visé en juin, et selon The Record, ses opérateurs avaient reconstruit leur réseau. Aucune arrestation n&#39;est annoncée. Les données des victimes de CastleRAT sont transmises à des services d&#39;alerte, dont Have I Been Pwned, et l&#39;agence allemande de sécurité informatique (BSI) prévient les victimes en Allemagne.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.presseportal.de/blaulicht/pm/7/6389442&#34;&gt;BKA&lt;/a&gt;, &lt;a href=&#34;https://therecord.media/european-authorities-take-down-stealic-malware-second-time&#34;&gt;The Record&lt;/a&gt;, &lt;a href=&#34;https://www.helpnetsecurity.com/2026/11/12/europol-operation-endgame-malware-takedown/&#34;&gt;Help Net Security&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 035, vendredi 13 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La Commission européenne propose le Digital Fairness Act, qui interdit les interfaces manipulatrices et oblige à laisser couper le défilement infini</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?a=5&amp;utm_source=rss#a5"/>
+    <published>2026-11-13T06:59:56+01:00</published>
+    <updated>2026-11-13T06:59:56+01:00</updated>
+    <category term="UE"/>
+    <content type="html">
+&lt;p&gt;La Commission européenne a présenté le mercredi 11 novembre sa proposition de Digital Fairness Act, une révision des règles de protection des consommateurs en ligne. Le texte interdit les interfaces conçues pour forcer un achat, comme un faux message de stock presque épuisé, et impose d&#39;afficher les prix réels des achats en monnaie virtuelle dans les applications et le prix maximal dans les files d&#39;attente de billetterie. Les utilisateurs devront pouvoir désactiver les fonctions qui poussent à un usage compulsif, comme la lecture automatique et le défilement infini, selon Euronews, ainsi que les systèmes qui simulent une relation personnelle, dont des robots conversationnels, selon Next. Les mécaniques de jeu payantes qui font progresser plus vite (pay-to-win) sont interdites aux mineurs. Les essais gratuits ne pourront plus devenir des abonnements payants sans accord, la résiliation devra être simple, et les consommateurs auront droit à un interlocuteur humain au service client. La Commission propose aussi de pouvoir enquêter elle-même sur les infractions de grande ampleur et d&#39;infliger des amendes jusqu&#39;à 6&amp;nbsp;% du chiffre d&#39;affaires mondial. Elle estime que les mesures feront économiser jusqu&#39;à 13,7 milliards d&#39;euros par an aux consommateurs. Le texte doit maintenant être examiné par le Parlement européen et le Conseil. Selon Euronews, l&#39;association de défense des droits numériques EDRi juge que les règles reposent trop sur la désactivation par l&#39;utilisateur.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2407&#34;&gt;Commission européenne&lt;/a&gt;, &lt;a href=&#34;https://www.euronews.com/2026/11/11/eu-targets-subscription-traps-addictive-design-and-hidden-fees-with-new-digital-rules&#34;&gt;Euronews&lt;/a&gt;, &lt;a href=&#34;https://next.ink/266856/abonnements-jeux-ia-leurope-veut-dejouer-les-arnaques-du-numerique-avec-le-dfa/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 035, vendredi 13 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : libghostty, le moteur du terminal Ghostty publié en bibliothèque, passe en version 1.0 et équipe déjà les IDE de JetBrains</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-11-13T06:59:55+01:00</published>
+    <updated>2026-11-13T06:59:55+01:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;libghostty-vt est le cœur d&#39;émulation du terminal Ghostty, extrait en bibliothèque utilisable par d&#39;autres programmes. Elle interprète les séquences de contrôle envoyées par les applications en ligne de commande et tient l&#39;état de l&#39;écran, du curseur et de l&#39;historique&amp;nbsp;; l&#39;application qui l&#39;intègre se charge de l&#39;affichage et de l&#39;interface. Le README la décrit comme une bibliothèque C et Zig sans dépendance&amp;nbsp;; elle fonctionne sous Linux, macOS, Windows, FreeBSD, Android, iOS et en WebAssembly, selon heise.&lt;/p&gt;
+&lt;p&gt;La version 1.0, annoncée le 6 novembre par Mitchell Hashimoto, fige l&#39;interface binaire&amp;nbsp;: les mises à jour de la série 1.x ne demandent pas de recompiler les programmes qui l&#39;utilisent. La version 1.0.1 a suivi le 11 novembre, selon heise. Les terminaux des IDE de JetBrains reposent sur la bibliothèque depuis la version 2026.3. Les mainteneurs de Neovim ont approuvé son intégration à la place de libvterm, en attendant une version publiée pour la fusionner, et des développeurs de KDE testent un terminal construit dessus.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/ghostty-org/ghostty&#34;&gt;github.com/ghostty-org/ghostty&lt;/a&gt;, consulté le 13 novembre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: MIT, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: Dépôt ghostty-org/ghostty, partagé avec l&#39;application Ghostty&amp;nbsp;: 64&amp;nbsp;037 étoiles, 3&amp;nbsp;902 forks, 18&amp;nbsp;821 commits, 146 issues et 125 pull requests ouvertes au 13 novembre&amp;nbsp;; dernière version de la bibliothèque vt-1.0.1, publiée le 11 novembre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Mitchell Hashimoto, qui a lancé Ghostty en 2022 et détient le droit d&#39;auteur avec les contributeurs du projet selon le fichier LICENSE&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: La bibliothèque ne fait pas l&#39;affichage, laissé au programme qui l&#39;intègre. La stabilité de l&#39;interface n&#39;est garantie qu&#39;à l&#39;intérieur de la série 1.x. L&#39;intégration à Neovim est approuvée mais pas encore fusionnée. Le chiffre de 12,5 millions d&#39;utilisateurs actifs des IDE de JetBrains, cité par Mitchell Hashimoto, vient d&#39;un rapport de JetBrains et n&#39;est pas vérifié par un tiers.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 035, vendredi 13 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Yandex déclare perdus 2,84 % des données des clients de son cloud après les dégâts subis en octobre par ses centres de données</title>
@@ -783,81 +872,5 @@
 &lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Les versions ARM64 pour Linux ne sont pour l&#39;instant proposées que par le dépôt PPA quotidien et le canal Snap «&amp;nbsp;edge&amp;nbsp;». La version 4.1 demande libopenshot 1.1.0 ou plus récente. Le projet repose sur une petite société, sans fondation ni gouvernance externe.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-02.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 026, lundi 2 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Binance évalue à 6,3 milliards de dollars les actifs sortis de ses portefeuilles lors d&#39;une attaque partie de l&#39;ordinateur d&#39;un ingénieur</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html#a1</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=1&amp;utm_source=rss#a1"/>
-    <published>2026-10-30T07:00:00+01:00</published>
-    <updated>2026-10-30T07:00:00+01:00</updated>
-    <category term="Sécurité"/>
-    <content type="html">
-&lt;p&gt;&lt;strong&gt;La plateforme d&#39;échange de cryptomonnaies Binance a suspendu les retraits le jeudi 29 octobre après des sorties de fonds non autorisées. Elle estime le montant touché à environ 6,3 milliards de dollars, dont environ 3 milliards ont été gelés. CoinDesk et heise le décrivent comme le plus gros vol de cryptomonnaies recensé&amp;nbsp;; le précédent, chez Bybit début 2025, portait sur 1,4 milliard de dollars, selon heise.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Selon les premiers résultats de l&#39;enquête de Binance, rapportés par CoinDesk et Inc42, l&#39;attaque est partie de l&#39;ordinateur portable compromis d&#39;un ingénieur DevOps. L&#39;attaquant a atteint un conteneur de service et y a soumis des ordres de retrait non autorisés. Binance dit n&#39;avoir trouvé aucune trace de fuite des clés privées de ses portefeuilles. Elle a révoqué l&#39;autorisation de l&#39;adresse concernée et annonce un rapport technique détaillé une fois l&#39;enquête terminée.&lt;/p&gt;
-&lt;p&gt;Tether dit avoir gelé plus de 1,57 milliard de dollars en USDT et Circle plus de 800 millions en USDC, selon CoinDesk. D&#39;après la société d&#39;analyse Arkham, citée par CoinDesk, les portefeuilles de l&#39;attaquant ont contenu à un moment plus de 5,7 milliards de dollars, dont environ 1,5 milliard en bitcoins et 900 millions en ether. L&#39;attaquant a aussi déposé des USDT volés sur la plateforme de prêt Aave pour emprunter au moins 20&amp;nbsp;000 WETH, soit environ 44 millions de dollars. Aave a suspendu les nouveaux dépôts et emprunts sur ses marchés V3 et V4, selon Inc42.&lt;/p&gt;
-&lt;p&gt;La société d&#39;analyse TRM Labs attribue l&#39;attaque «&amp;nbsp;avec un haut degré de confiance&amp;nbsp;» à TraderTraitor, un groupe nord-coréen, selon CoinDesk. L&#39;enquêteur indépendant ZachXBT désigne le groupe Lazarus comme l&#39;auteur probable. Binance n&#39;a pas désigné d&#39;auteur et dit travailler avec les forces de l&#39;ordre.&lt;/p&gt;
-&lt;p&gt;Binance affirme qu&#39;elle couvrira toutes les pertes avec son fonds de garantie SAFU et ses fonds propres&amp;nbsp;; sa codirigeante Yi He l&#39;a confirmé sur X. Les dépôts ont repris et les retraits doivent reprendre dans les 48 heures, selon heise. En Inde, la plateforme CoinDCX a suspendu par précaution les nouvelles positions sur ses contrats à terme, selon Inc42.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.binance.com/en/support/announcement/detail/c5a8729a97ac486d963784d96c5642d7&#34;&gt;Binance&lt;/a&gt;, &lt;a href=&#34;https://www.coindesk.com/business/2026/10/29/potential-multi-billion-binance-hack-hitting-crypto-markets&#34;&gt;CoinDesk&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/6-3-Milliarden-US-Dollar-Neuer-groesster-Krypto-Coup-aller-Zeiten-trifft-Binance-11505601.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://inc42.com/buzz/binance-hit-by-record-6-3-bn-crypto-breach-suspends-withdrawals/&#34;&gt;Inc42&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 025, vendredi 30 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Mistral publie les poids de Mistral Large 4, un modèle de 1 000 milliards de paramètres, sous une licence MIT modifiée</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html#a2</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=2&amp;utm_source=rss#a2"/>
-    <published>2026-10-30T06:59:59+01:00</published>
-    <updated>2026-10-30T06:59:59+01:00</updated>
-    <category term="France"/>
-    <content type="html">
-&lt;p&gt;Mistral AI a mis en ligne le 29 octobre sur Hugging Face les poids de Mistral Large 4, surnommé «&amp;nbsp;Le Chonk&amp;nbsp;» et présenté en préversion début octobre. Selon la fiche du modèle, il compte environ 1&amp;nbsp;000 milliards de paramètres, dont 49 milliards actifs pour chaque jeton, accepte du texte et des images et traite jusqu&#39;à un million de jetons de contexte&amp;nbsp;; il a été entraîné sur 3&amp;nbsp;800 GPU Nvidia Grace Blackwell dans les centres de données européens de Mistral. La licence, «&amp;nbsp;Mistral Ecosystem Open-Weight License&amp;nbsp;», est une version modifiée de la licence MIT&amp;nbsp;: l&#39;usage commercial est libre, mais une entreprise qui vend l&#39;accès au modèle comme service doit obtenir une licence commerciale auprès de Mistral. Selon Mistral, le modèle obtient 48&amp;nbsp;% à l&#39;indice Coding Agent d&#39;Artificial Analysis, à égalité avec le modèle chinois GLM-5.3, en consommant 47&amp;nbsp;% de jetons de moins par tâche&amp;nbsp;; ces chiffres n&#39;ont pas été vérifiés par un tiers. Une variante spécialisée dans les tests d&#39;intrusion et l&#39;audit de vulnérabilités est réservée à des partenaires contrôlés, dont Orange Cyberdefense, pour des tests sur des systèmes dont ils ont l&#39;autorisation. L&#39;agence européenne de cybersécurité ENISA dit tester le modèle pour auditer du code et analyser des journaux.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://mistral.ai/news/mistral-large-4-oss/&#34;&gt;Mistral AI&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/10/29/mistral-releases-weights-for-its-trillion-parameter-ai-model-targeting-cybersecurity/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Mistral-Large-4-Modellgewichte-veroeffentlicht-Coding-Leistung-verbessert-11504965.html&#34;&gt;heise&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 025, vendredi 30 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Le SPF Finances belge coupe MyMinfin et Tax-on-web après une cyberattaque et repousse une échéance fiscale au 16 novembre</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html#a3</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=3&amp;utm_source=rss#a3"/>
-    <published>2026-10-30T06:59:58+01:00</published>
-    <updated>2026-10-30T06:59:58+01:00</updated>
-    <category term="Belgique"/>
-    <content type="html">
-&lt;p&gt;Le service public fédéral Finances a annoncé le mercredi 28 octobre une cyberattaque contre ses services numériques et a mis hors ligne par précaution son portail fiscal MyMinfin. Son porte-parole Francis Adyns a cité aussi Tax-on-web et Biztax parmi les services coupés, selon The Register. L&#39;administration dit n&#39;avoir à ce stade aucun indice de fuite de données. Selon Francis Adyns, l&#39;attaque a été stoppée en quelques heures et les attaquants n&#39;ont pas pu s&#39;étendre pour prendre le contrôle d&#39;applications ou accéder à des données&amp;nbsp;; les services doivent être rétablis dans un environnement isolé. L&#39;échéance du 31 octobre pour certaines déclarations de revenus, dont celles des indépendants et des revenus de sociétés étrangères, passe au 16 novembre, selon The Register. L&#39;auteur de l&#39;attaque n&#39;a pas été identifié. Début octobre, le SPF avait déjà mis hors ligne de nombreux sites à cause des failles critiques de PHP&amp;nbsp;; aucun lien n&#39;a été établi entre les deux épisodes, selon The Record.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.theregister.com/security/2026/10/29/belgiums-tax-agency-confirms-cyberattack-pulls-services-offline/5306409&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://therecord.media/cyberattack-disrupts-belgian-tax-services-before-deadline&#34;&gt;The Record&lt;/a&gt;, &lt;a href=&#34;https://www.euronews.com/2026/10/28/belgiums-finance-and-tax-agency-hit-by-cyberattack&#34;&gt;Euronews&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 025, vendredi 30 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Les douanes malaisiennes saisissent 30 serveurs à puces d&#39;IA déclarés comme composants électroniques, en transit vers un autre pays d&#39;Asie</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html#a4</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=4&amp;utm_source=rss#a4"/>
-    <published>2026-10-30T06:59:57+01:00</published>
-    <updated>2026-10-30T06:59:57+01:00</updated>
-    <category term="Malaisie"/>
-    <content type="html">
-&lt;p&gt;Les douanes de l&#39;aéroport de Kuala Lumpur ont annoncé le 28 octobre la saisie, dans la zone franche de l&#39;aéroport, de 30 serveurs équipés de puces d&#39;IA avancées, d&#39;une valeur de 49,5 millions de ringgits (12,1 millions de dollars), selon The Sun. «&amp;nbsp;Les serveurs étaient déclarés comme “composants électroniques” pour échapper aux contrôles&amp;nbsp;», a déclaré la directrice des douanes de l&#39;aéroport, Aspalila Ag Tuah. La cargaison venait d&#39;un pays asiatique non nommé et devait être réexportée vers un autre, la Malaisie servant de point de transit pour contourner les restrictions à l&#39;exportation. Les autorités l&#39;attribuent à un réseau organisé&amp;nbsp;: c&#39;est le cinquième cas lié à ce réseau cette année, pour plus de 24 millions de dollars au total. La saisie date du 15 octobre, selon heise, qui cite l&#39;agence Bernama&amp;nbsp;: aucune arrestation n&#39;a eu lieu et l&#39;entreprise qui a organisé l&#39;envoi a été convoquée. Le fabricant des puces n&#39;a pas été nommé. En juin, 72 serveurs avaient été saisis dans la même zone franche. La Malaisie impose depuis 2025 un permis et une notification préalable pour l&#39;exportation et le transit des puces d&#39;IA américaines.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://newswav.com/article/malaysia-foils-12-mn-ai-chip-smuggling-bid-A2610_lUtsRy&#34;&gt;The Sun (via Newswav)&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Malaysia-Zoll-beschlagnahmt-KI-Chips-im-Wert-von-rund-12-Millionen-US-Dollar-11505399.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://economictimes.indiatimes.com/tech/artificial-intelligence/ai-chips-worth-12-1-million-seized-at-malaysia-airport-customs-authority-says/articleshow/135255556.cms&#34;&gt;Reuters (via The Economic Times)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 025, vendredi 30 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>L&#39;outil open source du jour : Project Quarry</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html#outil</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?outil&amp;utm_source=rss#outil"/>
-    <published>2026-10-30T06:59:56+01:00</published>
-    <updated>2026-10-30T06:59:56+01:00</updated>
-    <category term="L&#39;outil open source du jour"/>
-    <content type="html">
-&lt;p&gt;Project Quarry est un framework Python qui analyse les conversations d&#39;agents d&#39;IA (messages, appels d&#39;outils, résultats et ordre des événements) pour y repérer des comportements à risque. On écrit des règles dans un langage dédié&amp;nbsp;; chaque règle est compilée en automate à états finis, puis exécutée sur la conversation. Une règle peut aussi interroger un modèle quand les vérifications locales ne suffisent pas.&lt;/p&gt;
-&lt;p&gt;Cisco l&#39;a publié le 28 octobre, en version 0.1.0. Selon Amy Chang, responsable de la recherche sur les menaces liées à l&#39;IA chez Cisco, interrogée par The Register, l&#39;outil examine toute la session d&#39;un agent plutôt qu&#39;une action isolée&amp;nbsp;: lire un fichier sensible ou envoyer une requête vers l&#39;extérieur peut être légitime, mais la suite des deux signale une fuite de données. Cisco le compare à Snort pour le trafic réseau et à YARA pour l&#39;identification des logiciels malveillants.&lt;/p&gt;
-&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/cisco-ai-defense/project-quarry&#34;&gt;github.com/cisco-ai-defense/project-quarry&lt;/a&gt;, consulté le 30 octobre.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: Apache 2.0, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 42 étoiles, 3 forks, 22 commits, 0 issue et 0 pull request ouvertes au 30 octobre&amp;nbsp;; dernière release 0.1.0 le 28 octobre 2026&amp;nbsp;; premier commit le 27 octobre&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: L&#39;équipe AI Defense de Cisco (organisation GitHub cisco-ai-defense)&amp;nbsp;; le billet de présentation est signé par Amy Chang, Adam Swanda, Ravikumar Balakrishnan et Konstantin Berlin&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Version alpha&amp;nbsp;: la syntaxe des règles peut changer avant la version 1.0, ce qui obligera à réécrire les règles existantes. Python 3.11 à 3.13 seulement. Les règles sémantiques demandent un fournisseur de modèle configuré&amp;nbsp;; les exemples fournis les remplacent par des mots-clés, non destinés à la production. Projet porté par un acteur commercial, sans gouvernance externe.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-10-30.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 025, vendredi 30 octobre 2026&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

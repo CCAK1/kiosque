@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 16 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Lundi 16 novembre 2026<span class="price">4,92&nbsp;€</span></span><span class="issue" aria-label="Numéro 36">036</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">SpaceX rattrape l'étage supérieur de Starship au retour de l'orbite</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Une fusée Vulcan perd 40 satellites d'Amazon</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">805 millions d'euros d'amende pour Meta en Italie</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Le Bundestag adopte la réforme du renseignement allemand</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Une faille exploitée d'UnrealIRCd entre au catalogue de la CISA</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Wine</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">États-Unis</p>
+    <h2>SpaceX rattrape pour la première fois l'étage supérieur de Starship au retour d'un vol en orbite, mais perd le premier étage</h2>
+    <p class="deck">Le vaisseau Ship 42, étage supérieur de la fusée Starship, a été saisi par les deux bras mécaniques de sa tour de lancement au Texas le samedi 14 novembre, après plus de 22 heures en orbite. C'est la première fois qu'un étage supérieur est rattrapé au retour d'un vol orbital, selon heise et Teslarati. Le premier étage, Super Heavy, a renoncé à sa propre récupération et a été détruit au-dessus du golfe du Mexique.</p>
+    <div class="body">
+      <p>Le vol 15 a décollé de Starbase, au Texas, le vendredi 13 novembre vers 16 h 47, heure locale, soit 23 h 47 à Paris, selon NewSpace Economy. C'est le quinzième vol d'essai de Starship et le quatrième de l'année, selon heise. Le vaisseau a largué 26 satellites Starlink de troisième génération, dont trois portaient des caméras chargées de photographier son bouclier thermique avant la rentrée dans l'atmosphère, selon Teslarati. Il a fait environ 14 fois le tour de la Terre en un peu plus de 22 heures et 32 minutes, selon heise. Le vol précédent avait duré environ trois heures et s'était terminé par un amerrissage dans le Pacifique, selon NewSpace Economy.</p>
+      <p>Au retour, le vaisseau est revenu vers son site de lancement et est descendu sur un seul moteur jusqu'aux bras de la tour, qui l'ont saisi, selon heise. SpaceX rattrape déjà son premier étage de cette manière depuis octobre 2024&nbsp;; le rattrapage de l'étage supérieur évite les jambes d'atterrissage et doit permettre de le relancer sans le repêcher en mer. L'état du vaisseau après le vol n'est pas connu, selon heise. NewSpace Economy indique qu'il reste à inspecter son bouclier thermique, ses moteurs et sa structure pour savoir s'il peut revoler et avec quels travaux.</p>
+      <p>Le premier étage, Booster 22, devait être rattrapé quelques minutes après le décollage. Selon Dan Huot, porte-parole de SpaceX cité par NewSpace Economy, son système de guidage a constaté qu'il se trouvait «&nbsp;hors des conditions requises pour poursuivre un rattrapage&nbsp;» et l'a dévié vers la mer, comme prévu dans ce cas. Son système d'autodestruction a ensuite été déclenché au-dessus du golfe du Mexique, selon heise. SpaceX attribue l'incident, à titre provisoire, à une alarme signalant une masse d'ergols trop faible&nbsp;; la cause exacte est en cours d'analyse, selon heise. Elon Musk l'a attribué à un manque d'ergols dû à des moteurs un peu moins performants que prévu et a déclaré que cette perte «&nbsp;ne change pas&nbsp;» le calendrier de SpaceX pour des vols de Starship entièrement réutilisables, selon Teslarati.</p>
+      <p>SpaceX visait sur ce vol le rattrapage des deux étages. Une récupération complète après un vol orbital aurait été une première, selon heise. Ce résultat n'est pas atteint&nbsp;: seul l'étage supérieur est revenu à la tour.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://www.heise.de/news/SpaceX-faengt-erstmals-Starship-nach-Flug-in-der-Erdumlaufbahn-wieder-auf-11525437.html">heise</a>, <a href="https://newspaceeconomy.ca/2026/11/14/starship-flight-15-historic-spacecraft-catch-successful-satellite-deployment-and-a-lost-booster/">NewSpace Economy</a>, <a href="https://www.teslarati.com/spacex-catches-starship-first/">Teslarati</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">États-Unis</p>
+      <h3>Une fusée Vulcan de ULA échoue dix minutes après son décollage et perd les 40 satellites Internet d'Amazon qu'elle emportait</h3>
+      <p>La fusée Vulcan de United Launch Alliance (ULA), coentreprise de Boeing et Lockheed Martin, a décollé de Cap Canaveral, en Floride, le dimanche 15 novembre à 12 h 40, heure locale, soit 18 h 40 à Paris, avec 40 satellites du réseau Internet Amazon Leo, selon Spaceflight Now et Space.com. ULA a indiqué que le lanceur avait subi une anomalie dix minutes après le départ et n'avait pas placé sa charge en orbite&nbsp;; les satellites sont perdus. Selon Spaceflight Now, le premier étage a semblé fonctionner plus longtemps que prévu et s'est séparé en retard, puis l'animation de télémétrie a montré des corrections d'orientation inhabituelles de l'étage supérieur Centaur au début de sa poussée&nbsp;; ULA a seulement indiqué qu'un problème était survenu pendant cette poussée. C'est le premier échec complet de ULA depuis sa création en 2006, selon Spaceflight Now et heise. Ce vol était le cinquième de Vulcan, le premier depuis neuf mois après des problèmes de tuyères sur les propulseurs d'appoint, et le premier des 38 lancements réservés par Amazon sur ce lanceur, selon Spaceflight Now. Il devait porter à 436 le nombre de satellites lancés pour Amazon Leo, qui en demande plus de 3&nbsp;300. Selon heise, Amazon doit avoir 1&nbsp;616 satellites en orbite d'ici juillet 2028. Amazon a déclaré que tout lancement comporte des risques et que ULA restait un partenaire éprouvé, selon heise.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://spaceflightnow.com/2026/11/15/ula-suffers-first-total-mission-failure-with-loss-of-vulcan-rocket-carrying-40-amazon-leo-satellites/">Spaceflight Now</a>, <a href="https://www.space.com/space-exploration/launches-spacecraft/ula-vulcan-centaur-return-to-flight-amazon-leo-internet-satellite-launch">Space.com</a>, <a href="https://www.heise.de/news/Amazon-Satelliten-nach-Problem-einer-Vulcan-Traegerrakete-im-All-verloren-11525671.html">heise</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Italie</p>
+      <h3>L'autorité italienne de protection des données inflige 805 millions d'euros d'amende à Meta, dont l'application Facebook lisait les galeries photo sans consentement</h3>
+      <p>Le Garante per la protezione dei dati personali, l'autorité italienne de protection des données, a annoncé le samedi 14 novembre une amende de 805 millions d'euros contre Meta Platforms Ireland, soit environ 0,47&nbsp;% du chiffre d'affaires mondial du groupe, selon son communiqué. L'application Facebook pour Android accédait aux photos, aux vidéos et à leurs métadonnées sur les téléphones d'environ 20 millions d'utilisateurs italiens sans consentement spécifique ni information suffisante. L'accès passait par une fonction disponible depuis 2023, qui propose pendant la navigation des photos et vidéos de la galerie à publier. Elle était activée par défaut, et l'accès à la galerie était couvert par une autorisation unique, valable pour toute l'application et précédée d'une information générale. Le Garante fonde sa décision sur l'article 122 du code italien de la vie privée, qui transpose la directive ePrivacy, et a rejeté l'argument de Meta selon lequel l'autorité irlandaise était compétente&nbsp;: ce texte ne prévoit pas de guichet unique. L'enquête a commencé en juillet 2025 après une plainte d'une association de consommateurs de Bolzano, selon heise. Meta a 60 jours pour demander un consentement séparé et laisser la fonction désactivée par défaut, y compris pour les utilisateurs qui l'avaient acceptée. Le Garante n'a pas examiné l'éventuelle utilisation de ces contenus pour entraîner des modèles d'IA, que Meta dément, et se réserve d'examiner à part une fonction de traitement des galeries dans le cloud lancée en 2026. Meta se dit «&nbsp;en net désaccord avec l'évaluation des faits&nbsp;», juge l'amende disproportionnée et annonce un recours, selon Il Fatto Quotidiano.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.garanteprivacy.it/home/docweb/-/docweb-display/docweb/10321080">Garante per la protezione dei dati personali</a>, <a href="https://www.heise.de/news/Datenschutzverstoss-Meta-soll-in-Italien-805-Millionen-Euro-Strafe-zahlen-11525635.html">heise</a>, <a href="https://www.ilfattoquotidiano.it/2026/11/14/meta-multa-garante-privacy-facebook-foto-notizie/8571980/">Il Fatto Quotidiano</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Allemagne</p>
+      <h3>Le Bundestag adopte la réforme du renseignement qui autorise le BND à neutraliser des serveurs de pirates étatiques</h3>
+      <p>Les députés allemands ont adopté le vendredi 13 novembre la réforme du droit des services de renseignement, par 308 voix contre 190 et 71 abstentions selon le site du Bundestag (309 voix pour selon la taz). La CDU/CSU et le SPD ont voté pour, l'AfD et Die Linke contre, les Verts se sont abstenus. Le service de renseignement extérieur, le BND, ne se limite plus à collecter des informations&nbsp;: il peut intervenir dans des situations de menace définies impliquant une puissance étrangère, par exemple en mettant hors service les serveurs de groupes de pirates étatiques, selon le Bundestag. Il peut conserver sans examen préalable les données issues de la surveillance stratégique des télécommunications, six mois pour les contenus et douze mois pour les métadonnées. Le renseignement intérieur, le BfV, obtient l'accès à des systèmes informatiques, des outils de comparaison biométrique et l'analyse de données par IA. Selon heise, le BND pourra aussi entrer secrètement dans des logements pour installer un logiciel espion, avec un examen préalable pour les logements situés en Allemagne, et des systèmes automatisés pourront décider de mesures de cyberdéfense qui effacent ou modifient des données sans contrôle humain préalable. Le contrôle est confié à un conseil indépendant, l'Unabhängiger Kontrollrat, porté de six à douze membres, selon la taz. Le texte protège aussi les échanges confidentiels avec une IA au même titre qu'une conversation entre personnes, selon la taz. L'AfD, Die Linke et les Verts s'attendent à ce que la Cour constitutionnelle censure les nouveaux pouvoirs du BfV, selon la taz. Le texte doit encore passer au Bundesrat, selon heise.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.bundestag.de/dokumente/textarchiv/2026/kw46-de-nachrichtendienste-1231530">Bundestag</a>, <a href="https://www.heise.de/news/Lizenz-zum-Einbruch-Bundestag-winkt-umkaempfte-Geheimdienstreform-durch-11524886.html">heise</a>, <a href="https://taz.de/BND-und-Verfassungsschutz/!6229998/">taz</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Open source</p>
+      <h3>Une faille du serveur de discussion UnrealIRCd, exploitée depuis début novembre, entre au catalogue américain des vulnérabilités attaquées</h3>
+      <p>L'agence américaine de cybersécurité CISA a ajouté le vendredi 13 novembre la faille CVE-2026-114713 d'UnrealIRCd à son catalogue des vulnérabilités exploitées, avec une échéance de correction au 16 novembre pour les administrations fédérales, selon The Hacker News. UnrealIRCd est un logiciel open source de serveur IRC, le protocole de messagerie instantanée par salons. La faille se trouve dans le module labeled-response, activé par défaut selon heise, qui renvoie l'étiquette «&nbsp;label&nbsp;» d'un message dans ses réponses sans en neutraliser les caractères spéciaux. Sur un réseau d'au moins deux serveurs reliés, un utilisateur ordinaire peut ainsi injecter des commandes que les serveurs échangent entre eux et les faire exécuter avec les droits d'un serveur ou d'un opérateur&nbsp;: déconnecter des utilisateurs ou les bannir de tout le réseau, selon heise et The Hacker News. Les versions 6.0.0 à 6.2.7 sont touchées, ainsi que la version 5, qui ne reçoit plus de correctifs. La version 6.2.7.1, publiée le 7 novembre, corrige la faille, et un correctif applicable sans redémarrage est disponible&nbsp;; les tentatives d'exploitation ont commencé environ un jour après, selon The Hacker News. Le mainteneur, Bram Matthys, la décrit comme le problème le plus critique du logiciel depuis 15 ans. Selon heise, la version corrige neuf failles, trouvées lors d'un audit interne mené avec l'aide de l'IA&nbsp;; pour la version 5, il faut désactiver le module et redémarrer les serveurs.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.cisa.gov/news-events/alerts/2026/11/13/cisa-adds-two-known-exploited-vulnerabilities-catalog">CISA</a>, <a href="https://www.heise.de/news/Angriffe-auf-UnrealIRCd-Sicherheitsluecke-ermoeglicht-Befehle-mit-Serverrechten-11525565.html">heise</a>, <a href="https://thehackernews.com/2026/11/attackers-exploit-unrealircd-flaw-that.html">The Hacker News</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">Wine, qui fait tourner des logiciels Windows sous Linux et macOS, publie sa version 11.22 avec les instructions AVX dans l'émulation x86 sur ARM64</h2>
+    <div class="tool-grid">
+      <div>
+        <p>Wine exécute des programmes écrits pour Windows sur Linux, macOS et les systèmes BSD sans machine virtuelle ni copie de Windows&nbsp;: il réimplémente les interfaces de programmation de Windows et traduit leurs appels vers ceux du système hôte. Le projet est né en 1993&nbsp;; le premier commit de son historique date du 29 juin 1993.</p>
+        <p>La version de développement 11.22, publiée le 13 novembre, ajoute les instructions vectorielles AVX à l'émulation du code x86 sur les processeurs ARM64, la répartition aléatoire de l'espace d'adressage, les données de langue Unicode CLDR 49, une nouvelle validation DTD dans MSXML et des métriques corrigées pour la police Tahoma. Elle corrige 34 bugs, dont un plantage au lancement de Guild Wars 2, selon l'annonce de la version.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://gitlab.winehq.org/wine/wine">gitlab.winehq.org/wine/wine</a>, miroir GitHub wine-mirror/wine consulté le 16 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>GNU LGPL 2.1 ou version ultérieure, vérifiée dans les fichiers LICENSE et COPYING.LIB du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>Miroir GitHub wine-mirror/wine&nbsp;: 4&nbsp;287 étoiles, 1&nbsp;511 forks, 186&nbsp;865 commits et 28 pull requests ouvertes au 16 novembre&nbsp;; dernière version wine-11.22, publiée le 13 novembre 2026</dd></div>
+        <div><dt>Qui</dt><dd>Projet communautaire dont les versions sont publiées par Alexandre Julliard, auteur du commit de la 11.22&nbsp;; le fichier AUTHORS recense plus de 2&nbsp;100 contributeurs</dd></div>
+        <div><dt>À savoir</dt><dd>La 11.22 est une version de développement, pas une version stable. Le fonctionnement dépend de chaque logiciel et n'est pas garanti. Le dépôt GitHub est un miroir&nbsp;: le développement passe par gitlab.winehq.org et les rapports de bugs par bugs.winehq.org, d'où l'absence d'issues sur GitHub.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-13.html" rel="prev">Numéro précédent&nbsp;: <span class="num">035</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

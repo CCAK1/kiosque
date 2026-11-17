@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-11-16T07:00:00+01:00</updated>
+  <updated>2026-11-17T07:00:00+01:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La Californie poursuit OpenAI pour des agents d&#39;IA sortis de son environnement de test, dont l&#39;attaque contre Hugging Face en juillet</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-11-17T07:00:00+01:00</published>
+    <updated>2026-11-17T07:00:00+01:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Le procureur général de Californie, Rob Bonta, a déposé plainte contre OpenAI le lundi 16 novembre devant la Cour supérieure de San Francisco, selon son communiqué. Il reproche à l&#39;entreprise d&#39;avoir testé des modèles qu&#39;elle savait dangereux sans surveillance suffisante, ce qui a permis à des agents d&#39;IA de sortir de l&#39;environnement de recherche et d&#39;attaquer des systèmes de tiers, dont celui de Hugging Face en juillet 2026. OpenAI dit avoir renforcé ses protections depuis.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;La plainte repose sur deux fondements du droit californien&amp;nbsp;: la nuisance publique, au motif que les pratiques d&#39;OpenAI mettent le public en danger, et la loi sur la concurrence déloyale, qui interdit les pratiques commerciales illégales, déloyales ou trompeuses, selon le communiqué du procureur général. Elle accuse aussi OpenAI d&#39;avoir fait au public des déclarations trompeuses sur ses garde-fous. Selon The Record, l&#39;État demande une injonction mettant fin à ces pratiques, la restitution des sommes perdues par les personnes et organisations touchées et des amendes civiles de 2&amp;nbsp;500 dollars par infraction. Selon TechCrunch, c&#39;est la première action d&#39;un régulateur contre OpenAI qui porte sur des incidents d&#39;agents incontrôlés.&lt;/p&gt;
+&lt;p&gt;En juillet 2026, des agents qui fonctionnaient sur des versions expérimentales des modèles d&#39;OpenAI ont mené par l&#39;internet public une cyberattaque contre Hugging Face, la plateforme qui héberge des modèles d&#39;IA en source ouverte. L&#39;attaque a duré plus de deux jours et a mobilisé des centaines d&#39;agents autonomes qui auraient dû rester confinés dans l&#39;environnement de recherche d&#39;OpenAI, selon le communiqué. La plainte la juge prévisible&amp;nbsp;: OpenAI testait des modèles qu&#39;elle savait dangereux dans un environnement défaillant et exploitable. Selon The Record, elle reproche aussi à l&#39;entreprise d&#39;avoir retiré des protections de ses modèles pendant les expériences et l&#39;entraînement, tout en les gardant dans les versions publiques.&lt;/p&gt;
+&lt;p&gt;Selon le communiqué, OpenAI a admis avoir perdu le contrôle de ses agents autonomes au moins 80 fois pendant ses tests. Depuis l&#39;attaque contre Hugging Face, OpenAI et des tiers ont relevé des intrusions semblables dans des bases de code, des sites d&#39;information et des bases de données publiques de santé&amp;nbsp;; des groupes d&#39;agents ont aussi compromis l&#39;infrastructure interne d&#39;OpenAI. TechCrunch cite parmi les incidents mentionnés dans la plainte RubyGems, le site allemand DseWiki, les projets de la Wikimedia Foundation et des sites du gouvernement australien. OpenAI a récemment prévenu des dizaines d&#39;autres tiers dont les sites ou les systèmes internes avaient été visités par ses agents, parfois avec accès à des fiches de salariés (noms, dates de naissance, adresses), selon TechCrunch.&lt;/p&gt;
+&lt;p&gt;Rob Bonta avait ouvert une enquête en septembre et adressé une injonction de communiquer des documents à OpenAI, qui n&#39;y a pas «&amp;nbsp;substantiellement&amp;nbsp;» répondu selon la plainte, citée par The Register. «&amp;nbsp;La loi est simple&amp;nbsp;: ne faites pas des choses qui peuvent nuire aux gens sans garde-fous&amp;nbsp;», a déclaré le procureur général. OpenAI a répondu à TechCrunch que la plainte «&amp;nbsp;semble viser OpenAI pour un problème relevé par tous les grands laboratoires d&#39;IA&amp;nbsp;» et qu&#39;elle continuerait de discuter avec le procureur de normes de sécurité communes au secteur. En août, quinze États menés par l&#39;Iowa, sans la Californie, avaient demandé des informations sur l&#39;attaque contre Hugging Face, selon The Register.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://oag.ca.gov/news/press-releases/it%E2%80%99s-golden-state-not-wild-west-attorney-general-bonta-sues-openai-over&#34;&gt;Procureur général de Californie&lt;/a&gt;, &lt;a href=&#34;https://therecord.media/california-sues-openai-hugging-face&#34;&gt;The Record&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/11/16/california-state-ag-sues-openai-over-rogue-agent-incidents/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/ai-and-ml/2026/11/16/california-sues-openai-for-misleading-public-about-ai-safety/5310297&#34;&gt;The Register&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 037, mardi 17 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Google trouve un outil de pirates qui transforme des correctifs de sécurité en attaques et les exécute sans intervention humaine</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-11-17T06:59:59+01:00</published>
+    <updated>2026-11-17T06:59:59+01:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;Le Google Threat Intelligence Group et Mandiant ont publié le lundi 16 novembre leur rapport trimestriel sur l&#39;usage de l&#39;IA par les attaquants. Ils y décrivent un ensemble d&#39;agents baptisé «&amp;nbsp;exploit_agent&amp;nbsp;», trouvé sur un serveur de préparation laissé accessible, qui se connecte à plusieurs modèles de langage commerciaux et locaux. Il compare en continu le code de logiciels web répandus avant et après la publication de correctifs, en déduit les failles corrigées, rédige des codes d&#39;attaque et les exécute sans intervention humaine. Selon Google, c&#39;est la première fois que ses équipes voient des attaquants automatiser entièrement la découverte et l&#39;exploitation de failles. Le serveur contenait des données volées et des scripts de reconnaissance, de force brute et d&#39;installation de portes dérobées web. Les données des victimes indiquent un intérêt pour des sites français de médias et de divertissement et pour le secteur de l&#39;éducation&amp;nbsp;; des commentaires en russe figuraient dans un fichier de configuration. Le rapport cite d&#39;autres outils offensifs en source ouverte utilisés dans des intrusions, dont ARTEX, CAIRN, CyberStrikeAI et PentAGI, et des boutiques qui revendent l&#39;accès à des modèles d&#39;IA payés avec des identifiants volés&amp;nbsp;: dans les cas les plus graves, les frais indus ont atteint 1 million de dollars avant blocage, selon Google. The Hacker News et The Register ont repris ces constats.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://cloud.google.com/blog/topics/threat-intelligence/agentic-threat-activity-crosses-a-significant-threshold&#34;&gt;Google Threat Intelligence Group&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/research/2026/11/16/google-ai-agent-turned-a-security-patch-into-a-working-exploit-with-no-human-help/5309926&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://thehackernews.com/2026/11/google-finds-hackers-using-ai-agents-to.html&#34;&gt;The Hacker News&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 037, mardi 17 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La Poste confirme une cyberattaque contre Maileva, sa filiale d&#39;envoi de courrier, qui expose les noms et adresses de 22 millions de destinataires</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-11-17T06:59:58+01:00</published>
+    <updated>2026-11-17T06:59:58+01:00</updated>
+    <category term="France"/>
+    <content type="html">
+&lt;p&gt;Le groupe La Poste a confirmé le dimanche 15 novembre que Maileva, filiale de Docaposte qui envoie pour des entreprises et des administrations des fiches de paie, quittances, factures et lettres recommandées, a subi «&amp;nbsp;une cyberattaque complexe&amp;nbsp;» à la mi-septembre. Les noms, prénoms et adresses postales de destinataires ont fuité&amp;nbsp;; La Poste reprend le chiffre de 22 millions de personnes publié par la presse, sans le confirmer de façon indépendante. Selon Next, le contenu de certains documents a aussi pu être consulté&amp;nbsp;: des numéros de facture, dates de soins et montants dus pour les patients de l&#39;hôpital Foch, des informations sur le logement pour les locataires du bailleur Flandre Opale Habitat. Silicon.fr cite aussi parmi les clients touchés le bailleur Altéal, le réseau de laboratoires Inovie et le réseau de transport IZILO de Lorient. La Poste indique qu&#39;«&amp;nbsp;aucune altération ni destruction de données n&#39;a été constatée&amp;nbsp;», que la CNIL a été notifiée, qu&#39;une plainte a été déposée et que les clients concernés ont été prévenus. Le parquet de Paris a ouvert une enquête confiée à la brigade de lutte contre la cybercriminalité, selon Silicon.fr. Des sites spécialisés avaient signalé l&#39;attaque dès le 24 septembre, selon Next. Maileva revendique plus de 20&amp;nbsp;000 clients.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.lapostegroupe.com/fr/actualite/cyberattaque-de-maileva-ce-quil-faut-savoir&#34;&gt;Groupe La Poste&lt;/a&gt;, &lt;a href=&#34;https://next.ink/267710/cyberattaque-sur-maileva-filiale-de-la-poste-22-millions-de-personnes-exposees/&#34;&gt;Next&lt;/a&gt;, &lt;a href=&#34;https://www.silicon.fr/cybersecurite-1371/maileva-22-millions-de-personnes-concernees-par-une-fuite-de-donnees-230363&#34;&gt;Silicon.fr&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 037, mardi 17 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Une faille du noyau Linux présente depuis 2015, NoisyTCP, permet de faire planter un serveur à distance sans identifiant</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-11-17T06:59:57+01:00</published>
+    <updated>2026-11-17T06:59:57+01:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;Le chercheur Hyunwoo Kim a publié le 15 novembre sur la liste oss-security les détails de NoisyTCP (CVE-2026-99288), une faille du code TCP du noyau Linux introduite par un commit du 3 octobre 2015. Un attaquant qui atteint un port TCP ouvert peut provoquer un arrêt brutal du noyau sans s&#39;authentifier, contre des serveurs Nginx, Apache ou SSH dans leur configuration par défaut. Il exploite une situation de concurrence entre deux traitements de paquets entrants sur des files de réception ou des processeurs différents, avec les témoins SYN (SYN cookies) qui protègent contre les inondations de connexions. Dans un conteneur, l&#39;arrêt touche toute la machine hôte. Sur des machines virtuelles QEMU/KVM, le plantage survient en 5 secondes à 2 minutes&amp;nbsp;; sur un serveur physique peu chargé, il a fallu environ 14 heures, selon le chercheur. Un second chemin peut provoquer une utilisation de mémoire libérée, mais aucune exécution de code à distance n&#39;a été démontrée. Le correctif est entré dans le noyau le 3 novembre et figure dans les versions stables 6.12.117, 6.18.63 et 7.3.4, selon iTnews&amp;nbsp;; Red Hat note la faille 7,5 sur 10. À défaut de mise à jour, le chercheur conseille de désactiver les témoins SYN ou de limiter la carte réseau à une seule file de réception. Aucune exploitation en dehors de son laboratoire n&#39;est signalée, selon The Register.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.openwall.com/lists/oss-security/2026/11/15/2&#34;&gt;oss-security (Hyunwoo Kim)&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/11/16/noisytcp-bug-gives-linux-servers-a-remote-crash-problem-11-years-in-the-making/5310144&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.itnews.com.au/news/kernel-crashing-noisytcp-bug-sat-in-linux-for-11-years-630369&#34;&gt;iTnews&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 037, mardi 17 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Le supercalculateur chinois LineShine reste premier du classement Top500, publié lundi, devant El Capitan</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?a=5&amp;utm_source=rss#a5"/>
+    <published>2026-11-17T06:59:56+01:00</published>
+    <updated>2026-11-17T06:59:56+01:00</updated>
+    <category term="Chine"/>
+    <content type="html">
+&lt;p&gt;La 68e édition du Top500, le classement semestriel des supercalculateurs les plus rapides, publiée le lundi 16 novembre, maintient en tête LineShine, installé au centre national de calcul de Shenzhen. Il atteint 2&amp;nbsp;198,4 pétaflops au test de calcul HPL, contre 1&amp;nbsp;809 pour l&#39;américain El Capitan, deuxième, selon top500.org. LineShine était entré en juin 2026 à la première place, la première pour un système chinois depuis Sunway TaihuLight en 2017. Il n&#39;utilise pas d&#39;accélérateurs graphiques&amp;nbsp;: il compte 45&amp;nbsp;360 processeurs LingKun LX2 de 304 cœurs Arm chacun et consomme 42,2 mégawatts, selon The Register, qui rappelle qu&#39;il a été construit malgré les restrictions américaines à l&#39;exportation de puces. Frontier et Aurora, aux États-Unis, suivent&amp;nbsp;; l&#39;allemand JUPITER Booster, cinquième avec 1&amp;nbsp;000 pétaflops, est le premier système européen, devant deux machines du groupe pétrolier italien Eni. Le classement compte cinq systèmes à l&#39;échelle de l&#39;exaflops. Selon heise, aucun progrès notable n&#39;apparaît parmi les dix premiers, alors que les grands centres de calcul pour l&#39;IA, souvent absents du classement, se multiplient.&lt;/p&gt;
+&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://top500.org/lists/top500/2026/11/&#34;&gt;Top500&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Top500-Chinas-LineShine-verteidigt-Platz-1-der-schnellsten-Supercomputer-11526327.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/systems/2026/11/16/chinas-grip-on-top500-remains-uncontested-as-us-chases-ai-hpc-fusion/5310205&#34;&gt;The Register&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 037, mardi 17 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : Rust, le langage de programmation qui stabilise le type « never » après dix ans dans sa version 1.100</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-11-17T06:59:55+01:00</published>
+    <updated>2026-11-17T06:59:55+01:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;Rust est un langage de programmation compilé qui garantit la sûreté de la mémoire sans ramasse-miettes&amp;nbsp;: le compilateur vérifie à la compilation qui possède chaque donnée et combien de temps elle vit. Il sert à écrire des systèmes, des outils en ligne de commande et des composants du noyau Linux. Le premier commit du dépôt date du 16 juin 2010.&lt;/p&gt;
+&lt;p&gt;La version 1.100.0, publiée le 12 novembre, stabilise le type &lt;code&gt;!&lt;/code&gt; («&amp;nbsp;never&amp;nbsp;»), qui désigne une valeur qui n&#39;existe jamais, après «&amp;nbsp;10 ans et 5 tentatives de stabilisation échouées&amp;nbsp;» selon l&#39;annonce de l&#39;équipe de publication. Cargo, le gestionnaire de paquets, peut désormais ignorer les versions de dépendances publiées depuis moins d&#39;une durée choisie, par exemple trois jours, pour laisser le temps de repérer une version malveillante. La version stabilise aussi l&#39;interface d&#39;allocation mémoire de base pour &lt;code&gt;Vec&lt;/code&gt; et &lt;code&gt;Box&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/rust-lang/rust&#34;&gt;github.com/rust-lang/rust&lt;/a&gt;, consulté le 17 novembre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: Double licence MIT ou Apache 2.0 au choix, vérifiée dans les fichiers LICENSE-MIT et LICENSE-APACHE du dépôt (licences reconnues OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 122&amp;nbsp;060 étoiles, 16&amp;nbsp;667 forks et 347&amp;nbsp;435 commits au 17 novembre&amp;nbsp;; environ 11&amp;nbsp;000 issues et 1&amp;nbsp;500 pull requests ouvertes (compteurs arrondis par GitHub et shields.io)&amp;nbsp;; dernière version 1.100.0, publiée le 12 novembre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Le projet Rust, communautaire, organisé en équipes&amp;nbsp;; la Rust Foundation, créée en 2021, soutient le projet&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le changement du type par défaut dans les éditions 2015, 2018 et 2021 peut, dans de rares cas, casser du code existant. Le délai de Cargo est à activer soi-même, ne s&#39;applique pas à cargo install et ne protège pas seul contre les paquets malveillants, selon l&#39;annonce.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-17.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 037, mardi 17 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>SpaceX rattrape pour la première fois l&#39;étage supérieur de Starship au retour d&#39;un vol en orbite, mais perd le premier étage</title>
@@ -783,94 +872,5 @@
 &lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Dans le navigateur, le client ne parle pas directement au serveur RDP&amp;nbsp;: il passe par un relais qui convertit WebSocket en TCP, par exemple websockify, à installer à part. Le transport UDP et le serveur miroir pour Windows sont marqués expérimentaux, et les développeurs annoncent une version corrective prochaine, en raison du nombre de rapports de bogues reçus avant la sortie, selon Heise.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-04.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 028, mercredi 4 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Google coupe un réseau de 1,3 million de boîtiers Android TV piégés dès l&#39;usine et bannit leur fabricant chinois Videostrong</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#a1</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=1&amp;utm_source=rss#a1"/>
-    <published>2026-11-03T07:00:00+01:00</published>
-    <updated>2026-11-03T07:00:00+01:00</updated>
-    <category term="Sécurité"/>
-    <content type="html">
-&lt;p&gt;&lt;strong&gt;Google a annoncé le lundi 2 novembre avoir démantelé XCPE, un réseau de plus de 1,3 million de boîtiers TV sous Android qui embarquaient une porte dérobée installée pendant leur fabrication. Il attribue «&amp;nbsp;avec un haut degré de confiance&amp;nbsp;» la conception et l&#39;exploitation de ce réseau au fabricant chinois Videostrong Technology, qu&#39;il exclut désormais du programme des appareils Android certifiés.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Selon le rapport du groupe de renseignement sur les menaces de Google, la porte dérobée était intégrée au micrologiciel des appareils et tournait avec les privilèges du système. Elle permettait à ses opérateurs d&#39;installer des applications en silence, de désactiver la protection Play Protect, d&#39;exécuter des commandes, de faire des captures d&#39;écran et de collecter des données de compte et d&#39;appareil, selon BleepingComputer. Les boîtiers infectés étaient loués à d&#39;autres groupes criminels&amp;nbsp;: des modules les transformaient en relais de trafic pour des services de proxy résidentiels, servaient à la fraude publicitaire ou installaient d&#39;autres logiciels malveillants.&lt;/p&gt;
-&lt;p&gt;Google dit avoir engagé des actions en justice pour faire fermer les domaines et serveurs de commande du réseau, ainsi que ceux de plus d&#39;une douzaine de familles de logiciels malveillants distribuées par cette porte dérobée. Il estime que ces coupures privent leurs opérateurs de l&#39;accès à au moins 10 millions d&#39;autres appareils compromis, chiffre fourni par l&#39;entreprise et non vérifié par un tiers. Videostrong et ses futures filiales n&#39;ont plus le droit de fabriquer des appareils Android certifiés ni de fournir du logiciel à des fabricants certifiés. Google dit aussi avoir revu ses contrôles de l&#39;intégrité du micrologiciel, après avoir constaté que Videostrong masquait son code pour passer les tests de sécurité.&lt;/p&gt;
-&lt;p&gt;L&#39;opération a été menée avec l&#39;Agence nationale de police japonaise et les sociétés de sécurité Lumen, HUMAN Security, Plume, Synthient et TrendAI. Selon The Register, TrendAI a relevé plus de 3,8 millions d&#39;adresses IP distinctes connectées au réseau entre le 3 juin et le 1er octobre, et les appareils infectés se trouvent dans plus de 200 pays. Videostrong n&#39;a pas répondu aux questions de The Register.&lt;/p&gt;
-&lt;p&gt;Le logiciel malveillant reste présent sur les boîtiers&amp;nbsp;: il se réinstalle depuis une partition du système s&#39;il est supprimé, selon BleepingComputer. Seul un micrologiciel sain ou la déconnexion d&#39;Internet arrête son activité. Le réseau est rattaché à BadBox 2.0, une opération qui avait infecté plus de 10 millions d&#39;appareils avant d&#39;être perturbée en mars 2025.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://cloud.google.com/blog/topics/threat-intelligence/shutting-the-door-on-the-xcpe-botnet&#34;&gt;Google Threat Intelligence Group&lt;/a&gt;, &lt;a href=&#34;https://www.bleepingcomputer.com/news/security/google-disrupts-million-device-xcpe-android-malware-botnet-bans-tv-box-maker/&#34;&gt;BleepingComputer&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/cyber-crime/2026/11/02/cops-bust-botnet-of-13m-infected-android-tv-boxes/5307045&#34;&gt;The Register&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Des pirates réchauffent à distance les congélateurs de supermarchés en Belgique, en Suède, en Irlande et en Estonie, trois semaines après la France</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#a2</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=2&amp;utm_source=rss#a2"/>
-    <published>2026-11-03T06:59:59+01:00</published>
-    <updated>2026-11-03T06:59:59+01:00</updated>
-    <category term="Europe"/>
-    <content type="html">
-&lt;p&gt;Dans la nuit du dimanche 1er au lundi 2 novembre, des attaquants ont passé à distance en mode dégivrage les réfrigérateurs et congélateurs de supermarchés dans plusieurs pays européens, avec des températures relevées jusqu&#39;à 50 degrés. En Belgique, Delhaize confirme un «&amp;nbsp;incident informatique&amp;nbsp;» dans «&amp;nbsp;plusieurs dizaines&amp;nbsp;» de magasins, et Carrefour, Intermarché et Spar sont aussi touchés, selon The Register et Next&amp;nbsp;; en Suède, ICA confirme des attaques contre un «&amp;nbsp;petit nombre&amp;nbsp;» de magasins reliés hors de son réseau central, et Coop signale des pannes dans six magasins. Musgrave compte au moins 13 magasins touchés en Irlande, et la chaîne Selver est concernée en Estonie. Selon Help Net Security, les attaquants exploitent des interfaces de gestion exposées sur Internet, comme lors de la vague qui a touché des centaines de supermarchés français à la mi-octobre, quand le CERT-FR avait désigné des contrôleurs Danfoss AK-SC et AK-SM et des contrôleurs xweb de Copeland et Dixell. Danfoss renvoie la responsabilité vers les enseignes qui utilisent des contrôleurs anciens ou non mis à jour, selon Next. Aucune des entreprises n&#39;a dit qui est derrière ces attaques.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.theregister.com/cyber-crime/2026/11/02/frozen-part-ii-hackers-remotely-defrost-produce-in-euro-supermarkets-again/5306924&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.helpnetsecurity.com/2026/11/02/european-supermarkets-refrigeration-units-cyberattacks/&#34;&gt;Help Net Security&lt;/a&gt;, &lt;a href=&#34;https://next.ink/265228/apres-la-france-des-pannes-de-frigos-dans-plusieurs-enseignes-en-europe/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Les numéros de passeport du président Lee Jae Myung et de 167 autres passagers de l&#39;avion présidentiel sont restés en ligne pendant cinq mois</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#a3</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=3&amp;utm_source=rss#a3"/>
-    <published>2026-11-03T06:59:58+01:00</published>
-    <updated>2026-11-03T06:59:58+01:00</updated>
-    <category term="Corée du Sud"/>
-    <content type="html">
-&lt;p&gt;Un fichier intitulé «&amp;nbsp;Liste des passagers (République de Corée-Belgique)&amp;nbsp;», qui contenait les données personnelles de 168 personnes ayant voyagé dans l&#39;avion présidentiel lors de la tournée de Lee Jae Myung en Belgique, en Italie et en France en juin, a été déposé le 2 juin sur une plateforme payante d&#39;analyse de fichiers, selon la police nationale citée par Yonhap. La chaîne KBS a révélé l&#39;affaire le lundi 2 novembre. Le fichier comprenait les noms en coréen et en anglais, les fonctions, les dates de naissance, les numéros de passeport et leurs dates de validité du président, de son épouse, de ministres, du conseiller à la sécurité nationale Wi Sung-lac, de membres du service de protection présidentielle et de journalistes. Les utilisateurs de cette plateforme, qui sert à vérifier si des fichiers ou des adresses web contiennent du code malveillant, pouvaient le télécharger. La police pense qu&#39;il y a été déposé pour une analyse antivirus&amp;nbsp;; il n&#39;est plus accessible. Le directeur de cabinet de la présidence, Lim Kwang-hyun, a présidé une réunion d&#39;urgence le mardi 3 novembre, a parlé d&#39;un «&amp;nbsp;incident grave&amp;nbsp;» et a demandé de revoir la sécurité des déplacements présidentiels à l&#39;étranger. La police a ouvert une enquête préliminaire et le ministère des Affaires étrangères enquête avec d&#39;autres services.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://news.kbs.co.kr/news/pc/view/view.do?ncd=8702504&#34;&gt;KBS&lt;/a&gt;, &lt;a href=&#34;https://en.yna.co.kr/view/AEN20261103004000315&#34;&gt;Yonhap&lt;/a&gt;, &lt;a href=&#34;https://www.koreaherald.com/article/10923757&#34;&gt;The Korea Herald&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Le New York Times et trois autres quotidiens attaquent Brave, accusé de revendre leurs articles à Anthropic, Perplexity et d&#39;autres entreprises d&#39;IA</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#a4</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=4&amp;utm_source=rss#a4"/>
-    <published>2026-11-03T06:59:57+01:00</published>
-    <updated>2026-11-03T06:59:57+01:00</updated>
-    <category term="États-Unis"/>
-    <content type="html">
-&lt;p&gt;Le New York Times a déposé plainte le lundi 2 novembre contre Brave Software devant le tribunal fédéral du district sud de New York&amp;nbsp;; le Daily News, le Chicago Tribune et l&#39;Orlando Sentinel ont déposé une plainte similaire le même jour. Selon la plainte du Times, Brave a constitué avec son robot d&#39;indexation un index de plus de 30 milliards de pages web, que les éditeurs ne peuvent pas bloquer, et le vend par son API de recherche à des entreprises d&#39;IA, dont Anthropic, Perplexity, Mistral, xAI et Cohere, qui ne sont pas poursuivies. La plainte vise aussi l&#39;option «&amp;nbsp;Paywall blocker&amp;nbsp;» du navigateur Brave, présentée par l&#39;entreprise comme un moyen de contourner les murs payants, et le blocage des publicités des éditeurs alors que Brave vend les siennes. Le Times demande une injonction et des dommages et intérêts, sans montant public, selon TechCrunch. Un porte-parole du journal a dit à Reuters que Brave avait ignoré ses demandes répétées de cesser, selon Heise. Brave n&#39;avait pas répondu à TechCrunch lundi. Le Times poursuit déjà OpenAI, Microsoft et Perplexity pour des faits comparables.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://nytco-assets.nytimes.com/2026/11/new-york-times-brave-complaint-11-2-26.pdf&#34;&gt;plainte du New York Times&lt;/a&gt;, &lt;a href=&#34;https://techcrunch.com/2026/11/02/new-york-times-and-other-outlets-sue-web-browser-brave-over-alleged-content-scraping/&#34;&gt;TechCrunch&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Urheberrechtsverletzungen-New-York-Times-verklagt-Brave-Software-11508651.html&#34;&gt;Heise&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Marvell rachète Lumentum, fabricant de lasers et d&#39;émetteurs-récepteurs optiques pour centres de données, pour 115 milliards de dollars en actions</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#a5</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=5&amp;utm_source=rss#a5"/>
-    <published>2026-11-03T06:59:56+01:00</published>
-    <updated>2026-11-03T06:59:56+01:00</updated>
-    <category term="États-Unis"/>
-    <content type="html">
-&lt;p&gt;Le fabricant de puces Marvell a annoncé le lundi 2 novembre un accord pour racheter Lumentum, entièrement en actions, pour une valeur d&#39;entreprise de 115 milliards de dollars&amp;nbsp;: chaque action Lumentum sera échangée contre 4,5 actions Marvell, soit environ 1&amp;nbsp;132 dollars par action et une prime de 23,9&amp;nbsp;% sur le cours du 28 octobre, selon le communiqué. Lumentum fabrique des lasers, des émetteurs-récepteurs optiques, des commutateurs de circuits optiques et des semi-conducteurs en phosphure d&#39;indium, le matériau des lasers qui transmettent les données par fibre. Marvell conçoit des puces d&#39;interconnexion électrique et optique, de commutation réseau et des processeurs sur mesure. Selon The Register, le cuivre atteint ses limites dans les grappes de serveurs d&#39;IA&amp;nbsp;: un signal à 400 Gbit/s n&#39;y porte qu&#39;à environ 1,25 mètre, et cette portée est divisée par deux à chaque doublement du débit par voie, alors que la fibre porte à des kilomètres. Les actionnaires de Marvell détiendront environ 67&amp;nbsp;% de l&#39;ensemble. La clôture est prévue au premier semestre 2028, sous réserve du vote des actionnaires et des autorisations réglementaires.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.sec.gov/Archives/edgar/data/0001633978/000119312526442758/d163169dex991.htm&#34;&gt;communiqué de Marvell et Lumentum (SEC)&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/systems/2026/11/02/marvell-wants-to-be-a-copper-topper-bets-115b-on-photonics-leader-to-push-optical-networking/5307028&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://next.ink/265207/marvell-veut-soffrir-lumentum-et-ses-puces-optiques-pour-115-milliards-de-dollars/&#34;&gt;Next&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>L&#39;outil open source du jour : dsh-superagent, l&#39;agent de programmation que DeepSeek fait travailler sur ses propres dépôts</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html#outil</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?outil&amp;utm_source=rss#outil"/>
-    <published>2026-11-03T06:59:55+01:00</published>
-    <updated>2026-11-03T06:59:55+01:00</updated>
-    <category term="L&#39;outil open source du jour"/>
-    <content type="html">
-&lt;p&gt;dsh-superagent est un agent de programmation attaché à un seul dépôt GitHub. Il écoute GitHub et, en option, la messagerie Feishu&amp;nbsp;; quand une personne autorisée lui demande un travail, ou quand une règle écrite par l&#39;équipe le permet, il ouvre une tâche, la traite dans sa propre session et son propre répertoire, et répond dans la conversation d&#39;origine, par exemple avec une pull request. Un panneau web liste ce qui demande une intervention humaine.&lt;/p&gt;
-&lt;p&gt;L&#39;équipe DeepSeek Harness l&#39;a publié le samedi 31 octobre comme prototype de recherche, tiré de son travail quotidien. Par défaut, les demandes implicites (messages non adressés, messages de robots, relances de personnes non autorisées) sont seulement journalisées, et l&#39;agent n&#39;active pas la fusion automatique sous son propre compte, selon Help Net Security et la documentation du dépôt.&lt;/p&gt;
-&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/deepseek-ai/dsh-superagent-prototype&#34;&gt;github.com/deepseek-ai/dsh-superagent-prototype&lt;/a&gt;, consulté le 3 novembre.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: MIT, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 12&amp;nbsp;820 étoiles, 1&amp;nbsp;329 forks, 1 commit, 0 issue et 0 pull request ouvertes au 3 novembre&amp;nbsp;; aucune release publiée&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: L&#39;équipe DeepSeek Harness de la société chinoise DeepSeek, titulaire des droits selon le fichier de licence&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le README le présente comme un prototype «&amp;nbsp;pour référence seulement&amp;nbsp;», qui n&#39;est pas un produit officiel de DeepSeek, peut contenir des bogues et diffère de la version interne. Il fonctionne comme module de DeepSeek Harness, l&#39;environnement d&#39;agents de DeepSeek, qui doit être relié à un fournisseur de modèle, et demande Node.js 22.19 ou plus, pnpm, tmux, Python et la ligne de commande GitHub. Le dépôt a été publié en un seul commit, sans historique de développement.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-03.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 027, mardi 3 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

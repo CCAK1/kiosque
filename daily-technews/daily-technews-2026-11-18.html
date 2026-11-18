@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 18 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Mercredi 18 novembre 2026<span class="price">2,27&nbsp;€</span></span><span class="issue" aria-label="Numéro 38">038</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Java4Shell&nbsp;: une faille de Java permet d'exécuter du code à distance</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Le Riken arrête Fugaku après une intrusion dans son réseau</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">OVHcloud présente Olala mini, son premier modèle de langage</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Des pirates passent par Optimizely pour piéger les sites de 178 organisations</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">La justice européenne rejette le recours du CEPD contre les règles d'Europol</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: PostgreSQL</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Sécurité</p>
+    <h2>Java4Shell&nbsp;: une faille du décodeur Base64 de Java permet d'exécuter du code à distance sur Jira, Jenkins ou Keycloak, et Oracle publie le correctif</h2>
+    <p class="deck">L'entreprise de sécurité Calif a publié le mardi 17 novembre les détails de Java4Shell (CVE-2026-114938), une corruption de mémoire dans le décodeur Base64 accéléré de Java. Oracle et le projet OpenJDK ont publié le correctif le même jour. Calif dit avoir exécuté du code à distance, sans identifiant, sur Keycloak, Jira, Confluence, Artifactory, Jenkins et PingFederate dans leur configuration par défaut.</p>
+    <div class="body">
+      <p>La faille se trouve dans la version accélérée par le matériel du décodage Base64, un format qui transforme des données binaires en texte. Ce code n'est utilisé que sur les processeurs x86-64 dotés des instructions AVX-512 VBMI&nbsp;: chez Intel les Xeon Ice Lake, Sapphire Rapids, Emerald Rapids et Granite Rapids, chez AMD les EPYC et Ryzen à partir de Zen 4, selon Calif. Les processeurs ARM64 ne sont pas concernés. Une chaîne Base64 piégée suffit à corrompre la mémoire&nbsp;: selon heise, la démonstration publiée tient en 64 lettres «&nbsp;A&nbsp;» suivies d'un signe égal. Calif note la faille 9,2 sur 10 (CVSS 4.0)&nbsp;; Oracle lui donne 8,1 (CVSS 3.1), selon BleepingComputer.</p>
+      <p>Toutes les versions d'OpenJDK depuis la 17.0.6, sortie début 2023, sont touchées, ainsi que les distributions qui en dérivent&nbsp;: Oracle Java SE, Amazon Corretto, Eclipse Temurin, Azul Zulu, Microsoft Build of OpenJDK et Red Hat OpenJDK. Chez Oracle, sont touchées les versions de Java SE jusqu'à 17.0.21.0.3, 21.0.13.0.3, 25.0.5.0.3 et 27.0.1.0.3, selon heise. Le correctif fait partie de la mise à jour de sécurité de novembre d'Oracle, qui couvre 655 vulnérabilités dans l'ensemble de ses produits, selon BleepingComputer.</p>
+      <p>Il n'existe pas d'attaque universelle&nbsp;: l'attaquant doit trouver, dans chaque application, un endroit où elle décode du Base64 venu de l'extérieur. Calif dit l'avoir fait après authentification sur Apache Kafka, Apache Solr, Elasticsearch, Gerrit et Spinnaker, ainsi que sur des applications d'exemple construites avec Struts et Spring Boot. L'entreprise a publié une démonstration de la corruption de mémoire, mais pas ses codes d'attaque complets. Aucune exploitation par des pirates n'a été signalée, selon heise.</p>
+      <p>Selon Calif, son chercheur Quang Luong a trouvé la faille en une heure en auditant le code interne d'OpenJDK avec Codex, l'assistant de programmation d'OpenAI, puis a écrit le premier code d'attaque en deux heures, pour moins de 200 dollars de calcul&nbsp;; ces chiffres sont fournis par l'entreprise et non vérifiés par un tiers. En attendant la mise à jour, deux options de lancement désactivent le code vulnérable&nbsp;: <code>-XX:-UseBASE64Intrinsics</code>, ou <code>-XX:UseAVX=2</code> sur x86-64.</p>
+    </div>
+    <p class="meta">Information du 17 novembre. Sources&nbsp;: <a href="https://calif.io/java4shell/">Calif</a>, <a href="https://www.bleepingcomputer.com/news/security/critical-java4shell-flaw-allows-rce-attacks-on-major-java-applications/">BleepingComputer</a>, <a href="https://www.heise.de/news/Java4Shell-Gefaehrlicher-Bug-in-Java-11528499.html">heise</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Japon</p>
+      <h3>Le Riken arrête le supercalculateur Fugaku après une intrusion qui expose les données de 4&nbsp;597 utilisateurs et leurs clés SSH</h3>
+      <p>L'institut de recherche japonais Riken a annoncé le lundi 16 novembre qu'un attaquant extérieur était entré entre le 10 et le 13 novembre dans le réseau d'exploitation de Fugaku, son supercalculateur de 537 pétaflops, en passant par un tableau de bord public qui affiche l'état de la machine. Plusieurs serveurs ont été modifiés et des programmes non autorisés y ont été installés. Le Riken a confirmé l'intrusion le 13 novembre, arrêté Fugaku le 14 à 4 h 30 et coupé l'accès extérieur, puis stoppé tous les calculs en cours et désactivé les clés de connexion de tous les utilisateurs le 15. Sont exposés les noms, adresses électroniques et identifiants de 4&nbsp;222 utilisateurs de Fugaku et les noms et adresses de 375 utilisateurs de Rikyu, un second supercalculateur consacré à l'IA, ainsi que des fichiers de leurs répertoires personnels&nbsp;: données de recherche, clés SSH privées et clés d'accès à d'autres systèmes. L'attaquant a essayé de se servir de certaines de ces clés&nbsp;; le Riken dit n'avoir pas trouvé, à ce stade, de fuite de résultats de recherche. La méthode d'intrusion n'est pas encore établie et l'attaque n'est attribuée à personne, selon BleepingComputer. Fugaku ne redémarrera qu'une fois la faille corrigée et les serveurs reconstruits, sans date annoncée.</p>
+      <p class="meta">Information du 16 novembre. Sources&nbsp;: <a href="https://www.riken.jp/pr/news/2026/20261116_2/index.html">Riken</a>, <a href="https://www.bleepingcomputer.com/news/security/japan-takes-fugaku-supercomputer-offlline-after-cyberattack/">BleepingComputer</a>, <a href="https://www.theregister.com/security/2026/11/17/japans-fugaku-supercomputer-has-decidedly-un-super-security/5310333">The Register</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">France</p>
+      <h3>OVHcloud présente Olala mini, son premier modèle de langage, entraîné sur trois supercalculateurs publics européens et publié sous licence Apache 2.0</h3>
+      <p>OVHcloud a présenté le mardi 17 novembre Olala mini 7A1B, le premier modèle de sa famille de modèles de langage, avant son lancement officiel prévu le jeudi 19 novembre. C'est un modèle à mélange d'experts&nbsp;: 7 milliards de paramètres au total, dont environ 1 milliard sert à chaque requête, répartis entre 256 experts par couche. Il combine deux mécanismes d'attention, Differential-TPA et Mamba-3, et lit jusqu'à 32&nbsp;000 tokens. Il a été entraîné sur trois supercalculateurs publics européens, Jupiter en Allemagne, MeluXina au Luxembourg et Jean Zay en France, avec des heures de calcul évaluées à 7 millions d'euros. Les poids, le modèle de base, le rapport technique et la documentation de conformité au règlement européen sur l'IA seront publiés sur Hugging Face sous licence Apache 2.0, selon le communiqué. OVHcloud annonce 160 tokens par seconde sur une carte graphique RTX A4500 et 50 sur un processeur seul&nbsp;; Next relève que les poids en BF16 pèsent environ 14 Go et ne tiennent dans les 8 Go de mémoire annoncés qu'après quantification. Qwant utilise le modèle pour ses réponses courtes aux recherches, 20&nbsp;% plus rapides et trois fois moins chères qu'avec le modèle précédent, selon OVHcloud&nbsp;; ces chiffres ne sont pas vérifiés par un tiers. Aucun résultat de banc d'essai n'a été publié. Une version 1.1 portant le contexte à 128&nbsp;000 tokens est annoncée d'ici la fin de l'année.</p>
+      <p class="meta">Information du 17 novembre. Sources&nbsp;: <a href="https://corporate.ovhcloud.com/fr/newsroom/news/ovh-olala-mini/">OVHcloud</a>, <a href="https://next.ink/267996/ovhcloud-donne-un-avant-gout-de-son-premier-modele-olala/">Next</a>, <a href="https://www.clubic.com/actualite-639616-ovhcloud-lance-olala-son-premier-modele-d-ia-maison-entraine-sur-des-supercalculateurs-europeens.html">Clubic</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Sécurité</p>
+      <h3>Des pirates passent par Optimizely pour injecter du code malveillant sur les sites de 178 organisations, dont la BBC, Zoom, IKEA et HSBC</h3>
+      <p>Optimizely, éditeur d'un outil de tests et de personnalisation de sites web, a confirmé le lundi 16 novembre qu'une faille de sa plateforme Web Experimentation avait permis d'injecter du code JavaScript malveillant dans les sites de certains de ses clients. Selon The Register, les attaquants ont exploité une faille du processus d'inscription, puis le champ «&nbsp;Project JavaScript&nbsp;», où les clients ajoutent leur propre code, servi ensuite par le réseau de diffusion d'Optimizely. Le chercheur Scott Helme, de Report URI, a trouvé du code malveillant dans 188 des 1&nbsp;611 scripts examinés, appartenant à 178 organisations, dont 32 dans la banque et la finance&nbsp;; il cite la BBC, CNN, Zoom, Salesforce, GitLab, IKEA, HSBC, Equifax, Air France-KLM et Ledger. Le code remplaçait les adresses de portefeuilles de cryptomonnaie copiées par celles des attaquants, relevait les numéros de carte bancaire saisis, volait cookies et captures d'écran, et tentait d'installer les outils d'attaque Coruna et DarkSword sur les iPhone et iPad aux versions anciennes d'iOS. Report URI a suivi environ 7&nbsp;000 dollars de cryptomonnaie vers les portefeuilles des attaquants&nbsp;; le nombre de cartes volées et d'appareils infectés n'est pas connu. Optimizely dit avoir corrigé la faille, retiré le code injecté et prévenu les clients concernés, selon The Record.</p>
+      <p class="meta">Information du 16 novembre. Sources&nbsp;: <a href="https://blog.report-uri.com/worlds-largest-brands-infected-with-malware-via-optimizely/">Report URI</a>, <a href="https://therecord.media/optimizely-malicious-code-customer-sites">The Record</a>, <a href="https://www.theregister.com/cyber-crime/2026/11/17/optimizely-hack-turns-worlds-biggest-websites-into-malware-dispensers/5310448">The Register</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">UE</p>
+      <h3>La Cour de justice de l'UE rejette le recours du contrôleur européen de la protection des données contre la conservation de données par Europol</h3>
+      <p>La Cour de justice de l'Union européenne a rejeté le mardi 17 novembre le pourvoi du Contrôleur européen de la protection des données (CEPD) dans l'affaire C-698/23 P. En janvier 2022, le CEPD avait constaté qu'Europol, l'agence européenne de coopération policière, conservait des données personnelles sans avoir établi si les personnes concernées relevaient des catégories prévues par son règlement, et lui avait ordonné de les classer dans un délai de six à douze mois ou de les effacer. En juin 2022, le Parlement européen et le Conseil ont modifié le règlement d'Europol et ajouté des dispositions transitoires qui l'autorisent, sous conditions, à continuer de traiter les données déjà reçues dans le cadre d'enquêtes en cours. Le CEPD y voyait une légalisation rétroactive de cette pratique et une atteinte à son indépendance. La Cour juge, comme le Tribunal en septembre 2023, que son recours est irrecevable&nbsp;: le CEPD n'est pas une institution de l'Union et doit prouver que le texte le concerne directement, or ces dispositions ne modifient ni ses missions, ni ses pouvoirs, ni sa décision de 2022, selon le communiqué de la Cour. Selon heise, la Cour ne se prononce pas sur la conformité de ces règles au droit de l'Union, qui restent en vigueur.</p>
+      <p class="meta">Information du 17 novembre. Sources&nbsp;: <a href="https://curia.europa.eu/site/upload/docs/application/pdf/2026-11/cp260165en.pdf">Cour de justice de l'UE</a>, <a href="https://www.heise.de/news/EuGH-weist-Klage-gegen-Europol-Befugnis-zur-Massenueberwachung-ab-11527902.html">heise</a>, <a href="https://eulawlive.com/court-of-justice-dismisses-edps-appeal-against-europol-transitional-provisions/">EU Law Live</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">PostgreSQL, la base de données qui corrige 52 failles en une mise à jour et sort sa version 19 jeudi</h2>
+    <div class="tool-grid">
+      <div>
+        <p>PostgreSQL est un système de gestion de base de données relationnelle&nbsp;: il stocke des tables, les interroge en SQL et garantit qu'une transaction s'applique entièrement ou pas du tout. Il sert de base à des applications web, à des outils d'analyse et, avec des extensions, à la recherche par vecteurs pour l'IA. Le premier commit du dépôt date du 9 juillet 1996.</p>
+        <p>Les versions 18.7, 17.12, 16.16, 15.20 et 14.25, publiées le 12 novembre, corrigent 52 vulnérabilités et plus de 140 bogues, selon l'annonce du projet. Trente-deux de ces failles sont notées 8,8 sur 10, dont CVE-2026-6460, qui permet à un utilisateur de la base autorisé à créer des objets d'exécuter du code, selon The Register. Après la mise à jour, certains index doivent être reconstruits et une nouvelle sauvegarde complète faite pour les sauvegardes incrémentales. La version 14 ne reçoit plus de correctifs. La version 19 est annoncée pour le jeudi 19 novembre.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/postgres/postgres">github.com/postgres/postgres</a> (miroir du dépôt git.postgresql.org), consulté le 18 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>Licence PostgreSQL, proche des licences BSD et MIT, vérifiée dans le fichier COPYRIGHT du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>22&nbsp;865 étoiles, 6&nbsp;114 forks et 66&nbsp;042 commits au 18 novembre&nbsp;; le miroir GitHub n'accepte ni issues ni pull requests, les correctifs passent par la liste de diffusion pgsql-hackers&nbsp;; dernière étiquette REL_19_0, posée le 16 novembre 2026</dd></div>
+        <div><dt>Qui</dt><dd>Le PostgreSQL Global Development Group, communauté de développeurs bénévoles et salariés de plusieurs entreprises&nbsp;; le code descend de Postgres, créé à l'université de Californie à Berkeley</dd></div>
+        <div><dt>À savoir</dt><dd>Selon The Register, c'est la troisième mise à jour trimestrielle de suite à battre le record de failles corrigées&nbsp;; Alastair Turner, de Percona, y relève des signalements issus d'outils d'analyse par IA d'Anthropic et d'OpenAI. Les failles notées 8,8 supposent un accès à la base. Les utilisateurs de la version 14 doivent passer à une version plus récente.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-17.html" rel="prev">Numéro précédent&nbsp;: <span class="num">037</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

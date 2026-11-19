@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 19 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Jeudi 19 novembre 2026<span class="price">3,33&nbsp;€</span></span><span class="issue" aria-label="Numéro 39">039</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">F5 corrige dix failles de nginx, dont deux exploitables à distance</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Deux versions piégées d'agent-framework, la bibliothèque de Microsoft, volent des identifiants</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Codeberg injoignable après la suspension de son domaine par NameSilo</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Les États-Unis soumettent à licence les centres de données qui louent du calcul à la Chine</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Kitesurf</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Sécurité</p>
+    <h2>F5 corrige dix failles du serveur web nginx, dont deux qui permettent de prendre la main sur un serveur à distance par HTTP/2</h2>
+    <p class="deck">F5, qui maintient le serveur web open source nginx, a publié le mercredi 18 novembre des correctifs pour dix vulnérabilités de nginx Open Source et de nginx Plus. Deux d'entre elles, CVE-2026-123633 et CVE-2026-123007, permettent d'exécuter du code à distance, sans identifiant, sur un serveur où HTTP/2 est activé. Wiz, qui les a signalées, les note 9,2 sur 10 (CVSS 4.0).</p>
+    <div class="body">
+      <p>CVE-2026-123633 est une utilisation de mémoire après libération dans la gestion des connexions HTTP/2&nbsp;: nginx libère la mémoire d'une connexion alors qu'une requête s'en sert encore. CVE-2026-123007 est une erreur de calcul dans le compteur qui règle le contrôle de flux de HTTP/2, qui aboutit à une copie de mémoire invalide. Wiz dit avoir mené l'attaque sur un serveur qui ne sert que des fichiers statiques, sans application derrière lui ni module tiers. La première faille touche les versions 1.19.7 à 1.31.8, la seconde toutes les versions depuis la 1.9.5, sortie en 2015, selon Wiz.</p>
+      <p>Les versions corrigées de nginx Open Source sont la 1.30.7, branche stable, et la 1.31.9, branche principale, selon heise. Pour nginx Plus, les correctifs sont dans les versions 37.0.7.1 et 37.2.0.1 pour la première faille, 37.0.8.1 et 37.3.0.1 pour la seconde, selon Wiz. F5 dit n'avoir trouvé aucune trace d'exploitation de ces failles. En attendant la mise à jour, Wiz conseille de désactiver HTTP/2 avec la directive <code>http2 off;</code>. nginx sert environ un tiers des sites web, soit près de 225 millions, selon l'enquête de septembre de Netcraft citée par The Register.</p>
+      <p>Plusieurs équipes ont trouvé ces failles chacune de leur côté&nbsp;: Wiz, Ikotas Labs, Metnir, Rapid7 et Xint, la plupart avec l'aide d'outils d'IA, selon The Register. Wiz dit les avoir trouvées avec Wiz Atlas, son outil d'analyse de code par IA, et les avoir signalées à F5 entre le 21 octobre et le 16 novembre. Rapid7 a publié un code de démonstration de CVE-2026-123007. Xint dit qu'un scan automatisé, sans intervention humaine, a trouvé quatre autres failles de nginx, et qu'une faille du noyau Linux combinée à l'une d'elles donne les droits d'administrateur sur la machine&nbsp;; l'entreprise a nommé cet ensemble «&nbsp;nginx2root&nbsp;». Ces résultats sont fournis par les entreprises et ne sont pas vérifiés par un tiers.</p>
+    </div>
+    <p class="meta">Information du 18 novembre. Sources&nbsp;: <a href="https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities">Wiz</a>, <a href="https://www.theregister.com/security/2026/11/18/ai-found-more-critical-bugs-in-another-widely-used-technology-running-225m-websites/5310887">The Register</a>, <a href="https://www.heise.de/news/Webserver-nginx-Update-schliesst-schwere-Luecken-11530216.html">heise</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Sécurité</p>
+      <h3>Deux versions piégées d'agent-framework, la bibliothèque Python de Microsoft pour créer des agents d'IA, volent des identifiants cloud</h3>
+      <p>Deux versions malveillantes, 1.26.1 et 1.26.2, d'agent-framework, la bibliothèque Python officielle de Microsoft pour construire des agents d'IA, ont été publiées le mardi 17 novembre sur PyPI, le dépôt de paquets de Python, avec le compte éditeur de Microsoft. Le paquet est téléchargé près de 200&nbsp;000 fois par mois, selon The Register. Selon l'analyse d'OpenSourceMalware, chaque version installe un fichier <code>.pth</code> que Python exécute à chaque démarrage, même si la bibliothèque n'est jamais importée. Le code relève les variables d'environnement et les fichiers d'identifiants (Azure, AWS, GitHub, Docker, Hugging Face, npm), demande de nouveaux jetons d'accès à Azure, Azure DevOps et GitHub Actions, puis envoie le tout vers une adresse du service webhook.site. Le paquet piégé s'appuie sur la version légitime 1.26.0 du cœur de la bibliothèque, qui continue donc de fonctionner, selon BleepingComputer. La seconde version a été publiée après la mise en quarantaine de la première&nbsp;: l'attaquant gardait un accès à la publication, et la manière dont il l'a obtenu n'est pas connue. Microsoft a rendu privés plusieurs dépôts «&nbsp;le temps d'enquêter sur du contenu malveillant&nbsp;», selon un porte-parole cité par The Register. Les chercheurs recommandent de considérer comme volés tous les identifiants accessibles depuis une machine où l'une des deux versions a été installée.</p>
+      <p class="meta">Information du 17 novembre. Sources&nbsp;: <a href="https://opensourcemalware.com/blog/agent-framework-pypi-compromised">OpenSourceMalware</a>, <a href="https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858">The Register</a>, <a href="https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/">BleepingComputer</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Allemagne</p>
+      <h3>Codeberg, plateforme associative d'hébergement de code, reste injoignable au moins trois heures après la suspension de son domaine par NameSilo</h3>
+      <p>Le domaine codeberg.org, qui donne accès à Codeberg, plateforme allemande d'hébergement de code open source gérée par une association, a cessé de répondre le mercredi 18 novembre au matin. À 9 h 13, heure de Paris, Codeberg a indiqué que le domaine, enregistré chez l'américain NameSilo, avait «&nbsp;entièrement disparu&nbsp;» de son compte&nbsp;; l'association dit ne pas avoir oublié de le renouveler et n'avoir trouvé aucune connexion suspecte. NameSilo lui a ensuite confirmé que le domaine était suspendu et que le dossier était transmis à son service chargé des abus. Le domaine était retiré du DNS&nbsp;: le site, mais aussi le clonage et l'envoi de code par Git, étaient inaccessibles, selon Linuxiac. Forgejo, le logiciel sur lequel tourne Codeberg, n'a pas pu publier comme prévu une mise à jour de sécurité, selon heise. Codeberg a renoncé à basculer sur son domaine codeberg.eu, en invoquant la double authentification, la gestion de plusieurs domaines et les adresses de dépôts à changer. À 12 h 23, l'association a annoncé que le domaine redevenait accessible, sans avoir reçu de réponse officielle de NameSilo sur le motif. Le registre du .org indique une échéance du domaine en 2028 et une dernière modification le 18 novembre à 12 h 02. Codeberg héberge notamment Forgejo, Zig et GNU Guix, et Gentoo y déplace ses dépôts depuis GitHub, selon Linuxiac.</p>
+      <p class="meta">Information du 18 novembre. Sources&nbsp;: <a href="https://social.anoxinon.de/@codebergstatus/117636437840688845">Codeberg (compte de statut)</a>, <a href="https://www.heise.de/news/GitHub-Alternative-Codeberg-verliert-Domain-und-ist-nicht-erreichbar-11529143.html">heise</a>, <a href="https://linuxiac.com/codeberg-domain-suspended-by-namesilo-disrupting-open-source-projects/">Linuxiac</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">États-Unis, Chine</p>
+      <h3>Les États-Unis soumettent à licence les centres de données du monde entier qui louent de la puissance de calcul à des entreprises chinoises</h3>
+      <p>La règle «&nbsp;Addressing Remote Access to Advanced Semiconductors&nbsp;» du Bureau of Industry and Security (BIS), le service du département du Commerce américain chargé du contrôle des exportations, annoncée le lundi 16 novembre, est publiée ce jeudi 19 novembre au Federal Register, date de son entrée en vigueur. Elle impose une licence à tout centre de données, où qu'il se trouve, qui fournit plus de 12 millions d'unités de TPP, la mesure de puissance de calcul des règles américaines, à des entreprises dont le siège est en Chine, à Macao ou dans un autre pays soumis à un embargo américain sur les armes. Les centres qui servent déjà ces clients ont 90 jours pour obtenir une licence. L'exportation de puces avancées vers l'Indonésie, la Malaisie, Singapour, la Thaïlande et le Brésil, que la règle juge exposés à un «&nbsp;risque de détournement plus élevé que la normale&nbsp;», exige aussi une licence, sauf pour les acheteurs dont le siège est aux États-Unis, qui doivent alors faire l'objet de rapports mensuels. Les systèmes de recommandation des sites marchands et des réseaux sociaux sont exemptés. La règle abroge aussi l'AI Diffusion Rule de l'administration Biden, qui n'avait jamais été appliquée, selon The Next Web. Le président de Tencent, Martin Lau, a déclaré lors de la présentation des résultats trimestriels du groupe que ces restrictions «&nbsp;font reculer tout le monde en Chine&nbsp;», en particulier pour l'entraînement des modèles d'IA, selon The Register.</p>
+      <p class="meta">Information du 19 novembre. Sources&nbsp;: <a href="https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors">Federal Register</a>, <a href="https://thenextweb.com/news/us-remote-access-ai-chips-rule-china-singapore-malaysia">The Next Web</a>, <a href="https://www.theregister.com/systems/2026/11/19/chinese-web-giant-tencent-says-new-us-gpu-ban-sets-everyone-back-in-china/5310927">The Register</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">Kitesurf, le moteur de navigateur de Cloudflare pour les agents d'IA, publié sous licence Apache 2.0</h2>
+    <div class="tool-grid">
+      <div>
+        <p>Kitesurf est un moteur de navigateur expérimental qui tourne sur Cloudflare Workers, le service d'exécution de code de Cloudflare. Il lit le HTML, applique le CSS, exécute le JavaScript des pages et produit des captures d'écran, sans Chrome ni conteneur de navigateur. Il parle le Chrome DevTools Protocol, ce qui permet de le piloter avec des outils comme Puppeteer. Son cœur est écrit en Rust et compilé en WebAssembly, à partir de bibliothèques open source pour l'analyse du HTML et du CSS, la mise en page et le rendu.</p>
+        <p>Cloudflare a publié le code sur GitHub sous licence Apache 2.0, selon heise le 18 novembre&nbsp;; la dernière version du dépôt, 2026.11.10, date du même jour. Selon les mesures de Cloudflare, Kitesurf consomme nettement moins de processeur et de mémoire que Chromium pour les captures d'écran et l'extraction de HTML, mais met environ deux fois plus de temps au total&nbsp;; ces mesures ne sont pas vérifiées par un tiers.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/cloudflare/kitesurf">github.com/cloudflare/kitesurf</a>, consulté le 19 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>Apache 2.0, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>2&nbsp;105 étoiles, 111 forks, 429 commits, 21 issues et 27 pull requests ouvertes au 19 novembre, dernière release 2026.11.10 le 18 novembre 2026</dd></div>
+        <div><dt>Qui</dt><dd>Cloudflare, entreprise américaine de réseau de diffusion de contenu et de sécurité&nbsp;; premier commit du dépôt public le 19 octobre 2026</dd></div>
+        <div><dt>À savoir</dt><dd>Projet présenté comme expérimental par Cloudflare. Le déploiement sur Cloudflare exige le forfait payant Workers&nbsp;: l'outil dépend de l'offre d'un acteur commercial. Pas d'authentification intégrée. La vidéo, WebGL et les sessions longues avec connexion restent hors de sa portée, selon heise. Le README déconseille d'ouvrir des sites inconnus en local, où le JavaScript ne tourne pas dans un bac à sable renforcé. Les contributions passent d'abord par un ticket validé par un mainteneur.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-18.html" rel="prev">Numéro précédent&nbsp;: <span class="num">038</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

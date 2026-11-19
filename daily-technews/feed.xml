@@ -5,10 +5,85 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-11-18T07:00:00+01:00</updated>
+  <updated>2026-11-19T07:00:00+01:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>F5 corrige dix failles du serveur web nginx, dont deux qui permettent de prendre la main sur un serveur à distance par HTTP/2</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-11-19T07:00:00+01:00</published>
+    <updated>2026-11-19T07:00:00+01:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;F5, qui maintient le serveur web open source nginx, a publié le mercredi 18 novembre des correctifs pour dix vulnérabilités de nginx Open Source et de nginx Plus. Deux d&#39;entre elles, CVE-2026-123633 et CVE-2026-123007, permettent d&#39;exécuter du code à distance, sans identifiant, sur un serveur où HTTP/2 est activé. Wiz, qui les a signalées, les note 9,2 sur 10 (CVSS 4.0).&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;CVE-2026-123633 est une utilisation de mémoire après libération dans la gestion des connexions HTTP/2&amp;nbsp;: nginx libère la mémoire d&#39;une connexion alors qu&#39;une requête s&#39;en sert encore. CVE-2026-123007 est une erreur de calcul dans le compteur qui règle le contrôle de flux de HTTP/2, qui aboutit à une copie de mémoire invalide. Wiz dit avoir mené l&#39;attaque sur un serveur qui ne sert que des fichiers statiques, sans application derrière lui ni module tiers. La première faille touche les versions 1.19.7 à 1.31.8, la seconde toutes les versions depuis la 1.9.5, sortie en 2015, selon Wiz.&lt;/p&gt;
+&lt;p&gt;Les versions corrigées de nginx Open Source sont la 1.30.7, branche stable, et la 1.31.9, branche principale, selon heise. Pour nginx Plus, les correctifs sont dans les versions 37.0.7.1 et 37.2.0.1 pour la première faille, 37.0.8.1 et 37.3.0.1 pour la seconde, selon Wiz. F5 dit n&#39;avoir trouvé aucune trace d&#39;exploitation de ces failles. En attendant la mise à jour, Wiz conseille de désactiver HTTP/2 avec la directive &lt;code&gt;http2 off;&lt;/code&gt;. nginx sert environ un tiers des sites web, soit près de 225 millions, selon l&#39;enquête de septembre de Netcraft citée par The Register.&lt;/p&gt;
+&lt;p&gt;Plusieurs équipes ont trouvé ces failles chacune de leur côté&amp;nbsp;: Wiz, Ikotas Labs, Metnir, Rapid7 et Xint, la plupart avec l&#39;aide d&#39;outils d&#39;IA, selon The Register. Wiz dit les avoir trouvées avec Wiz Atlas, son outil d&#39;analyse de code par IA, et les avoir signalées à F5 entre le 21 octobre et le 16 novembre. Rapid7 a publié un code de démonstration de CVE-2026-123007. Xint dit qu&#39;un scan automatisé, sans intervention humaine, a trouvé quatre autres failles de nginx, et qu&#39;une faille du noyau Linux combinée à l&#39;une d&#39;elles donne les droits d&#39;administrateur sur la machine&amp;nbsp;; l&#39;entreprise a nommé cet ensemble «&amp;nbsp;nginx2root&amp;nbsp;». Ces résultats sont fournis par les entreprises et ne sont pas vérifiés par un tiers.&lt;/p&gt;
+&lt;p&gt;Information du 18 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://www.wiz.io/blog/nginx-http2-rce-vulnerabilities&#34;&gt;Wiz&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/11/18/ai-found-more-critical-bugs-in-another-widely-used-technology-running-225m-websites/5310887&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Webserver-nginx-Update-schliesst-schwere-Luecken-11530216.html&#34;&gt;heise&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 039, jeudi 19 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Deux versions piégées d&#39;agent-framework, la bibliothèque Python de Microsoft pour créer des agents d&#39;IA, volent des identifiants cloud</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-11-19T06:59:59+01:00</published>
+    <updated>2026-11-19T06:59:59+01:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;Deux versions malveillantes, 1.26.1 et 1.26.2, d&#39;agent-framework, la bibliothèque Python officielle de Microsoft pour construire des agents d&#39;IA, ont été publiées le mardi 17 novembre sur PyPI, le dépôt de paquets de Python, avec le compte éditeur de Microsoft. Le paquet est téléchargé près de 200&amp;nbsp;000 fois par mois, selon The Register. Selon l&#39;analyse d&#39;OpenSourceMalware, chaque version installe un fichier &lt;code&gt;.pth&lt;/code&gt; que Python exécute à chaque démarrage, même si la bibliothèque n&#39;est jamais importée. Le code relève les variables d&#39;environnement et les fichiers d&#39;identifiants (Azure, AWS, GitHub, Docker, Hugging Face, npm), demande de nouveaux jetons d&#39;accès à Azure, Azure DevOps et GitHub Actions, puis envoie le tout vers une adresse du service webhook.site. Le paquet piégé s&#39;appuie sur la version légitime 1.26.0 du cœur de la bibliothèque, qui continue donc de fonctionner, selon BleepingComputer. La seconde version a été publiée après la mise en quarantaine de la première&amp;nbsp;: l&#39;attaquant gardait un accès à la publication, et la manière dont il l&#39;a obtenu n&#39;est pas connue. Microsoft a rendu privés plusieurs dépôts «&amp;nbsp;le temps d&#39;enquêter sur du contenu malveillant&amp;nbsp;», selon un porte-parole cité par The Register. Les chercheurs recommandent de considérer comme volés tous les identifiants accessibles depuis une machine où l&#39;une des deux versions a été installée.&lt;/p&gt;
+&lt;p&gt;Information du 17 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://opensourcemalware.com/blog/agent-framework-pypi-compromised&#34;&gt;OpenSourceMalware&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/11/18/microsofts-official-python-agent-framework-hijacked-to-distribute-malware/5310858&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.bleepingcomputer.com/news/security/microsofts-agent-framework-pypi-package-compromised-to-steal-credentials/&#34;&gt;BleepingComputer&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 039, jeudi 19 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Codeberg, plateforme associative d&#39;hébergement de code, reste injoignable au moins trois heures après la suspension de son domaine par NameSilo</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-11-19T06:59:58+01:00</published>
+    <updated>2026-11-19T06:59:58+01:00</updated>
+    <category term="Allemagne"/>
+    <content type="html">
+&lt;p&gt;Le domaine codeberg.org, qui donne accès à Codeberg, plateforme allemande d&#39;hébergement de code open source gérée par une association, a cessé de répondre le mercredi 18 novembre au matin. À 9 h 13, heure de Paris, Codeberg a indiqué que le domaine, enregistré chez l&#39;américain NameSilo, avait «&amp;nbsp;entièrement disparu&amp;nbsp;» de son compte&amp;nbsp;; l&#39;association dit ne pas avoir oublié de le renouveler et n&#39;avoir trouvé aucune connexion suspecte. NameSilo lui a ensuite confirmé que le domaine était suspendu et que le dossier était transmis à son service chargé des abus. Le domaine était retiré du DNS&amp;nbsp;: le site, mais aussi le clonage et l&#39;envoi de code par Git, étaient inaccessibles, selon Linuxiac. Forgejo, le logiciel sur lequel tourne Codeberg, n&#39;a pas pu publier comme prévu une mise à jour de sécurité, selon heise. Codeberg a renoncé à basculer sur son domaine codeberg.eu, en invoquant la double authentification, la gestion de plusieurs domaines et les adresses de dépôts à changer. À 12 h 23, l&#39;association a annoncé que le domaine redevenait accessible, sans avoir reçu de réponse officielle de NameSilo sur le motif. Le registre du .org indique une échéance du domaine en 2028 et une dernière modification le 18 novembre à 12 h 02. Codeberg héberge notamment Forgejo, Zig et GNU Guix, et Gentoo y déplace ses dépôts depuis GitHub, selon Linuxiac.&lt;/p&gt;
+&lt;p&gt;Information du 18 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://social.anoxinon.de/@codebergstatus/117636437840688845&#34;&gt;Codeberg (compte de statut)&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/GitHub-Alternative-Codeberg-verliert-Domain-und-ist-nicht-erreichbar-11529143.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://linuxiac.com/codeberg-domain-suspended-by-namesilo-disrupting-open-source-projects/&#34;&gt;Linuxiac&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 039, jeudi 19 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Les États-Unis soumettent à licence les centres de données du monde entier qui louent de la puissance de calcul à des entreprises chinoises</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-11-19T06:59:57+01:00</published>
+    <updated>2026-11-19T06:59:57+01:00</updated>
+    <category term="États-Unis, Chine"/>
+    <content type="html">
+&lt;p&gt;La règle «&amp;nbsp;Addressing Remote Access to Advanced Semiconductors&amp;nbsp;» du Bureau of Industry and Security (BIS), le service du département du Commerce américain chargé du contrôle des exportations, annoncée le lundi 16 novembre, est publiée ce jeudi 19 novembre au Federal Register, date de son entrée en vigueur. Elle impose une licence à tout centre de données, où qu&#39;il se trouve, qui fournit plus de 12 millions d&#39;unités de TPP, la mesure de puissance de calcul des règles américaines, à des entreprises dont le siège est en Chine, à Macao ou dans un autre pays soumis à un embargo américain sur les armes. Les centres qui servent déjà ces clients ont 90 jours pour obtenir une licence. L&#39;exportation de puces avancées vers l&#39;Indonésie, la Malaisie, Singapour, la Thaïlande et le Brésil, que la règle juge exposés à un «&amp;nbsp;risque de détournement plus élevé que la normale&amp;nbsp;», exige aussi une licence, sauf pour les acheteurs dont le siège est aux États-Unis, qui doivent alors faire l&#39;objet de rapports mensuels. Les systèmes de recommandation des sites marchands et des réseaux sociaux sont exemptés. La règle abroge aussi l&#39;AI Diffusion Rule de l&#39;administration Biden, qui n&#39;avait jamais été appliquée, selon The Next Web. Le président de Tencent, Martin Lau, a déclaré lors de la présentation des résultats trimestriels du groupe que ces restrictions «&amp;nbsp;font reculer tout le monde en Chine&amp;nbsp;», en particulier pour l&#39;entraînement des modèles d&#39;IA, selon The Register.&lt;/p&gt;
+&lt;p&gt;Information du 19 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://www.federalregister.gov/public-inspection/2026-23529/addressing-remote-access-to-advanced-semiconductors&#34;&gt;Federal Register&lt;/a&gt;, &lt;a href=&#34;https://thenextweb.com/news/us-remote-access-ai-chips-rule-china-singapore-malaysia&#34;&gt;The Next Web&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/systems/2026/11/19/chinese-web-giant-tencent-says-new-us-gpu-ban-sets-everyone-back-in-china/5310927&#34;&gt;The Register&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 039, jeudi 19 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : Kitesurf, le moteur de navigateur de Cloudflare pour les agents d&#39;IA, publié sous licence Apache 2.0</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-11-19T06:59:56+01:00</published>
+    <updated>2026-11-19T06:59:56+01:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;Kitesurf est un moteur de navigateur expérimental qui tourne sur Cloudflare Workers, le service d&#39;exécution de code de Cloudflare. Il lit le HTML, applique le CSS, exécute le JavaScript des pages et produit des captures d&#39;écran, sans Chrome ni conteneur de navigateur. Il parle le Chrome DevTools Protocol, ce qui permet de le piloter avec des outils comme Puppeteer. Son cœur est écrit en Rust et compilé en WebAssembly, à partir de bibliothèques open source pour l&#39;analyse du HTML et du CSS, la mise en page et le rendu.&lt;/p&gt;
+&lt;p&gt;Cloudflare a publié le code sur GitHub sous licence Apache 2.0, selon heise le 18 novembre&amp;nbsp;; la dernière version du dépôt, 2026.11.10, date du même jour. Selon les mesures de Cloudflare, Kitesurf consomme nettement moins de processeur et de mémoire que Chromium pour les captures d&#39;écran et l&#39;extraction de HTML, mais met environ deux fois plus de temps au total&amp;nbsp;; ces mesures ne sont pas vérifiées par un tiers.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/cloudflare/kitesurf&#34;&gt;github.com/cloudflare/kitesurf&lt;/a&gt;, consulté le 19 novembre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: Apache 2.0, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 2&amp;nbsp;105 étoiles, 111 forks, 429 commits, 21 issues et 27 pull requests ouvertes au 19 novembre, dernière release 2026.11.10 le 18 novembre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Cloudflare, entreprise américaine de réseau de diffusion de contenu et de sécurité&amp;nbsp;; premier commit du dépôt public le 19 octobre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Projet présenté comme expérimental par Cloudflare. Le déploiement sur Cloudflare exige le forfait payant Workers&amp;nbsp;: l&#39;outil dépend de l&#39;offre d&#39;un acteur commercial. Pas d&#39;authentification intégrée. La vidéo, WebGL et les sessions longues avec connexion restent hors de sa portée, selon heise. Le README déconseille d&#39;ouvrir des sites inconnus en local, où le JavaScript ne tourne pas dans un bac à sable renforcé. Les contributions passent d&#39;abord par un ticket validé par un mainteneur.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-19.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 039, jeudi 19 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Java4Shell : une faille du décodeur Base64 de Java permet d&#39;exécuter du code à distance sur Jira, Jenkins ou Keycloak, et Oracle publie le correctif</title>
@@ -783,94 +858,5 @@
 &lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le projet repose sur un très petit nombre de mainteneurs. Les logiciels qui embarquent leur propre copie de zlib ne profitent des correctifs qu&#39;après une mise à jour de leur part.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 030, vendredi 6 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>OpenAI dit avoir produit 948 exploits distincts donnant les droits root sous Linux en une seule exécution d&#39;agents, pour 1,2 million de dollars</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#a1</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=1&amp;utm_source=rss#a1"/>
-    <published>2026-11-05T07:00:00+01:00</published>
-    <updated>2026-11-05T07:00:00+01:00</updated>
-    <category term="États-Unis"/>
-    <content type="html">
-&lt;p&gt;&lt;strong&gt;OpenAI a publié le mercredi 4 novembre un billet intitulé «&amp;nbsp;A thousand fewer paths to root&amp;nbsp;». L&#39;entreprise y décrit une chaîne d&#39;agents, fondée sur un modèle spécialisé en cybersécurité qu&#39;elle n&#39;a pas encore diffusé, lancée à la mi-octobre sur la dernière version du noyau Linux. Selon OpenAI, cette exécution a produit 948 failles distinctes d&#39;élévation locale de privilèges, chacune accompagnée d&#39;un exploit fonctionnel et d&#39;un correctif proposé. Ces chiffres sont fournis par l&#39;entreprise et n&#39;ont pas été vérifiés par un tiers.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Une élévation locale de privilèges permet à un utilisateur ou à un programme déjà présent sur une machine d&#39;obtenir les droits de l&#39;administrateur root. Selon le billet, la chaîne a relevé 2&amp;nbsp;308 anomalies candidates dans le noyau, en a reproduit 1&amp;nbsp;724 comme de vraies vulnérabilités, puis a écrit 1&amp;nbsp;169 exploits d&#39;élévation de privilèges qui fonctionnent. Une étape d&#39;analyse des variantes les a regroupés en 948 failles distinctes, chacune avec son correctif. La même exécution a produit 291 preuves de concept de fuite d&#39;informations, selon The Hacker News.&lt;/p&gt;
-&lt;p&gt;L&#39;exécution a coûté 1&amp;nbsp;213&amp;nbsp;430 dollars de crédits d&#39;API, soit environ 1&amp;nbsp;280 dollars par faille distincte, selon Runtime Wire. OpenAI affirme que ses agents ont découvert et utilisé au moins 10 techniques d&#39;exploitation du noyau qui n&#39;avaient pas été décrites, et que des spécialistes extérieurs de l&#39;exploitation du noyau ont confirmé cette appréciation sur l&#39;échantillon qu&#39;ils ont examiné. L&#39;entreprise donne aussi une valeur théorique de 18,9 à 66,3 millions de dollars à ces failles si elles avaient été vendues à des programmes de primes aux bogues.&lt;/p&gt;
-&lt;p&gt;Les correctifs ne sont pas tous intégrés. Dix jours après l&#39;exécution, 61 failles étaient corrigées dans le noyau officiel, 43 avaient un correctif en attente d&#39;intégration et 299 étaient en cours de signalement et de discussion publique, selon les chiffres d&#39;OpenAI repris par The Hacker News. OpenAI dit travailler avec les mainteneurs du noyau Linux et ne pas publier le code des exploits. L&#39;entreprise ne publie pas la liste des versions du noyau concernées.&lt;/p&gt;
-&lt;p&gt;OpenAI n&#39;indique ni le nom du modèle utilisé, ni sa date de diffusion, ni les conditions dans lesquelles d&#39;autres organisations pourraient y accéder.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://openai.com/index/a-thousand-fewer-paths-to-root/&#34;&gt;OpenAI&lt;/a&gt;, &lt;a href=&#34;https://thehackernews.com/2026/11/openai-ai-pipeline-generates-948-linux.html&#34;&gt;The Hacker News&lt;/a&gt;, &lt;a href=&#34;https://runtimewire.com/article/openai-agents-948-linux-kernel-flaws&#34;&gt;Runtime Wire&lt;/a&gt;, &lt;a href=&#34;https://www.unite.ai/openai-pipeline-finds-948-linux-kernel-privilege-escalation-flaws/&#34;&gt;Unite.ai&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Crédit Mutuel Arkéa chiffre à environ 100 millions d&#39;euros les opérations frauduleuses menées par des pirates depuis un compte du groupe</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#a2</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=2&amp;utm_source=rss#a2"/>
-    <published>2026-11-05T06:59:59+01:00</published>
-    <updated>2026-11-05T06:59:59+01:00</updated>
-    <category term="France"/>
-    <content type="html">
-&lt;p&gt;Le groupe bancaire Crédit Mutuel Arkéa, maison mère de la banque en ligne Fortuneo, a confirmé le mercredi 4 novembre avoir été victime d&#39;une cyberattaque ayant permis des opérations frauduleuses, pour un montant «&amp;nbsp;de l&#39;ordre de 100 millions d&#39;euros&amp;nbsp;» selon une estimation provisoire, a rapporté l&#39;AFP. Selon la banque, les attaquants sont passés par la plateforme d&#39;un prestataire avant d&#39;utiliser un compte appartenant à l&#39;établissement et de virer l&#39;argent vers d&#39;autres banques. Arkéa affirme que Fortuneo n&#39;a pas été le point d&#39;entrée et que l&#39;attaque n&#39;a pas de conséquence financière pour ses 5,6 millions de clients, selon Next. La banque ne confirme pas le chiffre de 118 millions d&#39;euros avancé par Le Télégramme mais en valide l&#39;ordre de grandeur. Une partie des fonds aurait transité par des plateformes de cryptomonnaies en début de semaine, selon Clubic&amp;nbsp;; Arkéa n&#39;a ni confirmé ni démenti. La section cybercriminalité du parquet de Paris a ouvert une enquête après une plainte de la banque, a indiqué le ministère public à l&#39;AFP. Arkéa demande à ses clients de ne communiquer aucune information personnelle ou bancaire en réponse à des messages se réclamant de la banque.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.boursorama.com/actualite-economique/actualites/credit-mutuel-arkea-cyberattaque-pour-pres-de-100-millions-d-euros-enquete-ouverte-7a25b65f08450c07e9ea616dca1bfc71&#34;&gt;AFP (via Boursorama)&lt;/a&gt;, &lt;a href=&#34;https://next.ink/brief-article/la-banque-en-ligne-fortuneo-victime-dune-cyberattaque/&#34;&gt;Next&lt;/a&gt;, &lt;a href=&#34;https://www.clubic.com/actualite-637615-fortuneo-victime-d-une-fraude-les-clients-a-l-abri-mais-des-millions-d-euros-auraient-ete-detournes.html&#34;&gt;Clubic&lt;/a&gt;, &lt;a href=&#34;https://www.presse-citron.net/fraude-chez-credit-mutuel-arkea-un-hackeur-vide-les-comptes-de-la-banque-en-ligne-fortuneo/&#34;&gt;Presse-citron&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Moonshot AI publie les poids de Kimi K3.1 Pro, un modèle de 2 800 milliards de paramètres, sous une licence qui impose un contrat aux gros hébergeurs</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#a3</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=3&amp;utm_source=rss#a3"/>
-    <published>2026-11-05T06:59:58+01:00</published>
-    <updated>2026-11-05T06:59:58+01:00</updated>
-    <category term="Chine"/>
-    <content type="html">
-&lt;p&gt;La société pékinoise Moonshot AI a mis en ligne le mercredi 4 novembre, sur Hugging Face, les poids de Kimi K3.1 Pro, un modèle lancé le 23 octobre par son interface de programmation, comme elle s&#39;y était engagée. Selon la fiche du modèle, il s&#39;agit d&#39;un mélange d&#39;experts de 2&amp;nbsp;800 milliards de paramètres, dont 104 milliards sont activés pour chaque jeton, avec une fenêtre de contexte de 1&amp;nbsp;048&amp;nbsp;576 jetons et des entrées en texte et en images. Les poids sont publiés en précision réduite MXFP4 et pèsent 1,56 To, répartis en 96 fichiers, selon Runtime Wire. La licence propre au modèle autorise l&#39;usage, la modification et l&#39;usage commercial gratuits, mais une entreprise qui revend l&#39;accès au modèle comme service et dépasse 20 millions de dollars de chiffre d&#39;affaires sur douze mois doit signer un accord séparé avec Moonshot, et les grands produits commerciaux doivent afficher le nom du modèle, selon Sina Tech et ABMedia&amp;nbsp;; elle n&#39;est pas reconnue par l&#39;OSI. Moonshot dit avoir retiré volontairement des données d&#39;entraînement liées à la cybersécurité offensive pour que ces poids ouverts restent en retrait sur ce terrain. Le modèle se classe premier des modèles à poids ouverts et treizième au total du classement Agent Arena, selon Sina Tech. Dès le 4 novembre, des contributeurs des moteurs d&#39;inférence libres vLLM et SGLang ont ouvert des demandes de fusion pour le prendre en charge.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://huggingface.co/moonshotai/Kimi-K3.1-Pro&#34;&gt;Hugging Face (fiche du modèle)&lt;/a&gt;, &lt;a href=&#34;https://runtimewire.com/article/moonshot-ai-kimi-k3-1-pro-weights&#34;&gt;Runtime Wire&lt;/a&gt;, &lt;a href=&#34;https://finance.sina.com.cn/tech/digi/2026-11-05/doc-inixrunh9587030.shtml&#34;&gt;Sina Tech&lt;/a&gt;, &lt;a href=&#34;https://abmedia.io/kimi-k3-1-pro-weights-license&#34;&gt;ABMedia&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Une opération coordonnée par Europol saisit plus de 100 serveurs d&#39;un fournisseur de fausses plateformes d&#39;investissement en ligne</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#a4</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=4&amp;utm_source=rss#a4"/>
-    <published>2026-11-05T06:59:57+01:00</published>
-    <updated>2026-11-05T06:59:57+01:00</updated>
-    <category term="Europe"/>
-    <content type="html">
-&lt;p&gt;Des enquêteurs d&#39;Albanie, de Chypre, de Finlande, d&#39;Allemagne, du Kosovo et de Macédoine du Nord, appuyés par Europol et Eurojust, ont mené le mardi 3 novembre une opération contre l&#39;infrastructure d&#39;une escroquerie à l&#39;investissement dont les victimes potentielles se trouvent dans plus de 50 pays, selon le communiqué d&#39;Europol. Ils ont perquisitionné 17 sites, saisi plus de 100 serveurs et arrêté sept suspects. L&#39;opération visait une entreprise soupçonnée de fournir à des centres d&#39;appels de faux sites de courtage en ligne, sur lesquels des opérateurs poussaient les victimes à investir, selon The Cyber Express. L&#39;enquête est dirigée par le parquet allemand d&#39;Itzehoe&amp;nbsp;; elle a commencé en 2022 après la plainte d&#39;un couple allemand victime de l&#39;escroquerie et a déjà donné lieu à des actions en 2022 et en 2025, selon Balkan Insight. Les pertes connues dépassent 4 millions d&#39;euros, selon The Cyber Express. Les suspects arrêtés n&#39;ont pas été identifiés publiquement.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.europol.europa.eu/media-press/newsroom/news/investment-scams-potential-victims-in-least-50-countries-over-100-servers-seized&#34;&gt;Europol&lt;/a&gt;, &lt;a href=&#34;https://thecyberexpress.com/investment-fraud-network-hit/&#34;&gt;The Cyber Express&lt;/a&gt;, &lt;a href=&#34;https://balkaninsight.com/2026/11/03/seven-arrested-in-international-investment-fraud-crackdown-in-balkans/bi/&#34;&gt;Balkan Insight&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Les électeurs américains rejettent les projets de centres de données dans tous les référendums locaux sauf un, le jour des élections de mi-mandat</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#a5</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=5&amp;utm_source=rss#a5"/>
-    <published>2026-11-05T06:59:56+01:00</published>
-    <updated>2026-11-05T06:59:56+01:00</updated>
-    <category term="États-Unis"/>
-    <content type="html">
-&lt;p&gt;Lors des élections de mi-mandat du mardi 3 novembre, 41 questions soumises au vote dans dix États portaient sur des centres de données, et les électeurs se sont prononcés contre les projets dans toutes sauf une, selon une analyse de CNBC fondée sur les données de Ballotpedia publiée le 4 novembre. L&#39;exception est Harwood, dans le Dakota du Nord, où les électeurs ont refusé d&#39;ajouter une procédure d&#39;examen des projets industriels, centres de données compris. L&#39;Ohio concentre plus de la moitié des scrutins, avec 21 questions dans 18 communes&amp;nbsp;; à Wilmington, environ 80&amp;nbsp;% des votants ont rejeté, lors de quatre référendums, les changements de zonage prévus pour accueillir un centre de données, selon Fortune. Au Kansas, les villes d&#39;El Dorado et d&#39;Emporia ont approuvé l&#39;interdiction des centres de données «&amp;nbsp;à fort impact&amp;nbsp;», selon Forbes. Les campagnes et groupes extérieurs des deux partis ont dépensé plus de 173 millions de dollars en publicités contre les centres de données pendant la campagne, selon Fast Company. Certains résultats n&#39;étaient pas encore publiés le 4 novembre, et les décomptes varient selon les recensements.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.cnbc.com/2026/11/04/data-center-ballot-measures-2026-midterm.html&#34;&gt;CNBC&lt;/a&gt;, &lt;a href=&#34;https://fortune.com/2026/11/04/ohio-data-center-ballot-measures-midterm-elections/&#34;&gt;Fortune&lt;/a&gt;, &lt;a href=&#34;https://www.forbes.com/sites/zacharyfolk/2026/11/04/heres-where-voters-are-rejecting-data-centers-at-the-ballot-full-list/&#34;&gt;Forbes&lt;/a&gt;, &lt;a href=&#34;https://www.fastcompany.com/91635527/midterm-elections-2026-ai-data-centers-lost-big-list-state-ballots&#34;&gt;Fast Company&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>L&#39;outil open source du jour : vLLM, le moteur d&#39;inférence libre qui prépare l&#39;accueil de Kimi K3.1 Pro</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html#outil</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?outil&amp;utm_source=rss#outil"/>
-    <published>2026-11-05T06:59:55+01:00</published>
-    <updated>2026-11-05T06:59:55+01:00</updated>
-    <category term="L&#39;outil open source du jour"/>
-    <content type="html">
-&lt;p&gt;vLLM est un moteur d&#39;inférence et de service pour les grands modèles de langage&amp;nbsp;: il charge les poids d&#39;un modèle et répond aux requêtes par une interface compatible avec celle d&#39;OpenAI, en gérant la mémoire des GPU pour traiter beaucoup de requêtes en parallèle. Il fonctionne sur les GPU de NVIDIA, d&#39;AMD et d&#39;Intel et sur des processeurs x86, ARM et PowerPC, et des greffons ajoutent les TPU de Google, les puces Ascend de Huawei, Intel Gaudi ou Apple Silicon, selon son README.&lt;/p&gt;
-&lt;p&gt;Le mercredi 4 novembre, le jour de la publication des poids de Kimi K3.1 Pro, une demande de fusion intitulée «&amp;nbsp;[Model] Kimi K3.1 Pro&amp;nbsp;» a été ouverte dans le dépôt pour ajouter le modèle&amp;nbsp;; elle était encore en cours d&#39;examen le 5 novembre. Des fiches de déploiement pour ce modèle ont été ajoutées le même jour au projet, et une autre demande propose de le servir sur TPU.&lt;/p&gt;
-&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/vllm-project/vllm&#34;&gt;github.com/vllm-project/vllm&lt;/a&gt;, consulté le 5 novembre.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: Apache 2.0, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 96&amp;nbsp;356 étoiles, 24&amp;nbsp;421 forks, 24&amp;nbsp;651 commits, 2&amp;nbsp;780 issues et 7&amp;nbsp;103 pull requests ouvertes au 5 novembre&amp;nbsp;; dernière release v0.33.0 le 1er novembre 2026&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Projet né au Sky Computing Lab de l&#39;université de Californie à Berkeley, premier commit le 9 février 2023, aujourd&#39;hui maintenu par des institutions universitaires et des entreprises et plus de 2&amp;nbsp;000 contributeurs, selon le README&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: La prise en charge de Kimi K3.1 Pro n&#39;était pas fusionnée le 5 novembre, et le modèle demande environ 1,56 To de poids, soit plusieurs GPU de centre de données.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-05.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 029, jeudi 5 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

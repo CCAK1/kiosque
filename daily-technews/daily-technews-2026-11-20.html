@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 20 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Vendredi 20 novembre 2026<span class="price">4,37&nbsp;€</span></span><span class="issue" aria-label="Numéro 40">040</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">La Commission européenne confirme une cyberattaque menée avec Artex, un outil d'intrusion piloté par IA</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Broadcom corrige une faille de VMware vCenter exploitée depuis septembre, selon Google</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Google publie Gemini 4 Neon, un modèle pour les tâches d'agents de longue durée</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Un tribunal britannique oblige le gouvernement à confirmer l'injonction adressée à Apple</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Le Congrès américain publie les licences d'export de puces d'IA de Nvidia et AMD vers la Chine</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: PowerShell</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">UE</p>
+    <h2>La Commission européenne confirme une cyberattaque menée avec Artex, un outil d'intrusion piloté par IA, qui a coupé plusieurs de ses applications internes</h2>
+    <p class="deck">La Commission européenne a confirmé le jeudi 19 novembre, par la voix de son porte-parole au point presse de midi, avoir été visée par une «&nbsp;campagne cyber générée par IA&nbsp;». L'attaque a été détectée le 22 octobre, selon heise. D'après Politico, cité par heise et The Register, les attaquants ont utilisé Artex, un logiciel libre de test d'intrusion piloté par des modèles de langage, contre lequel le CERT-EU, le service de cybersécurité des institutions de l'UE, avait mis en garde le 5 novembre.</p>
+    <div class="body">
+      <p>Plusieurs applications internes ont été retirées du réseau par précaution. Sysper, qui gère les salaires, les congés et le temps de travail du personnel, a été rétablie en début de semaine, puis est de nouveau tombée en panne le mercredi 18 novembre. MyPMO, qui sert au remboursement des frais médicaux, a été rétablie en début de semaine. Les services de traduction internes étaient en panne mardi, selon heise. The Register compte plus de dix jours de perturbations. Les salaires ont été versés normalement, mais de nombreux agents n'ont pas pu saisir leurs horaires ni demander de congés, selon Politico cité par heise.</p>
+      <p>«&nbsp;Des systèmes individuels ont été visés&nbsp;», a déclaré Thomas Regnier, porte-parole de la Commission, cité par The Register&nbsp;; les personnes concernées ont été informées. Selon heise, le porte-parole a indiqué qu'à ce stade aucune donnée personnelle n'avait fuité&nbsp;; The Register écrit que la Commission n'a pas répondu à ses questions sur ce point. Le Corporate Management Board, l'instance de gestion de crise de la Commission, a tenu une réunion extraordinaire début novembre et ordonné des contrôles de sécurité renforcés. Henna Virkkunen, commissaire au numérique, a informé ses collègues mercredi.</p>
+      <p>Artex part d'un objectif formulé en langage naturel, le découpe en étapes et les fait exécuter par un ou plusieurs agents qui lancent de vrais outils de reconnaissance et de test, selon le billet du CERT-EU. Il n'embarque pas de modèle d'IA&nbsp;: il se branche sur des fournisseurs de modèles de langage externes. Le respect du périmètre et l'évitement des actions destructives reposent sur des règles configurables et sur le modèle lui-même, sans contrôle technique strict, écrit le CERT-EU. Le dépôt d'origine a été retiré en octobre après des signalements d'usage abusif, mais des copies circulent encore.</p>
+      <p>Le FBI, cité par heise et The Register, a recensé début novembre plus de 1&nbsp;600 consoles Artex accessibles sur Internet. Dans certaines attaques, il a fallu moins de trois heures pour passer de l'identification d'une cible à un accès privilégié à ses systèmes. Selon heise, le FBI indique que DeepSeek est le modèle le plus utilisé avec Artex, parce qu'il est bon marché et a peu de garde-fous.</p>
+    </div>
+    <p class="meta">Information du 19 novembre. Sources&nbsp;: <a href="https://www.heise.de/news/Cyberangriff-auf-EU-Kommission-Verdacht-auf-KI-Tool-Artex-tagelange-Ausfaelle-11531596.html">heise</a>, <a href="https://www.theregister.com/cyber-crime/2026/11/19/european-commission-scrambles-to-contain-ai-assisted-cyberattack/5311103">The Register</a>, <a href="https://cert.europa.eu/blog/from-penetration-testing-to-cyber-threat-beware-of-artex">CERT-EU</a>, <a href="https://audiovisual.ec.europa.eu/en/media/video/I-298222">point presse de la Commission</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Sécurité</p>
+      <h3>Broadcom corrige une faille de VMware vCenter que Google dit exploitée depuis septembre par un groupe d'espionnage probablement chinois</h3>
+      <p>Broadcom a publié le jeudi 19 novembre l'avis VMSA-2026-0009, qui corrige CVE-2026-123890, une faille de VMware Directory Service, le service d'annuaire de vCenter, la console qui administre les serveurs virtualisés VMware. Notée 9,8 sur 10, elle permet à un attaquant qui a accès au réseau de vCenter de contourner l'authentification. Les versions corrigées sont 9.1.1.0200, 9.0.2.0200 et 8.0 U3m&nbsp;; Broadcom n'indique aucune mesure de contournement, et vCenter 7.0, hors support général depuis octobre 2025, n'a pas de correctif public. L'avis de Broadcom ne mentionne aucune exploitation. Mandiant, filiale de Google qui a signalé la faille, l'attribue à Armory Castle, anciennement suivi sous le nom UNC5221, un groupe qu'elle juge probablement chinois&nbsp;: il l'aurait exploitée pendant plus de deux mois avant le correctif, à partir de début septembre, selon SecurityWeek. Son outil, BONESAW, vole la base de l'annuaire, extrait le matériel de signature des jetons SAML et crée un compte administrateur&nbsp;; l'accès initial passait par une autre faille, dans BeyondTrust Remote Support. Le même avis corrige quatre autres failles, dans SDDC Manager et VMware Tools pour Windows.</p>
+      <p class="meta">Information du 19 novembre. Sources&nbsp;: <a href="https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39495">Broadcom</a>, <a href="https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/">SecurityWeek</a>, <a href="https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193">The Register</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">États-Unis</p>
+      <h3>Google publie Gemini 4 Neon, un modèle destiné aux tâches d'agents de longue durée, facturé 3 dollars le million de jetons en entrée</h3>
+      <p>Google a présenté le mercredi 18 novembre Gemini 4 Neon, nouveau modèle de la famille Gemini 4 après Argon, Carbon et Hydrogen, dans un billet de Koray Kavukcuoglu, vice-président de Google DeepMind. Google le place entre Carbon, prévu pour les projets longs et difficiles, et Hydrogen, prévu pour l'exécution rapide. Il accepte jusqu'à un million de jetons de contexte et propose quatre niveaux de raisonnement. Dans l'API, il coûte 3 dollars par million de jetons en entrée, 0,15 dollar en entrée mise en cache et 15 dollars en sortie&nbsp;; Argon et Carbon passeront à 4 et 20 dollars le 1er décembre, à la fin de leur tarif de lancement, selon ITdaily. Dans Antigravity, l'environnement de développement par agents de Google, Neon peut servir d'orchestrateur qui répartit le travail entre plusieurs sous-agents Hydrogen lancés en parallèle. Il est disponible dans l'API Gemini payante, dans Gemini pour les entreprises, dans Antigravity et dans l'application Gemini pour les abonnés Google AI Pro et Ultra. Google cite un score de 61 à l'indice d'Artificial Analysis et de 65,2&nbsp;% sur Terminal-Bench 4.1&nbsp;; ces résultats sont fournis par l'entreprise et ne sont pas vérifiés par un tiers.</p>
+      <p class="meta">Information du 18 novembre. Sources&nbsp;: <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/">Google</a>, <a href="https://www.theregister.com/ai-and-ml/2026/11/19/google-continues-model-chemistry-experiment-with-neon/5310934">The Register</a>, <a href="https://itdaily.com/news/software/google-gemini-4-neon/">ITdaily</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Royaume-Uni</p>
+      <h3>Un tribunal britannique juge que le gouvernement ne peut plus refuser de confirmer l'injonction adressée à Apple sur les données chiffrées d'iCloud</h3>
+      <p>L'Investigatory Powers Tribunal, la juridiction britannique chargée des affaires de surveillance, a rendu le jeudi 19 novembre un jugement dans les recours d'Apple, de Privacy International, de Liberty et de deux particuliers contre le ministère de l'Intérieur. Il rejette l'argument du ministère selon lequel confirmer l'existence d'une technical capability notice adressée à Apple, une injonction technique prévue par l'Investigatory Powers Act de 2016, nuirait à la sécurité nationale. Le gouvernement ne peut donc plus s'en tenir à sa position de ne «&nbsp;ni confirmer ni démentir&nbsp;». Le tribunal relève que des responsables ont autorisé des informations au Times et au Financial Times, et écrit que «&nbsp;toute personne un tant soit peu intéressée par le sujet le sait déjà&nbsp;», selon PPC Land. Selon heise, l'injonction vise à affaiblir la sécurité d'iCloud pour permettre aux autorités britanniques de consulter des données non chiffrées&nbsp;; Apple dit ne pas s'y être conformée. Le contenu de l'injonction reste secret. Le tribunal doit examiner sa légalité au premier semestre 2027&nbsp;; l'audience prévue en décembre est jugée impraticable.</p>
+      <p class="meta">Information du 19 novembre. Sources&nbsp;: <a href="https://investigatorypowerstribunal.org.uk/judgement/1-mr-vincent-kearney-2-british-broadcasting-corporation-v-1-chief-constable-of-the-police-service-of-northern-ireland-2-chief-constable-of-durham-constabulary-3-security-service-4-governme/">Investigatory Powers Tribunal</a>, <a href="https://www.heise.de/news/Spionagegericht-Grossbritannien-muss-Auftrag-fuer-Apple-Hintertuer-gestehen-11531845.html">heise</a>, <a href="https://ppc.land/home-office-loses-bid-to-hide-that-it-served-apple-a-secret-notice/">PPC Land</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">États-Unis, Chine</p>
+      <h3>Une commission du Congrès américain publie les licences d'export de puces d'IA de Nvidia et AMD vers la Chine&nbsp;: 879&nbsp;000 puces autorisées sur 3,4 millions demandées</h3>
+      <p>Brian Mast, président de la commission des affaires étrangères de la Chambre des représentants, a rendu publics le jeudi 19 novembre des éléments des demandes de licences d'exportation de puces d'IA de Nvidia et d'AMD vers la Chine, en vertu des pouvoirs que lui donne l'Export Control Reform Act. Selon le communiqué de la commission, les deux entreprises ont demandé à vendre 3,4 millions de puces, et le Bureau of Industry and Security (BIS), le service du département du Commerce chargé des exportations, en a autorisé plus de 879&nbsp;000. Il s'agit des puces H200 de Nvidia et de puces comparables d'AMD, pour des demandes déposées jusqu'en mai 2026, selon DigitalToday. Des ventes ont été autorisées à Alibaba et Tencent, inscrites par le département de la Guerre sur sa liste des entreprises militaires chinoises. Le BIS a refusé deux grosses demandes de Nvidia, 610&nbsp;000 puces pour Alibaba et 508&nbsp;000 pour ByteDance, selon The Register. Brian Mast désigne Magin Infrastructure et New Matrix, présentes dans des demandes de Nvidia, comme des sociétés écrans soupçonnées de contrebande. Une licence ne vaut pas livraison&nbsp;: selon The Register, de nombreuses commandes autorisées n'ont jamais été livrées.</p>
+      <p class="meta">Information du 19 novembre. Sources&nbsp;: <a href="https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china">commission des affaires étrangères de la Chambre des représentants</a>, <a href="https://www.theregister.com/legal/2026/11/20/us-let-nvidia-and-amd-sell-bucketloads-of-chips-to-military-linked-chinese-companies/5311200">The Register</a>, <a href="https://www.digitaltoday.co.kr/en/view/128597/us-approved-879000-advanced-chips-exports-to-chinese-firms-in-six-months-including-nvidia-amd">DigitalToday</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">PowerShell 7, le shell libre de Microsoft, remplacera Windows PowerShell 5.1 dans la prochaine version de Windows</h2>
+    <div class="tool-grid">
+      <div>
+        <p>PowerShell est un interpréteur de commandes et un langage de script pour automatiser l'administration des systèmes. Ses commandes manipulent des objets .NET plutôt que du texte brut, ce qui permet d'enchaîner des traitements sans analyser la sortie de chaque commande. Depuis la version 6, il est développé en open source sur GitHub et fonctionne sous Windows, Linux et macOS. Windows embarquait jusqu'ici Windows PowerShell 5.1, une version plus ancienne, fermée et propre à Windows.</p>
+        <p>Microsoft a annoncé le 17 novembre que PowerShell 7 sera inclus dans Windows à partir de la prochaine version, sous forme de paquet MSIX, selon le billet de Jason Helmick, de l'équipe PowerShell. Windows Server 2025 et Windows 11 26H2 sont les dernières versions où PowerShell 5.1 est activé par défaut&nbsp;; il restera ensuite installable à la demande avant d'être retiré, selon The Register. Les deux versions peuvent fonctionner côte à côte. La version 7.7.0 est sortie le 10 novembre.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/PowerShell/PowerShell">github.com/PowerShell/PowerShell</a>, consulté le 20 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>MIT, vérifiée dans le fichier LICENSE.txt du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>56&nbsp;235 étoiles, 8&nbsp;545 forks, 11&nbsp;645 commits, 1&nbsp;299 issues et 370 pull requests ouvertes au 20 novembre, dernière release v7.7.0 le 10 novembre 2026</dd></div>
+        <div><dt>Qui</dt><dd>Microsoft, qui emploie l'équipe PowerShell et dirige le projet&nbsp;; premier commit du dépôt le 12 février 2015</dd></div>
+        <div><dt>À savoir</dt><dd>Le paquet MSIX livré avec Windows ne gère pas encore l'exécution sous le compte SYSTEM (tâches planifiées, services, scripts de gestion), les commandes DISM ni les réglages communs à tous les utilisateurs de la machine, selon Microsoft. L'éditeur PowerShell ISE reste lié à la version 5.1. Aucune date n'est donnée pour la version de Windows concernée ni pour le retrait de PowerShell 5.1. Le projet dépend des choix de Microsoft.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-19.html" rel="prev">Numéro précédent&nbsp;: <span class="num">039</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

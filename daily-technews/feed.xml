@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-11-19T07:00:00+01:00</updated>
+  <updated>2026-11-20T07:00:00+01:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La Commission européenne confirme une cyberattaque menée avec Artex, un outil d&#39;intrusion piloté par IA, qui a coupé plusieurs de ses applications internes</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-11-20T07:00:00+01:00</published>
+    <updated>2026-11-20T07:00:00+01:00</updated>
+    <category term="UE"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;La Commission européenne a confirmé le jeudi 19 novembre, par la voix de son porte-parole au point presse de midi, avoir été visée par une «&amp;nbsp;campagne cyber générée par IA&amp;nbsp;». L&#39;attaque a été détectée le 22 octobre, selon heise. D&#39;après Politico, cité par heise et The Register, les attaquants ont utilisé Artex, un logiciel libre de test d&#39;intrusion piloté par des modèles de langage, contre lequel le CERT-EU, le service de cybersécurité des institutions de l&#39;UE, avait mis en garde le 5 novembre.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Plusieurs applications internes ont été retirées du réseau par précaution. Sysper, qui gère les salaires, les congés et le temps de travail du personnel, a été rétablie en début de semaine, puis est de nouveau tombée en panne le mercredi 18 novembre. MyPMO, qui sert au remboursement des frais médicaux, a été rétablie en début de semaine. Les services de traduction internes étaient en panne mardi, selon heise. The Register compte plus de dix jours de perturbations. Les salaires ont été versés normalement, mais de nombreux agents n&#39;ont pas pu saisir leurs horaires ni demander de congés, selon Politico cité par heise.&lt;/p&gt;
+&lt;p&gt;«&amp;nbsp;Des systèmes individuels ont été visés&amp;nbsp;», a déclaré Thomas Regnier, porte-parole de la Commission, cité par The Register&amp;nbsp;; les personnes concernées ont été informées. Selon heise, le porte-parole a indiqué qu&#39;à ce stade aucune donnée personnelle n&#39;avait fuité&amp;nbsp;; The Register écrit que la Commission n&#39;a pas répondu à ses questions sur ce point. Le Corporate Management Board, l&#39;instance de gestion de crise de la Commission, a tenu une réunion extraordinaire début novembre et ordonné des contrôles de sécurité renforcés. Henna Virkkunen, commissaire au numérique, a informé ses collègues mercredi.&lt;/p&gt;
+&lt;p&gt;Artex part d&#39;un objectif formulé en langage naturel, le découpe en étapes et les fait exécuter par un ou plusieurs agents qui lancent de vrais outils de reconnaissance et de test, selon le billet du CERT-EU. Il n&#39;embarque pas de modèle d&#39;IA&amp;nbsp;: il se branche sur des fournisseurs de modèles de langage externes. Le respect du périmètre et l&#39;évitement des actions destructives reposent sur des règles configurables et sur le modèle lui-même, sans contrôle technique strict, écrit le CERT-EU. Le dépôt d&#39;origine a été retiré en octobre après des signalements d&#39;usage abusif, mais des copies circulent encore.&lt;/p&gt;
+&lt;p&gt;Le FBI, cité par heise et The Register, a recensé début novembre plus de 1&amp;nbsp;600 consoles Artex accessibles sur Internet. Dans certaines attaques, il a fallu moins de trois heures pour passer de l&#39;identification d&#39;une cible à un accès privilégié à ses systèmes. Selon heise, le FBI indique que DeepSeek est le modèle le plus utilisé avec Artex, parce qu&#39;il est bon marché et a peu de garde-fous.&lt;/p&gt;
+&lt;p&gt;Information du 19 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://www.heise.de/news/Cyberangriff-auf-EU-Kommission-Verdacht-auf-KI-Tool-Artex-tagelange-Ausfaelle-11531596.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/cyber-crime/2026/11/19/european-commission-scrambles-to-contain-ai-assisted-cyberattack/5311103&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://cert.europa.eu/blog/from-penetration-testing-to-cyber-threat-beware-of-artex&#34;&gt;CERT-EU&lt;/a&gt;, &lt;a href=&#34;https://audiovisual.ec.europa.eu/en/media/video/I-298222&#34;&gt;point presse de la Commission&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 040, vendredi 20 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Broadcom corrige une faille de VMware vCenter que Google dit exploitée depuis septembre par un groupe d&#39;espionnage probablement chinois</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-11-20T06:59:59+01:00</published>
+    <updated>2026-11-20T06:59:59+01:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;Broadcom a publié le jeudi 19 novembre l&#39;avis VMSA-2026-0009, qui corrige CVE-2026-123890, une faille de VMware Directory Service, le service d&#39;annuaire de vCenter, la console qui administre les serveurs virtualisés VMware. Notée 9,8 sur 10, elle permet à un attaquant qui a accès au réseau de vCenter de contourner l&#39;authentification. Les versions corrigées sont 9.1.1.0200, 9.0.2.0200 et 8.0 U3m&amp;nbsp;; Broadcom n&#39;indique aucune mesure de contournement, et vCenter 7.0, hors support général depuis octobre 2025, n&#39;a pas de correctif public. L&#39;avis de Broadcom ne mentionne aucune exploitation. Mandiant, filiale de Google qui a signalé la faille, l&#39;attribue à Armory Castle, anciennement suivi sous le nom UNC5221, un groupe qu&#39;elle juge probablement chinois&amp;nbsp;: il l&#39;aurait exploitée pendant plus de deux mois avant le correctif, à partir de début septembre, selon SecurityWeek. Son outil, BONESAW, vole la base de l&#39;annuaire, extrait le matériel de signature des jetons SAML et crée un compte administrateur&amp;nbsp;; l&#39;accès initial passait par une autre faille, dans BeyondTrust Remote Support. Le même avis corrige quatre autres failles, dans SDDC Manager et VMware Tools pour Windows.&lt;/p&gt;
+&lt;p&gt;Information du 19 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://support.broadcom.com/web/ecx/support-content-notification/-/external/content/SecurityAdvisories/0/39495&#34;&gt;Broadcom&lt;/a&gt;, &lt;a href=&#34;https://www.securityweek.com/newly-patched-vmware-vcenter-flaw-exploited-as-zero-day-by-chinese-apt/&#34;&gt;SecurityWeek&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/11/20/flaws-in-vmware-and-kvm-need-attention-if-you-have-time-while-fixing-java-php-and-everything-else/5311193&#34;&gt;The Register&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 040, vendredi 20 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Google publie Gemini 4 Neon, un modèle destiné aux tâches d&#39;agents de longue durée, facturé 3 dollars le million de jetons en entrée</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-11-20T06:59:58+01:00</published>
+    <updated>2026-11-20T06:59:58+01:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;Google a présenté le mercredi 18 novembre Gemini 4 Neon, nouveau modèle de la famille Gemini 4 après Argon, Carbon et Hydrogen, dans un billet de Koray Kavukcuoglu, vice-président de Google DeepMind. Google le place entre Carbon, prévu pour les projets longs et difficiles, et Hydrogen, prévu pour l&#39;exécution rapide. Il accepte jusqu&#39;à un million de jetons de contexte et propose quatre niveaux de raisonnement. Dans l&#39;API, il coûte 3 dollars par million de jetons en entrée, 0,15 dollar en entrée mise en cache et 15 dollars en sortie&amp;nbsp;; Argon et Carbon passeront à 4 et 20 dollars le 1er décembre, à la fin de leur tarif de lancement, selon ITdaily. Dans Antigravity, l&#39;environnement de développement par agents de Google, Neon peut servir d&#39;orchestrateur qui répartit le travail entre plusieurs sous-agents Hydrogen lancés en parallèle. Il est disponible dans l&#39;API Gemini payante, dans Gemini pour les entreprises, dans Antigravity et dans l&#39;application Gemini pour les abonnés Google AI Pro et Ultra. Google cite un score de 61 à l&#39;indice d&#39;Artificial Analysis et de 65,2&amp;nbsp;% sur Terminal-Bench 4.1&amp;nbsp;; ces résultats sont fournis par l&#39;entreprise et ne sont pas vérifiés par un tiers.&lt;/p&gt;
+&lt;p&gt;Information du 18 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/&#34;&gt;Google&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/ai-and-ml/2026/11/19/google-continues-model-chemistry-experiment-with-neon/5310934&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://itdaily.com/news/software/google-gemini-4-neon/&#34;&gt;ITdaily&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 040, vendredi 20 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Un tribunal britannique juge que le gouvernement ne peut plus refuser de confirmer l&#39;injonction adressée à Apple sur les données chiffrées d&#39;iCloud</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-11-20T06:59:57+01:00</published>
+    <updated>2026-11-20T06:59:57+01:00</updated>
+    <category term="Royaume-Uni"/>
+    <content type="html">
+&lt;p&gt;L&#39;Investigatory Powers Tribunal, la juridiction britannique chargée des affaires de surveillance, a rendu le jeudi 19 novembre un jugement dans les recours d&#39;Apple, de Privacy International, de Liberty et de deux particuliers contre le ministère de l&#39;Intérieur. Il rejette l&#39;argument du ministère selon lequel confirmer l&#39;existence d&#39;une technical capability notice adressée à Apple, une injonction technique prévue par l&#39;Investigatory Powers Act de 2016, nuirait à la sécurité nationale. Le gouvernement ne peut donc plus s&#39;en tenir à sa position de ne «&amp;nbsp;ni confirmer ni démentir&amp;nbsp;». Le tribunal relève que des responsables ont autorisé des informations au Times et au Financial Times, et écrit que «&amp;nbsp;toute personne un tant soit peu intéressée par le sujet le sait déjà&amp;nbsp;», selon PPC Land. Selon heise, l&#39;injonction vise à affaiblir la sécurité d&#39;iCloud pour permettre aux autorités britanniques de consulter des données non chiffrées&amp;nbsp;; Apple dit ne pas s&#39;y être conformée. Le contenu de l&#39;injonction reste secret. Le tribunal doit examiner sa légalité au premier semestre 2027&amp;nbsp;; l&#39;audience prévue en décembre est jugée impraticable.&lt;/p&gt;
+&lt;p&gt;Information du 19 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://investigatorypowerstribunal.org.uk/judgement/1-mr-vincent-kearney-2-british-broadcasting-corporation-v-1-chief-constable-of-the-police-service-of-northern-ireland-2-chief-constable-of-durham-constabulary-3-security-service-4-governme/&#34;&gt;Investigatory Powers Tribunal&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Spionagegericht-Grossbritannien-muss-Auftrag-fuer-Apple-Hintertuer-gestehen-11531845.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://ppc.land/home-office-loses-bid-to-hide-that-it-served-apple-a-secret-notice/&#34;&gt;PPC Land&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 040, vendredi 20 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Une commission du Congrès américain publie les licences d&#39;export de puces d&#39;IA de Nvidia et AMD vers la Chine : 879 000 puces autorisées sur 3,4 millions demandées</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?a=5&amp;utm_source=rss#a5"/>
+    <published>2026-11-20T06:59:56+01:00</published>
+    <updated>2026-11-20T06:59:56+01:00</updated>
+    <category term="États-Unis, Chine"/>
+    <content type="html">
+&lt;p&gt;Brian Mast, président de la commission des affaires étrangères de la Chambre des représentants, a rendu publics le jeudi 19 novembre des éléments des demandes de licences d&#39;exportation de puces d&#39;IA de Nvidia et d&#39;AMD vers la Chine, en vertu des pouvoirs que lui donne l&#39;Export Control Reform Act. Selon le communiqué de la commission, les deux entreprises ont demandé à vendre 3,4 millions de puces, et le Bureau of Industry and Security (BIS), le service du département du Commerce chargé des exportations, en a autorisé plus de 879&amp;nbsp;000. Il s&#39;agit des puces H200 de Nvidia et de puces comparables d&#39;AMD, pour des demandes déposées jusqu&#39;en mai 2026, selon DigitalToday. Des ventes ont été autorisées à Alibaba et Tencent, inscrites par le département de la Guerre sur sa liste des entreprises militaires chinoises. Le BIS a refusé deux grosses demandes de Nvidia, 610&amp;nbsp;000 puces pour Alibaba et 508&amp;nbsp;000 pour ByteDance, selon The Register. Brian Mast désigne Magin Infrastructure et New Matrix, présentes dans des demandes de Nvidia, comme des sociétés écrans soupçonnées de contrebande. Une licence ne vaut pas livraison&amp;nbsp;: selon The Register, de nombreuses commandes autorisées n&#39;ont jamais été livrées.&lt;/p&gt;
+&lt;p&gt;Information du 19 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://foreignaffairs.house.gov/news/press-releases/chairman-brian-mast-exercises-legislative-authority-to-publicly-release-ai-chip-license-information-for-china&#34;&gt;commission des affaires étrangères de la Chambre des représentants&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/legal/2026/11/20/us-let-nvidia-and-amd-sell-bucketloads-of-chips-to-military-linked-chinese-companies/5311200&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.digitaltoday.co.kr/en/view/128597/us-approved-879000-advanced-chips-exports-to-chinese-firms-in-six-months-including-nvidia-amd&#34;&gt;DigitalToday&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 040, vendredi 20 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : PowerShell 7, le shell libre de Microsoft, remplacera Windows PowerShell 5.1 dans la prochaine version de Windows</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-11-20T06:59:55+01:00</published>
+    <updated>2026-11-20T06:59:55+01:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;PowerShell est un interpréteur de commandes et un langage de script pour automatiser l&#39;administration des systèmes. Ses commandes manipulent des objets .NET plutôt que du texte brut, ce qui permet d&#39;enchaîner des traitements sans analyser la sortie de chaque commande. Depuis la version 6, il est développé en open source sur GitHub et fonctionne sous Windows, Linux et macOS. Windows embarquait jusqu&#39;ici Windows PowerShell 5.1, une version plus ancienne, fermée et propre à Windows.&lt;/p&gt;
+&lt;p&gt;Microsoft a annoncé le 17 novembre que PowerShell 7 sera inclus dans Windows à partir de la prochaine version, sous forme de paquet MSIX, selon le billet de Jason Helmick, de l&#39;équipe PowerShell. Windows Server 2025 et Windows 11 26H2 sont les dernières versions où PowerShell 5.1 est activé par défaut&amp;nbsp;; il restera ensuite installable à la demande avant d&#39;être retiré, selon The Register. Les deux versions peuvent fonctionner côte à côte. La version 7.7.0 est sortie le 10 novembre.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/PowerShell/PowerShell&#34;&gt;github.com/PowerShell/PowerShell&lt;/a&gt;, consulté le 20 novembre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: MIT, vérifiée dans le fichier LICENSE.txt du dépôt (licence reconnue OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 56&amp;nbsp;235 étoiles, 8&amp;nbsp;545 forks, 11&amp;nbsp;645 commits, 1&amp;nbsp;299 issues et 370 pull requests ouvertes au 20 novembre, dernière release v7.7.0 le 10 novembre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Microsoft, qui emploie l&#39;équipe PowerShell et dirige le projet&amp;nbsp;; premier commit du dépôt le 12 février 2015&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le paquet MSIX livré avec Windows ne gère pas encore l&#39;exécution sous le compte SYSTEM (tâches planifiées, services, scripts de gestion), les commandes DISM ni les réglages communs à tous les utilisateurs de la machine, selon Microsoft. L&#39;éditeur PowerShell ISE reste lié à la version 5.1. Aucune date n&#39;est donnée pour la version de Windows concernée ni pour le retrait de PowerShell 5.1. Le projet dépend des choix de Microsoft.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-20.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 040, vendredi 20 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>F5 corrige dix failles du serveur web nginx, dont deux qui permettent de prendre la main sur un serveur à distance par HTTP/2</title>
@@ -782,81 +871,5 @@
 &lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: La branche 5 rompt la compatibilité avec la 4 sur plusieurs points (moteur de réseaux de neurones, import TensorFlow, arithmétique saturée sur 32 bits)&amp;nbsp;: une application existante doit être adaptée avant migration. Plusieurs fonctions avancées sont dans un dépôt séparé, opencv_contrib.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-09.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 031, lundi 9 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Sekoia attribue à APT29 une campagne qui a piégé le script d&#39;analyse d&#39;audience Plerdy pour infecter des iPhone et des téléphones Android</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html#a1</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?a=1&amp;utm_source=rss#a1"/>
-    <published>2026-11-06T07:00:00+01:00</published>
-    <updated>2026-11-06T07:00:00+01:00</updated>
-    <category term="Russie, Ukraine"/>
-    <content type="html">
-&lt;p&gt;&lt;strong&gt;La société française de cybersécurité Sekoia a publié le mercredi 4 novembre un rapport sur une campagne baptisée «&amp;nbsp;Poisoned Source&amp;nbsp;». Des attaquants ont injecté du code dans des sites web légitimes, dans deux faux sites et dans le script de suivi de Plerdy, un service ukrainien d&#39;analyse d&#39;audience chargé par des milliers de sites, pour exploiter des failles déjà corrigées d&#39;iOS et de Chrome sur Android. Sekoia attribue la campagne, avec un niveau de confiance modéré à élevé, à APT29, groupe lié au service de renseignement extérieur russe (SVR).&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Selon Sekoia, le script de Plerdy a été modifié entre le 27 août et le 3 septembre 2026. Les sites qui le chargeaient, en majorité ukrainiens et dont certains liés au domaine militaire, servaient alors le code malveillant à leurs visiteurs. Les attaquants ont aussi monté deux sites clones, qui imitent un site consacré au 250e anniversaire de l&#39;indépendance des États-Unis et celui d&#39;un hôtel londonien proche de Downing Street et du ministère britannique de la Défense. Leurs noms de domaine ont été créés entre avril et août 2026, selon le rapport.&lt;/p&gt;
-&lt;p&gt;Le code relève d&#39;abord l&#39;empreinte de l&#39;appareil, environ 394 champs selon Sekoia, puis choisit une chaîne d&#39;exploitation. Sur iOS 16.7, il vole les cookies. Sur iOS 18.5, il utilise le kit DarkSword, qui peut extraire messages, contacts, photos, mots de passe du trousseau et données de WhatsApp et de Telegram. Sur Chrome pour Android, versions 139 à 145 sauf 143, il installe un programme que Sekoia nomme AndroSnitch, qui vole les données du navigateur et les mots de passe Wi-Fi. Toutes les failles utilisées avaient été corrigées par Apple et Google avant la campagne&amp;nbsp;: seuls les appareils non mis à jour sont exposés.&lt;/p&gt;
-&lt;p&gt;Parmi les victimes identifiées par Sekoia figurent une entreprise ukrainienne de production de gaz, point de départ de l&#39;enquête, une association professionnelle américaine de l&#39;industrie chimique, un parti politique européen d&#39;extrême droite et un mouvement tchèque qui lui est associé, un site bulgare lié au domaine militaire et une clinique australienne. The Hacker News relève que l&#39;exploitation s&#39;arrête sur un modèle précis de téléphone Samsung. Sekoia écrit ne pas savoir si les attaquants visaient des personnes précises ou le plus grand nombre d&#39;appareils possible.&lt;/p&gt;
-&lt;p&gt;Sekoia fonde son attribution sur des recoupements techniques, le profil des victimes et l&#39;infrastructure, dont un cas proche décrit par Google en 2024. La société propose aux CERT nationaux de leur transmettre les indicateurs de compromission. Le nombre de smartphones compromis n&#39;est pas établi, selon The Record.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.sekoia.com/blog/poisoned-source-apt29-watering-holes-targets-mobile-devices-with-n-day-exploits&#34;&gt;Sekoia&lt;/a&gt;, &lt;a href=&#34;https://therecord.media/russia-hackers-smartphone-cyberattacks&#34;&gt;The Record&lt;/a&gt;, &lt;a href=&#34;https://thehackernews.com/2026/11/apt29-linked-hackers-hijack-web.html&#34;&gt;The Hacker News&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 030, vendredi 6 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>OpenAI ouvre GPT-6 Cyber, son modèle de recherche de failles et d&#39;écriture d&#39;exploits, à une partie des clients de son programme Daybreak Red</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html#a2</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?a=2&amp;utm_source=rss#a2"/>
-    <published>2026-11-06T06:59:59+01:00</published>
-    <updated>2026-11-06T06:59:59+01:00</updated>
-    <category term="États-Unis"/>
-    <content type="html">
-&lt;p&gt;OpenAI a publié le jeudi 5 novembre GPT-6 Cyber, une version de son modèle entraînée pour la recherche de vulnérabilités, la validation d&#39;exploits et les tests d&#39;intrusion. Le modèle est accessible par l&#39;API et par Codex à une partie des clients de Daybreak Red, le programme d&#39;OpenAI réservé aux organisations autorisées à mener des actions de sécurité offensive, depuis des adresses IP approuvées, selon Clubic&amp;nbsp;; l&#39;accès doit être étendu à tous les clients de ce programme dans les semaines à venir. Des équipes de Cisco et de CodeRabbit l&#39;utilisent déjà, selon Heise. OpenAI annonce 48,5&amp;nbsp;% de réussite sur ExploitGym, son évaluation d&#39;écriture d&#39;exploits, contre 32,1&amp;nbsp;% pour GPT-5.6 Cyber et 42,4&amp;nbsp;% pour GPT-6 Astra, et dit que le modèle sort du périmètre autorisé dans 0,07&amp;nbsp;% des cas sans consigne explicite, contre 5,51&amp;nbsp;% pour GPT-5.6 Cyber, selon Heise. Ces chiffres sont fournis par l&#39;entreprise et n&#39;ont pas été vérifiés par un tiers. OpenAI dit que le modèle a trouvé 81 vulnérabilités de gravité élevée inconnues dans Firefox, que Mozilla a commencé à corriger, selon The Register&amp;nbsp;; c&#39;est aussi ce modèle qui a produit les 948 exploits du noyau Linux décrits par OpenAI le 4 novembre. OpenAI classe GPT-6 Cyber au niveau «&amp;nbsp;critique&amp;nbsp;» de son cadre d&#39;évaluation des risques, le plus élevé pour les capacités cyber. L&#39;entreprise a aussi multiplié par quatre les montants moyens de son programme de primes aux bogues, jusqu&#39;à 100&amp;nbsp;000 dollars pour une faille critique exceptionnelle, hors bonus.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://openai.com/index/introducing-gpt-6-cyber/&#34;&gt;OpenAI&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/11/05/openai-releases-gpt-6-cyber-and-promises-this-one-stays-within-rules-of-engagement/5307855&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/OpenAIs-fuer-Cybersecurity-verbessertes-KI-Modell-GPT-6-Cyber-haelt-sich-an-Regeln-11514280.html&#34;&gt;Heise&lt;/a&gt;, &lt;a href=&#34;https://www.clubic.com/actualite-637927-openai-lance-gpt-6-cyber-pour-traquer-les-failles-et-tester-leur-exploitation.html&#34;&gt;Clubic&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 030, vendredi 6 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Tencent sort la version finale de Hy4, un modèle de 770 milliards de paramètres qui lit les images et pilote un ordinateur</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html#a3</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?a=3&amp;utm_source=rss#a3"/>
-    <published>2026-11-06T06:59:58+01:00</published>
-    <updated>2026-11-06T06:59:58+01:00</updated>
-    <category term="Chine"/>
-    <content type="html">
-&lt;p&gt;Tencent a mis en service le mercredi 4 novembre la version finale de Hy4, son modèle de langage principal, deux mois après une préversion publiée le 28 août sous licence Apache 2.0. Le modèle compte 770 milliards de paramètres, dont 49 milliards actifs pour chaque élément de texte traité selon une architecture à mélange d&#39;experts, et une fenêtre de contexte d&#39;un million de jetons, selon Heise. Par rapport à la préversion, il ajoute la lecture d&#39;images, de graphiques et de documents, et le pilotage d&#39;un ordinateur par l&#39;interface graphique et la ligne de commande&amp;nbsp;; Tencent dit l&#39;avoir entraîné notamment sur Blender et sur des logiciels de conception assistée par ordinateur, selon TechNode. Le modèle est disponible dans les applications de Tencent, par son API et sur la plateforme OpenRouter, qui l&#39;a mis en ligne le 4 novembre. Tencent maintient les tarifs de la préversion, 0,834 dollar par million de jetons en entrée et 2,501 dollars en sortie, et annonce la publication prochaine des poids et d&#39;une fiche technique, sans date, selon TechNode&amp;nbsp;; les poids de la version finale n&#39;étaient pas publiés le 5 novembre, selon Heise. Sur l&#39;indice du cabinet d&#39;évaluation Artificial Analysis, Hy4 obtient 35 points, au deuxième rang des laboratoires chinois derrière Kimi K3.1 Pro de Moonshot AI (46 points), selon Heise.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://technode.com/2026/11/04/tencent-launches-hy4-with-vision-and-computer-use-capabilities/&#34;&gt;TechNode&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Tencent-Hy4-Neues-KI-Modell-schafft-es-in-chinesische-Spitzengruppe-11513555.html&#34;&gt;Heise&lt;/a&gt;, &lt;a href=&#34;https://openrouter.ai/tencent/hy4&#34;&gt;OpenRouter (fiche du modèle)&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 030, vendredi 6 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Une faille du gestionnaire de paquets APT permet à un miroir ou à un proxy malveillant de faire installer un paquet piégé avec les droits root sur Debian et Ubuntu</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html#a4</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?a=4&amp;utm_source=rss#a4"/>
-    <published>2026-11-06T06:59:57+01:00</published>
-    <updated>2026-11-06T06:59:57+01:00</updated>
-    <category term="Open source"/>
-    <content type="html">
-&lt;p&gt;Debian et Ubuntu ont publié le mercredi 4 novembre des correctifs pour la faille CVE-2026-109518 d&#39;APT, le programme qui télécharge et installe les logiciels sur ces distributions et leurs dérivées. Un attaquant capable de modifier le trafic HTTP entre une machine et le serveur de paquets, par exemple un miroir ou un proxy malveillant, peut faire installer un paquet de son choix à la place du paquet vérifié, et exécuter ainsi du code avec les droits root, selon la fiche du suivi de sécurité de Debian. La faille combine une redirection HTTP, la relance automatique des téléchargements échoués et la réutilisation de liens durs entre fichiers, qui fait que le paquet installé peut différer de celui dont la signature a été contrôlée, selon GBHackers. Elle ne touche que les machines où le réglage &lt;code&gt;Acquire::Retries&lt;/code&gt; n&#39;est pas nul&amp;nbsp;; sa valeur par défaut est 3 depuis Debian 12 et Ubuntu 22.04, et les versions plus anciennes ne sont pas exposées dans leur configuration d&#39;origine. Ubuntu lui attribue une note CVSS 4.0 de 7,7 sur 10. Debian a corrigé APT dans les versions 2.6.2 pour Debian 12 et 3.0.4 pour Debian 13, et crédite le chercheur Max Justicz pour la découverte. Aucun des avis ne décrit d&#39;exploitation constatée, selon The Hacker News.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://security-tracker.debian.org/tracker/CVE-2026-109518&#34;&gt;Debian (suivi de sécurité)&lt;/a&gt;, &lt;a href=&#34;https://ubuntu.com/security/CVE-2026-109518&#34;&gt;Ubuntu&lt;/a&gt;, &lt;a href=&#34;https://thehackernews.com/2026/11/debian-and-ubuntu-apt-flaw-lets-mitm.html&#34;&gt;The Hacker News&lt;/a&gt;, &lt;a href=&#34;https://gbhackers.com/debian-and-ubuntu-linux-apt-vulnerability/&#34;&gt;GBHackers&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 030, vendredi 6 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>L&#39;outil open source du jour : zlib, la bibliothèque de compression qui sort sa version 1.4 avec une série de correctifs de sécurité</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html#outil</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?outil&amp;utm_source=rss#outil"/>
-    <published>2026-11-06T06:59:56+01:00</published>
-    <updated>2026-11-06T06:59:56+01:00</updated>
-    <category term="L&#39;outil open source du jour"/>
-    <content type="html">
-&lt;p&gt;zlib est une bibliothèque en C qui compresse et décompresse des données au format deflate, utilisé par les fichiers gzip et zip, les images PNG et la compression HTTP. Elle est intégrée à de nombreux systèmes d&#39;exploitation, langages et logiciels, dont les gestionnaires de paquets.&lt;/p&gt;
-&lt;p&gt;La version 1.4 est sortie le mercredi 4 novembre, après la 1.3.2 du 17 février. Son journal des modifications liste deux failles identifiées par un numéro CVE, un dépassement de tampon dans &lt;code&gt;gzwrite()&lt;/code&gt; et une arithmétique de pointeur hors limites dans &lt;code&gt;infback9()&lt;/code&gt;, plusieurs vulnérabilités dans le composant minizip et une série d&#39;écritures ou de lectures hors des tampons sur des données invalides. Elle améliore aussi la portabilité vers Android, AIX, PowerPC, s390x et Windows.&lt;/p&gt;
-&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/madler/zlib&#34;&gt;github.com/madler/zlib&lt;/a&gt;, consulté le 6 novembre.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: licence zlib, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 7&amp;nbsp;193 étoiles, 2&amp;nbsp;895 forks, 1&amp;nbsp;212 commits, 61 issues et 100 pull requests ouvertes au 6 novembre&amp;nbsp;; dernière release v1.4 le 4 novembre 2026&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Jean-loup Gailly et Mark Adler, auteurs depuis 1995 selon le fichier LICENSE&amp;nbsp;; Mark Adler signe la version 1.4 et la plupart des commits récents&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le projet repose sur un très petit nombre de mainteneurs. Les logiciels qui embarquent leur propre copie de zlib ne profitent des correctifs qu&#39;après une mise à jour de leur part.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-06.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 030, vendredi 6 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

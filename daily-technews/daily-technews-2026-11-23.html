@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 23 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Lundi 23 novembre 2026<span class="price">4,72&nbsp;€</span></span><span class="issue" aria-label="Numéro 41">041</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Signal bloque les captures d'écran sur iOS et Android pour empêcher Siri et Gemini de lire les conversations</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Des agents d'IA d'un groupe lié à la Chine trouvent seuls une faille inconnue, selon Amazon</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">KEPCO déclare le vol des données de 1,52 million de personnes</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Des pirates passent par le cloud de GL.iNet pour infecter des routeurs et des boîtiers KVM</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Hugendubel coupe sa boutique en ligne et son accès à la tolino cloud après une cyberattaque</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: PHP</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">États-Unis</p>
+    <h2>Signal bloque les captures d'écran sur iOS et Android pour empêcher Siri et Gemini de lire les conversations</h2>
+    <p class="deck">Signal a annoncé le vendredi 20 novembre, dans un billet de sa présidente Meredith Whittaker, que son application bloque désormais les captures d'écran sur iOS 27 et, sur Android, dès qu'elle détecte un assistant d'IA qui tente de lire l'écran. La messagerie chiffrée veut empêcher les agents d'IA intégrés aux systèmes d'exploitation, comme Siri chez Apple et Gemini chez Google, d'extraire le contenu des conversations.</p>
+    <div class="body">
+      <p>Sur iOS 27, le réglage s'appelle «&nbsp;Block Siri AI&nbsp;» et se trouve dans la rubrique de sécurité de l'application, selon BleepingComputer. Sur Android, Signal active automatiquement son option «&nbsp;Screen security&nbsp;» quand il détecte un assistant qui tente d'accéder à l'écran, faute de pouvoir détecter les captures de façon fiable sur toutes les versions d'Android modifiées par les fabricants, écrit Signal. Le blocage empêche aussi l'utilisateur de faire lui-même des captures de ses conversations. Il peut le désactiver dans les réglages&nbsp;; Signal prévient que cela «&nbsp;expose potentiellement&nbsp;» ses messages et ceux de ses contacts à ces agents.</p>
+      <p>Signal applique déjà ce blocage par défaut sur Windows 11 depuis mai 2025, contre Recall, la fonction de Microsoft qui photographie l'écran à intervalles réguliers. Sur macOS, l'application ne peut pas bloquer les captures de façon fiable&nbsp;: Signal recommande d'ajouter l'application à la liste des apps exclues dans les réglages de Siri. Les agents lisent le texte des captures par reconnaissance de caractères, selon The Register.</p>
+      <p>Meredith Whittaker qualifie l'accès des agents d'IA au contenu des applications de «&nbsp;menace existentielle&nbsp;» pour Signal. Une fois les données capturées par l'agent du système, elles sont stockées et accessibles à la base locale ou au serveur distant qu'il utilise, hors du contrôle de Signal, écrit-elle, citée par TechCrunch. Elle juge la mesure «&nbsp;incomplète&nbsp;»&nbsp;: les agents peuvent atteindre les données des applications par d'autres voies, comme le système de fichiers de l'appareil. Selon Signal, ses ingénieurs ont étudié pendant des mois, par rétro-ingénierie, la façon dont ces systèmes accèdent aux données des applications.</p>
+      <p>Signal demande à Apple, Google et Microsoft de fournir aux développeurs un moyen simple et documenté d'exclure leur application de l'accès et du traitement par l'IA, de publier les spécifications techniques de ces agents et d'empêcher les agents tiers, comme Muse de Meta, d'utiliser les réglages d'accessibilité pour atteindre les données des applications. Apple prépare, dans la version bêta publique de macOS 27.3, des contrôles plus fins sur l'accès des logiciels au disque et au contrôle de l'appareil, selon The Register.</p>
+    </div>
+    <p class="meta">Information du 20 novembre. Sources&nbsp;: <a href="https://signal.org/blog/protecting-your-privacy/">Signal</a>, <a href="https://www.theregister.com/security/2026/11/20/signal-slams-door-on-prying-ai-agents-to-protect-privacy/5311466">The Register</a>, <a href="https://techcrunch.com/2026/11/21/signal-restricts-mobile-screenshots-as-it-confronts-existential-threat-of-ai-surveillance/">TechCrunch</a>, <a href="https://www.bleepingcomputer.com/news/security/signal-to-block-siri-gemini-ai-from-capturing-chats-on-ios-android/">BleepingComputer</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Chine</p>
+      <h3>Des agents d'IA d'un groupe lié à la Chine ont trouvé seuls une faille inconnue et pris le contrôle d'un serveur universitaire, selon Amazon</h3>
+      <p>L'équipe de renseignement sur les menaces d'Amazon a publié le vendredi 20 novembre l'analyse d'une campagne de 48 heures, commencée le 8 septembre contre des universités d'Asie de l'Est hors de Chine continentale, menée avec Cairn, un logiciel libre de test d'intrusion qui coordonne plusieurs agents d'IA. Les consignes étaient rédigées en chinois simplifié et les scripts réglés sur l'heure de Chine, ce qui conduit Amazon à attribuer l'opération à un acteur lié à la Chine. Après environ 16 heures et 148 actions successives sans succès contre un serveur Redis, les agents ont découvert dans MONAI Label, une application libre d'annotation d'images médicales par IA, une faille de traversée de répertoire dans le nom des fichiers téléversés. Ils sont passés de la cartographie de l'interface à l'écriture de fichiers arbitraires en 11 minutes environ, selon Amazon, puis ont ouvert un accès à distance avec les droits root, selon The Register. L'opérateur humain leur a ensuite fourni un relais vers le réseau d'une deuxième université, dont le serveur faisait tourner le même logiciel&nbsp;; Amazon en déduit qu'il l'avait compromis avec la même faille. Amazon a prévenu les mainteneurs, qui ont publié un correctif et l'avis GHSA-qc22-rmgc-vg94. Amazon a eu accès à l'historique de la campagne le 10 septembre en trouvant une instance de Cairn exposée sur Internet sans authentification.</p>
+      <p class="meta">Information du 20 novembre. Sources&nbsp;: <a href="https://aws.amazon.com/blogs/security/chinese-nexus-actors-cairn-ai-agents-found-a-zero-day-on-their-own/">Amazon (AWS Security Blog)</a>, <a href="https://www.theregister.com/security/2026/11/20/china-attackers-deployed-ai-agents-that-autonomously-found-and-exploited-a-0-day-to-take-over-a-university-server/5311382">The Register</a>, <a href="https://therecord.media/amazon-research-cairn-ai-university-attacks-possible-zero-day">The Record</a>, <a href="https://www.bleepingcomputer.com/news/security/hackers-use-autonomous-ai-tool-cairn-to-find-zero-day-take-over-server/">BleepingComputer</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Corée du Sud</p>
+      <h3>L'électricien public sud-coréen KEPCO déclare le vol des données de 1,52 million de personnes, dont des numéros de carte et de compte bancaire</h3>
+      <p>KEPCO, l'entreprise publique qui fournit l'électricité en Corée du Sud, a annoncé le dimanche 22 novembre qu'un attaquant extérieur s'était introduit dans deux de ses systèmes et en avait copié les données, selon Yonhap. Sur KEPCO ON, la plateforme de facturation des clients, 650&nbsp;487 personnes sont concernées&nbsp;: nom, numéro d'enregistrement de résident, adresse, numéro de compte bancaire, numéro de carte et historique de facturation. Sur SRM, le système d'achats électroniques, 869&nbsp;761 personnes sont concernées&nbsp;: 426&nbsp;827 représentants d'entreprises fournisseurs, dont le numéro d'enregistrement de résident, et 442&nbsp;934 salariés de KEPCO et de ses partenaires. Les deux systèmes peuvent contenir les mêmes personnes, et KEPCO n'a pas donné le nombre de doublons, selon etnews. L'entreprise dit avoir détecté l'intrusion le 20 novembre. La veille, un compte nommé «&nbsp;Noiem&nbsp;» avait affirmé sur le forum DarkForums détenir des données de KEPCO, dont des prix d'offres d'appels d'offres, selon DailySecu, qui précise que ces chiffres ne sont pas vérifiés et que KEPCO ne s'est pas exprimé sur cette publication. KEPCO a coupé l'accès depuis l'extérieur, suspendu les services touchés, saisi la police et enquête avec le Service national du renseignement. Son président, Kim Dong-cheol, a présenté des excuses. KEPCO avait déclaré un mois plus tôt une autre fuite, qui touchait 35&nbsp;528 personnes.</p>
+      <p class="meta">Information du 22 novembre. Sources&nbsp;: <a href="https://en.yna.co.kr/view/AEN20261122002700315">Yonhap</a>, <a href="https://www.etnews.com/20261122000093">etnews</a>, <a href="https://www.dailysecu.com/news/articleView.html?idxno=209657">DailySecu</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Hong Kong</p>
+      <h3>Des pirates passent par le service de gestion à distance de GL.iNet pour installer un logiciel malveillant sur des routeurs et des boîtiers KVM</h3>
+      <p>GL.iNet, fabricant de routeurs domestiques et de voyage installé à Hong Kong, a publié le vendredi 20 novembre un avis de sécurité&nbsp;: un tiers non autorisé a exploité une faille de son service de gestion à distance dans le cloud pour installer un logiciel malveillant sur une partie de ses routeurs et de ses boîtiers KVM, qui permettent de piloter un ordinateur à distance. Le fabricant dit avoir corrigé la faille et bloqué l'accès utilisé, mais le correctif côté cloud ne retire pas le logiciel déjà installé&nbsp;: il faut appliquer le micrologiciel de sécurité publié pour chaque modèle, par exemple la version 1.10.3 pour les KVM RM1 et RM10. GL.iNet n'a pas indiqué comment la faille a été exploitée ni combien d'appareils sont touchés. Le signe d'infection qu'il publie est un processus nommé «&nbsp;crond -i /tmp/.log&nbsp;». BleepingComputer a analysé un script téléchargé le 19 novembre qui installe des accès à distance avec les droits root, des tâches de démarrage pour persister et une version modifiée de l'outil netstat qui masque les connexions vers le serveur des attaquants. Le cabinet RemoteToHome Consulting a relevé une activité suspecte sur 152 des 183 appareils qu'il possède ou gère, selon BleepingComputer, qui précise que certains accès anciens n'ont peut-être pas de lien avec cette attaque. Les correctifs devaient être déployés à partir du dimanche 22 novembre, selon heise.</p>
+      <p class="meta">Information du 20 novembre. Sources&nbsp;: <a href="https://www.gl-inet.com/en-us/blogs/blog/glinet-security-notice-2026-11-20">GL.iNet</a>, <a href="https://www.bleepingcomputer.com/news/security/hackers-exploit-glinet-cloud-flaw-to-infect-routers-kvm-devices/">BleepingComputer</a>, <a href="https://www.heise.de/news/GL-iNet-Schwachstelle-entdeckt-Patch-verfuegbar-11533722.html">heise</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Allemagne</p>
+      <h3>Le libraire allemand Hugendubel coupe sa boutique en ligne et son accès à la tolino cloud après une cyberattaque</h3>
+      <p>Le site de Hugendubel, chaîne de librairies allemande d'une centaine de magasins, affiche depuis la nuit du 19 au 20 novembre un message de «&nbsp;panne technique&nbsp;»&nbsp;: la boutique en ligne, la tolino cloud et le service client ne sont pas joignables, et les librairies restent ouvertes. Selon netzwelt et PC Games Hardware, la boutique a été visée par une cyberattaque cette nuit-là, et Hugendubel a déclenché un plan d'urgence et coupé tous ses systèmes. La tolino cloud est la plateforme commune à plusieurs libraires de langue allemande qui sert à charger les livres numériques sur les liseuses tolino&nbsp;: les clients de Hugendubel ne peuvent plus télécharger les titres achetés ni synchroniser leur progression de lecture et leurs notes, et le partage familial est indisponible&nbsp;; les livres déjà présents sur les appareils restent lisibles. Selon Hugendubel, cité par PC Games Hardware, les attaquants n'ont pas volé de données clients. Une porte-parole a indiqué avant le week-end que la durée du rétablissement n'était pas estimable, et l'entreprise a annoncé sur Instagram un retour de la boutique en ligne d'ici quelques jours, selon netzwelt. Hugendubel recommande à ses clients de changer leur mot de passe et de se méfier des courriels qui se réclament de l'entreprise. Le mode d'attaque n'a pas été communiqué.</p>
+      <p class="meta">Information des 21 et 22 novembre. Sources&nbsp;: <a href="https://www.hugendubel.de/">Hugendubel</a>, <a href="https://www.netzwelt.de/ist-down/261016-hugendubel-hackerangriff-offline-kunden-wissen.html">netzwelt</a>, <a href="https://www.pcgameshardware.de/Hacker-Thema-237117/News/Hackerangriff-auf-Hugendubel-zeigt-die-Auswirkungen-digitaler-Inhalte-1560764/">PC Games Hardware</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">PHP 8.6 sécurise par défaut les cookies de session</h2>
+    <div class="tool-grid">
+      <div>
+        <p>PHP est un langage de script exécuté côté serveur pour produire des pages web. Il fait tourner WordPress, Drupal ou MediaWiki, et des cadriciels comme Laravel et Symfony. La version 8.6 est sortie le jeudi 19 novembre, selon The Register, conformément au calendrier annuel du projet.</p>
+        <p>Les sessions changent de réglages par défaut, à la suite d'une proposition de Jörg Sowa adoptée en juin&nbsp;: PHP refuse les identifiants de session qu'il n'a pas créés lui-même, ce qui empêche un attaquant d'imposer un identifiant connu à sa victime&nbsp;; le cookie de session ne peut plus être lu par le JavaScript de la page&nbsp;; il n'est plus envoyé lors des requêtes POST venues d'un autre site. Les chaînes contenant un octet nul déclenchent désormais une erreur dans de nombreux cas. La version ajoute l'application partielle de fonctions, une interface de scrutation des connexions réseau et une fonction clamp(). Les versions 8.5.13, 8.4.28, 8.3.37 et 8.2.36, publiées en même temps, corrigent sept failles critiques d'exécution de code à distance, selon The Register.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/php/php-src">github.com/php/php-src</a>, consulté le 23 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>BSD à trois clauses (BSD-3-Clause), vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>41&nbsp;848 étoiles, 8&nbsp;529 forks, 150&nbsp;948 commits, 1&nbsp;041 issues et 1&nbsp;331 pull requests ouvertes au 23 novembre, dernière version majeure PHP 8.6.0, étiquetée le 17 novembre 2026</dd></div>
+        <div><dt>Qui</dt><dd>Le PHP Group, titulaire des droits avec Zend Technologies, et des contributeurs bénévoles ou rémunérés, dont ceux financés par la PHP Foundation&nbsp;; premier commit du dépôt le 7 avril 1999</dd></div>
+        <div><dt>À savoir</dt><dd>Les nouveaux réglages de session ne s'appliquent que si aucune configuration ne les fixe déjà&nbsp;: une ligne explicite dans php.ini, l'application ou le cadriciel garde l'ancien comportement. Le passage à la 8.6 peut casser du code qui comptait sur l'acceptation silencieuse des octets nuls.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-20.html" rel="prev">Numéro précédent&nbsp;: <span class="num">040</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

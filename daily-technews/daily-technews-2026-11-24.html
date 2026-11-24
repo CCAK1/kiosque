@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 24 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Mardi 24 novembre 2026<span class="price">4,68&nbsp;€</span></span><span class="issue" aria-label="Numéro 42">042</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Le CHU de la Guadeloupe travaille sur papier après une cyberattaque</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Anthropic lance Claude Ship, des agents qui relisent, corrigent et approuvent les pull requests</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Une faille critique de Cisco Expressway est exploitée pour prendre les droits root</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Les États-Unis inscrivent Megaspeed sur leur liste noire commerciale</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">Amazon rachète à Decart son logiciel d'optimisation des puces d'IA</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Shirudo</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">France</p>
+    <h2>Le CHU de la Guadeloupe travaille sur papier après une cyberattaque qui a chiffré ses bases de données</h2>
+    <p class="deck">Le centre hospitalier universitaire de la Guadeloupe a déclenché son plan blanc le dimanche 22 novembre, après une cyberattaque survenue dans la nuit du samedi 21 au dimanche 22 novembre. Des bases de données ont été chiffrées, et le réseau, les logiciels et la téléphonie fixe de l'hôpital ne fonctionnent plus. Les opérations, les examens d'imagerie et les consultations non urgentes sont déprogrammés jusqu'au 27 novembre, selon Next.</p>
+    <div class="body">
+      <p>Les soignants sont revenus aux dossiers papier, avec des coursiers entre les services, selon Clubic. Seuls les smartphones personnels fonctionnent&nbsp;: les agents se sont échangé leurs numéros sur papier, selon Guadeloupe La 1ère. Le Samu n'est pas touché&nbsp;; les urgences restent ouvertes pour les urgences vitales, après un appel au 15. Cette semaine, l'hôpital se concentre sur les urgences et les patients déjà hospitalisés. Un numéro vert, le 0590&nbsp;360&nbsp;360, renseigne les patients sur les rendez-vous annulés ou maintenus.</p>
+      <p>Le site historique de Chauvel, aux Abymes, est le plus touché, car son système informatique est plus ancien, selon La 1ère. Le nouveau site de Belle-Plaine, construit après l'incendie de novembre 2017 et vers lequel le CHU transfère ses services depuis avril, l'est moins. Le service informatique a coupé tout le réseau pour arrêter la propagation, et les autres hôpitaux de l'île ont reçu la consigne de ne pas s'y connecter. Le transfert des urgences pédiatriques vers Belle-Plaine est maintenu à partir de 0 h 01 le 24 novembre&nbsp;; les urgences adultes restent à Chauvel jusqu'en janvier 2027.</p>
+      <p>Selon le directeur général, Éric Guyader, les attaquants seraient passés par un prestataire informatique de l'hôpital, lui-même piraté quelques mois plus tôt, qui détient des adresses d'accès à distance et des mots de passe pour intervenir au CHU. Le prestataire n'est pas nommé, et cette piste n'est pas confirmée. L'ANSSI «&nbsp;confirme la gravité de l'attaque&nbsp;», selon Éric Guyader, cité par Clubic. Les équipes de cybersécurité d'Orange assistent l'hôpital, et la section cybercriminalité du parquet de Paris a ouvert une enquête le lundi 23 novembre, selon La 1ère.</p>
+      <p>Le directeur s'attend à une demande de rançon, probablement liée à un rançongiciel, et dit que l'hôpital ne paiera pas. Au moment des publications, aucune demande ni revendication n'avait été reçue, et le CHU ne savait pas si des données de santé des patients avaient été copiées avant le chiffrement. Aucun délai de retour à la normale n'est donné&nbsp;; un diagnostic complet est attendu en fin de semaine. C'est la première intrusion de ce type au CHU, selon La 1ère. Les établissements de santé français ont déclaré 764 incidents de sécurité en 2025, selon les chiffres du CERT Santé cités par Clubic.</p>
+    </div>
+    <p class="meta">Information des 22 et 23 novembre. Sources&nbsp;: <a href="https://la1ere.franceinfo.fr/guadeloupe/cyberattaque-au-chu-de-la-guadeloupe-l-impact-est-majeur-alors-que-medecins-et-agents-fonctionnent-en-mode-degrade-1760855.html">Guadeloupe La 1ère</a>, <a href="https://www.clubic.com/actualite-640504-guadeloupe-le-chu-frappe-par-une-cyberattaque-massive-le-plan-blanc-declenche.html">Clubic</a>, <a href="https://next.ink/brief-article/le-chu-de-guadeloupe-est-paralyse-par-une-cyberattaque/">Next</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">États-Unis</p>
+      <h3>Anthropic lance Claude Ship, des agents qui relisent, corrigent et approuvent les pull requests sur GitHub</h3>
+      <p>Anthropic a présenté le lundi 23 novembre Claude Ship, un ensemble de trois agents qui prennent en charge une pull request de la relecture à la décision de fusion. Code Review, déjà disponible, relit les modifications sous plusieurs angles et publie ses constats sur la pull request. PR Steward, en bêta, corrige les tests d'intégration continue en échec, les conflits de fusion et les remarques de relecture, puis indique après chaque envoi ce qu'il a modifié et comment l'annuler&nbsp;; il ne peut ni approuver ni fusionner. Claude Approvals, en bêta, applique une politique d'approbation que l'équipe rédige en langage naturel dans un fichier du dépôt&nbsp;: il peut approuver seul les changements courants ou exiger un humain. Anthropic conseille de le lancer d'abord en mode observation. La commande /ship de Claude Code pousse le code, ouvre la pull request, lance la relecture et traite les retours. Le service est réservé aux offres Team et Enterprise et aux dépôts GitHub, et il n'est pas proposé aux organisations sous contrat de non-conservation des données ou de conformité HIPAA. Il est facturé à la consommation de jetons, avec des plafonds de dépense. Anthropic écrit que Claude Ship «&nbsp;peut manquer des bugs, des failles de sécurité ou d'autres problèmes&nbsp;». Selon l'entreprise, dans son équipe Claude Code, le nombre de pull requests fusionnées a plus que doublé de juin à septembre et la part de pull requests annulées a baissé de plus de 40&nbsp;%&nbsp;; ces chiffres ne sont pas vérifiés par un tiers.</p>
+      <p class="meta">Information du 23 novembre. Sources&nbsp;: <a href="https://claude.com/resources/articles/introducing-claude-ship">Anthropic</a>, <a href="https://techcrunch.com/2026/11/23/anthropic-launches-claude-ship-letting-ai-agents-review-fix-and-approve-code-changes/">TechCrunch</a>, <a href="https://9to5mac.com/2026/11/23/anthropic-launches-new-claude-ship-feature-for-builders/">9to5Mac</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Sécurité</p>
+      <h3>Une faille critique des passerelles Cisco Expressway en cluster est exploitée pour exécuter des commandes avec les droits root</h3>
+      <p>La faille CVE-2026-76466, notée 9,8 sur 10, touche les passerelles de visioconférence Cisco Expressway-C et Expressway-E, physiques ou virtuelles, configurées en cluster. Elle vient de cookies persistants et d'une validation insuffisante des certificats clients quand le mode «&nbsp;TLS Verify&nbsp;» est activé pour le clustering&nbsp;: un attaquant sans identifiants, avec un accès réseau, peut appeler des fonctions à distance et exécuter des commandes avec les droits root, selon l'avis de Cisco. Cisco l'a publié le 21 octobre avec la version corrigée X15.5.20&nbsp;; les versions X15.5.3 et antérieures sont vulnérables, et celles de la branche X14 doivent migrer. Il n'existe pas de contournement. L'agence américaine CISA a ajouté la faille à son catalogue des failles exploitées le 20 novembre. La société de sécurité F6 a confirmé des attaques et publié des indicateurs, selon heise&nbsp;: après la publication d'un code d'exploitation, des attaquants ont compromis deux appareils exposés sur Internet puis deux nœuds internes, et préparé des scripts Python pour atteindre d'autres machines du réseau (SMB, SQL Server, WinRM) et chercher des identifiants dans des dépôts GitLab, selon The Register. Une attaque réussie laisse l'entrée «&nbsp;nodeup 'wombat@127.0.0.1'&nbsp;» dans le journal erlang.log. En attendant la mise à jour, F6 recommande de réserver les ports TCP 4371 et 4372 aux nœuds du cluster. Cisco a mis à jour son avis le 23 novembre pour mentionner l'inscription au catalogue de la CISA, en précisant ne pas avoir de preuve directe d'exploitation.</p>
+      <p class="meta">Information du 23 novembre. Sources&nbsp;: <a href="https://sec.cloudapps.cisco.com/security/center/content/CiscoSecurityAdvisory/cisco-sa-vcs-static-cred-hr7EWZ8t">Cisco</a>, <a href="https://www.theregister.com/security/2026/11/23/critical-cisco-remote-code-execution-bug-under-attack/5311722">The Register</a>, <a href="https://www.heise.de/news/Warnung-vor-Angriffen-auf-Cisco-Expressway-und-SAP-NetWeaver-11534049.html">heise</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">États-Unis, Asie</p>
+      <h3>Les États-Unis inscrivent sur leur liste noire commerciale Megaspeed, loueur de puces Nvidia soupçonné de détournement vers la Chine</h3>
+      <p>Le Bureau of Industry and Security, au département américain du Commerce, a rendu publique le lundi 23 novembre une règle qui ajoute sept entreprises à l'Entity List&nbsp;: MSFusion, PT Megaspeed International et Speedmatrix en Malaisie, trois sociétés à Singapour, dont Megaspeed International et Swiftdata, et Megaspeed (Thailand) en Thaïlande. Le texte invoque un «&nbsp;risque important&nbsp;» que ces entreprises participent au détournement de matériel de calcul avancé vers des utilisateurs ou des usages non autorisés. Toute exportation de biens soumis à la réglementation américaine vers elles exige désormais une licence, examinée avec une présomption de refus&nbsp;; les envois déjà en route ont 30 jours pour arriver. Selon heise, Megaspeed installe des puces d'IA dans des centres de données et loue leur puissance de calcul, notamment à des clients chinois. Nvidia lui a vendu des processeurs à partir de juin 2024 et a cessé en juin 2025&nbsp;; le département de la Justice enquête sur une possible contrebande de puces vers la Chine, et Megaspeed dit avoir lancé une enquête interne. Le secrétaire au Trésor, Scott Bessent, a déclaré que le Trésor, le Pentagone, le département d'État et le représentant au Commerce soutenaient cette inscription depuis des mois, selon Semafor. Le même jour, le conseil d'administration de Nvidia a rappelé Jensen Huang à sa direction&nbsp;; il avait démissionné moins de deux semaines plus tôt après des questions sur sa relation avec Alice Huang, cofondatrice de Megaspeed, qui dit avoir quitté l'entreprise fin août 2025. Les services de renseignement américains la soupçonnent de travailler pour un service chinois, ce que Pékin dément, selon heise.</p>
+      <p class="meta">Information du 23 novembre. Sources&nbsp;: <a href="https://public-inspection.federalregister.gov/2026-23999.pdf">Bureau of Industry and Security (Federal Register)</a>, <a href="https://www.semafor.com/article/11/23/2026/commerce-to-add-megaspeed-to-trade-blacklist">Semafor</a>, <a href="https://www.heise.de/news/Nvidia-Affaere-USA-verhaengen-Handelsverbot-ueber-Megaspeed-11535434.html">heise</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">États-Unis, Israël</p>
+      <h3>Amazon rachète à l'israélien Decart son logiciel d'optimisation des puces d'IA et recrute ses fondateurs</h3>
+      <p>Amazon a annoncé le lundi 23 novembre un accord pour acquérir le Decart Optimization Stack, la technologie de la jeune entreprise israélienne Decart, et recruter ses trois cofondateurs, Dean Leitersdorf, Orian Leitersdorf et Moshe Shalev, avec leurs chercheurs et ingénieurs. Le logiciel se place entre le modèle d'IA et la puce&nbsp;: il ajuste les noyaux de calcul, les compilateurs et les environnements d'exécution au matériel pour occuper en permanence chaque cœur de calcul, et fonctionne sur les GPU de Nvidia, les TPU de Google et les puces Trainium d'Amazon, selon The Register. Amazon dit vouloir améliorer l'inférence et les performances de ses propres puces, Graviton et Trainium&nbsp;; l'accord passe par Annapurna Labs, sa filiale de conception de puces, selon GeekWire. Amazon n'a pas donné de montant. Bloomberg l'estime à environ 7,5 milliards de dollars, d'après une source proche du dossier. Selon le quotidien israélien Globes, cité par GeekWire, les fondateurs, qui détiennent environ 64&nbsp;% de Decart, s'engagent à rester cinq ans chez Amazon et pourraient toucher environ 4,8 milliards de dollars. Les modèles de Decart, Lucy pour la vidéo en direct et Oasis pour les mondes virtuels, ne font pas partie de l'accord, selon un porte-parole d'Amazon cité par The Register. Anthropic avait négocié le rachat de Decart pour environ 6 milliards de dollars en août avant d'y renoncer en septembre, selon Bloomberg. L'opération doit être autorisée par les régulateurs.</p>
+      <p class="meta">Information du 23 novembre. Sources&nbsp;: <a href="https://www.aboutamazon.com/news/company-news/amazon-decart-ai-optimization">Amazon</a>, <a href="https://www.theregister.com/ai-and-ml/2026/11/23/amazon-scoops-up-ai-accelerator-tech-to-keep-chips-busy-at-all-times/5311754">The Register</a>, <a href="https://www.geekwire.com/2026/amazon-is-buying-decarts-ai-chip-software-for-a-reported-7-5b-and-bringing-its-founders-aboard/">GeekWire</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">Cisco et OpenAI publient Shirudo, qui bloque une faille dans le noyau Linux en attendant le correctif</h2>
+    <div class="tool-grid">
+      <div>
+        <p>Shirudo est un logiciel de sécurité pour Linux publié le lundi 23 novembre par Cisco et OpenAI. Il applique des protections ciblées, appelées «&nbsp;shields&nbsp;» ou «&nbsp;upatches&nbsp;», qui bloquent le chemin d'exploitation d'une faille sur un système en marche, sans redémarrage, le temps que le correctif soit déployé. Les protections sont des programmes eBPF, une technologie qui exécute de petits programmes isolés dans le noyau Linux, ou des agents Java. Elles sont signées, distribuées par un registre de conteneurs OCI, vérifiées par le noyau avant chargement, et une puce TPM garde une trace vérifiable de celles qui ont été chargées ou retirées. Les équipes peuvent observer l'effet d'une protection avant de l'activer. Le projet dérive de Tetragon, outil eBPF d'Isovalent, société rachetée par Cisco, réécrit pour être piloté par des agents d'IA.</p>
+        <p>Dans la démonstration publiée par les deux entreprises, l'agent Codex d'OpenAI a écrit une protection contre Java4Shell, la faille du décodeur Base64 de Java révélée le 18 novembre&nbsp;: elle ajoute un contrôle des entrées à la fonction de décodage et a été attachée à un Elasticsearch 9.5.5 en cours d'exécution, qui a rejeté l'entrée malveillante sans interruption de service. OpenAI précise que ce test était contrôlé et ne donne pas de mesures détaillées.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/shirudo-dev/shirudo">github.com/shirudo-dev/shirudo</a>, consulté le 24 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>BSD à deux clauses (BSD-2-Clause), vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)&nbsp;; les programmes BPF sont sous double licence BSD et GPL, selon OpenAI</dd></div>
+        <div><dt>Activité</dt><dd>170 étoiles, 12 forks, 1&nbsp;769 commits, 37 issues et 19 pull requests ouvertes au 24 novembre&nbsp;; aucune version stable, seulement des étiquettes de test</dd></div>
+        <div><dt>Qui</dt><dd>Cisco, par son équipe Isovalent (annonce signée Thomas Graf, cocréateur de Cilium, et Liz Rice), et OpenAI&nbsp;; premier commit du dépôt le 18 octobre 2026</dd></div>
+        <div><dt>À savoir</dt><dd>Le dépôt se déclare en préversion. En production, il faut un noyau Linux avec les correctifs propres au projet et une puce TPM 2.0. Les tests complets tournent sur x86-64, la validation sur riscv64 n'est pas faite. Les deux entreprises prévoient qu'un humain valide chaque protection écrite par un agent avant sa mise en production, selon The Register.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-23.html" rel="prev">Numéro précédent&nbsp;: <span class="num">041</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

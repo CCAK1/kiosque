@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 25 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Mercredi 25 novembre 2026<span class="price">3,34&nbsp;€</span></span><span class="issue" aria-label="Numéro 43">043</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">Une faille d'Azure API Management exploitée contre deux énergéticiens norvégiens</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Zhipu met en service GLM-5.4, avec vision et contexte d'un million de jetons</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">Cleverbridge déclare le vol de numéros de carte bancaire et de codes CVV</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">CrowdStrike rachète Zscaler pour 43,9 milliards de dollars en actions</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: Ladybird</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Norvège</p>
+    <h2>Une faille d'Azure API Management exploitée pour voler des secrets chez Equinor et Skagerak Energi, selon l'autorité norvégienne de sécurité</h2>
+    <p class="deck">Microsoft avertit ses clients qu'une faille d'Azure API Management, son service qui publie et protège les API d'une entreprise, a permis à un tiers non autorisé d'accéder aux secrets stockés dans les instances de la gamme Classic. L'autorité nationale de sécurité norvégienne, le NSM, relie la faille aux attaques contre le groupe gazier et pétrolier Equinor et l'hydroélectricien Skagerak Energi, et demande à tous les utilisateurs du service de considérer leurs secrets comme compromis.</p>
+    <div class="body">
+      <p>Dans un avis envoyé à ses clients et cité par BleepingComputer, Microsoft indique avoir identifié la faille le 18 novembre et déployé une correction le lendemain. Elle touche les niveaux Developer, Basic, Standard et Premium de la gamme Classic&nbsp;; le niveau Consumption et tous les niveaux v2 ne sont pas concernés. Quand une instance Classic n'était pas configurée selon les recommandations de sécurité de Microsoft, la faille donnait accès à certaines fonctions d'administration, dont la lecture des secrets. Microsoft cite les «&nbsp;named values&nbsp;» (valeurs de configuration), les secrets clients des fournisseurs d'identité et OpenID Connect, les clés d'abonnement et les jetons d'appel des API de gestion.</p>
+      <p>La correction ferme l'accès mais n'invalide pas les identifiants déjà copiés, précise Microsoft, qui demande de les renouveler et de chercher des connexions suspectes dans les systèmes qu'ils ouvrent. Un identifiant volé sert directement contre le service qu'il protège, en dehors d'API Management, selon le chercheur Anders Kristiansen cité par The Register, qui a publié des requêtes pour repérer une exploitation. Sur Reddit, un administrateur affirme que son entreprise a découvert l'attaque après des connexions à ses coffres Azure Key Vault avec un jeton d'administrateur valide&nbsp;; BleepingComputer n'a pas vérifié ce témoignage.</p>
+      <p>Selon le NSM, le secteur de l'énergie norvégien a repéré la faille le premier, et un acteur inconnu a cherché activement des jetons d'accès, des secrets et des named values. L'autorité salue Equinor pour une détection précoce et un partage rapide de l'information, et indique que des organisations d'autres pays et d'autres secteurs sont touchées. «&nbsp;Il reste incertain jusqu'où l'exploitation de la faille est allée&nbsp;», déclare Martin Albert-Hoff, du NSM. Equinor avait annoncé une cyberattaque en cours le 17 novembre, puis l'avoir arrêtée sans indice de vol ou de modification de données, selon BleepingComputer. Skagerak Energi a déclaré le 18 novembre une tentative d'attaque sans effet sur sa production ni indice de fuite d'information.</p>
+      <p>Microsoft affirme que sa correction est déployée sur toutes les instances qu'il héberge, sans action des clients. Le NSM demande pourtant de vérifier la version d'exécution de chaque passerelle, sur sa page internal-status&nbsp;: en branche 0.52, elle doit être 31936 ou plus, en branche 0.53, 31938 ou plus. Une instance en dessous reste vulnérable, et son propriétaire doit contacter le fournisseur. Microsoft n'a pas expliqué cet écart à BleepingComputer, ni répondu aux questions de The Register.</p>
+    </div>
+    <p class="meta">Information du 23 novembre. Sources&nbsp;: <a href="https://nsm.no/aktuelt/nsm-deler-tiltak-mot-sarbarhet-i-azure-api-management">NSM</a>, <a href="https://www.bleepingcomputer.com/news/security/microsoft-azure-flaw-exploited-to-steal-customers-api-credentials/">BleepingComputer</a>, <a href="https://www.theregister.com/security/2026/11/23/norway-links-energy-firm-cyberattacks-to-critical-azure-api-management-flaw/5311598">The Register</a>, <a href="https://www.skagerakenergi.no/presse/pressemeldinger/skagerak-energi-utsatt-for-forsok-pa-cyberangrep">Skagerak Energi</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">Chine</p>
+      <h3>Zhipu met en service GLM-5.4, un modèle qui fait tourner plusieurs fois les mêmes couches, et ajoute la lecture d'images</h3>
+      <p>L'entreprise chinoise Zhipu (Z.ai) a ajouté le lundi 23 novembre le modèle GLM-5.4 à son abonnement de programmation Coding Plan, selon IT Home et TechNode. La liste des modèles l'affiche avec la vision, la compréhension d'images, que n'avait pas la version 5.3, et une fenêtre de contexte d'un million de jetons. Les abonnés des formules V2, V3 et équipe ont un quota d'utilisation de GLM-5.4 multiplié par 1,5. Selon un responsable de Zhipu cité par IT Home, l'équipe a augmenté pendant trois mois à la fois la taille du modèle et l'usage du «&nbsp;Loop Transformer&nbsp;». Dans un transformer classique, chaque couche s'exécute une fois par passage&nbsp;; dans un Loop Transformer, un groupe de couches aux poids partagés tourne plusieurs fois et affine à chaque tour le résultat du précédent, ce qui ajoute de la profondeur sans ajouter de paramètres. Dans son billet de présentation, Z.ai indique être parti du modèle GLM-5 et faire tourner 28 de ses couches deux fois, pour un modèle de 750 milliards de paramètres, selon Next. L'entreprise reconnaît que le modèle a tendance à s'enliser dans des phases de réflexion trop longues. Les poids ne sont pas publiés&nbsp;: Z.ai promet de les diffuser après des mesures de sécurité, sans date. Aucun résultat de test comparatif n'a été publié, selon TechNode.</p>
+      <p class="meta">Information des 23 et 24 novembre. Sources&nbsp;: <a href="https://www.ithome.com/1/030/809.htm">IT Home</a>, <a href="https://technode.com/2026/11/23/zhipu-rolls-out-glm-5-4-with-vision-and-million-token-context/">TechNode</a>, <a href="https://next.ink/269432/glm-5-4-avec-loop-transformer-z-ai-propose-un-modele-pour-le-code-plus-generaliste/">Next</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">Allemagne</p>
+      <h3>La plateforme de vente de logiciels Cleverbridge déclare le vol de numéros de carte bancaire, avec leur code de sécurité</h3>
+      <p>Cleverbridge, société installée à Cologne qui vend des logiciels et gère des abonnements pour le compte d'éditeurs, a détecté le 4 novembre une activité non autorisée sur sa plateforme, selon sa page d'information sur l'incident. Les systèmes touchés ont été coupés puis remis en ligne le même jour. L'enquête a ensuite montré que des tiers avaient copié «&nbsp;une quantité limitée de données personnelles&nbsp;», dont des données de cartes de paiement utilisées pour des achats sur la plateforme, selon heise. Dans un courriel aux clients concernés, cité par The Register, la société précise que le numéro de carte, la date d'expiration, le code de sécurité CVV et les coordonnées sont concernés&nbsp;; selon heise, le CVV fait partie des données volées dans une minorité de cas. Les adresses électroniques et postales et les numéros de téléphone peuvent aussi avoir été exposés, pas les mots de passe des comptes. La norme de sécurité des cartes PCI DSS interdit de conserver le CVV après l'autorisation d'un paiement, même chiffré. Cleverbridge n'a pas dit comment les attaquants ont obtenu ces codes, ni combien de personnes sont touchées&nbsp;; elle précise qu'il ne s'agit pas d'un rançongiciel. Parmi ses clients figurent Red Hat, SUSE, Tenable, Veeam et Parallels, selon The Register, sans que les éditeurs concernés soient connus. Les notifications sont envoyées depuis le vendredi 20 novembre par TransUnion et Cyberscout, avec une offre de surveillance de crédit là où elle existe.</p>
+      <p class="meta">Information des 23 et 24 novembre. Sources&nbsp;: <a href="https://grow.cleverbridge.com/incident-update">Cleverbridge</a>, <a href="https://www.theregister.com/cyber-crime/2026/11/23/cleverbridge-admits-attackers-stole-customers-credit-card-and-cvv-numbers-yep-you-read-that-right/5311573">The Register</a>, <a href="https://www.heise.de/news/Datenleck-bei-Cleverbridge-Kreditkartendaten-abgegriffen-11535956.html">heise</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">États-Unis</p>
+      <h3>CrowdStrike rachète Zscaler pour 43,9 milliards de dollars en actions pour ajouter la sécurité réseau à sa protection des postes</h3>
+      <p>CrowdStrike a annoncé le lundi 23 novembre un accord pour acheter Zscaler par échange d'actions, pour une valeur d'environ 43,9 milliards de dollars, selon le communiqué déposé auprès de la SEC, le régulateur boursier américain. Chaque action Zscaler sera échangée contre 1,135 action CrowdStrike, soit une prime de 34&nbsp;% sur le cours de clôture du vendredi, selon The Register. CrowdStrike vend Falcon, un logiciel qui surveille et protège les ordinateurs, serveurs et comptes d'une entreprise. Zscaler exploite un service en nuage placé entre les utilisateurs et les applications, qui contrôle chaque connexion au lieu de faire confiance au réseau interne, l'approche dite «&nbsp;zero trust&nbsp;». CrowdStrike veut réunir les deux, et proposer les produits Zscaler dans son offre d'abonnement Falcon Flex. Les deux entreprises ont plus de 2&nbsp;000 clients en commun, et environ 8&nbsp;000 clients de Zscaler n'achètent rien à CrowdStrike, selon CrowdStrike, qui prévoit 500 millions de dollars d'économies annuelles en deux ans&nbsp;; aucune n'a dit s'il y aurait des suppressions de postes. Le fondateur de Zscaler, Jay Chaudhry, reste à sa tête et entre au conseil d'administration de CrowdStrike. La clôture est prévue au second semestre de l'exercice 2028 de CrowdStrike, sous réserve des autorisations réglementaires et du vote des actionnaires.</p>
+      <p class="meta">Information du 23 novembre. Sources&nbsp;: <a href="https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000035/crwd-20261123xex991.htm">CrowdStrike (SEC)</a>, <a href="https://www.theregister.com/security/2026/11/24/crowdstrike-splashes-44b-on-zscaler-customers-brace-for-the-bill/5311877">The Register</a>, <a href="https://next.ink/brief-article/crowdstrike-va-racheter-zscaler-pour-44-milliards-de-dollars/">Next</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">Ladybird, navigateur web au moteur écrit de zéro, publie sa première version alpha</h2>
+    <div class="tool-grid">
+      <div>
+        <p>Ladybird est un navigateur web dont le moteur, qui interprète HTML, CSS et JavaScript, est écrit de zéro&nbsp;: ce n'est pas une variante de Chromium, de Gecko (Firefox) ou de WebKit (Safari). Le projet a publié le lundi 23 novembre ses premières versions alpha pour macOS et Linux&nbsp;; jusque-là, il fallait compiler le code source pour l'essayer. Le canal alpha se met à jour automatiquement à un rythme continu. Le navigateur sait signaler depuis son interface un site qui s'affiche mal, et propose d'envoyer un rapport après un plantage.</p>
+        <p>Le projet prend en charge WebDriver pour les tests automatisés et le protocole des outils de développement de Firefox. Ses lettres mensuelles récentes décrivent un compilateur JavaScript à la volée, un nouveau moteur WebAssembly, le passage de l'analyseur HTML et du calcul de styles en Rust, et un audit de sécurité avec la société Trail of Bits.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/LadybirdBrowser/ladybird">github.com/LadybirdBrowser/ladybird</a>, consulté le 25 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>BSD à deux clauses (BSD-2-Clause), vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>68&nbsp;615 étoiles, 3&nbsp;270 forks, 95&nbsp;505 commits, 495 issues et 57 pull requests ouvertes au 25 novembre, dernière version 2026.47.8 le 24 novembre</dd></div>
+        <div><dt>Qui</dt><dd>La Ladybird Browser Initiative, association américaine à but non lucratif (statut 501(c)(3)), financée par des sponsors et des dons&nbsp;; l'annonce de l'alpha est signée Andreas Kling, qui a lancé le projet au sein du système d'exploitation SerenityOS (premier commit en 2018)</dd></div>
+        <div><dt>À savoir</dt><dd>Version destinée aux premiers testeurs&nbsp;: certains sites ne fonctionnent pas et le navigateur plante parfois, selon l'annonce, qui précise ne faire «&nbsp;aucune promesse sur la sécurité&nbsp;» à ce stade. Pas de version Windows. Le projet annonce l'absence de revenus tirés des utilisateurs (pas d'accord de moteur de recherche par défaut).</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-24.html" rel="prev">Numéro précédent&nbsp;: <span class="num">042</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>

@@ -5,10 +5,99 @@
   <id>https://ccak1.github.io/kiosque/daily-technews/</id>
   <link rel="self" type="application/atom+xml" href="https://ccak1.github.io/kiosque/daily-technews/feed.xml"/>
   <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/?utm_source=rss"/>
-  <updated>2026-11-25T07:00:00+01:00</updated>
+  <updated>2026-11-26T07:00:00+01:00</updated>
   <author><name>Cyril Caritey</name></author>
   <icon>https://ccak1.github.io/kiosque/daily-technews/icone.png</icon>
   <logo>https://ccak1.github.io/kiosque/daily-technews/icone.png</logo>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La FCC autorise SpaceX à placer jusqu&#39;à un million de satellites servant de centres de données en orbite</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html#a1</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?a=1&amp;utm_source=rss#a1"/>
+    <published>2026-11-26T07:00:00+01:00</published>
+    <updated>2026-11-26T07:00:00+01:00</updated>
+    <category term="États-Unis"/>
+    <content type="html">
+&lt;p&gt;&lt;strong&gt;Le bureau de l&#39;espace de la Commission fédérale des communications (FCC), le régulateur américain des télécommunications, a accordé le 25 novembre à SpaceX une autorisation pour Starmind, une constellation de 1&amp;nbsp;000&amp;nbsp;000 de satellites conçus pour fonctionner comme des centres de données en orbite. La décision rejette les demandes de refus déposées par Amazon, Viasat et l&#39;American Astronomical Society, et reporte l&#39;examen du plan de SpaceX pour la fin de vie de ses satellites.&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;SpaceX avait déposé sa demande le 30 janvier 2026. Selon l&#39;ordonnance publiée par la FCC (DA 26-1273), les satellites seront répartis en couches orbitales de 50 km entre 500 et 1&amp;nbsp;002 km d&#39;altitude, sur des orbites inclinées à 30 degrés et sur des orbites héliosynchrones. La FCC réglemente les fréquences radio&amp;nbsp;: l&#39;autorisation porte sur les liaisons de secours et d&#39;urgence qui servent à suivre et à commander les satellites, dans les bandes 18,8-19,3 GHz et 28,6-29,1 GHz. Pour ses autres communications, Starmind utilisera des liaisons optiques, selon le dossier de SpaceX cité dans l&#39;ordonnance.&lt;/p&gt;
+&lt;p&gt;L&#39;autorisation devient caduque si SpaceX ne tient pas un calendrier fixé par la FCC&amp;nbsp;: un premier satellite en service au plus tard le 25 novembre 2033, 10&amp;nbsp;% de la constellation, soit 100&amp;nbsp;000 satellites, en 2035, la moitié en 2038 et la totalité en 2040. SpaceX doit remettre deux rapports par an sur les rapprochements dangereux entre ses satellites et d&#39;autres objets en orbite, et respecter les paramètres déposés auprès de l&#39;Union internationale des télécommunications.&lt;/p&gt;
+&lt;p&gt;La règle américaine impose qu&#39;un satellite en fin de mission sous 2&amp;nbsp;000 km d&#39;altitude rentre dans l&#39;atmosphère. SpaceX demandait de pouvoir envoyer ceux qui opèrent au-dessus de 600 km vers des orbites de rebut ou une orbite autour du Soleil. La FCC a reporté cette demande, faute d&#39;informations suffisantes&amp;nbsp;: avant de déployer un satellite qui ne sera pas détruit par rentrée atmosphérique, SpaceX devra demander une modification de son autorisation. Les objections sur l&#39;environnement et sur la gêne pour l&#39;astronomie optique ont été écartées au motif qu&#39;elles ne relèvent pas de la compétence de la FCC, selon l&#39;ordonnance. L&#39;American Astronomical Society s&#39;est dite «&amp;nbsp;profondément déçue&amp;nbsp;», selon GeekWire.&lt;/p&gt;
+&lt;p&gt;Brendan Carr, président de la FCC, présente ces centres de données comme nécessaires à la place des États-Unis dans l&#39;IA, selon GeekWire. Le journal rappelle que SpaceX a annoncé en août un partenariat avec Nvidia pour les processeurs de calcul embarqués, et que d&#39;autres projets attendent une décision&amp;nbsp;: 51&amp;nbsp;600 satellites pour Blue Origin, 88&amp;nbsp;000 pour Starcloud. The Register cite une estimation de Google selon laquelle les centres de données orbitaux ne deviendraient viables qu&#39;avec un coût de lancement de 200 dollars par kilogramme, et note que les méga-constellations en projet aux États-Unis, en Chine, en Europe et en Inde totalisaient déjà environ 100&amp;nbsp;000 satellites.&lt;/p&gt;
+&lt;p&gt;Information du 25 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://docs.fcc.gov/public/attachments/DA-26-1273A1.pdf&#34;&gt;FCC (ordonnance DA 26-1273)&lt;/a&gt;, &lt;a href=&#34;https://www.geekwire.com/2026/fcc-clears-spacex-million-satellites-starmind-data-center/&#34;&gt;GeekWire&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/off-prem/2026/11/25/the-sky-was-once-full-of-stars-kids-then-the-fcc-let-elon-musk-launch-a-million-datacenter-satellites/5312268&#34;&gt;The Register&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 044, jeudi 26 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Un jury fédéral de New York déclare Huawei coupable de vol de secrets commerciaux, de fraude bancaire et de violation des sanctions contre l&#39;Iran</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html#a2</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?a=2&amp;utm_source=rss#a2"/>
+    <published>2026-11-26T06:59:59+01:00</published>
+    <updated>2026-11-26T06:59:59+01:00</updated>
+    <category term="États-Unis, Chine"/>
+    <content type="html">
+&lt;p&gt;Après un procès de trois mois devant le tribunal fédéral du district est de New York, à Brooklyn, un jury a déclaré coupables le mardi 24 novembre Huawei Technologies et trois de ses filiales, Huawei Device, Futurewei Technologies et Huawei Device USA, annonce le ministère américain de la Justice. Les chefs retenus sont le complot en vue de voler des secrets commerciaux, la fraude électronique et bancaire, le complot en vue de frauder les États-Unis, la violation de la loi IEEPA sur les sanctions économiques et le complot de blanchiment d&#39;argent. Le jury a acquitté Huawei du chef de racket en bande organisée, l&#39;accusation la plus lourde, selon UPI. Selon l&#39;accusation, Huawei a menti aux banques sur Skycom, présentée comme un partenaire alors qu&#39;il s&#39;agissait d&#39;une filiale qui commerçait en Iran, et obtenu ainsi des milliards de dollars de financements. Des employés ont copié le code source de routeurs de Cisco, désigné en interne «&amp;nbsp;ocsic&amp;nbsp;», et envoyé en Chine des photos et des données techniques de Tappy, un robot de test de T-Mobile, dont un employé a emporté une pièce. La peine, des amendes, confiscations et restitutions, sera fixée le 14 septembre 2027. Huawei déclare que les chefs retenus n&#39;ont «&amp;nbsp;aucun fondement juridique ni factuel&amp;nbsp;», que les cinq litiges de secrets commerciaux cités par l&#39;accusation étaient des affaires civiles réglées depuis vingt ans, et qu&#39;il engagera les actions juridiques nécessaires, selon The Register et UPI.&lt;/p&gt;
+&lt;p&gt;Information du 24 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://www.justice.gov/opa/pr/chinese-tech-giant-huawei-and-subsidiaries-convicted-sanctions-violations-fraud-conspiracy&#34;&gt;ministère américain de la Justice&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/legal/2026/11/25/jury-finds-huawei-stole-us-tech-laundered-money-and-broke-sanctions/5312024&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.upi.com/Top_News/US/2026/11/25/jury-convicts-Huawei/3151795587204/&#34;&gt;UPI&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 044, jeudi 26 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>La Commission européenne propose le Quantum Act, qui coordonne les programmes quantiques et crée la base d&#39;un fonds de participations dans les technologies stratégiques</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html#a3</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?a=3&amp;utm_source=rss#a3"/>
+    <published>2026-11-26T06:59:58+01:00</published>
+    <updated>2026-11-26T06:59:58+01:00</updated>
+    <category term="UE"/>
+    <content type="html">
+&lt;p&gt;La Commission européenne a présenté le 25 novembre à Strasbourg sa proposition de Quantum Act, un règlement pour transformer la recherche européenne sur les technologies quantiques en produits et en capacités de production. Le texte crée un réseau d&#39;instituts de recherche, des concours de financement ciblés, par exemple pour des ordinateurs quantiques qui continuent de fonctionner malgré les erreurs de calcul ou des appareils de navigation qui se passent du signal satellite, des infrastructures partagées (ordinateurs et simulateurs quantiques) et des pôles d&#39;appui aux start-up et PME. Il prévoit une surveillance des chaînes d&#39;approvisionnement avec les États membres, des garde-fous dans les marchés publics et une transition coordonnée vers la cryptographie post-quantique, conçue pour résister aux futurs ordinateurs quantiques, selon le communiqué de la Commission. Selon Le Monde Informatique, citant des chiffres de la Commission repris par Reuters, 9 des 47 composants critiques recensés n&#39;ont aucun fournisseur dans l&#39;UE. Le texte donne aussi une base juridique au Sovereign Tech Equity Fund, un fonds qui prendra des participations dans des entreprises de technologies jugées essentielles à la souveraineté de l&#39;UE, en lien avec la Banque européenne d&#39;investissement. Tech.eu et Sifted évoquent 50 milliards d&#39;euros&amp;nbsp;; Le Monde Informatique précise que la proposition n&#39;inscrit aucun montant. Le Parlement européen et le Conseil doivent maintenant examiner le texte.&lt;/p&gt;
+&lt;p&gt;Information du 25 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://ec.europa.eu/commission/presscorner/detail/en/ip_26_2567&#34;&gt;Commission européenne&lt;/a&gt;, &lt;a href=&#34;https://www.lemondeinformatique.fr/it-direction/quantum-act-l-ue-veut-soutenir-son-industrie-quantique-avec-un-fonds-souverain&#34;&gt;Le Monde Informatique&lt;/a&gt;, &lt;a href=&#34;https://tech.eu/2026/11/25/eu-proposes-eur50-billion-equity-fund-to-support-quantum-and-essential-sovereign-tech/&#34;&gt;Tech.eu&lt;/a&gt;, &lt;a href=&#34;https://sifted.eu/articles/au-quantum-act-sovereign-tech-fund/&#34;&gt;Sifted&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 044, jeudi 26 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Une faille de l&#39;installateur de Drupal est exploitée pour prendre le contrôle de sites, et l&#39;agence américaine de cybersécurité impose le correctif</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html#a4</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?a=4&amp;utm_source=rss#a4"/>
+    <published>2026-11-26T06:59:57+01:00</published>
+    <updated>2026-11-26T06:59:57+01:00</updated>
+    <category term="Sécurité"/>
+    <content type="html">
+&lt;p&gt;La CISA, l&#39;agence américaine de cybersécurité, a ajouté le 24 novembre à son catalogue des failles exploitées la CVE-2026-132165, qui touche Drupal, le gestionnaire de contenu libre utilisé pour de nombreux sites publics et d&#39;entreprise. Les administrations fédérales civiles américaines doivent la corriger avant le 27 novembre. Selon l&#39;avis publié par l&#39;équipe de sécurité de Drupal le 18 novembre, le script d&#39;installation install.php, qui reste sur le serveur après la mise en service, peut dans certaines conditions être relancé par un attaquant non authentifié pour réinstaller Drupal, ce qui mène à la prise de contrôle du site ou à l&#39;exécution de code. Drupal classe la faille «&amp;nbsp;très critique&amp;nbsp;», 20 sur 25 sur son échelle, et indique avoir reçu un signalement d&#39;exploitation sur des sites en production dès le 19 novembre à 19 h UTC. Les versions corrigées sont 10.6.22, 11.3.22 et 11.4.13&amp;nbsp;; les branches 11.2, 10.5 et antérieures, ainsi que Drupal 8 et 9, ne reçoivent plus de correctifs. Drupal recommande aussi de bloquer l&#39;accès à l&#39;installateur. La faille a été trouvée par l&#39;outil d&#39;analyse de code open source d&#39;Anthropic, selon l&#39;avis. La CISA a inscrit le même jour une faille de la bibliothèque ASP.NET abandonnée Idunno.AntiCsrf et une faille d&#39;Optimizely Web Experimentation, selon Security Affairs et Help Net Security.&lt;/p&gt;
+&lt;p&gt;Information du 24 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://www.drupal.org/sa-core-2026-017&#34;&gt;Drupal (SA-CORE-2026-017)&lt;/a&gt;, &lt;a href=&#34;https://www.cisa.gov/news-events/alerts/2026/11/24/cisa-adds-three-known-exploited-vulnerabilities-catalog&#34;&gt;CISA&lt;/a&gt;, &lt;a href=&#34;https://www.helpnetsecurity.com/2026/11/25/drupal-installer-rce-cve-2026-132165-exploited/&#34;&gt;Help Net Security&lt;/a&gt;, &lt;a href=&#34;https://securityaffairs.com/203965/uncategorized/u-s-cisa-adds-drupal-core-idunno-anticsrf-and-optimizely-web-experimentation-flaws-to-its-known-exploited-vulnerabilities-catalog.html&#34;&gt;Security Affairs&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 044, jeudi 26 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>Le chausseur Deichmann déclare un accès non autorisé aux données des clients de sa boutique en ligne et de sa filiale Snipes</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html#a5</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?a=5&amp;utm_source=rss#a5"/>
+    <published>2026-11-26T06:59:56+01:00</published>
+    <updated>2026-11-26T06:59:56+01:00</updated>
+    <category term="Allemagne"/>
+    <content type="html">
+&lt;p&gt;Le groupe allemand Deichmann, basé à Essen, a publié le 24 novembre sur son site un avis selon lequel des personnes non autorisées ont eu accès à des données de clients de sa boutique en ligne&amp;nbsp;: nom, adresses de facturation et de livraison, factures, adresse électronique, numéro de téléphone et moyen de paiement choisi. Les mots de passe, les identifiants de compte, les numéros de carte bancaire et les identifiants PayPal ne sont pas touchés, selon l&#39;entreprise, qui dit avoir bloqué l&#39;accès et fermé la faille utilisée, sans préciser laquelle. Deichmann qualifie le périmètre de «&amp;nbsp;limité&amp;nbsp;», sans donner de nombre de clients, et dit n&#39;avoir aucun indice d&#39;utilisation des données. La filiale Snipes, qui vend des chaussures de sport, est aussi concernée, a indiqué une porte-parole citée par Handelsblatt. Le groupe a prévenu les autorités, porté plainte et fait appel à des experts extérieurs&amp;nbsp;; il informera les clients concernés par courriel. Il met en garde contre des messages qui se feraient passer pour lui en citant de vraies commandes, et rappelle qu&#39;il ne demande jamais de mot de passe ni de données de paiement, selon heise et t-online. Deichmann exploite environ 4&amp;nbsp;700 magasins dans 36 pays et 40 boutiques en ligne, selon Handelsblatt.&lt;/p&gt;
+&lt;p&gt;Information des 24 et 25 novembre. Sources&amp;nbsp;: &lt;a href=&#34;https://www.deichmann.com/de-de/ds-customer-notice&#34;&gt;Deichmann&lt;/a&gt;, &lt;a href=&#34;https://www.heise.de/news/Deichmann-Online-Shop-geknackt-unbefugter-Datenzugriff-11537484.html&#34;&gt;heise&lt;/a&gt;, &lt;a href=&#34;https://www.handelsblatt.com/technik/it-internet/datenklau-hacker-greifen-auf-kundendaten-im-deichmann-onlineshop-zu/100272740.html&#34;&gt;Handelsblatt&lt;/a&gt;, &lt;a href=&#34;https://www.t-online.de/digital/aktuelles/id_101545656/deichmann-hackerangriff-unbekannte-stehlen-kundendaten-aus-onlineshop.html&#34;&gt;t-online&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 044, jeudi 26 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
+  <entry>
+    <author><name>Cyril Caritey</name></author>
+    <title>L&#39;outil open source du jour : Xen Orchestra, l&#39;outil libre d&#39;administration des serveurs XCP-ng, corrige une faille d&#39;authentification que la CISA dit exploitée</title>
+    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html#outil</id>
+    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?outil&amp;utm_source=rss#outil"/>
+    <published>2026-11-26T06:59:55+01:00</published>
+    <updated>2026-11-26T06:59:55+01:00</updated>
+    <category term="L&#39;outil open source du jour"/>
+    <content type="html">
+&lt;p&gt;Xen Orchestra est une interface web, accompagnée d&#39;un outil en ligne de commande et d&#39;une API REST, qui sert à créer, migrer, superviser et sauvegarder les machines virtuelles des serveurs XCP-ng et XenServer, des hyperviseurs fondés sur Xen. Il fonctionne sans agent installé sur les serveurs. La CISA a ajouté le 25 novembre à son catalogue des failles exploitées la CVE-2026-133469, et demande aux administrations fédérales civiles américaines de la corriger avant le 28 novembre.&lt;/p&gt;
+&lt;p&gt;Selon l&#39;avis de sécurité VSA-2026-062 publié par l&#39;éditeur le 10 novembre, un jeton d&#39;authentification contenant un objet JSON vide est accepté par l&#39;API REST, qui connecte alors l&#39;attaquant comme le propriétaire du premier jeton valide trouvé, avec des droits d&#39;administrateur. L&#39;éditeur décrit une exploitation en cours qui peut aller jusqu&#39;à prendre le contrôle des serveurs XCP-ng en tant que root, et publie les adresses IP de l&#39;attaquant et des indicateurs de compromission. Les versions corrigées sont 6.9.2 (stable) et 6.10.1&amp;nbsp;; une installation compilée depuis les sources doit passer à la dernière version de la branche master.&lt;/p&gt;
+&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/vatesfr/xen-orchestra&#34;&gt;github.com/vatesfr/xen-orchestra&lt;/a&gt;, consulté le 26 novembre.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: AGPL-3.0-or-later pour la plupart des composants, dont le serveur xo-server, et ISC pour quelques bibliothèques, selon le fichier LICENSE.md du dépôt (deux licences reconnues OSI)&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 1&amp;nbsp;005 étoiles, 331 forks, 18&amp;nbsp;039 commits, 259 issues et 203 pull requests ouvertes au 26 novembre, dernière release publiée sur GitHub xo-lite-v0.27.0 (l&#39;interface allégée XO Lite) le 29 octobre 2026&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Vates, société française qui développe aussi l&#39;hyperviseur XCP-ng&amp;nbsp;; premier commit en décembre 2012&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Vates vend une version empaquetée, l&#39;appliance XOA, avec support&amp;nbsp;; la version compilée depuis les sources n&#39;a pas de support de l&#39;éditeur et se met à jour à la main. L&#39;éditeur recommande de ne pas exposer Xen Orchestra sur Internet et de le placer sur un réseau d&#39;administration dédié. Une installation compromise doit être réinstallée et tous ses secrets changés, selon l&#39;avis.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-26.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 044, jeudi 26 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
+  </entry>
   <entry>
     <author><name>Cyril Caritey</name></author>
     <title>Une faille d&#39;Azure API Management exploitée pour voler des secrets chez Equinor et Skagerak Energi, selon l&#39;autorité norvégienne de sécurité</title>
@@ -782,94 +871,5 @@
 &lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: La bibliothèque ne fait pas l&#39;affichage, laissé au programme qui l&#39;intègre. La stabilité de l&#39;interface n&#39;est garantie qu&#39;à l&#39;intérieur de la série 1.x. L&#39;intégration à Neovim est approuvée mais pas encore fusionnée. Le chiffre de 12,5 millions d&#39;utilisateurs actifs des IDE de JetBrains, cité par Mitchell Hashimoto, vient d&#39;un rapport de JetBrains et n&#39;est pas vérifié par un tiers.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-13.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 035, vendredi 13 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Yandex déclare perdus 2,84 % des données des clients de son cloud après les dégâts subis en octobre par ses centres de données</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html#a1</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?a=1&amp;utm_source=rss#a1"/>
-    <published>2026-11-12T07:00:00+01:00</published>
-    <updated>2026-11-12T07:00:00+01:00</updated>
-    <category term="Russie"/>
-    <content type="html">
-&lt;p&gt;&lt;strong&gt;Yandex Cloud, la plateforme d&#39;informatique en nuage du groupe russe Yandex, a indiqué le mardi 10 novembre dans un billet de son blog que ses ingénieurs ont rétabli l&#39;accès à 97,16&amp;nbsp;% des données de ses clients, et que les 2,84&amp;nbsp;% restants ne peuvent pas être récupérés. L&#39;entreprise attribue cette perte à des «&amp;nbsp;dommages critiques au matériel&amp;nbsp;» et à l&#39;absence de sauvegardes sur la plateforme chez les clients concernés. Selon la presse russe, trois centres de données de Yandex ont été frappés par des drones début octobre.&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Le billet de Yandex Cloud indique seulement qu&#39;«&amp;nbsp;en octobre, l&#39;infrastructure des centres de données de Yandex a été endommagée&amp;nbsp;», sans nommer la cause. Selon iXBT et Important Stories, les attaques de drones ont visé des sites situés dans les régions de Riazan, de Kalouga et de Vladimir. Selon The Register, la frappe du début octobre a provoqué un incendie puis une panne dans la zone de disponibilité ru-central1-b, et d&#39;autres frappes, dont une à la mi-octobre, ont perturbé des services cloud et de paiement. Des médias ukrainiens ont affirmé que l&#39;opération avait été ordonnée par Kiev, ce que The Register indique ne pas pouvoir confirmer.&lt;/p&gt;
-&lt;p&gt;Yandex ne donne ni le volume de données perdu, ni le nombre de machines virtuelles ou de clients touchés, selon Important Stories. L&#39;entreprise avait auparavant annoncé avoir rétabli l&#39;accès à environ 90&amp;nbsp;% des données, selon iXBT. Le billet précise que les clients qui utilisaient les outils de sauvegarde de la plateforme n&#39;ont rien perdu&amp;nbsp;: le stockage objet Object Storage, le service Cloud Backup, les instantanés de disques et les sauvegardes standard des bases de données gérées.&lt;/p&gt;
-&lt;p&gt;Yandex Cloud annonce deux mesures. Toutes les nouvelles machines virtuelles sont désormais créées avec la sauvegarde activée, que l&#39;utilisateur peut désactiver dans la console. Une nouvelle zone de disponibilité, ru-central1-f, a ouvert le mercredi 11 novembre dans un lieu que l&#39;entreprise ne divulgue pas, avec des ressources limitées par des quotas au démarrage et sans traitement local du trafic des points de terminaison privés, que d&#39;autres zones prennent en charge.&lt;/p&gt;
-&lt;p&gt;Une zone de disponibilité regroupe un ou plusieurs centres de données dotés de leur propre alimentation et de leur propre réseau&amp;nbsp;; répartir une application et ses copies de données sur plusieurs zones permet de continuer à fonctionner quand l&#39;une d&#39;elles tombe.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://yandex.cloud/ru/blog/recovery&#34;&gt;Yandex Cloud&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/off-prem/2026/11/12/russian-cloud-yandex-says-drone-attacks-on-its-datacenters-caused-data-loss/5309234&#34;&gt;The Register&lt;/a&gt;, &lt;a href=&#34;https://www.ixbt.com/news/2026/11/10/iandeks-priznal-bezvozvratnuiu-poteriu-casti-dannyx-klientov-yandex-cloud-posle-atak-bespilotnikov.html&#34;&gt;iXBT&lt;/a&gt;, &lt;a href=&#34;https://istories.media/news/2026/11/10/pochti-3-klientskikh-dannikh-yandeksa-bezvozvratno-poteryani/&#34;&gt;Important Stories&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?a=1&amp;amp;utm_source=rss#a1&#34;&gt;Daily Technews n° 034, jeudi 12 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Maersk confirme un vol de données dans un système issu d&#39;une acquisition, revendiqué par le groupe de rançongiciel WhiteArmor</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html#a2</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?a=2&amp;utm_source=rss#a2"/>
-    <published>2026-11-12T06:59:59+01:00</published>
-    <updated>2026-11-12T06:59:59+01:00</updated>
-    <category term="Danemark"/>
-    <content type="html">
-&lt;p&gt;Le groupe danois de transport maritime et de logistique A.P. Moller-Maersk a indiqué le mercredi 11 novembre enquêter sur un incident de sécurité informatique avec vol de données, limité selon lui à un système local hérité d&#39;une société acquise précédemment, qu&#39;il ne nomme pas. Selon sa déclaration, citée par The Register et BleepingComputer, «&amp;nbsp;les constatations à ce stade indiquent fortement qu&#39;aucune donnée sensible n&#39;a été divulguée&amp;nbsp;», le système a été isolé et aucun impact n&#39;a été relevé sur les autres systèmes ni sur ceux des clients et partenaires reliés par API ou par échange de données informatisé (EDI). Maersk n&#39;attend pas de perturbation des réservations et des expéditions. Selon BleepingComputer, le groupe de rançongiciel WhiteArmor a inscrit Maersk sur son site de fuite le week-end précédent et réclame 5 millions de dollars en bitcoins sous 30 jours. Il dit avoir pris environ 100 Go de données des plateformes de LF Logistics, racheté par Maersk en 2022, dont près de 30&amp;nbsp;000 fiches de chauffeurs, des mots de passe en clair et des reçus de livraison&amp;nbsp;; ces affirmations ne sont pas vérifiées et Maersk ne les a pas commentées.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://www.maersk.com/news/articles/2026/11/11/it-security-incident&#34;&gt;Maersk&lt;/a&gt;, &lt;a href=&#34;https://www.bleepingcomputer.com/news/security/maersk-confirms-data-breach-as-whitearmor-ransomware-demands-5-million/&#34;&gt;BleepingComputer&lt;/a&gt;, &lt;a href=&#34;https://www.theregister.com/security/2026/11/11/shipping-giant-maersk-probes-it-security-incident-data-theft/5309096&#34;&gt;The Register&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?a=2&amp;amp;utm_source=rss#a2&#34;&gt;Daily Technews n° 034, jeudi 12 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>La Pologne coupe ePUAP, sa plateforme de démarches administratives en ligne, après une cyberattaque, et l&#39;ABW enquête</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html#a3</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?a=3&amp;utm_source=rss#a3"/>
-    <published>2026-11-12T06:59:58+01:00</published>
-    <updated>2026-11-12T06:59:58+01:00</updated>
-    <category term="Pologne"/>
-    <content type="html">
-&lt;p&gt;Le ministre polonais du Numérique, Krzysztof Gawkowski, a annoncé sur X le mardi 10 novembre au soir que «&amp;nbsp;la cyberattaque contre le système d&#39;État ePUAP a été détectée et arrêtée&amp;nbsp;». ePUAP est la plateforme nationale qui permet aux citoyens et aux administrations d&#39;échanger des courriers officiels en ligne. Le ministère l&#39;a déconnectée du réseau extérieur, une mesure qu&#39;il présente comme préventive&amp;nbsp;: selon Marek Gieorgica, directeur de la communication du ministère, cité par The Record et naTemat, le système n&#39;a été ni compromis ni perturbé par l&#39;attaque. Selon The Record, il sera remis en service quand les spécialistes de la sécurité auront terminé leurs travaux, sans date annoncée&amp;nbsp;; le ministre assure, selon naTemat, que l&#39;infrastructure du Centre informatique de l&#39;État (COI) est sûre. Les boîtes de réception ePUAP sont indisponibles, et le Profil de confiance, l&#39;identité numérique qui sert à signer des démarches, peut être touché. L&#39;Agence de sécurité intérieure (ABW) a été saisie, selon naTemat. Le ministère n&#39;a pas dit si des données avaient été volées ni désigné d&#39;auteur.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://therecord.media/poland-shuts-down-government-services-platform-cyberattack&#34;&gt;The Record&lt;/a&gt;, &lt;a href=&#34;https://natemat.pl/675169,epuap-pilnie-wylaczony-po-ataku-hakerow-sprawa-juz-zajmuje-sie-abw&#34;&gt;naTemat&lt;/a&gt;, &lt;a href=&#34;https://lodz.tvp.pl/cyberatak-epuap-system-wylaczony-kiedy-zacznie-dzialac,96420288&#34;&gt;TVP&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?a=3&amp;amp;utm_source=rss#a3&#34;&gt;Daily Technews n° 034, jeudi 12 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Git corrige six vulnérabilités, dont une qui permet d&#39;exécuter du code pendant le clonage récursif d&#39;un dépôt piégé</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html#a4</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?a=4&amp;utm_source=rss#a4"/>
-    <published>2026-11-12T06:59:57+01:00</published>
-    <updated>2026-11-12T06:59:57+01:00</updated>
-    <category term="Open source"/>
-    <content type="html">
-&lt;p&gt;Le projet Git a publié le mardi 10 novembre la version 2.56.1 et des versions de maintenance pour les séries 2.50 à 2.55, qui corrigent six vulnérabilités, selon le billet d&#39;Elijah Newren, ingénieur chez GitHub. La plus grave, CVE-2026-111760, vient d&#39;une troncature d&#39;entier dans la gestion de l&#39;index&amp;nbsp;: un chemin de fichier très long passe les contrôles sous un nom puis est écrit sous un nom plus court. Selon LinuxSecurity, un attaquant peut ainsi remplacer le fichier .git d&#39;un sous-module par un lien symbolique vers un répertoire contenant des scripts automatiques (hooks), qui s&#39;exécutent lorsqu&#39;une victime clone le dépôt avec ses sous-modules. Les cinq autres failles permettent à un serveur malveillant d&#39;écrire hors du répertoire des références lors du clonage d&#39;un dépôt vide, ou provoquent des corruptions de mémoire et des lectures hors limites avec des messages à plus de deux signatures GPG, des correctifs binaires, de très grosses fusions et des flux git fast-import, selon Help Net Security. Aucune exploitation n&#39;est signalée. GitHub recommande de mettre à jour aussi les copies de Git intégrées aux applications et, en attendant, de ne pas cloner récursivement de dépôts non fiables&amp;nbsp;; GitHub Enterprise Server reçoit des correctifs à appliquer par ses administrateurs.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://github.blog/open-source/git/git-security-vulnerabilities-announced-7/&#34;&gt;GitHub&lt;/a&gt;, &lt;a href=&#34;https://www.helpnetsecurity.com/2026/11/11/git-project-security-updates/&#34;&gt;Help Net Security&lt;/a&gt;, &lt;a href=&#34;https://linuxsecurity.com/howtos/learn-tips-and-tricks/how-to-clone-a-git-repository-safely&#34;&gt;LinuxSecurity&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?a=4&amp;amp;utm_source=rss#a4&#34;&gt;Daily Technews n° 034, jeudi 12 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>Alibaba ouvre en préversion Qwen4-Max, un modèle qui lit texte, images et vidéos avec un contexte d&#39;un million de tokens</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html#a5</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?a=5&amp;utm_source=rss#a5"/>
-    <published>2026-11-12T06:59:56+01:00</published>
-    <updated>2026-11-12T06:59:56+01:00</updated>
-    <category term="Chine"/>
-    <content type="html">
-&lt;p&gt;Alibaba a ouvert le mercredi 11 novembre une préversion de Qwen4-Max, le modèle de tête de sa future famille Qwen 4, selon TechNode et l&#39;agence Cailian. Selon la documentation de Qwen Cloud, le modèle accepte du texte, des images et des vidéos, pour l&#39;analyse de captures d&#39;écran, de documents et de vidéos, avec un contexte d&#39;un million de tokens et une sortie limitée à 393&amp;nbsp;216 tokens, raisonnement compris. Il prend en charge l&#39;appel de fonctions, la recherche web, les sorties structurées en JSON et des interfaces compatibles avec celles d&#39;OpenAI et d&#39;Anthropic. La préversion n&#39;est accessible que par Token Plan, l&#39;abonnement d&#39;Alibaba destiné aux outils de programmation, sans facturation à l&#39;usage, et dans les applications Qwen, Qoder, QwenWork et QwenStudio. Elle court jusqu&#39;au 25 novembre à minuit, heure de Pékin, date à laquelle ce modèle sera retiré. Alibaba n&#39;a publié ni nombre de paramètres, ni résultats de tests, ni poids du modèle, ni date de sortie de la version finale.&lt;/p&gt;
-&lt;p&gt;Sources&amp;nbsp;: &lt;a href=&#34;https://docs.qwencloud.com/developer-guides/getting-started/latest-model&#34;&gt;Qwen Cloud&lt;/a&gt;, &lt;a href=&#34;https://technode.com/2026/11/11/alibaba-opens-qwen4-max-preview-with-a-million-token-context-window/&#34;&gt;TechNode&lt;/a&gt;, &lt;a href=&#34;https://finance.eastmoney.com/a/202611113928231724.html&#34;&gt;Cailian&lt;/a&gt;&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?a=5&amp;amp;utm_source=rss#a5&#34;&gt;Daily Technews n° 034, jeudi 12 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
-  </entry>
-  <entry>
-    <author><name>Cyril Caritey</name></author>
-    <title>L&#39;outil open source du jour : Zellij, l&#39;espace de travail pour terminal qui devient aussi un émulateur de terminal dans sa version 0.46</title>
-    <id>https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html#outil</id>
-    <link rel="alternate" type="text/html" href="https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?outil&amp;utm_source=rss#outil"/>
-    <published>2026-11-12T06:59:55+01:00</published>
-    <updated>2026-11-12T06:59:55+01:00</updated>
-    <category term="L&#39;outil open source du jour"/>
-    <content type="html">
-&lt;p&gt;Zellij est un multiplexeur de terminal&amp;nbsp;: il découpe une fenêtre de terminal en panneaux et en onglets, et garde les sessions ouvertes quand l&#39;utilisateur se déconnecte. Il propose des panneaux flottants et empilés, des dispositions décrites dans des fichiers (layouts), le partage d&#39;une session entre plusieurs utilisateurs, un client web intégré et des extensions écrites dans tout langage compilé en WebAssembly. Il est écrit en Rust.&lt;/p&gt;
-&lt;p&gt;La version 0.46.0, publiée le mercredi 11 novembre, ajoute un mode émulateur de terminal de bureau, lancé par la commande zellij terminal, qui fonctionne sous Linux, macOS et Windows selon les notes de version. Le multiplexeur ne change pas, et les deux modes partagent les mêmes sessions. Les binaires compilés avec musl n&#39;incluent pas ce mode&amp;nbsp;: il faut les binaires gnu.&lt;/p&gt;
-&lt;p&gt;Dépôt&amp;nbsp;: &lt;a href=&#34;https://github.com/zellij-org/zellij&#34;&gt;github.com/zellij-org/zellij&lt;/a&gt;, consulté le 12 novembre.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Licence&lt;/strong&gt;&amp;nbsp;: MIT, vérifiée dans le fichier LICENSE.md du dépôt (licence reconnue OSI)&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Activité&lt;/strong&gt;&amp;nbsp;: 36&amp;nbsp;017 étoiles, 1&amp;nbsp;529 forks, 3&amp;nbsp;459 commits et 383 pull requests ouvertes au 12 novembre&amp;nbsp;; environ 1&amp;nbsp;600 issues ouvertes, chiffre arrondi affiché par GitHub&amp;nbsp;; dernière release v0.46.0 le 11 novembre 2026&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;Qui&lt;/strong&gt;&amp;nbsp;: Le collectif zellij-org, mené par Aram Drevekenin, auteur de 247 des commits de l&#39;année écoulée&amp;nbsp;; projet commencé en juillet 2020&lt;/li&gt;
-&lt;li&gt;&lt;strong&gt;À savoir&lt;/strong&gt;&amp;nbsp;: Le développement repose largement sur une seule personne. Le README affiche des sponsors, dont la société de trading G-Research. Le mode émulateur de terminal est une nouveauté de cette version et n&#39;existe pas dans les binaires musl.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;&lt;a href=&#34;https://ccak1.github.io/kiosque/daily-technews/daily-technews-2026-11-12.html?outil&amp;amp;utm_source=rss#outil&#34;&gt;Daily Technews n° 034, jeudi 12 novembre 2026&lt;/a&gt;&lt;/p&gt;</content>
   </entry>
 </feed>

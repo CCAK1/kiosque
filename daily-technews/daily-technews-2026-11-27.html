@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Daily Technews, édition du 27 novembre 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@500;700&family=Abril+Fatface&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --paper: #E9E9E6;
+    --ink: #141414;
+    --muted: #5C5C59;
+    --hair: #B9B9B4;
+    --accent-rule: #141414;
+    --accent: #B3243F;
+    --band-bg: #141414;
+    --band-ink: #E9E9E6;
+    --mast: "Archivo Black", "Arial Black", Impact, sans-serif;
+    --grot: "Space Grotesk", "Helvetica Neue", Arial, sans-serif;
+    --didone: "Abril Fatface", "Bodoni 72", Didot, Georgia, serif;
+    --text: "Source Serif 4", Georgia, "Times New Roman", serif;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+      --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+    }
+  }
+  :root[data-theme="dark"] {
+    --paper: #161616; --ink: #ECECE8; --muted: #A3A39E; --hair: #3A3A37;
+    --accent-rule: #ECECE8; --accent: #F08CA0; --band-bg: #ECECE8; --band-ink: #161616;
+  }
+
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+  @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+  body { margin: 0; background: var(--paper); color: var(--ink); font-family: var(--text); font-size: 1.1875rem; line-height: 1.62; }
+  .page { max-width: 1180px; margin: 0 auto; padding: 1rem 1.125rem 0; }
+
+  a { color: inherit; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
+  a:hover { color: var(--accent); }
+  a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+  /* Manchette */
+  .topline { display: flex; justify-content: flex-end; align-items: baseline; gap: 1rem; }
+  .issue { font-family: var(--didone); font-size: 1.75rem; line-height: 1; }
+  .price { font-family: var(--grot); font-weight: 700; font-size: 1.125rem; line-height: 1; margin: 0; }
+  .title {
+    font-family: var(--mast); font-weight: 400; text-transform: uppercase;
+    font-size: clamp(2.4rem, 13vw, 5.4rem); line-height: .88; letter-spacing: -.02em;
+    margin: .35rem 0 .6rem;
+  }
+  .title span { display: block; }
+  .dateline {
+    border-top: 2px solid var(--ink); padding: .55rem 0 0;
+    font-family: var(--text); font-size: .8125rem; letter-spacing: .14em; text-transform: uppercase;
+  }
+
+  /* Sommaire */
+  .contents {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 1rem 1.25rem;
+    margin: 1.1rem 0 0; padding: .9rem 0 1rem;
+    border-top: 1px solid var(--accent-rule); border-bottom: 1px solid var(--accent-rule);
+  }
+  .contents a { text-decoration: none; display: block; }
+  .contents .num { font-family: var(--grot); font-weight: 700; font-size: 1.0625rem; display: block; line-height: 1.1; }
+  .contents .what { font-family: var(--text); font-size: .875rem; line-height: 1.3; color: var(--muted); display: block; margin-top: .2rem; }
+  .contents a:hover .what { color: var(--accent); }
+
+  /* Rubriques et titres */
+  .zone, .tool-head {
+    font-family: var(--grot); font-weight: 500; font-size: .75rem; letter-spacing: .22em; text-transform: uppercase;
+    color: var(--muted); margin: 0 0 .6rem;
+  }
+  h2, h3 { font-family: var(--grot); font-weight: 700; letter-spacing: -.02em; margin: 0; }
+
+  main { display: block; }
+  .lead { padding: 1.6rem 0 1.8rem; border-bottom: 1px solid var(--ink); }
+  .lead h2 { font-size: clamp(2rem, 6.4vw, 3.1rem); line-height: 1.02; }
+  .lead .deck { font-size: 1.3125rem; line-height: 1.42; margin: .9rem 0 1.2rem; }
+  .lead .body p { margin: 0 0 1rem; }
+  .lead .body p:last-child { margin-bottom: 0; }
+
+  .meta { font-size: .9375rem; font-style: italic; color: var(--muted); margin: 1rem 0 0; line-height: 1.5; }
+
+  .briefs { display: block; }
+  .brief { padding: 1.5rem 0; border-bottom: 1px solid var(--hair); }
+  .brief h3 { font-size: 1.5rem; line-height: 1.08; margin-bottom: .65rem; }
+  .brief p:not(.zone):not(.meta) { margin: 0; font-size: 1.125rem; line-height: 1.6; }
+  .brief p.meta, .tool p.meta { font-size: .9375rem; line-height: 1.5; margin-top: 1rem; }
+
+  /* Outil */
+  .tool { padding: 1.6rem 0 2rem; }
+  .tool h2 { font-size: clamp(1.75rem, 5vw, 2.5rem); line-height: 1.04; margin-bottom: .8rem; }
+  .tool-grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+  .tool p { margin: 0 0 .9rem; }
+  dl.facts { margin: 0; border-top: 1px solid var(--hair); }
+  dl.facts div { display: grid; grid-template-columns: 6.5rem 1fr; gap: .75rem; padding: .6rem 0; border-bottom: 1px solid var(--hair); }
+  dl.facts dt { font-family: var(--grot); font-weight: 700; font-size: 1rem; }
+  dl.facts dd { margin: 0; font-size: 1.0625rem; line-height: 1.45; }
+
+  /* Bandeau de pied */
+  .band { background: var(--band-bg); color: var(--band-ink); margin: 0 -1.125rem; padding: .7rem 1.125rem; font-family: var(--grot); font-size: .75rem; letter-spacing: .04em; }
+
+  @media (min-width: 900px) {
+    .page { padding: 1.5rem 2rem 0; }
+    .title span { display: inline; }
+    .title { font-size: clamp(4rem, 8.4vw, 6.2rem); }
+    .contents { grid-template-columns: repeat(6, 1fr); }
+    main { display: grid; grid-template-columns: repeat(12, 1fr); column-gap: 0; }
+    .briefs { display: contents; }
+    .lead { grid-column: 1 / 9; padding-right: 2rem; border-bottom: 0; }
+    .lead .body { column-count: 2; column-gap: 2rem; }
+    .lead .body p { break-inside: avoid; }
+    .brief { border-bottom: 0; }
+    .brief:nth-child(1) { grid-column: 9 / 13; border-left: 1px solid var(--hair); padding: 1.6rem 0 1.8rem 2rem; }
+    .brief:nth-child(n+2) { border-top: 1px solid var(--ink); padding: 1.6rem 1.75rem 1.8rem; border-left: 1px solid var(--hair); }
+    .brief:nth-child(2) { grid-column: 1 / 5; padding-left: 0; border-left: 0; }
+    .brief:nth-child(3) { grid-column: 5 / 9; }
+    .brief:nth-child(4) { grid-column: 9 / 13; padding-right: 0; }
+    .tool { grid-column: 1 / 13; border-top: 1px solid var(--ink); }
+    .tool-grid { grid-template-columns: 1.15fr 1fr; gap: 2.5rem; }
+    .band { margin: 0 -2rem; padding: .7rem 2rem; }
+  }
+</style>
+<style>code{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.88em;background:rgba(0,0,0,.06);padding:0 .25em;border-radius:3px}</style>
+<style id="suite">
+  .title { margin-top: 0; }
+  .dateline { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: .25rem 1rem; }
+  .dateline .price { font: inherit; }
+  .dateline .price::before { content: "•"; margin: 0 .7em; }
+  /* Séparations entre articles en gris */
+  .lead { border-bottom-color: var(--hair); }
+  @media (min-width: 900px) {
+    .brief:nth-child(n+2), .tool { border-top-color: var(--hair); }
+  }
+  .dateline .issue { letter-spacing: 0; }
+  .suite { display: flex; flex-wrap: wrap; justify-content: space-between; gap: .5rem 1.5rem; border-top: 1px solid var(--accent-rule); margin-top: .5rem; padding: .9rem 0 1.1rem; font-family: var(--grot); font-weight: 500; font-size: .9375rem; }
+  .suite a { text-decoration: none; }
+  .suite .num { font-family: var(--didone); font-weight: 400; }
+</style>
+<link rel="icon" type="image/png" href="icone.png">
+<link rel="apple-touch-icon" href="icone.png">
+<script defer src="https://basktide-umami.vercel.app/script.js" data-website-id="91da3e1b-784a-4d76-a1b7-6745da3ff092" data-domains="ccak1.github.io"></script>
+</head>
+<body>
+<div class="page">
+
+  <header>
+  <h1 class="title"><span>Daily </span><span>Technews</span></h1>
+  <div class="dateline"><span>Vendredi 27 novembre 2026<span class="price">2,94&nbsp;€</span></span><span class="issue" aria-label="Numéro 45">045</span></div>
+</header>
+<nav class="contents" aria-label="Sommaire">
+  <a href="#a1"><span class="num">1</span><span class="what">1Password déclare un vol de données clients passé par le compte GitHub d'un employé</span></a>
+  <a href="#a2"><span class="num">2</span><span class="what">Le FinCEN coupe une partie de ses systèmes après un accès non autorisé</span></a>
+  <a href="#a3"><span class="num">3</span><span class="what">L'AFP coupe sa plateforme AFP Forum après une cyberattaque</span></a>
+  <a href="#a4"><span class="num">4</span><span class="what">Palo Alto corrige la faille Fragnesia exploitée contre ses pare-feu</span></a>
+  <a href="#a5"><span class="num">5</span><span class="what">La FIFA déclare une cyberattaque et un accès à des données personnelles</span></a>
+  <a href="#outil"><span class="num">+</span><span class="what">L'outil open source&nbsp;: zizmor</span></a>
+</nav>
+<main>
+  <article class="lead" id="a1">
+    <p class="zone">Canada</p>
+    <h2>1Password déclare le vol de noms, d'adresses e-mail et de données de comptes clients par un attaquant entré par le compte GitHub d'un employé</h2>
+    <p class="deck">L'éditeur canadien du gestionnaire de mots de passe 1Password a publié le 25 novembre un billet sur un incident de sécurité&nbsp;: un attaquant a pris le contrôle du compte GitHub professionnel d'un employé, a eu accès au code source et a poussé du code malveillant dans des services internes, qui ont téléchargé des données d'administration des comptes d'une partie des clients. Selon l'entreprise, le contenu des coffres-forts des clients n'a jamais été accessible à l'attaquant.</p>
+    <div class="body">
+      <p>L'enquête a commencé le 19 novembre, quand 1Password a relevé des indices d'accès au compte GitHub de l'employé, selon le billet. Les données copiées comprennent les noms et adresses e-mail des clients concernés et des métadonnées internes de compte que l'entreprise qualifie de non secrètes. Selon SecurityWeek et TechSpot, elles comprennent aussi des jetons de certains liens d'invitation et de récupération de compte envoyés par e-mail.</p>
+      <p>Le billet indique que des paramètres du protocole d'authentification SRP (Secure Remote Password) font partie des données copiées. Selon SecurityWeek, il s'agit de vérificateurs SRP calculés à partir du mot de passe et de la clé secrète de chaque utilisateur, qui ne permettent pas de se connecter directement à un compte. 1Password n'a pas donné le nombre de clients concernés ni expliqué comment le compte GitHub de l'employé a été compromis.</p>
+      <p>L'entreprise a désactivé le compte GitHub de l'employé, révoqué le jeton volé et supprimé les accès créés par l'attaquant. Les codes d'invitation et de récupération passent de six chiffres à dix caractères. 1Password indique que ses clients n'ont rien à modifier dans leur compte et annonce une analyse des causes dans les prochaines semaines, une fois l'enquête terminée.</p>
+    </div>
+    <p class="meta">Sources&nbsp;: <a href="https://1password.com/blog/update-on-nov-2026-security-incident">1Password</a>, <a href="https://www.securityweek.com/1password-breach-exposes-customer-data-internal-source-code/">SecurityWeek</a>, <a href="https://www.techspot.com/news/114711-1password-confirms-data-breach-after-hacker-compromises-employee.html">TechSpot</a>, <a href="https://heise.de/news/Donnerstag-Datenabfluss-bei-1Password-1-Million-Rechenzentren-im-All-erlaubt-11538479.html">heise online</a></p>
+  </article>
+
+  <section class="briefs" aria-label="Les autres infos du jour">
+    <article class="brief" id="a2">
+      <p class="zone">États-Unis</p>
+      <h3>Le FinCEN, service du Trésor américain contre le blanchiment, coupe une partie de ses systèmes après un accès non autorisé</h3>
+      <p>Le Financial Crimes Enforcement Network (FinCEN), le service du Trésor américain qui reçoit les déclarations des banques sur les opérations suspectes, a déclaré le 25 novembre enquêter sur un incident de cybersécurité qui a donné un accès non autorisé à une partie limitée de ses systèmes, et en avoir mis certains hors ligne par précaution, selon ABC News et The Record. Le site de dépôt des déclarations BSA E-Filing reste en ligne, mais certains services peuvent être indisponibles&nbsp;; le canal de dépôt automatisé par lots SDTM (Secure Data Transfer Mode) est touché. Une ordonnance du FinCEN, FIN-2026-R002, datée du 24 novembre, accorde aux établissements qui utilisaient ce canal au 18 novembre un délai jusqu'au 30 décembre pour les déclarations dues entre le 18 novembre et le 29 décembre. Le FinCEN travaille avec le FBI, l'agence de cybersécurité CISA et des experts extérieurs, et n'a dit ni quelles données ont été consultées ni qui est responsable, selon Government Executive. L'incident suit l'intrusion déclarée par la CIA et le bureau du directeur du renseignement national, rapportée le 24 novembre par le New York Times, selon Help Net Security.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.fincen.gov/sites/default/files/100/ORDER-FIN-2026-R002.pdf">FinCEN (ordonnance FIN-2026-R002)</a>, <a href="https://abcnews.com/US/treasurys-fincen-cybersecurity-incident-includes-unauthorized-access-systems/story?id=138432822">ABC News</a>, <a href="https://therecord.media/treasury-fincen-takes-systems-offline-after-cyber-incident">The Record</a>, <a href="https://www.govexec.com/technology/2026/11/treasurys-financial-crimes-bureau-takes-systems-offline-after-hack/417443/">Government Executive</a>, <a href="https://www.helpnetsecurity.com/2026/11/26/fincen-breach-systems-offline/">Help Net Security</a></p>
+    </article>
+    <article class="brief" id="a3">
+      <p class="zone">France</p>
+      <h3>L'AFP coupe AFP Forum, la plateforme de téléchargement de ses dépêches, photos et vidéos, après une cyberattaque</h3>
+      <p>L'Agence France-Presse a été visée par une cyberattaque dans la nuit du 25 au 26 novembre, à partir de 1 h 30 heure de Paris, selon un courriel interne de la direction cité par Al Jazeera. L'attaque visait AFP Forum, l'une des plateformes sur lesquelles les clients de l'agence consultent et téléchargent ses contenus. Les équipes de l'AFP ont contenu l'intrusion et mis AFP Forum hors ligne par précaution&nbsp;; la plateforme reste indisponible jusqu'à nouvel ordre, et l'agence propose d'autres moyens d'accès à ses abonnés, selon Bernama, qui cite l'agence Anadolu, et Clubic. Une enquête est en cours avec des experts extérieurs, et l'AFP indique n'avoir à ce stade aucune information sur les auteurs. L'agence avait déjà subi une cyberattaque fin septembre 2024 contre une partie des systèmes qui livrent ses contenus aux clients.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.aljazeera.com/news/2026/11/27/global-news-agency-afp-reports-cyberattack-shuts-down-content-platform">Al Jazeera</a>, <a href="https://www.clubic.com/actualite-641320-l-afp-coupe-l-acces-a-sa-plateforme-apres-une-cyberattaque.html">Clubic</a>, <a href="https://www.bernama.com/en/world/news.php?id=2640136">Bernama</a>, <a href="https://fr.qz.com/afp-cyberattaque-plateforme-afp-forum-inaccessible-112626">Quartz</a></p>
+    </article>
+    <article class="brief" id="a4">
+      <p class="zone">Sécurité</p>
+      <h3>Palo Alto Networks corrige dans ses pare-feu la faille Fragnesia du noyau Linux, utilisée pour en prendre le contrôle complet</h3>
+      <p>Palo Alto Networks a publié le 25 novembre le bulletin PAN-SA-2026-0015, qui corrige dans PAN-OS, le système de ses pare-feu, la CVE-2026-46300, surnommée Fragnesia, une faille du noyau Linux qui permet d'obtenir les droits root. Selon l'éditeur, des attaquants l'ont enchaînée avec PHP2Shell, deux failles du langage PHP (CVE-2026-109618 et CVE-2026-109619) qui permettent d'exécuter du code à distance sans authentification, pour prendre le contrôle complet de pare-feu dont l'interface d'administration était exposée sur Internet. Fragnesia ne peut pas être exploitée seule à distance&nbsp;: la seule méthode connue passe d'abord par PHP2Shell, selon le bulletin. Les administrateurs qui ont appliqué les correctifs PHP2Shell d'octobre sont protégés contre l'enchaînement observé, indique Palo Alto, qui recommande d'appliquer aussi les correctifs de Fragnesia et de retirer tout accès Internet aux interfaces d'administration.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://security.paloaltonetworks.com/PAN-SA-2026-0015">Palo Alto Networks</a>, <a href="https://www.bleepingcomputer.com/news/security/palo-alto-networks-warns-of-fragnesia-flaw-exploited-in-pan-os-attacks/">BleepingComputer</a>, <a href="https://www.securityweek.com/palo-alto-networks-patches-fragnesia-flaw-used-to-root-firewalls/">SecurityWeek</a>, <a href="https://www.heise.de/en/news/Palo-Alto-Attacks-target-PAN-OS-firewalls-with-exposed-management-access-11538882.html">heise online</a></p>
+    </article>
+    <article class="brief" id="a5">
+      <p class="zone">Suisse</p>
+      <h3>La FIFA déclare un accès non autorisé à des données personnelles et professionnelles lors d'une cyberattaque</h3>
+      <p>La Fédération internationale de football, dont le siège est à Zurich, a déclaré le 26 novembre avoir subi une cyberattaque criminelle qui a donné un accès non autorisé à «&nbsp;un ensemble limité d'informations personnelles et professionnelles&nbsp;», et travailler avec les autorités, dont les services de police, selon l'Associated Press, citée par le Washington Times, et UPI. La FIFA n'a pas dit quand l'attaque a eu lieu, combien de personnes sont concernées ni quelles informations ont été prises. Un groupe qui se nomme Handsome Boy Hacking Club a revendiqué l'attaque, publié des captures d'écran et affirme avoir pris plus de 12 Go de données&nbsp;; ce chiffre est celui du groupe et n'est pas vérifié, selon Inside World Football et UPI.</p>
+      <p class="meta">Sources&nbsp;: <a href="https://www.washingtontimes.com/news/2026/nov/26/cyberattack-accessed-personal-business-information-fifa-says/">Associated Press, via le Washington Times</a>, <a href="https://www.upi.com/Sports_News/2026/11/26/FIFA-soccer-football-hack/3621795708514/">UPI</a>, <a href="https://www.insideworldfootball.com/2026/11/27/fifa-hit-by-cyber-attack-personal-and-business-data-stolen">Inside World Football</a></p>
+    </article>
+  </section>
+
+  <section class="tool" id="outil" aria-labelledby="tool-title">
+    <p class="tool-head">L'outil open source du jour</p>
+    <h2 id="tool-title">zizmor, l'analyseur de sécurité des chaînes d'intégration continue, ajoute un contrôle des extractions de code dangereuses</h2>
+    <div class="tool-grid">
+      <div>
+        <p>zizmor est un outil d'analyse statique, en ligne de commande, qui cherche et corrige des failles de sécurité dans les fichiers de configuration des chaînes d'intégration et de déploiement continus&nbsp;: GitHub Actions, Dependabot et pre-commit. Il détecte notamment les injections dans les modèles qui permettent à un attaquant d'exécuter son code, les identifiants conservés ou divulgués par erreur, les permissions trop larges accordées aux machines d'exécution et les références Git trompeuses.</p>
+        <p>La version 1.33.0, publiée le 22 novembre, ajoute le contrôle dangerous-checkout, qui repère les extractions de code Git dangereuses, pour l'instant limité à l'action actions/checkout&nbsp;; la version 1.33.1 a suivi le même jour avec une correction. zizmor est écrit en Rust et s'installe avec Homebrew, pip ou pipx, selon sa documentation.</p>
+        <p class="meta">Dépôt&nbsp;: <a href="https://github.com/zizmorcore/zizmor">github.com/zizmorcore/zizmor</a>, consulté le 27 novembre.</p>
+      </div>
+      <dl class="facts">
+        <div><dt>Licence</dt><dd>MIT, vérifiée dans le fichier LICENSE du dépôt (licence reconnue OSI)</dd></div>
+        <div><dt>Activité</dt><dd>1&nbsp;681 commits au 27 novembre, dernière release v1.33.1 le 22 novembre 2026, relevés dans le dépôt Git&nbsp;; étoiles, forks, issues et pull requests ouvertes non relevés, la page du dépôt n'étant pas accessible à l'outil de fabrication ce jour</dd></div>
+        <div><dt>Qui</dt><dd>William Woodruff, auteur de 1&nbsp;164 commits sur 1&nbsp;681 et titulaire du copyright de la licence, au sein de l'organisation GitHub zizmorcore&nbsp;; premier commit le 19 août 2024&nbsp;; développement financé par des sponsors, dont Grafana Labs selon le README</dd></div>
+        <div><dt>À savoir</dt><dd>L'outil analyse la configuration, pas les comptes&nbsp;: il ne détecte pas le vol d'un compte ou d'un jeton GitHub. Il couvre GitHub Actions, Dependabot et pre-commit, pas les autres plateformes d'intégration continue. Le projet repose pour l'essentiel sur un seul développeur.</dd></div>
+      </dl>
+    </div>
+  </section>
+</main>
+<nav class="suite" aria-label="Autres numéros">
+  <a href="daily-technews-2026-11-26.html" rel="prev">Numéro précédent&nbsp;: <span class="num">044</span></a>
+  <a href="archives.html">Tous les numéros</a>
+</nav>
+</div>
+</body>
+</html>
